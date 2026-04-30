@@ -1,0 +1,669 @@
+---
+---
+
+// ── Variables ─────────────────────────────────────────────────────────────────
+$green-dark:    #1B4332;
+$green-mid:     #2D6A4F;
+$green-accent:  #52B788;
+$green-light:   #D8F3DC;
+$green-bg:      #F0FDF4;
+$blue-revenue:  #1D4ED8;
+$blue-hover:    #1E40AF;
+$white:         #FFFFFF;
+$text-primary:  #0F172A;
+$text-secondary:#475569;
+$text-light:    #94A3B8;
+$border:        #D1FAE5;
+$code-bg:       #0F2318;
+
+// ── Reset & Base ──────────────────────────────────────────────────────────────
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: $green-bg;
+  color: $text-primary;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a { color: $blue-revenue; text-decoration: none; }
+a:hover { color: $blue-hover; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+// ── Header / Nav ──────────────────────────────────────────────────────────────
+.site-header {
+  background: $green-dark;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid $green-mid;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: $white !important;
+  letter-spacing: 0.05em;
+  background: $blue-revenue;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    color: #A7F3D0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+
+    &:hover { background: $green-mid; color: $white; }
+  }
+
+  .btn-nav {
+    background: $blue-revenue;
+    color: $white !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 8px;
+    &:hover { background: $blue-hover; }
+  }
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: $white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+// ── Hero ──────────────────────────────────────────────────────────────────────
+.hero {
+  background: $green-dark;
+  padding: 96px 0 80px;
+  color: $white;
+
+  .eyebrow {
+    display: inline-block;
+    background: rgba($green-accent, 0.2);
+    color: $green-accent;
+    border: 1px solid rgba($green-accent, 0.4);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    max-width: 700px;
+
+    .highlight {
+      color: $green-accent;
+    }
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    color: #A7F3D0;
+    max-width: 560px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: $blue-revenue;
+    color: $white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.15s, transform 0.1s;
+    &:hover { background: $blue-hover; transform: translateY(-1px); color: $white; }
+  }
+
+  .btn-ghost {
+    border: 1.5px solid rgba($green-accent, 0.5);
+    color: $green-accent;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.15s;
+    &:hover { background: rgba($green-accent, 0.1); color: $green-accent; }
+  }
+}
+
+// ── Impact Metrics ────────────────────────────────────────────────────────────
+.impact {
+  background: $white;
+  padding: 64px 0;
+  border-bottom: 1px solid $border;
+
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $green-mid;
+    margin-bottom: 40px;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+
+  .metric-card {
+    background: $green-bg;
+    border: 1px solid $border;
+    border-radius: 12px;
+    padding: 28px 24px;
+    border-top: 3px solid $green-accent;
+
+    .metric-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $green-dark;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric-label {
+      font-size: 0.9rem;
+      color: $text-secondary;
+    }
+  }
+}
+
+// ── Skills ────────────────────────────────────────────────────────────────────
+.skills {
+  background: $green-bg;
+  padding: 72px 0;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $green-dark;
+    margin-bottom: 8px;
+  }
+
+  .section-sub {
+    color: $text-secondary;
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-card {
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 12px;
+    padding: 24px;
+
+    .skill-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $green-dark;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: $text-secondary;
+      line-height: 1.5;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+  }
+}
+
+// ── Projects ──────────────────────────────────────────────────────────────────
+.projects {
+  background: $white;
+  padding: 72px 0;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $green-dark;
+    margin-bottom: 8px;
+  }
+
+  .section-sub {
+    color: $text-secondary;
+    margin-bottom: 40px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+}
+
+// ── Project Card ──────────────────────────────────────────────────────────────
+.project-card {
+  background: $white;
+  border: 1px solid $border;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba($green-dark, 0.1);
+  }
+
+  .card-image {
+    background: $green-dark;
+    height: 180px;
+    overflow: hidden;
+    img { width: 100%; height: 100%; object-fit: cover; }
+  }
+
+  .card-image-placeholder {
+    background: linear-gradient(135deg, $green-dark, $green-mid);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  .card-body {
+    padding: 20px 24px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $green-dark;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .card-tagline {
+    font-size: 0.875rem;
+    color: $text-secondary;
+    margin-bottom: 12px;
+    flex: 1;
+  }
+
+  .card-outcome {
+    font-size: 0.875rem;
+    color: $green-mid;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background: $green-bg;
+    border-radius: 6px;
+    border-left: 3px solid $green-accent;
+  }
+
+  .btn-card {
+    color: $blue-revenue;
+    font-weight: 600;
+    font-size: 0.875rem;
+    &:hover { color: $blue-hover; }
+  }
+}
+
+// ── Tags ──────────────────────────────────────────────────────────────────────
+.tag {
+  display: inline-block;
+  background: $green-light;
+  color: $green-dark;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+// ── Project Page ──────────────────────────────────────────────────────────────
+.project-hero {
+  background: $green-dark;
+  color: $white;
+  padding: 64px 0;
+
+  .back-link {
+    color: $green-accent;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    &:hover { color: $white; }
+  }
+
+  .project-tools-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+    .tag { background: rgba($green-accent, 0.2); color: $green-accent; border: 1px solid rgba($green-accent, 0.4); }
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    max-width: 780px;
+  }
+
+  .project-tagline-hero {
+    color: #A7F3D0;
+    font-size: 1.1rem;
+    max-width: 680px;
+    margin-bottom: 28px;
+  }
+}
+
+.outcome-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba($green-accent, 0.12);
+  border: 1px solid rgba($green-accent, 0.3);
+  border-radius: 10px;
+  padding: 16px 20px;
+  max-width: 640px;
+
+  .outcome-icon {
+    font-size: 1.2rem;
+    color: $green-accent;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  strong { color: $white; font-size: 1rem; }
+  p { color: #A7F3D0; font-size: 0.875rem; margin-top: 4px; }
+}
+
+.project-body {
+  padding: 56px 24px;
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $green-dark;
+    margin: 40px 0 14px;
+    padding-top: 8px;
+    border-top: 2px solid $green-light;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $green-mid;
+    margin: 28px 0 10px;
+  }
+
+  p { margin-bottom: 16px; color: $text-primary; line-height: 1.7; }
+
+  ul, ol {
+    margin: 0 0 16px 20px;
+    li { margin-bottom: 6px; color: $text-primary; line-height: 1.6; }
+  }
+
+  strong { color: $green-dark; }
+
+  // Code blocks
+  pre {
+    background: $code-bg;
+    border-radius: 10px;
+    padding: 20px 24px;
+    overflow-x: auto;
+    margin: 20px 0 28px;
+    border: 1px solid rgba($green-accent, 0.15);
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: #A7F3D0;
+      background: none;
+      padding: 0;
+    }
+  }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    background: $green-light;
+    color: $green-dark;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  // Result callout
+  .result-box {
+    background: $green-bg;
+    border: 1px solid $border;
+    border-left: 4px solid $blue-revenue;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 24px;
+    margin: 24px 0;
+
+    .result-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $blue-revenue;
+      margin-bottom: 10px;
+    }
+
+    ul { margin: 0 0 0 16px; }
+    li { color: $text-primary; font-size: 0.9375rem; margin-bottom: 6px; }
+  }
+
+  // Architecture diagram placeholder
+  .arch-diagram {
+    background: $green-dark;
+    border-radius: 12px;
+    padding: 28px;
+    margin: 24px 0;
+    color: $white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    overflow-x: auto;
+  }
+}
+
+// ── About & Contact pages ─────────────────────────────────────────────────────
+.page-hero {
+  background: $green-dark;
+  color: $white;
+  padding: 64px 0 48px;
+
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; }
+  p { color: #A7F3D0; font-size: 1.05rem; margin-top: 12px; max-width: 560px; }
+}
+
+.page-body {
+  padding: 56px 24px;
+  max-width: 760px;
+  margin: 0 auto;
+
+  h2 { font-size: 1.3rem; font-weight: 700; color: $green-dark; margin: 32px 0 12px; }
+  p  { margin-bottom: 16px; color: $text-primary; line-height: 1.7; }
+  ul { margin: 0 0 16px 20px; li { margin-bottom: 8px; } }
+}
+
+.contact-form {
+  background: $white;
+  border: 1px solid $border;
+  border-radius: 14px;
+  padding: 36px;
+  margin-top: 32px;
+
+  .form-group {
+    margin-bottom: 20px;
+    label { display: block; font-weight: 600; font-size: 0.875rem; color: $green-dark; margin-bottom: 6px; }
+    input, textarea, select {
+      width: 100%;
+      border: 1.5px solid $border;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      color: $text-primary;
+      background: $green-bg;
+      transition: border-color 0.15s;
+      &:focus { outline: none; border-color: $green-accent; background: $white; }
+    }
+    textarea { min-height: 120px; resize: vertical; }
+  }
+
+  .btn-submit {
+    background: $blue-revenue;
+    color: $white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s;
+    &:hover { background: $blue-hover; }
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+.site-footer {
+  background: $green-dark;
+  color: #A7F3D0;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $white;
+    margin-right: 12px;
+  }
+
+  p { font-size: 0.875rem; color: #A7F3D0; }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    a { color: #A7F3D0; font-size: 0.875rem; &:hover { color: $white; } }
+  }
+}
+
+// ── Responsive ───────────────────────────────────────────────────────────────
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: $green-dark;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    border-top: 1px solid $green-mid;
+    gap: 4px;
+
+    &.open { display: flex; }
+    a { padding: 12px 16px; }
+    .btn-nav { text-align: center; }
+  }
+
+  .site-header .container { position: relative; }
+  .nav-toggle { display: block; }
+
+  .hero { padding: 60px 0 48px; }
+  .hero .hero-ctas { flex-direction: column; }
+  .hero .btn-primary, .hero .btn-ghost { text-align: center; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid   { grid-template-columns: 1fr; }
+  .metrics-grid  { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-form { padding: 24px; }
+  .page-body { padding: 40px 16px; }
+}
+
+@media (max-width: 480px) {
+  .metrics-grid { grid-template-columns: 1fr; }
+}

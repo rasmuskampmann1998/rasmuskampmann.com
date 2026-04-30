@@ -1,0 +1,22 @@
+<article class="project-card">
+  {% if project.cover_image %}
+  <div class="card-image">
+    <img src="{{ project.cover_image | relative_url }}" alt="{{ project.title }}" loading="lazy" />
+  </div>
+  {% else %}
+  <div class="card-image-placeholder">
+    {{ project.cover_emoji | default: "📁" }}
+  </div>
+  {% endif %}
+  <div class="card-body">
+    <div class="card-tools">
+      {% for tool in project.tools limit:4 %}
+      <span class="tag">{{ tool }}</span>
+      {% endfor %}
+    </div>
+    <h3 class="card-title">{{ project.title }}</h3>
+    <p class="card-tagline">{{ project.tagline }}</p>
+    <p class="card-outcome">{{ project.outcome_headline }}</p>
+    <a href="{{ project.url | relative_url }}" class="btn-card">Read case study &rarr;</a>
+  </div>
+</article>

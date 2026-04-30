@@ -1,0 +1,39 @@
+title: Rasmus Krog
+tagline: RevOps Engineer
+description: I build GTM systems that generate pipeline — outbound automation, lead scoring, and market intelligence for B2B companies.
+baseurl: "/rasmus-krog-revops"
+url: "https://rasmuskampmann1998.github.io"
+
+author:
+  name: Rasmus Krog
+  email: rasmus.k@digi-tal.dk
+  linkedin: https://www.linkedin.com/in/rasmus-krog/
+  github: https://github.com/rasmuskampmann1998
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
