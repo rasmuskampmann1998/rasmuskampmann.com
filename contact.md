@@ -57,6 +57,6 @@ Most engagements start with a scoped project — a pipeline, a model, a dashboar
   </form>
 </div>
 
-Or reach me directly at **[rasmus.k@digi-tal.dk](mailto:rasmus.k@digi-tal.dk)** or on [LinkedIn](https://www.linkedin.com/in/rasmus-krog/).
+Or reach me directly at **[Rasmus.Kampmann@digi-tal.dk](mailto:Rasmus.Kampmann@digi-tal.dk)** or on [LinkedIn](https://www.linkedin.com/in/rasmus-kampmann/).
 
 </div>
