@@ -1,14 +1,15 @@
 title: Rasmus Kampmann
-tagline: RevOps Engineer
-description: I build GTM systems that generate pipeline — outbound automation, lead scoring, and market intelligence for B2B companies.
-baseurl: "/rasmus-krog-revops"
-url: "https://rasmuskampmann1998.github.io"
+tagline: Data Analyst · BI Developer · AI Workflows
+description: I build data, reporting, and AI systems that turn commercial Excel chaos into clarity. SQL · Power BI · Python · Web Scraping · AI Workflows.
+baseurl: ""
+url: "https://rasmuskampmann.com"
 
 author:
   name: Rasmus Kampmann
-  email: Rasmus.Kampmann@digi-tal.dk
-  linkedin: https://www.linkedin.com/in/rasmus-kampmann/
+  email: rasmuskampmann1998@gmail.com
+  linkedin: https://www.linkedin.com/in/rasmuskampmann/
   github: https://github.com/rasmuskampmann1998
+  location: Barcelona, Spain
 
 collections:
   projects:
@@ -37,3 +38,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - README.md

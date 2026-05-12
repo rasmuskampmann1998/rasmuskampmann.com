@@ -1,58 +1,62 @@
 ---
 layout: default
 title: About
-description: RevOps and GTM engineering — outbound automation, lead scoring, and market intelligence for B2B companies.
+description: Data Analyst, BI Developer, and AI Workflows specialist based in Barcelona. I turn commercial Excel chaos into clarity.
 ---
 
 <section class="page-hero">
   <div class="container">
     <h1>About</h1>
-    <p>I build the systems behind B2B pipeline — from raw data to CRM-ready leads.</p>
+    <p>Data Analyst, BI Developer, and AI Workflows specialist. I help ambitious B2B companies turn messy operational data into clean reporting and AI that drives commercial outcomes.</p>
   </div>
 </section>
 
 <div class="page-body">
 
+## How I got here
+
+I moved from operations and marketing into data analytics because I kept hitting the same wall. Every team I worked on was drowning in spreadsheets, the tools were disconnected, and nobody trusted the numbers. I learned SQL, Python, and Power BI to fix that for my own work. I liked it more than the work I was originally hired for, so I made it the thing I do.
+
+Today I build the data and AI infrastructure that lets commercial teams trust their reporting and make better decisions.
+
 ## What I do
 
-I'm a RevOps and GTM engineer. I build outbound pipelines, lead scoring models, analytics infrastructure, and market intelligence systems for B2B companies.
+I run productized engagements for B2B companies:
 
-My work sits at the intersection of data engineering, machine learning, and sales automation — the plumbing that makes modern GTM teams effective without scaling headcount.
+- **Data Audit** (free, 1 to 2 weeks). A written report on your current setup, the gaps, and the highest-leverage fixes.
+- **Data Foundation** (4 to 8 weeks). Consolidated data infrastructure plus the core Power BI dashboards your team actually uses.
+- **AI Implementation** (4 to 8 weeks). A specific AI workflow tied to a commercial outcome: lead scoring, churn prediction, GTM intelligence, financial forecasting.
+
+After a Foundation engagement, most clients move to a monthly retainer for ongoing analytics and evolution.
 
 ## How I work
 
-Most of what I build is custom: a pipeline tailored to your ICP, a scoring model trained on your actual conversion data, an analytics view built around the questions your team actually asks.
-
-I work in Node.js and Python, deploy on GitHub Actions and Docker, and integrate with the tools B2B teams already use — Pipedrive, Airtable, HeyReach, Clay, Apify.
-
-## What clients typically engage me for
-
-- **Outbound pipeline engineering** — CVR/company registry enrichment, LinkedIn data, AI personalisation, sequence automation, CRM sync
-- **Lead scoring & ML** — propensity models, ICP scoring, lookalike matching trained on your won deals
-- **Revenue analytics** — funnel analysis, cohort retention, ICP segmentation, churn timeseries
-- **Market intelligence** — competitive monitoring, regulatory tracking, signal aggregation across hundreds of sources
-- **AI integration** — Claude/GPT workflows for qualification, personalisation, screening, and classification
+Every engagement follows the same eight-stage delivery method. Audit, collection, analysis, infrastructure, reporting, AI and automation, scraping, AI implementation. Not every project touches every stage. This is the underlying flow. See the [homepage](/) for the full breakdown.
 
 ## Background
 
-I built and operate the full GTM stack for a Danish B2B software company — outbound pipeline, inbound enrichment, content signal tracking, and a data warehouse pulling from 12 sources. That system processes thousands of leads per month with minimal manual intervention.
+I built and operated the full GTM stack for a Danish B2B software company. Outbound pipeline, inbound enrichment, content signal tracking, and a data warehouse pulling from twelve sources. That system processes thousands of leads per month with minimal manual intervention, and it's the source of most of the case studies on this site.
 
-Before that: analytics and growth work across SaaS and service businesses.
+I currently work with a European seed and agri-tech company on operations, sales, inventory forecasting, and financial reporting.
 
-I'm based in Copenhagen and work with clients across Denmark and the Nordics, with some international engagements.
+Before data: operations and growth roles across SaaS and service businesses. The mix is deliberate. I've sat on both sides of the dashboard, so I know what reports leadership actually opens and which ones get ignored.
+
+## Where I'm based
+
+Barcelona, Spain. Originally from Denmark. I work remotely with clients across Europe, with a focus on Denmark, the Nordics, and Spain.
 
 ## Languages & tools
 
-**Languages:** Python, JavaScript/Node.js, SQL  
-**ML:** XGBoost, scikit-learn, SHAP, pandas, numpy  
-**Data:** Airtable, Supabase, Postgres, CSV/Excel pipelines  
-**Automation:** n8n, GitHub Actions, APScheduler, Docker  
-**Outreach:** HeyReach, Clay, Pipedrive, LinkedIn  
-**AI:** Claude API (Anthropic), OpenAI API  
-**Scraping:** Apify, Playwright, custom web scrapers
+**Languages:** Python, SQL, JavaScript/Node.js, Danish, English
+**Analysis & modelling:** pandas, scikit-learn, XGBoost, SHAP, Excel
+**BI & reporting:** Power BI (DAX), Tableau, Plotly, matplotlib
+**Data:** PostgreSQL, SQL Server, Supabase, Airtable, ETL design
+**Automation:** n8n, Make.com, GitHub Actions, APScheduler, Docker
+**Scraping:** Apify, Playwright, FastAPI, trafilatura, OSINT
+**AI:** Claude API, MCP, OpenAI API, tool-use, prompt engineering, vibe-code workflows
 
-<div style="margin-top: 40px;">
-  <a href="/rasmus-krog-revops/contact" class="btn-primary" style="background: #1D4ED8; color: white; padding: 14px 28px; border-radius: 8px; font-weight: 600; display: inline-block;">Get in touch &rarr;</a>
+<div style="margin-top: 48px;">
+  <a href="{{ '/contact' | relative_url }}" class="btn-primary-lime" style="background: #9DEB6E; color: #0A0A0A; padding: 14px 28px; border-radius: 10px; font-weight: 700; display: inline-block;">Request my free audit →</a>
 </div>
 
 </div>

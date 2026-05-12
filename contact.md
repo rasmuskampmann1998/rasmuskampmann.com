@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Contact
-description: Get in touch to discuss RevOps engineering, GTM automation, or analytics projects.
+description: Get in touch to discuss data, BI, or AI workflow projects. Request your free Data Audit.
 ---
 
 <section class="page-hero">
   <div class="container">
     <h1>Get in touch</h1>
-    <p>Based in Copenhagen. Available for project-based engagements across Denmark, the Nordics, and remotely.</p>
+    <p>Based in Barcelona. Available for project-based engagements across Europe and remotely.</p>
   </div>
 </section>
 
@@ -15,13 +15,14 @@ description: Get in touch to discuss RevOps engineering, GTM automation, or anal
 
 ## What I typically work on
 
-- Outbound pipeline engineering (enrichment → personalisation → CRM)
-- Lead scoring and propensity models
-- Revenue analytics and ICP segmentation
-- Market intelligence and competitive monitoring platforms
-- AI integration into sales and ops workflows
+- Data audits and source-of-truth design
+- Power BI dashboards and reporting infrastructure
+- SQL warehouses and ETL pipelines
+- AI workflows and agentic automation
+- Web scraping and external-signal collection
+- Lead scoring, churn prediction, and other applied ML
 
-Most engagements start with a scoped project — a pipeline, a model, a dashboard — and grow from there. I work directly with founders, heads of sales, and RevOps leads.
+Most engagements start with the free Data Audit. From there, scoped projects on Data Foundation or AI Implementation, and ongoing retainers if it's a fit.
 
 <div class="contact-form">
   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -41,11 +42,10 @@ Most engagements start with a scoped project — a pipeline, a model, a dashboar
       <label for="project">What are you looking to build?</label>
       <select id="project" name="project">
         <option value="">Select a type...</option>
-        <option value="outbound-pipeline">Outbound pipeline</option>
-        <option value="lead-scoring">Lead scoring / ML model</option>
-        <option value="analytics">Revenue analytics</option>
-        <option value="market-intelligence">Market intelligence platform</option>
-        <option value="ai-integration">AI integration</option>
+        <option value="audit">Free Data Audit</option>
+        <option value="foundation">Data Foundation (infrastructure + dashboards)</option>
+        <option value="ai-implementation">AI Implementation (lead scoring, churn, forecasting)</option>
+        <option value="retainer">Ongoing analytics retainer</option>
         <option value="other">Other / not sure yet</option>
       </select>
     </div>
@@ -57,6 +57,6 @@ Most engagements start with a scoped project — a pipeline, a model, a dashboar
   </form>
 </div>
 
-Or reach me directly at **[Rasmus.Kampmann@digi-tal.dk](mailto:Rasmus.Kampmann@digi-tal.dk)** or on [LinkedIn](https://www.linkedin.com/in/rasmus-kampmann/).
+Or reach me directly at **[rasmuskampmann1998@gmail.com](mailto:rasmuskampmann1998@gmail.com)** or on [LinkedIn](https://www.linkedin.com/in/rasmuskampmann/).
 
 </div>
