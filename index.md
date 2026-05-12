@@ -8,11 +8,12 @@ title: Home
     <div class="hero-avatar">
       <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
-    <h1>Hi, I'm Rasmus Kampmann</h1>
+    <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
+    <h1>I turn scattered commercial data into <span class="highlight">systems you trust.</span></h1>
     <p class="hero-subtitle">Data Analyst · BI Developer · SQL · Power BI · Python · AI Workflows</p>
     <ul class="hero-meta">
       <li>📊 From Ops &amp; Marketing into Data Analytics</li>
-      <li>💻 SQL · Power BI · Python · AI Workflows</li>
+      <li>💼 B2B Commercial Teams</li>
       <li>📍 Costa del Sol, Spain</li>
     </ul>
     <div class="hero-social">
@@ -28,7 +29,8 @@ title: Home
     </div>
     <div class="hero-ctas-centered">
       <a href="#projects" class="btn-pill">View Projects</a>
-      <a href="{{ '/about' | relative_url }}" class="btn-pill">About Me</a>
+      <a href="{{ '/contact' | relative_url }}" class="btn-pill">Get in touch</a>
+      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" class="btn-pill" download>Download CV</a>
     </div>
   </div>
 </section>
@@ -93,28 +95,24 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
-        <h3>Supabase</h3>
-        <p>I use Supabase as a structured, queryable database to store cleaned data, support analysis, and feed automated reporting pipelines.</p>
+        <h3>Web Scraping</h3>
+        <p>I build custom scrapers that pull external signals into the same warehouse as internal data. Competitor moves, prices, regulatory feeds, job postings.</p>
       </div>
 
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="5" cy="12" r="2.5"/>
-            <circle cx="19" cy="5" r="2.5"/>
-            <circle cx="19" cy="19" r="2.5"/>
-            <circle cx="12" cy="12" r="2.5"/>
-            <line x1="7" y1="11" x2="9.5" y2="11"/>
-            <line x1="14.5" y1="11" x2="17" y2="11"/>
-            <line x1="14" y1="8" x2="17" y2="6.5"/>
-            <line x1="14" y1="16" x2="17" y2="17.5"/>
+            <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/>
+            <circle cx="12" cy="12" r="1.6"/>
           </svg>
         </div>
-        <h3>n8n</h3>
-        <p>I use n8n as the automation layer that connects everything. Moving data between systems, triggering workflows, running AI agents.</p>
+        <h3>AI Workflows</h3>
+        <p>I build Claude and GPT workflows that classify, enrich, and summarise data. AI sits inside the pipeline, not bolted on top.</p>
       </div>
 
     </div>
@@ -145,7 +143,7 @@ title: Home
         <p>I build simple, reliable data systems that turn messy operational data into clear insights and automated reporting.</p>
         <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've designed BI models, automated data flows, and connected datasets across sales, inventory, production, finance, and ERP sources.</p>
         <p>My focus is always the same: <strong>create structure <span class="about-two-col-arrow">→</span> automate routine work <span class="about-two-col-arrow">→</span> deliver dashboards that support real decisions.</strong></p>
-        <p><strong>What I work with:</strong> Power BI, SQL, Python, Excel, Data Modeling, Automation (n8n / Make / Power Automate)</p>
+        <p><strong>What I work with:</strong> Power BI, SQL, Python, Excel, Data Modeling, Web Scraping, AI Workflows.</p>
         <p><strong>How I approach BI:</strong></p>
         <ul>
           <li>Clean, consistent data structures</li>
@@ -155,7 +153,6 @@ title: Home
           <li>Dashboards that highlight business logic, not noise</li>
         </ul>
         <p>I reduce operational friction by replacing manual spreadsheets and inconsistent processes with systems that run on their own and make the business easier to understand.</p>
-        <p style="margin-top: 24px;"><a href="{{ '/about' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;">Read full bio →</a></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/photo-2.jpg' | relative_url }}'" />
@@ -173,84 +170,64 @@ title: Home
     <div class="experience-timeline">
 
       <div class="experience-card">
-        <div class="experience-meta">
-          <h4>Digi-Tal Regnskab</h4>
-          <p class="experience-date">Feb 2026 – May 2026 · Contract · Remote</p>
-        </div>
-        <div class="experience-body">
-          <h5>GTM Engineer &amp; Data Analyst</h5>
-          <ul>
-            <li>Built the LinkedIn outbound infrastructure and analytics layer for a Danish SMB accounting firm.</li>
-            <li>Built end-to-end outbound pipeline: scraping, enrichment, scoring, sequence execution. Cold outreach hit around 50% acceptance rate.</li>
-            <li>Built predictive lead-scoring and accounting-software detection ML models (~75% accuracy across Danish SMBs).</li>
-            <li>Full-channel revenue analysis across Meta, Google, LinkedIn, cold calling, and inbound.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Pipedrive · Clay · Playwright · Apify · HeyReach · Claude</p>
-        </div>
+        <p class="experience-date">Feb 2026 – May 2026 · Contract · Remote</p>
+        <h4 class="experience-role">GTM Engineer &amp; Data Analyst</h4>
+        <p class="experience-company">Digi-Tal Regnskab</p>
+        <ul class="experience-bullets">
+          <li>Built the LinkedIn outbound infrastructure and analytics layer for a Danish SMB accounting firm.</li>
+          <li>Built end-to-end outbound pipeline: scraping, enrichment, scoring, sequence execution. Cold outreach hit around 50% acceptance rate.</li>
+          <li>Built predictive lead-scoring and accounting-software detection ML models (~75% accuracy across Danish SMBs).</li>
+          <li>Full-channel revenue analysis across Meta, Google, LinkedIn, cold calling, and inbound.</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Pipedrive · Clay · Playwright · Apify · HeyReach · Claude</p>
       </div>
 
       <div class="experience-card">
-        <div class="experience-meta">
-          <h4>Veginova Seeds</h4>
-          <p class="experience-date">Aug 2023 – Feb 2026 · Full-time · Hybrid</p>
-        </div>
-        <div class="experience-body">
-          <h5>Data Analyst &amp; RevOps</h5>
-          <ul>
-            <li>Owned the BI and reporting stack across sales, operations, and production. Single source of truth for the business.</li>
-            <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
-            <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
-            <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Clay · Claude Code</p>
-        </div>
+        <p class="experience-date">Aug 2023 – Feb 2026 · Full-time · Hybrid</p>
+        <h4 class="experience-role">Data Analyst &amp; RevOps</h4>
+        <p class="experience-company">Veginova Seeds</p>
+        <ul class="experience-bullets">
+          <li>Owned the BI and reporting stack across sales, operations, and production. Single source of truth for the business.</li>
+          <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
+          <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
+          <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Clay · Claude Code</p>
       </div>
 
       <div class="experience-card">
-        <div class="experience-meta">
-          <h4>Sira Logic</h4>
-          <p class="experience-date">Jun 2024 – Aug 2025 · Self-employed · Remote</p>
-        </div>
-        <div class="experience-body">
-          <h5>Founder · GTM Engineer &amp; RevOps</h5>
-          <ul>
-            <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
-            <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30-40%.</li>
-            <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
-            <li>Built custom web scraping systems for industry-specific data sources.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Clay · Apify · HubSpot · GoHighLevel · HeyReach</p>
-        </div>
+        <p class="experience-date">Jun 2024 – Aug 2025 · Self-employed · Remote</p>
+        <h4 class="experience-role">Founder · GTM Engineer &amp; RevOps</h4>
+        <p class="experience-company">Sira Logic</p>
+        <ul class="experience-bullets">
+          <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
+          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30 to 40%.</li>
+          <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
+          <li>Built custom web scraping systems for industry-specific data sources.</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Clay · Apify · HubSpot · GoHighLevel · HeyReach</p>
       </div>
 
       <div class="experience-card">
-        <div class="experience-meta">
-          <h4>Outlier</h4>
-          <p class="experience-date">Jan 2025 – Jan 2026 · Freelance · Remote</p>
-        </div>
-        <div class="experience-body">
-          <h5>AI &amp; LLM Data Analyst</h5>
-          <ul>
-            <li>Reviewed and annotated 1,000+ Danish-language AI conversations to improve response quality.</li>
-            <li>Spotted patterns where models failed and fed that back into training data.</li>
-            <li>Built practical understanding of how LLMs work and where they break. The same insight powers the AI scoring and qualification workflows I build today.</li>
-          </ul>
-        </div>
+        <p class="experience-date">Jan 2025 – Jan 2026 · Freelance · Remote</p>
+        <h4 class="experience-role">AI &amp; LLM Data Analyst</h4>
+        <p class="experience-company">Outlier</p>
+        <ul class="experience-bullets">
+          <li>Reviewed and annotated 1,000+ Danish-language AI conversations to improve response quality.</li>
+          <li>Spotted patterns where models failed and fed that back into training data.</li>
+          <li>Built practical understanding of how LLMs work and where they break. The same insight powers the AI scoring and qualification workflows I build today.</li>
+        </ul>
       </div>
 
       <div class="experience-card">
-        <div class="experience-meta">
-          <h4>Damstahl Danmark</h4>
-          <p class="experience-date">Jan 2023 – Aug 2023 · Part-time · Hybrid</p>
-        </div>
-        <div class="experience-body">
-          <h5>Marketing &amp; Digital Graduate</h5>
-          <ul>
-            <li>Managed product and marketing data in ERP and CRM platforms across European markets.</li>
-            <li>Built Excel dashboards for campaign reporting.</li>
-            <li>Standardised regional data processes.</li>
-          </ul>
-        </div>
+        <p class="experience-date">Jan 2023 – Aug 2023 · Part-time · Hybrid</p>
+        <h4 class="experience-role">Marketing &amp; Digital Graduate</h4>
+        <p class="experience-company">Damstahl Danmark</p>
+        <ul class="experience-bullets">
+          <li>Managed product and marketing data in ERP and CRM platforms across European markets.</li>
+          <li>Built Excel dashboards for campaign reporting.</li>
+          <li>Standardised regional data processes.</li>
+        </ul>
       </div>
 
     </div>
@@ -262,6 +239,6 @@ title: Home
     <span class="eyebrow">Want to work together?</span>
     <h2>See my freelance services</h2>
     <a href="{{ '/services' | relative_url }}" class="btn-primary">View Services →</a>
-    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or get in touch via the <a href="{{ '/contact' | relative_url }}">contact form</a>.</p>
+    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>CV</a>.</p>
   </div>
 </section>
