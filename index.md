@@ -3,91 +3,130 @@ layout: home
 title: Home
 ---
 
-<section class="hero">
+<section class="hero-centered">
   <div class="container">
-    <div class="hero-text">
-      <span class="eyebrow">Data Analyst · BI Developer · AI Workflows</span>
-      <h1>I build data, reporting, and AI systems that turn commercial Excel chaos into <span class="highlight">clarity.</span></h1>
-      <p class="hero-sub">Data analytics and reporting for B2B commercial teams. SQL, Power BI, Python, and AI workflows built into one system.</p>
-      <p class="stack-list">SQL · Power BI · Python · Web Scraping · AI Workflows</p>
-      <div class="hero-ctas">
-        <a href="{{ '/contact' | relative_url }}" class="btn-primary">Book your free audit →</a>
-        <a href="#case-studies" class="btn-ghost">See case studies</a>
-      </div>
+    <div class="hero-avatar">
+      <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
-    <div class="hero-portrait">
-      {% assign hero_img = '/assets/images/me/hero-portrait.jpg' | relative_url %}
-      <img src="{{ hero_img }}" alt="Rasmus Kampmann working" loading="eager" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
+    <h1>Hi, I'm Rasmus Kampmann</h1>
+    <p class="hero-subtitle">Data Analyst · BI Developer · SQL · Power BI · Python · AI Workflows</p>
+    <ul class="hero-meta">
+      <li>📊 From Ops &amp; Marketing into Data Analytics</li>
+      <li>💻 SQL · Power BI · Python · AI Workflows</li>
+      <li>📍 Costa del Sol, Spain</li>
+    </ul>
+    <div class="hero-social">
+      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="mailto:{{ site.author.email }}" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+      </a>
     </div>
-  </div>
-</section>
-
-<section class="who-section">
-  <div class="container">
-    <span class="eyebrow">Who I work with</span>
-    <h2>B2B commercial teams sitting on messy data</h2>
-    <p class="who-body">I work with B2B companies whose commercial data lives in too many tools: CRM, spreadsheets, finance systems, and operational tooling that don't talk to each other. The reports take days to build, the numbers don't match, and decisions get made on gut feel instead of evidence. I build the data infrastructure and reporting layer that fixes this.</p>
-  </div>
-</section>
-
-<section class="impact" id="impact">
-  <div class="container">
-    <span class="eyebrow">Impact at a glance</span>
-    <div class="impact-grid">
-      <div class="stat">
-        <div class="stat-number">7</div>
-        <div class="stat-label">End-to-end data systems shipped</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">110k+</div>
-        <div class="stat-label">Records analysed and scored</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Production ML models deployed</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">812</div>
-        <div class="stat-label">External sources monitored live</div>
-      </div>
+    <div class="hero-ctas-centered">
+      <a href="#projects" class="btn-pill">View Projects</a>
+      <a href="{{ '/about' | relative_url }}" class="btn-pill">About Me</a>
     </div>
   </div>
 </section>
 
-<section class="audit-section" id="audit">
+<section class="skills-grid-section" id="skills">
   <div class="container">
-    <span class="eyebrow">The offer</span>
-    <h2>Free Data Audit</h2>
-    <p class="section-sub">A written report on your current data setup. What's working, what's not, and the biggest fixes to make. No obligation, no sales call required.</p>
+    <span class="eyebrow">Skills</span>
+    <h2>What I Do</h2>
+    <p class="section-sub">The tools I use most, grouped by what I actually use them for.</p>
+    <div class="skills-grid">
 
-    <div class="audit-grid">
-      <div class="audit-left">
-        <p>Most B2B teams know their data is messy but can't see where the biggest leaks are. The audit gives you that map.</p>
-        <p>After the audit, we discuss whether scoped project work makes sense. There is no productized tier menu. Every engagement is shaped around what the audit surfaces.</p>
-        <div class="audit-meta">
-          <p><strong>Duration:</strong> 1 to 2 weeks</p>
-          <p><strong>For:</strong> Founders, CFOs, and commercial leaders at B2B SMBs</p>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="13" width="4" height="7" rx="0.5"/>
+            <rect x="10" y="7" width="4" height="13" rx="0.5"/>
+            <rect x="17" y="3" width="4" height="17" rx="0.5"/>
+          </svg>
         </div>
-        <a href="{{ '/contact' | relative_url }}" class="btn-primary" style="margin-top: 28px;">Request your free audit →</a>
+        <h3>Power BI</h3>
+        <p>I build interactive dashboards that turn messy business data into clear, real-time insights.</p>
       </div>
-      <div class="audit-right">
-        <ul class="audit-list">
-          <li>Review of your current spreadsheets, reporting, and data flow</li>
-          <li>Map of where data lives and where it breaks</li>
-          <li>Prioritised list of fixes ranked by impact and effort</li>
-          <li>Written PDF you can share with your team</li>
-        </ul>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="16" rx="1.5"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="3" y1="14" x2="21" y2="14"/>
+            <line x1="9" y1="4" x2="9" y2="20"/>
+            <line x1="15" y1="4" x2="15" y2="20"/>
+          </svg>
+        </div>
+        <h3>Excel</h3>
+        <p>I analyze, clean, structure, and validate data. The foundation before automating or loading it into databases.</p>
       </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>
+          </svg>
+        </div>
+        <h3>SQL</h3>
+        <p>I query and transform data to create reliable, analysis-ready datasets for dashboards and reporting.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+            <line x1="14" y1="4" x2="10" y2="20"/>
+          </svg>
+        </div>
+        <h3>Python</h3>
+        <p>I use Python for automation, data processing, API integrations, and deeper analytical tasks that go beyond spreadsheets.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
+          </svg>
+        </div>
+        <h3>Supabase</h3>
+        <p>I use Supabase as a structured, queryable database to store cleaned data, support analysis, and feed automated reporting pipelines.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5" cy="12" r="2.5"/>
+            <circle cx="19" cy="5" r="2.5"/>
+            <circle cx="19" cy="19" r="2.5"/>
+            <circle cx="12" cy="12" r="2.5"/>
+            <line x1="7" y1="11" x2="9.5" y2="11"/>
+            <line x1="14.5" y1="11" x2="17" y2="11"/>
+            <line x1="14" y1="8" x2="17" y2="6.5"/>
+            <line x1="14" y1="16" x2="17" y2="17.5"/>
+          </svg>
+        </div>
+        <h3>n8n</h3>
+        <p>I use n8n as the automation layer that connects everything. Moving data between systems, triggering workflows, running AI agents.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="projects" id="case-studies">
+<section class="projects is-large" id="projects">
   <div class="container">
-    <span class="eyebrow">Case studies</span>
-    <h2>Real systems I built. And the impact they had.</h2>
-    <p class="section-sub">Seven production projects across commercial analytics, data infrastructure, ML, and market intelligence. Written for non-technical readers, with full code on GitHub where applicable.</p>
-    <div class="projects-grid">
+    <span class="eyebrow">Explore my work</span>
+    <h2>My Projects</h2>
+    <p class="section-sub">Seven production data, BI, and AI systems I built across operations, finance, ML, and market intelligence. Written for non-technical readers.</p>
+    <div class="projects-grid-large">
       {% assign sorted_projects = site.projects | sort: "order" %}
       {% for project in sorted_projects %}
         {% include project-card.html project=project %}
@@ -96,164 +135,133 @@ title: Home
   </div>
 </section>
 
-<section class="process" id="process">
+<section class="about-two-col" id="about-strip">
   <div class="container">
-    <span class="eyebrow">How I work</span>
-    <h2>The delivery methodology behind every engagement</h2>
-    <p class="section-sub">Every engagement starts with the free audit. The eight stages below describe the full delivery flow when projects move forward. Not every project touches every stage.</p>
-
-    <ol class="process-steps">
-      <li>
-        <span class="step-num">01</span>
-        <div class="step-body">
-          <h4>Free audit of current setup</h4>
-          <p>Map the data, spreadsheets, and reporting as they exist today. Identify gaps, brittleness, and the highest-leverage fixes.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">02</span>
-        <div class="step-body">
-          <h4>Data collection &amp; consolidation</h4>
-          <p>Pull internal data from CRM, sales, finance, and ops into one clean, joined dataset.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">03</span>
-        <div class="step-body">
-          <h4>Data analysis &amp; insight surfacing</h4>
-          <p>Funnel analysis, cohort retention, churn drivers, segment performance. The questions your team has been asking but couldn't answer.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">04</span>
-        <div class="step-body">
-          <h4>Data infrastructure build</h4>
-          <p>SQL warehouse, ETL pipelines, a single source of truth that replaces brittle Excel workflows.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">05</span>
-        <div class="step-body">
-          <h4>Reporting &amp; dashboards</h4>
-          <p>Power BI dashboards built around the decisions leadership actually makes. Not just the data that happens to be there.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">06</span>
-        <div class="step-body">
-          <h4>AI &amp; automation in the data flow</h4>
-          <p>Claude and GPT workflows layered into the pipeline. Classification, enrichment, summarisation. Less manual cleanup.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">07</span>
-        <div class="step-body">
-          <h4>Scraping for external context</h4>
-          <p>When internal data isn't enough. Competitor moves, prices, regulations, signals. Custom scrapers feed the same source of truth.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">08</span>
-        <div class="step-body">
-          <h4>AI implementation tied to outcomes</h4>
-          <p>Models trained on your data, deployed into the workflows that drive revenue. GTM scoring, financial forecasting, ops optimisation.</p>
-        </div>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<section class="techstack" id="capabilities">
-  <div class="container">
-    <span class="eyebrow">Capabilities</span>
-    <h2>What I build with</h2>
-    <p class="section-sub">The underlying tools, grouped by what I actually use them for.</p>
-
-    <div class="techstack-grid">
-      <div class="tech-group">
-        <h3>Analysis &amp; modelling</h3>
-        <div class="tech-chips">
-          <span class="tag">Python</span>
-          <span class="tag">pandas</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">XGBoost</span>
-          <span class="tag">SHAP</span>
-          <span class="tag">Excel</span>
-        </div>
+    <div class="about-two-col-grid">
+      <div class="about-two-col-text">
+        <span class="eyebrow">Learn more</span>
+        <h2>About Me</h2>
+        <p>Hi, I'm Rasmus.</p>
+        <p>I build simple, reliable data systems that turn messy operational data into clear insights and automated reporting.</p>
+        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've designed BI models, automated data flows, and connected datasets across sales, inventory, production, finance, and ERP sources.</p>
+        <p>My focus is always the same: <strong>create structure <span class="about-two-col-arrow">→</span> automate routine work <span class="about-two-col-arrow">→</span> deliver dashboards that support real decisions.</strong></p>
+        <p><strong>What I work with:</strong> Power BI, SQL, Python, Excel, Data Modeling, Automation (n8n / Make / Power Automate)</p>
+        <p><strong>How I approach BI:</strong></p>
+        <ul>
+          <li>Clean, consistent data structures</li>
+          <li>Automated ingestion and transformation</li>
+          <li>Lightweight pipelines over complex systems</li>
+          <li>Power BI models that are easy to maintain and expand</li>
+          <li>Dashboards that highlight business logic, not noise</li>
+        </ul>
+        <p>I reduce operational friction by replacing manual spreadsheets and inconsistent processes with systems that run on their own and make the business easier to understand.</p>
+        <p style="margin-top: 24px;"><a href="{{ '/about' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;">Read full bio →</a></p>
       </div>
-      <div class="tech-group">
-        <h3>Reporting &amp; BI</h3>
-        <div class="tech-chips">
-          <span class="tag">Power BI</span>
-          <span class="tag">DAX</span>
-          <span class="tag">Tableau</span>
-          <span class="tag">Plotly</span>
-          <span class="tag">matplotlib</span>
-        </div>
-      </div>
-      <div class="tech-group">
-        <h3>Data infrastructure</h3>
-        <div class="tech-chips">
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">SQL Server</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">Airtable</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">ETL pipelines</span>
-        </div>
-      </div>
-      <div class="tech-group">
-        <h3>Automation</h3>
-        <div class="tech-chips">
-          <span class="tag">n8n</span>
-          <span class="tag">Make.com</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">APScheduler</span>
-          <span class="tag">Docker</span>
-        </div>
-      </div>
-      <div class="tech-group">
-        <h3>Scraping &amp; OSINT</h3>
-        <div class="tech-chips">
-          <span class="tag">Apify</span>
-          <span class="tag">Playwright</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">trafilatura</span>
-          <span class="tag">CVR / OSINT</span>
-        </div>
-      </div>
-      <div class="tech-group">
-        <h3>AI &amp; agentic systems</h3>
-        <div class="tech-chips">
-          <span class="tag">Claude API</span>
-          <span class="tag">MCP</span>
-          <span class="tag">OpenAI API</span>
-          <span class="tag">Tool use</span>
-          <span class="tag">Vibe-code workflows</span>
-        </div>
+      <div class="about-two-col-photo">
+        <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/photo-2.jpg' | relative_url }}'" />
       </div>
     </div>
   </div>
 </section>
 
-<section class="about-strip">
+<section class="experience-section" id="experience">
   <div class="container">
-    <div class="about-row">
-      <div class="about-photo">
-        <img src="{{ '/assets/images/me/headshot.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" />
+    <span class="eyebrow">3+ years of experience</span>
+    <h2>Previous Experience</h2>
+    <p class="section-sub">Roles where I built the data systems, dashboards, and automation behind real commercial decisions.</p>
+
+    <div class="experience-timeline">
+
+      <div class="experience-card">
+        <div class="experience-meta">
+          <h4>Digi-Tal Regnskab</h4>
+          <p class="experience-date">Feb 2026 – May 2026 · Contract · Remote</p>
+        </div>
+        <div class="experience-body">
+          <h5>GTM Engineer &amp; Data Analyst</h5>
+          <ul>
+            <li>Built the LinkedIn outbound infrastructure and analytics layer for a Danish SMB accounting firm.</li>
+            <li>Built end-to-end outbound pipeline: scraping, enrichment, scoring, sequence execution. Cold outreach hit around 50% acceptance rate.</li>
+            <li>Built predictive lead-scoring and accounting-software detection ML models (~75% accuracy across Danish SMBs).</li>
+            <li>Full-channel revenue analysis across Meta, Google, LinkedIn, cold calling, and inbound.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Pipedrive · Clay · Playwright · Apify · HeyReach · Claude</p>
+        </div>
       </div>
-      <div class="about-text">
-        <p>Built data and AI systems at Digi-Tal Regnskab and Veginova Seeds. Now freelance, helping B2B SMBs turn commercial data into decisions they can trust.</p>
-        <a href="{{ '/about' | relative_url }}">More about me →</a>
+
+      <div class="experience-card">
+        <div class="experience-meta">
+          <h4>Veginova Seeds</h4>
+          <p class="experience-date">Aug 2023 – Feb 2026 · Full-time · Hybrid</p>
+        </div>
+        <div class="experience-body">
+          <h5>Data Analyst &amp; RevOps</h5>
+          <ul>
+            <li>Owned the BI and reporting stack across sales, operations, and production. Single source of truth for the business.</li>
+            <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
+            <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
+            <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Clay · Claude Code</p>
+        </div>
       </div>
+
+      <div class="experience-card">
+        <div class="experience-meta">
+          <h4>Sira Logic</h4>
+          <p class="experience-date">Jun 2024 – Aug 2025 · Self-employed · Remote</p>
+        </div>
+        <div class="experience-body">
+          <h5>Founder · GTM Engineer &amp; RevOps</h5>
+          <ul>
+            <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
+            <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30-40%.</li>
+            <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
+            <li>Built custom web scraping systems for industry-specific data sources.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Clay · Apify · HubSpot · GoHighLevel · HeyReach</p>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-meta">
+          <h4>Outlier</h4>
+          <p class="experience-date">Jan 2025 – Jan 2026 · Freelance · Remote</p>
+        </div>
+        <div class="experience-body">
+          <h5>AI &amp; LLM Data Analyst</h5>
+          <ul>
+            <li>Reviewed and annotated 1,000+ Danish-language AI conversations to improve response quality.</li>
+            <li>Spotted patterns where models failed and fed that back into training data.</li>
+            <li>Built practical understanding of how LLMs work and where they break. The same insight powers the AI scoring and qualification workflows I build today.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-meta">
+          <h4>Damstahl Danmark</h4>
+          <p class="experience-date">Jan 2023 – Aug 2023 · Part-time · Hybrid</p>
+        </div>
+        <div class="experience-body">
+          <h5>Marketing &amp; Digital Graduate</h5>
+          <ul>
+            <li>Managed product and marketing data in ERP and CRM platforms across European markets.</li>
+            <li>Built Excel dashboards for campaign reporting.</li>
+            <li>Standardised regional data processes.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="cta-band">
+<section class="cta-soft">
   <div class="container">
-    <h2>Want a free Data Audit?</h2>
-    <p>1 to 2 weeks. Written report on your current setup. No obligation, no sales call required.</p>
-    <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
+    <span class="eyebrow">Want to work together?</span>
+    <h2>See my freelance services</h2>
+    <a href="{{ '/services' | relative_url }}" class="btn-primary">View Services →</a>
+    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or get in touch via the <a href="{{ '/contact' | relative_url }}">contact form</a>.</p>
   </div>
 </section>

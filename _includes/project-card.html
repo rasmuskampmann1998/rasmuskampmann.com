@@ -19,20 +19,12 @@
   </div>
   {% endif %}
   <div class="card-body">
-    <div class="card-tools">
-      {% for tool in project.tools limit:4 %}
-      <span class="tag">{{ tool }}</span>
-      {% endfor %}
-    </div>
     <h3 class="card-title">{{ project.title }}</h3>
     <p class="card-tagline">{{ project.tagline }}</p>
-    {% if project.outcome_headline %}
-    <p class="card-outcome">{{ project.outcome_headline }}</p>
-    {% endif %}
     {% if project.coming_soon %}
     <span class="btn-card-disabled">Article coming soon</span>
     {% else %}
-    <span class="btn-card">Read case study →</span>
+    <span class="btn-card">Read more →</span>
     {% endif %}
   </div>
 {% if project.coming_soon %}
