@@ -5,119 +5,88 @@ title: Home
 
 <section class="hero">
   <div class="container">
-    <span class="eyebrow">Data Analyst · BI Developer · AI Workflows</span>
-    <h1>I build data, reporting, and AI systems that turn commercial Excel chaos into <span class="highlight">clarity.</span></h1>
-    <p class="hero-sub">Productized engagements for ambitious B2B companies. From a free audit, to a clean data foundation, to AI tied to commercial outcomes.</p>
-    <div class="hero-ctas">
-      <a href="#offerings" class="btn-primary">See offerings →</a>
-      <a href="#case-studies" class="btn-ghost">See case studies</a>
+    <div class="hero-text">
+      <span class="eyebrow">Data Analyst · BI Developer · AI Workflows</span>
+      <h1>I build data, reporting, and AI systems that turn commercial Excel chaos into <span class="highlight">clarity.</span></h1>
+      <p class="hero-sub">Data analytics and reporting for B2B commercial teams. SQL, Power BI, Python, and AI workflows built into one system.</p>
+      <p class="stack-list">SQL · Power BI · Python · Web Scraping · AI Workflows</p>
+      <div class="hero-ctas">
+        <a href="{{ '/contact' | relative_url }}" class="btn-primary">Book your free audit →</a>
+        <a href="#case-studies" class="btn-ghost">See case studies</a>
+      </div>
     </div>
+    <div class="hero-portrait">
+      {% assign hero_img = '/assets/images/me/hero-portrait.jpg' | relative_url %}
+      <img src="{{ hero_img }}" alt="Rasmus Kampmann working" loading="eager" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
+    </div>
+  </div>
+</section>
+
+<section class="who-section">
+  <div class="container">
+    <span class="eyebrow">Who I work with</span>
+    <h2>B2B commercial teams sitting on messy data</h2>
+    <p class="who-body">I work with B2B companies whose commercial data lives in too many tools: CRM, spreadsheets, finance systems, and operational tooling that don't talk to each other. The reports take days to build, the numbers don't match, and decisions get made on gut feel instead of evidence. I build the data infrastructure and reporting layer that fixes this.</p>
   </div>
 </section>
 
 <section class="impact" id="impact">
   <div class="container">
-    <p class="section-label">Impact at a glance</p>
-    <div class="metrics-grid">
-      <div class="metric-card">
-        <div class="metric-number">7</div>
-        <div class="metric-label">End-to-end data systems shipped</div>
+    <span class="eyebrow">Impact at a glance</span>
+    <div class="impact-grid">
+      <div class="stat">
+        <div class="stat-number">7</div>
+        <div class="stat-label">End-to-end data systems shipped</div>
       </div>
-      <div class="metric-card">
-        <div class="metric-number">110k+</div>
-        <div class="metric-label">Records analysed and scored</div>
+      <div class="stat">
+        <div class="stat-number">110k+</div>
+        <div class="stat-label">Records analysed and scored</div>
       </div>
-      <div class="metric-card">
-        <div class="metric-number">3</div>
-        <div class="metric-label">Production ML models deployed</div>
+      <div class="stat">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Production ML models deployed</div>
       </div>
-      <div class="metric-card">
-        <div class="metric-number">812</div>
-        <div class="metric-label">External sources monitored live</div>
+      <div class="stat">
+        <div class="stat-number">812</div>
+        <div class="stat-label">External sources monitored live</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="offerings" id="offerings">
+<section class="audit-section" id="audit">
   <div class="container">
-    <p class="section-label">What you can hire me for</p>
-    <h2>Three productized offerings</h2>
-    <p class="section-sub">Fixed scope. Fixed price. Clear deliverables. Most clients start with the free audit and move into Foundation, then layer AI on top.</p>
+    <span class="eyebrow">The offer</span>
+    <h2>Free Data Audit</h2>
+    <p class="section-sub">A written report on your current data setup. What's working, what's not, and the biggest fixes to make. No obligation, no sales call required.</p>
 
-    <div class="offerings-grid">
-
-      <a href="{{ '/contact' | relative_url }}" class="offering-card offering-audit">
-        <div class="offering-head">
-          <span class="offering-tag">Lead-gen offer</span>
-          <span class="offering-price">Free</span>
+    <div class="audit-grid">
+      <div class="audit-left">
+        <p>Most B2B teams know their data is messy but can't see where the biggest leaks are. The audit gives you that map.</p>
+        <p>After the audit, we discuss whether scoped project work makes sense. There is no productized tier menu. Every engagement is shaped around what the audit surfaces.</p>
+        <div class="audit-meta">
+          <p><strong>Duration:</strong> 1 to 2 weeks</p>
+          <p><strong>For:</strong> Founders, CFOs, and commercial leaders at B2B SMBs</p>
         </div>
-        <h3>Data Audit</h3>
-        <p class="offering-desc">A written report on your current data setup. What's working, what's not, and the biggest fixes to make. No obligation, no sales call required.</p>
-        <ul class="offering-list">
+        <a href="{{ '/contact' | relative_url }}" class="btn-primary" style="margin-top: 28px;">Request your free audit →</a>
+      </div>
+      <div class="audit-right">
+        <ul class="audit-list">
           <li>Review of your current spreadsheets, reporting, and data flow</li>
           <li>Map of where data lives and where it breaks</li>
           <li>Prioritised list of fixes ranked by impact and effort</li>
           <li>Written PDF you can share with your team</li>
         </ul>
-        <div class="offering-meta">
-          <span><strong>Duration:</strong> 1–2 weeks</span>
-          <span><strong>For:</strong> Founders and ops leaders</span>
-        </div>
-        <span class="offering-cta">Request audit →</span>
-      </a>
-
-      <a href="{{ '/contact' | relative_url }}" class="offering-card offering-foundation">
-        <div class="offering-head">
-          <span class="offering-tag">Main offer</span>
-          <span class="offering-price">Fixed price</span>
-        </div>
-        <h3>Data Foundation</h3>
-        <p class="offering-desc">One source of truth and reporting your team actually trusts. Consolidated data infrastructure plus core Power BI dashboards built around the decisions you need to make.</p>
-        <ul class="offering-list">
-          <li>Data consolidation across CRM, finance, ops, and marketing</li>
-          <li>SQL warehouse + ETL pipelines (Supabase / PostgreSQL)</li>
-          <li>Core Power BI dashboards for leadership</li>
-          <li>Documentation + handover so your team can extend it</li>
-        </ul>
-        <div class="offering-meta">
-          <span><strong>Duration:</strong> 4–8 weeks</span>
-          <span><strong>For:</strong> Companies with data in 5+ tools</span>
-        </div>
-        <span class="offering-cta">Discuss a project →</span>
-      </a>
-
-      <a href="{{ '/contact' | relative_url }}" class="offering-card offering-ai">
-        <div class="offering-head">
-          <span class="offering-tag">Follow-on</span>
-          <span class="offering-price">Fixed price</span>
-        </div>
-        <h3>AI Implementation</h3>
-        <p class="offering-desc">A specific AI workflow tied to a commercial outcome. Lead scoring, churn prediction, GTM intelligence, financial forecasting. Models trained on your data, deployed in production.</p>
-        <ul class="offering-list">
-          <li>Outcome scoped up front (e.g. "lift win rate on outbound by X%")</li>
-          <li>Model trained on your real conversion / churn / sales data</li>
-          <li>Integration into the workflow where the decision happens</li>
-          <li>Monitoring and re-training plan</li>
-        </ul>
-        <div class="offering-meta">
-          <span><strong>Duration:</strong> 4–8 weeks</span>
-          <span><strong>For:</strong> Foundation clients ready for layer 2</span>
-        </div>
-        <span class="offering-cta">Discuss a project →</span>
-      </a>
-
+      </div>
     </div>
-
-    <p class="offerings-note">Looking for ongoing analytics, dashboard maintenance, or new analysis on demand? I offer monthly retainers after a Foundation engagement. <a href="{{ '/contact' | relative_url }}">Get in touch</a>.</p>
   </div>
 </section>
 
 <section class="projects" id="case-studies">
   <div class="container">
-    <p class="section-label">Case studies</p>
+    <span class="eyebrow">Case studies</span>
     <h2>Real systems I built. And the impact they had.</h2>
-    <p class="section-sub">Seven production projects across GTM, finance, operations, and market intelligence. Written for non-technical readers, with a link to the full code on GitHub.</p>
+    <p class="section-sub">Seven production projects across commercial analytics, data infrastructure, ML, and market intelligence. Written for non-technical readers, with full code on GitHub where applicable.</p>
     <div class="projects-grid">
       {% assign sorted_projects = site.projects | sort: "order" %}
       {% for project in sorted_projects %}
@@ -129,63 +98,63 @@ title: Home
 
 <section class="process" id="process">
   <div class="container">
-    <p class="section-label">How I work</p>
+    <span class="eyebrow">How I work</span>
     <h2>The delivery methodology behind every engagement</h2>
-    <p class="section-sub">Whether it's an Audit, a Foundation, or an AI Implementation, the work follows the same eight stages. Not every project touches every stage. This is the underlying flow.</p>
+    <p class="section-sub">Every engagement starts with the free audit. The eight stages below describe the full delivery flow when projects move forward. Not every project touches every stage.</p>
 
     <ol class="process-steps">
       <li>
         <span class="step-num">01</span>
-        <div>
+        <div class="step-body">
           <h4>Free audit of current setup</h4>
           <p>Map the data, spreadsheets, and reporting as they exist today. Identify gaps, brittleness, and the highest-leverage fixes.</p>
         </div>
       </li>
       <li>
         <span class="step-num">02</span>
-        <div>
+        <div class="step-body">
           <h4>Data collection &amp; consolidation</h4>
           <p>Pull internal data from CRM, sales, finance, and ops into one clean, joined dataset.</p>
         </div>
       </li>
       <li>
         <span class="step-num">03</span>
-        <div>
+        <div class="step-body">
           <h4>Data analysis &amp; insight surfacing</h4>
           <p>Funnel analysis, cohort retention, churn drivers, segment performance. The questions your team has been asking but couldn't answer.</p>
         </div>
       </li>
       <li>
         <span class="step-num">04</span>
-        <div>
+        <div class="step-body">
           <h4>Data infrastructure build</h4>
           <p>SQL warehouse, ETL pipelines, a single source of truth that replaces brittle Excel workflows.</p>
         </div>
       </li>
       <li>
         <span class="step-num">05</span>
-        <div>
+        <div class="step-body">
           <h4>Reporting &amp; dashboards</h4>
           <p>Power BI dashboards built around the decisions leadership actually makes. Not just the data that happens to be there.</p>
         </div>
       </li>
       <li>
         <span class="step-num">06</span>
-        <div>
+        <div class="step-body">
           <h4>AI &amp; automation in the data flow</h4>
           <p>Claude and GPT workflows layered into the pipeline. Classification, enrichment, summarisation. Less manual cleanup.</p>
         </div>
       </li>
       <li>
         <span class="step-num">07</span>
-        <div>
+        <div class="step-body">
           <h4>Scraping for external context</h4>
           <p>When internal data isn't enough. Competitor moves, prices, regulations, signals. Custom scrapers feed the same source of truth.</p>
         </div>
       </li>
       <li>
         <span class="step-num">08</span>
-        <div>
+        <div class="step-body">
           <h4>AI implementation tied to outcomes</h4>
           <p>Models trained on your data, deployed into the workflows that drive revenue. GTM scoring, financial forecasting, ops optimisation.</p>
         </div>
@@ -194,82 +163,89 @@ title: Home
   </div>
 </section>
 
-<section class="techstack" id="tech-stack">
+<section class="techstack" id="capabilities">
   <div class="container">
-    <p class="section-label">Capabilities</p>
+    <span class="eyebrow">Capabilities</span>
     <h2>What I build with</h2>
-    <p class="section-sub">The underlying tools, grouped by what I actually use them for. Listed for credibility, not sold individually.</p>
+    <p class="section-sub">The underlying tools, grouped by what I actually use them for.</p>
 
     <div class="techstack-grid">
-
       <div class="tech-group">
         <h3>Analysis &amp; modelling</h3>
         <div class="tech-chips">
-          <span class="tech-chip">Python</span>
-          <span class="tech-chip">pandas</span>
-          <span class="tech-chip">scikit-learn</span>
-          <span class="tech-chip">XGBoost</span>
-          <span class="tech-chip">SHAP</span>
-          <span class="tech-chip">Excel</span>
+          <span class="tag">Python</span>
+          <span class="tag">pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">Excel</span>
         </div>
       </div>
-
       <div class="tech-group">
         <h3>Reporting &amp; BI</h3>
         <div class="tech-chips">
-          <span class="tech-chip">Power BI</span>
-          <span class="tech-chip">DAX</span>
-          <span class="tech-chip">Tableau</span>
-          <span class="tech-chip">Plotly</span>
-          <span class="tech-chip">matplotlib</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">matplotlib</span>
         </div>
       </div>
-
       <div class="tech-group">
         <h3>Data infrastructure</h3>
         <div class="tech-chips">
-          <span class="tech-chip">PostgreSQL</span>
-          <span class="tech-chip">SQL Server</span>
-          <span class="tech-chip">Supabase</span>
-          <span class="tech-chip">Airtable</span>
-          <span class="tech-chip">Node.js</span>
-          <span class="tech-chip">ETL pipelines</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Airtable</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">ETL pipelines</span>
         </div>
       </div>
-
       <div class="tech-group">
         <h3>Automation</h3>
         <div class="tech-chips">
-          <span class="tech-chip">n8n</span>
-          <span class="tech-chip">Make.com</span>
-          <span class="tech-chip">GitHub Actions</span>
-          <span class="tech-chip">APScheduler</span>
-          <span class="tech-chip">Docker</span>
+          <span class="tag">n8n</span>
+          <span class="tag">Make.com</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">APScheduler</span>
+          <span class="tag">Docker</span>
         </div>
       </div>
-
       <div class="tech-group">
         <h3>Scraping &amp; OSINT</h3>
         <div class="tech-chips">
-          <span class="tech-chip">Apify</span>
-          <span class="tech-chip">Playwright</span>
-          <span class="tech-chip">FastAPI</span>
-          <span class="tech-chip">trafilatura</span>
-          <span class="tech-chip">CVR / OSINT</span>
+          <span class="tag">Apify</span>
+          <span class="tag">Playwright</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">trafilatura</span>
+          <span class="tag">CVR / OSINT</span>
         </div>
       </div>
-
       <div class="tech-group">
         <h3>AI &amp; agentic systems</h3>
         <div class="tech-chips">
-          <span class="tech-chip">Claude API</span>
-          <span class="tech-chip">MCP</span>
-          <span class="tech-chip">OpenAI API</span>
-          <span class="tech-chip">Tool use</span>
-          <span class="tech-chip">Vibe-code workflows</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">MCP</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Tool use</span>
+          <span class="tag">Vibe-code workflows</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
+<section class="about-strip">
+  <div class="container">
+    <div class="about-row">
+      <div class="about-photo">
+        <img src="{{ '/assets/images/me/headshot.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" />
+      </div>
+      <div class="about-text">
+        <p>Built data and AI systems at Digi-Tal Regnskab and Veginova Seeds. Now freelance, helping B2B SMBs turn commercial data into decisions they can trust.</p>
+        <a href="{{ '/about' | relative_url }}">More about me →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -277,7 +253,7 @@ title: Home
 <section class="cta-band">
   <div class="container">
     <h2>Want a free Data Audit?</h2>
-    <p>1–2 weeks. Written report on your current setup. No obligation, no sales call required.</p>
-    <a href="{{ '/contact' | relative_url }}" class="btn-primary-lime">Request my free audit →</a>
+    <p>1 to 2 weeks. Written report on your current setup. No obligation, no sales call required.</p>
+    <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
   </div>
 </section>

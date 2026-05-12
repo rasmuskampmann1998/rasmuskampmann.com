@@ -1,13 +1,13 @@
 ---
 layout: default
 title: About
-description: Data Analyst, BI Developer, and AI Workflows specialist based in Barcelona. I turn commercial Excel chaos into clarity.
+description: Data Analyst for B2B Commercial Teams. SQL, Power BI, Python, AI workflows. Based on the Costa del Sol.
 ---
 
 <section class="page-hero">
   <div class="container">
     <h1>About</h1>
-    <p>Data Analyst, BI Developer, and AI Workflows specialist. I help ambitious B2B companies turn messy operational data into clean reporting and AI that drives commercial outcomes.</p>
+    <p>Data Analyst for B2B commercial teams. I turn messy operational data into clean reporting and AI workflows that drive real decisions.</p>
   </div>
 </section>
 
@@ -21,29 +21,27 @@ Today I build the data and AI infrastructure that lets commercial teams trust th
 
 ## What I do
 
-I run productized engagements for B2B companies:
+I work freelance with B2B SMBs whose commercial data lives across too many tools. CRM, finance, ops, marketing, spreadsheets that don't talk to each other.
 
-- **Data Audit** (free, 1 to 2 weeks). A written report on your current setup, the gaps, and the highest-leverage fixes.
-- **Data Foundation** (4 to 8 weeks). Consolidated data infrastructure plus the core Power BI dashboards your team actually uses.
-- **AI Implementation** (4 to 8 weeks). A specific AI workflow tied to a commercial outcome: lead scoring, churn prediction, GTM intelligence, financial forecasting.
+Every engagement starts with a **free Data Audit**. One to two weeks of looking at your current setup. The output is a written report: what's working, what's not, and the highest-leverage fixes. No obligation, no sales call required.
 
-After a Foundation engagement, most clients move to a monthly retainer for ongoing analytics and evolution.
+After the audit, if it makes sense for both sides, we scope project work around what the audit surfaced. SQL warehouses, Power BI dashboards, AI workflows, scraping for external context, lead scoring, churn prediction. There is no productized tier menu. The work is shaped around what you actually need.
 
 ## How I work
 
-Every engagement follows the same eight-stage delivery method. Audit, collection, analysis, infrastructure, reporting, AI and automation, scraping, AI implementation. Not every project touches every stage. This is the underlying flow. See the [homepage](/) for the full breakdown.
+Every engagement follows the same eight-stage delivery method. Audit, collection, analysis, infrastructure, reporting, AI and automation, scraping, AI implementation. Not every project touches every stage. See the [homepage](/) for the full breakdown.
 
 ## Background
 
-I built and operated the full GTM stack for a Danish B2B software company. Outbound pipeline, inbound enrichment, content signal tracking, and a data warehouse pulling from twelve sources. That system processes thousands of leads per month with minimal manual intervention, and it's the source of most of the case studies on this site.
+Built and operated the full GTM stack for a Danish B2B software company. Outbound pipeline, inbound enrichment, content signal tracking, and a data warehouse pulling from twelve sources.
 
-I currently work with a European seed and agri-tech company on operations, sales, inventory forecasting, and financial reporting.
+Built operations, sales, inventory forecasting, and financial dashboards for a European seed and agri-tech company on a Supabase + Power BI stack.
 
 Before data: operations and growth roles across SaaS and service businesses. The mix is deliberate. I've sat on both sides of the dashboard, so I know what reports leadership actually opens and which ones get ignored.
 
 ## Where I'm based
 
-Barcelona, Spain. Originally from Denmark. I work remotely with clients across Europe, with a focus on Denmark, the Nordics, and Spain.
+Costa del Sol, Spain. Originally from Denmark. I work remotely with clients across Europe, with a focus on Denmark, the Nordics, and Spain.
 
 ## Languages & tools
 
@@ -56,7 +54,7 @@ Barcelona, Spain. Originally from Denmark. I work remotely with clients across E
 **AI:** Claude API, MCP, OpenAI API, tool-use, prompt engineering, vibe-code workflows
 
 <div style="margin-top: 48px;">
-  <a href="{{ '/contact' | relative_url }}" class="btn-primary-lime" style="background: #9DEB6E; color: #0A0A0A; padding: 14px 28px; border-radius: 10px; font-weight: 700; display: inline-block;">Request my free audit →</a>
+  <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
 </div>
 
 </div>
