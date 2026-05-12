@@ -4,7 +4,7 @@ layout: default
 <article class="project-page">
   <header class="project-hero">
     <div class="container">
-      <a href="{{ '/#projects' | relative_url }}" class="back-link">&larr; All projects</a>
+      <a href="{{ '/#case-studies' | relative_url }}" class="back-link">&larr; All case studies</a>
       <div class="project-tools-header">
         {% for tool in page.tools %}
         <span class="tag">{{ tool }}</span>
@@ -22,7 +22,14 @@ layout: default
     </div>
   </header>
 
-  <div class="project-body container">
+  <div class="project-body">
     {{ content }}
+
+    {% if page.github_url %}
+    <div class="github-link-block">
+      <p><strong>Want the technical deep-dive?</strong> Full code, queries, and reproducible analysis live on GitHub.</p>
+      <a href="{{ page.github_url }}" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    {% endif %}
   </div>
 </article>

@@ -1,11 +1,17 @@
-<article class="project-card">
+<article class="project-card{% if project.coming_soon %} is-coming-soon{% endif %}">
   {% if project.cover_image %}
   <div class="card-image">
     <img src="{{ project.cover_image | relative_url }}" alt="{{ project.title }}" loading="lazy" />
+    {% if project.coming_soon %}
+    <span class="coming-soon-badge">Coming soon</span>
+    {% endif %}
   </div>
   {% else %}
   <div class="card-image-placeholder">
     {{ project.cover_emoji | default: "📁" }}
+    {% if project.coming_soon %}
+    <span class="coming-soon-badge">Coming soon</span>
+    {% endif %}
   </div>
   {% endif %}
   <div class="card-body">
@@ -17,6 +23,10 @@
     <h3 class="card-title">{{ project.title }}</h3>
     <p class="card-tagline">{{ project.tagline }}</p>
     <p class="card-outcome">{{ project.outcome_headline }}</p>
+    {% if project.coming_soon %}
+    <span class="btn-card btn-card-disabled">Article coming soon</span>
+    {% else %}
     <a href="{{ project.url | relative_url }}" class="btn-card">Read case study &rarr;</a>
+    {% endif %}
   </div>
 </article>
