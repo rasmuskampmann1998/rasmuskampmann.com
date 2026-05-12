@@ -1,4 +1,8 @@
-<article class="project-card{% if project.coming_soon %} is-coming-soon{% endif %}">
+{% if project.coming_soon %}
+<article class="project-card is-coming-soon">
+{% else %}
+<a href="{{ project.url | relative_url }}" class="project-card">
+{% endif %}
   {% if project.cover_image %}
   <div class="card-image">
     <img src="{{ project.cover_image | relative_url }}" alt="{{ project.title }}" loading="lazy" />
@@ -22,11 +26,17 @@
     </div>
     <h3 class="card-title">{{ project.title }}</h3>
     <p class="card-tagline">{{ project.tagline }}</p>
+    {% if project.outcome_headline %}
     <p class="card-outcome">{{ project.outcome_headline }}</p>
+    {% endif %}
     {% if project.coming_soon %}
-    <span class="btn-card btn-card-disabled">Article coming soon</span>
+    <span class="btn-card-disabled">Article coming soon</span>
     {% else %}
-    <a href="{{ project.url | relative_url }}" class="btn-card">Read case study &rarr;</a>
+    <span class="btn-card">Read case study →</span>
     {% endif %}
   </div>
+{% if project.coming_soon %}
 </article>
+{% else %}
+</a>
+{% endif %}

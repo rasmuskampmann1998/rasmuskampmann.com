@@ -1,13 +1,31 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-left">
-      <span class="footer-logo">RK</span>
-      <p>Rasmus Kampmann · Data Analyst · BI Developer · AI Workflows · Barcelona, Spain.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">RK</span>
+        <p><strong style="color: var(--text-primary);">Rasmus Kampmann</strong><br />Data Analyst for B2B Commercial Teams. SQL, Power BI, Python, AI workflows.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}#case-studies">Case Studies</a></li>
+          <li><a href="{{ '/' | relative_url }}#process">Process</a></li>
+          <li><a href="{{ '/about' | relative_url }}">About</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Free Audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:{{ site.author.email }}">Email</a>
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} Rasmus Kampmann. All rights reserved.</p>
+      <p>Costa del Sol, Spain</p>
     </div>
   </div>
 </footer>
