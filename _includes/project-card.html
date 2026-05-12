@@ -21,6 +21,13 @@
   <div class="card-body">
     <h3 class="card-title">{{ project.title }}</h3>
     <p class="card-tagline">{{ project.tagline }}</p>
+    {% if project.tools.size > 0 %}
+    <div class="card-stack">
+      {% for tool in project.tools limit:5 %}
+      <span class="tech-pill">{{ tool }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
     {% if project.coming_soon %}
     <span class="btn-card-disabled">Article coming soon</span>
     {% else %}
