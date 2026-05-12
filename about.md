@@ -53,8 +53,9 @@ Costa del Sol, Spain. Originally from Denmark. I work remotely with clients acro
 **Scraping:** Apify, Playwright, FastAPI, trafilatura, OSINT
 **AI:** Claude API, MCP, OpenAI API, tool-use, prompt engineering, vibe-code workflows
 
-<div style="margin-top: 48px;">
-  <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
+<div style="margin-top: 48px; display: flex; gap: 14px; flex-wrap: wrap;">
+  <a href="{{ '/services' | relative_url }}" class="btn-primary">See my services →</a>
+  <a href="{{ '/contact' | relative_url }}" class="btn-ghost">Get in touch</a>
 </div>
 
 </div>
