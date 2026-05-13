@@ -158,7 +158,7 @@ title: Home
           <li>Build dashboards around the decisions leadership makes</li>
           <li>Use AI where it makes the work faster or more accurate</li>
         </ul>
-        <p><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude, LLM pipelines, MCP servers, machine learning, and agentic frameworks.</p>
+        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude, LLM pipelines, MCP servers, machine learning, and agentic frameworks.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
         <p><em>Available for freelance projects and the right full-time role.</em></p>
       </div>
