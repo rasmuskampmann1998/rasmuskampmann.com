@@ -1257,7 +1257,11 @@ section .section-sub {
     margin: 0 auto 12px !important;
     text-align: center;
 
-    .highlight { color: var(--accent-green); }
+    .highlight {
+      color: var(--accent-green);
+      font-weight: 600;
+      font-style: normal;
+    }
   }
 
   .hero-background {
@@ -1285,8 +1289,8 @@ section .section-sub {
     margin-bottom: 24px;
 
     a {
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -1319,7 +1323,7 @@ section .section-sub {
 
     a {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
+      font-size: 0.68rem;
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -1442,7 +1446,7 @@ section .section-sub {
 ul.hero-stack {
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 auto 40px !important;
+  margin: 0 auto 32px !important;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
