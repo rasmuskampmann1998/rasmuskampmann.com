@@ -163,7 +163,7 @@ title: Home
         <p><em>Available for freelance projects and the right full-time role.</em></p>
       </div>
       <div class="about-two-col-photo">
-        <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/photo-2.jpg' | relative_url }}'" />
+        <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
       </div>
     </div>
   </div>

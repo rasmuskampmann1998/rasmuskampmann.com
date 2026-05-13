@@ -1222,34 +1222,6 @@ section .section-sub {
     margin-bottom: 28px;
   }
 
-  .hero-stack {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 32px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-
-    li {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: border-color 0.15s, color 0.15s;
-    }
-
-    li:hover {
-      border-color: var(--accent-green);
-      color: var(--text-primary);
-    }
-  }
 
   .hero-meta {
     list-style: none;
@@ -1385,6 +1357,52 @@ section .section-sub {
       color: var(--text-muted);
       font-size: 0.92rem;
       line-height: 1.6;
+    }
+  }
+}
+
+// ── HERO STACK PILLS (single-line skill row under H1) ───────────────────────
+ul.hero-stack {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto 32px !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+
+  li {
+    list-style: none !important;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  li:hover {
+    border-color: var(--accent-green);
+    color: var(--text-primary);
+  }
+}
+
+@media (max-width: 520px) {
+  ul.hero-stack {
+    flex-wrap: wrap;
+    gap: 8px;
+
+    li {
+      font-size: 0.68rem;
+      padding: 5px 10px;
     }
   }
 }
