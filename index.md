@@ -51,7 +51,7 @@ title: Home
           </svg>
         </div>
         <h3>SQL</h3>
-        <p>I query and transform data to create reliable, analysis-ready datasets for dashboards and reporting.</p>
+        <p>I build the data layer that everything else runs on. Joins, transformations, and pipelines that turn raw data into analysis-ready tables your team can trust.</p>
       </div>
 
       <div class="skill-card">
@@ -63,7 +63,7 @@ title: Home
           </svg>
         </div>
         <h3>Power BI</h3>
-        <p>I build interactive dashboards that turn messy business data into clear, real-time insights.</p>
+        <p>I build dashboards leadership actually uses. Built around the decisions teams need to make, so reporting drives action instead of just showing numbers.</p>
       </div>
 
       <div class="skill-card">
@@ -75,7 +75,7 @@ title: Home
           </svg>
         </div>
         <h3>Python</h3>
-        <p>I use Python for automation, data processing, API integrations, and deeper analytical tasks that go beyond spreadsheets.</p>
+        <p>I build the automation, models, and analytical work spreadsheets can't handle. From data pipelines to ML classifiers to deeper analysis at scale.</p>
       </div>
 
       <div class="skill-card">
@@ -86,7 +86,7 @@ title: Home
           </svg>
         </div>
         <h3>AI Workflows</h3>
-        <p>I build Claude and GPT workflows that classify, enrich, and summarise data. AI sits inside the pipeline, not bolted on top.</p>
+        <p>I build AI into the pipeline where it changes the work. Lead scoring, qualification, software detection, market intelligence. Models trained on your data, deployed where decisions get made.</p>
       </div>
 
       <div class="skill-card">
@@ -100,7 +100,7 @@ title: Home
           </svg>
         </div>
         <h3>Excel</h3>
-        <p>I analyze, clean, structure, and validate data. The foundation before automating or loading it into databases.</p>
+        <p>I turn messy spreadsheets into clean, validated data the rest of the stack can rely on. The foundation every downstream system depends on.</p>
       </div>
 
       <div class="skill-card">
@@ -112,7 +112,7 @@ title: Home
           </svg>
         </div>
         <h3>Web Scraping</h3>
-        <p>I build custom scrapers that pull external signals into the same warehouse as internal data. Competitor moves, prices, regulatory feeds, job postings.</p>
+        <p>I build custom scrapers that pull external signals into the same warehouse as internal data. Competitor moves, prices, regulatory feeds, job postings, so your team sees the full picture, not just what's already inside.</p>
       </div>
 
     </div>
