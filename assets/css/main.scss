@@ -1222,6 +1222,35 @@ section .section-sub {
     margin-bottom: 28px;
   }
 
+  .hero-stack {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    li {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    li:hover {
+      border-color: var(--accent-green);
+      color: var(--text-primary);
+    }
+  }
+
   .hero-meta {
     list-style: none;
     padding: 0;
