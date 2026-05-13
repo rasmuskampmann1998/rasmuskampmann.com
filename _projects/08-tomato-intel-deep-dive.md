@@ -6,7 +6,7 @@ tools: [FastAPI, Python, Supabase, pgvector, Apify, Claude API, Voyage AI, DeepS
 outcome_headline: "Personalised research and competitor monitoring that cut manual hours and feeds leadership with better signal for decisions"
 outcome_detail: "218 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations. Live at tomato-intel-api.onrender.com."
 order: 8
-cover_image: /assets/images/projects/tomato-intel.jpg
+cover_image: /assets/images/projects/tomato-intel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/07-tomato-intel
 ---
 

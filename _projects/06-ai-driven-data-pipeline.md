@@ -6,7 +6,7 @@ tools: [Node.js, Python, Claude API, Apify, Clay, Airtable, PostgreSQL, Pipedriv
 outcome_headline: "Nine-stage pipeline combining public data extraction, ML scoring, multi-model AI orchestration, and real-time routing into operational systems"
 outcome_detail: "Built around methodology, not metrics. Validator logic, deterministic fallbacks, queue-based stage isolation, multi-model routing. Around 50% cold connection acceptance rate."
 order: 6
-cover_image: /assets/images/projects/linkedin-gtm.jpg
+cover_image: /assets/images/projects/ai-pipeline-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies
 ---
 
