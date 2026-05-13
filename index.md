@@ -32,8 +32,10 @@ title: Home
     <div class="hero-ctas-centered">
       <a href="#projects" class="btn-pill">View Projects</a>
       <a href="{{ '/contact' | relative_url }}" class="btn-pill">Get in touch</a>
-      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" class="btn-pill" download>Download CV</a>
     </div>
+    <p class="hero-cv-link">
+      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>↓ Download CV</a>
+    </p>
   </div>
 </section>
 

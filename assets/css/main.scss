@@ -1306,6 +1306,24 @@ section .section-sub {
     flex-wrap: wrap;
   }
 
+  .hero-cv-link {
+    margin-top: 14px;
+    text-align: center;
+
+    a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+
+      &:hover { color: var(--accent-green); }
+    }
+  }
+
   .btn-pill {
     padding: 13px 28px;
     border-radius: 999px;
