@@ -1,7 +1,7 @@
 ---
 layout: project
 title: End-to-End AI-Driven Data Pipeline
-tagline: "Multi-stage system orchestrating scraping, scoring, AI-driven content generation, and real-time data routing. Built around methodology, not metrics. Around 50% cold connection acceptance rate."
+tagline: ""
 tools: [Node.js, Python, Claude API, Apify, Clay, Airtable, PostgreSQL, Pipedrive, HeyReach, GitHub Actions]
 outcome_headline: "Nine-stage pipeline combining public data extraction, ML scoring, multi-model AI orchestration, and real-time routing into operational systems"
 outcome_detail: "Built around methodology, not metrics. Validator logic, deterministic fallbacks, queue-based stage isolation, multi-model routing. Around 50% cold connection acceptance rate."
@@ -26,9 +26,7 @@ The system runs end-to-end on autopilot. The only human-in-the-loop step is a we
 
 ## Context
 
-The brief: a system that researches each target, generates personalised content in a defined voice, routes outputs through validation, syncs results into operational systems, and produces a live performance view. Without sounding like a bot. Without an operations team to run it.
-
-The work was being done manually. The structural limit: per-record personalisation past a few hundred entities destroys the unit economics. The interesting engineering problem is producing AI output that survives manual review at scale.
+The work was being done manually. The structural limit: per-record personalisation past a few hundred entities destroys the unit economics.
 
 The constraint that shaped the build: every output had to be defensible. If reviewed manually, the data, the personalisation, and the structure all had to be something a domain expert would actually approve.
 
