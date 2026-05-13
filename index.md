@@ -9,13 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>I turn scattered commercial data into <span class="highlight">systems you trust.</span></h1>
-    <p class="hero-subtitle">Data Analyst · BI Developer · SQL · Power BI · Python · AI Workflows</p>
-    <ul class="hero-meta">
-      <li>📊 From Ops &amp; Marketing into Data Analytics</li>
-      <li>💼 B2B Commercial Teams</li>
-      <li>📍 Costa del Sol, Spain</li>
-    </ul>
+    <h1>Data Analyst &amp; BI Developer</h1>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -119,6 +113,12 @@ title: Home
   </div>
 </section>
 
+<section class="hero-tagline-band">
+  <div class="container">
+    <p class="hero-tagline">I turn scattered commercial data into <span class="highlight">systems you trust.</span></p>
+  </div>
+</section>
+
 <section class="projects is-large" id="projects">
   <div class="container">
     <span class="eyebrow">Explore my work</span>
@@ -140,19 +140,21 @@ title: Home
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus.</p>
-        <p>I build simple, reliable data systems that turn messy operational data into clear insights and automated reporting.</p>
-        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've designed BI models, automated data flows, and connected datasets across sales, inventory, production, finance, and ERP sources.</p>
-        <p>My focus is always the same: <strong>create structure <span class="about-two-col-arrow">→</span> automate routine work <span class="about-two-col-arrow">→</span> deliver dashboards that support real decisions.</strong></p>
-        <p><strong>What I work with:</strong> Power BI, SQL, Python, Excel, Data Modeling, Web Scraping, AI Workflows.</p>
-        <p><strong>How I approach BI:</strong></p>
+        <p>I build the infrastructure and analytics that turn scattered commercial data into connected systems and clearer decisions. SQL pipelines, Power BI reporting, web scraping, and AI workflows wired into one system.</p>
+        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've built BI models, automated data pipelines, ML detection systems, and end-to-end GTM infrastructure across sales, finance, operations, production, and ERP sources.</p>
+        <p>Most analysts build dashboards on top of someone else's data. I build the infrastructure underneath, so data and AI talk to each other. Analysis is only as reliable as the infrastructure under it. That's why I build both.</p>
+        <p><strong>How I work:</strong></p>
         <ul>
-          <li>Clean, consistent data structures</li>
-          <li>Automated ingestion and transformation</li>
-          <li>Lightweight pipelines over complex systems</li>
-          <li>Power BI models that are easy to maintain and expand</li>
-          <li>Dashboards that highlight business logic, not noise</li>
+          <li>Build clean, consistent data structures as the foundation</li>
+          <li>Automate ingestion and transformation instead of rebuilding manually</li>
+          <li>Keep pipelines lightweight, not over-engineered</li>
+          <li>Build Power BI models that are easy to maintain and extend</li>
+          <li>Build dashboards around the decisions leadership makes</li>
+          <li>Use AI where it makes the work faster or more accurate</li>
         </ul>
-        <p>I reduce operational friction by replacing manual spreadsheets and inconsistent processes with systems that run on their own and make the business easier to understand.</p>
+        <p><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude, LLM pipelines, MCP servers, machine learning, and agentic frameworks.</p>
+        <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
+        <p><em>Available for freelance projects and the right full-time role.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/photo-2.jpg' | relative_url }}'" />
