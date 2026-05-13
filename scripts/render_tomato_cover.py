@@ -1,89 +1,158 @@
 """
-Render 1600x900 cover for the TomatoIntel case study.
+Render 1600x900 cover for the Agentic External Intelligence Platform case study.
 
-The existing JPG (835x422) is a light-mode dashboard screenshot with right-side
-whitespace. We crop the whitespace, upscale the result to a tight 16:9 size,
-center it on a #0A0A0A canvas, and add a lime-green frame plus a caption.
+Conceptual four-job flow showing how 218 sources become a personalised briefing:
+Scraping -> Interpretation -> Retrieval -> Routing. Dark theme matches the other
+case-study covers for visual coherence across the portfolio grid.
 """
 from __future__ import annotations
 
 import os
-from PIL import Image, ImageDraw, ImageFont
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 from matplotlib import font_manager
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE_ROOT = os.path.abspath(os.path.join(HERE, ".."))
-SRC = os.path.join(SITE_ROOT, "assets", "images", "projects", "tomato-intel.jpg")
 OUT = os.path.join(SITE_ROOT, "assets", "images", "projects", "tomato-intel-cover.png")
 
+BG = "#0A0A0A"
+CARD = "#141414"
+BORDER = "#2A2A2A"
+ACCENT = "#B5E853"
+TEXT = "#FFFFFF"
+SUBTLE = "#8A8A8A"
+DIM = "#B0B0B0"
+
 W, H = 1600, 900
-BG = (10, 10, 10)
-ACCENT = (181, 232, 83)
-SUBTLE = (138, 138, 138)
 
 
-def find_mono_font_path() -> str | None:
-    for name in ("JetBrains Mono", "DejaVu Sans Mono", "Consolas", "Courier New"):
-        try:
-            path = font_manager.findfont(name, fallback_to_default=False)
-            if path and os.path.exists(path):
-                return path
-        except Exception:
-            continue
-    return None
+def pick_fonts() -> tuple[str, str]:
+    available = {f.name for f in font_manager.fontManager.ttflist}
+    title = "Inter" if "Inter" in available else ("DejaVu Sans" if "DejaVu Sans" in available else "sans-serif")
+    mono = "JetBrains Mono" if "JetBrains Mono" in available else ("DejaVu Sans Mono" if "DejaVu Sans Mono" in available else "monospace")
+    return title, mono
+
+
+BOXES = [
+    {
+        "num": "01",
+        "title": "Scraping",
+        "sub": "7-layer fallback chain",
+        "detail": [
+            "218 sources  ·  191 healthy",
+            "RSS · HTML · Crawl4AI",
+            "Playwright · Jina",
+            "Firecrawl · Apify",
+        ],
+    },
+    {
+        "num": "02",
+        "title": "Interpretation",
+        "sub": "Claude Haiku  ·  90-min cron",
+        "detail": [
+            "Detect language",
+            "Translate to English",
+            "Summarise · score · tag",
+            "Drop boilerplate (score 1)",
+        ],
+    },
+    {
+        "num": "03",
+        "title": "Retrieval",
+        "sub": "pgvector + Voyage AI",
+        "detail": [
+            "Top-k cosine similarity",
+            "Personalised by",
+            "tracked competitors",
+            "Citations as [1] [2] [3]",
+        ],
+    },
+    {
+        "num": "04",
+        "title": "Routing",
+        "sub": "Multi-LLM judge pattern",
+        "detail": [
+            "Haiku  ·  bulk classification",
+            "Sonnet  ·  hard synthesis",
+            "DeepSeek  ·  non-English",
+            "Perplexity  ·  live web",
+        ],
+    },
+]
 
 
 def main() -> None:
-    src = Image.open(SRC).convert("RGB")
-    sw, sh = src.size
-    print(f"Source: {sw}x{sh}")
+    title_font, mono_font = pick_fonts()
+    print(f"Fonts: title={title_font}, mono={mono_font}")
 
-    crop_right = int(sw * 0.965)
-    crop_bottom = int(sh * 0.84)
-    cropped = src.crop((0, 0, crop_right, crop_bottom))
-    cw, ch = cropped.size
-    print(f"Cropped: {cw}x{ch}")
+    fig = plt.figure(figsize=(16, 9), facecolor=BG, dpi=100)
+    ax = fig.add_axes([0, 0, 1, 1])
+    ax.set_xlim(0, W)
+    ax.set_ylim(0, H)
+    ax.set_facecolor(BG)
+    ax.axis("off")
 
-    inner_w = int(W * 0.88)
-    inner_h = int(H * 0.74)
-    scale = min(inner_w / cw, inner_h / ch)
-    new_w = int(cw * scale)
-    new_h = int(ch * scale)
-    resized = cropped.resize((new_w, new_h), Image.LANCZOS)
-    print(f"Resized: {new_w}x{new_h}")
+    ax.text(60, H - 70, "Agentic External Intelligence Platform",
+            fontsize=30, color=TEXT, fontname=title_font, fontweight="bold")
+    ax.text(60, H - 110, "From 218 sources to a personalised briefing",
+            fontsize=15, color=SUBTLE, fontname=mono_font)
 
-    canvas = Image.new("RGB", (W, H), BG)
-    x = (W - new_w) // 2
-    y = int(H * 0.13)
-    canvas.paste(resized, (x, y))
+    n = len(BOXES)
+    margin = 60
+    gap = 28
+    total_gap = gap * (n - 1)
+    box_w = (W - 2 * margin - total_gap) / n
+    box_h = 410
+    box_y = (H - box_h) / 2 - 30
 
-    draw = ImageDraw.Draw(canvas)
-    frame_inset = 4
-    draw.rectangle(
-        [x - frame_inset, y - frame_inset, x + new_w + frame_inset - 1, y + new_h + frame_inset - 1],
-        outline=ACCENT,
-        width=2,
-    )
+    for i, b in enumerate(BOXES):
+        x = margin + i * (box_w + gap)
+        rect = FancyBboxPatch(
+            (x, box_y), box_w, box_h,
+            boxstyle="round,pad=0,rounding_size=14",
+            linewidth=1.4, edgecolor=BORDER, facecolor=CARD, zorder=2,
+        )
+        ax.add_patch(rect)
 
-    font_path = find_mono_font_path()
-    title_size = 30
-    caption_size = 16
-    if font_path:
-        title_font = ImageFont.truetype(font_path, title_size)
-        caption_font = ImageFont.truetype(font_path, caption_size)
-    else:
-        title_font = ImageFont.load_default()
-        caption_font = ImageFont.load_default()
+        ax.text(x + 26, box_y + box_h - 50, b["num"],
+                fontsize=14, color=SUBTLE, fontname=mono_font, va="top")
+        ax.text(x + 26, box_y + box_h - 88, b["title"],
+                fontsize=26, color=TEXT, fontname=title_font, fontweight="bold", va="top")
 
-    title = "Agentic External Intelligence Platform"
-    tw = draw.textlength(title, font=title_font)
-    draw.text(((W - tw) / 2, 38), title, fill=(255, 255, 255), font=title_font)
+        ax.plot([x + 26, x + 70], [box_y + box_h - 130, box_y + box_h - 130],
+                color=ACCENT, linewidth=2.5, zorder=3, solid_capstyle="round")
+        ax.text(x + 26, box_y + box_h - 165, b["sub"],
+                fontsize=13, color=ACCENT, fontname=mono_font, va="top")
 
-    sub = "Live RAG dashboard  ·  218 sources  ·  tomato-intel-api.onrender.com"
-    sw_text = draw.textlength(sub, font=caption_font)
-    draw.text(((W - sw_text) / 2, H - 50), sub, fill=ACCENT, font=caption_font)
+        for j, line in enumerate(b["detail"]):
+            ax.text(x + 26, box_y + box_h - 215 - j * 26, line,
+                    fontsize=12, color=DIM, fontname=mono_font, va="top")
 
-    canvas.save(OUT, "PNG", optimize=True)
+        if i < n - 1:
+            arrow_x_start = x + box_w + 2
+            arrow_x_end = x + box_w + gap - 2
+            arrow_y = box_y + box_h / 2
+            arr = FancyArrowPatch(
+                (arrow_x_start, arrow_y), (arrow_x_end, arrow_y),
+                arrowstyle="-|>", mutation_scale=18,
+                color=ACCENT, linewidth=2.0, zorder=3,
+            )
+            ax.add_patch(arr)
+
+    callout_y = box_y - 70
+    ax.plot([60, 90], [callout_y + 8, callout_y + 8], color=ACCENT, linewidth=3, solid_capstyle="round")
+    ax.text(105, callout_y, "Intelligence layer",
+            fontsize=14, color=ACCENT, fontname=mono_font, fontweight="bold", va="center")
+    ax.text(105, callout_y - 28,
+            "Agentic scraper plans its own tool sequence  ·  Multi-LLM router picks the right model per query",
+            fontsize=13, color=DIM, fontname=mono_font, va="center")
+
+    ax.text(W - 60, 40, "Live  ·  tomato-intel-api.onrender.com",
+            fontsize=12, color=SUBTLE, fontname=mono_font, ha="right", va="center")
+
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    fig.savefig(OUT, facecolor=BG, dpi=100)
     print(f"Wrote {OUT} ({W}x{H})")
 
 
