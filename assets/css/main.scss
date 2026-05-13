@@ -1305,6 +1305,13 @@ section .section-sub {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   text-align: center;
+  padding: 40px 0 64px;
+
+  .eyebrow {
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 14px;
+  }
 
   h2 {
     text-align: center;
