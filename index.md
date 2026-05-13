@@ -45,6 +45,18 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>
+          </svg>
+        </div>
+        <h3>SQL</h3>
+        <p>I query and transform data to create reliable, analysis-ready datasets for dashboards and reporting.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="13" width="4" height="7" rx="0.5"/>
             <rect x="10" y="7" width="4" height="13" rx="0.5"/>
             <rect x="17" y="3" width="4" height="17" rx="0.5"/>
@@ -52,6 +64,29 @@ title: Home
         </div>
         <h3>Power BI</h3>
         <p>I build interactive dashboards that turn messy business data into clear, real-time insights.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+            <line x1="14" y1="4" x2="10" y2="20"/>
+          </svg>
+        </div>
+        <h3>Python</h3>
+        <p>I use Python for automation, data processing, API integrations, and deeper analytical tasks that go beyond spreadsheets.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/>
+            <circle cx="12" cy="12" r="1.6"/>
+          </svg>
+        </div>
+        <h3>AI Workflows</h3>
+        <p>I build Claude and GPT workflows that classify, enrich, and summarise data. AI sits inside the pipeline, not bolted on top.</p>
       </div>
 
       <div class="skill-card">
@@ -71,30 +106,6 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <ellipse cx="12" cy="5" rx="9" ry="3"/>
-            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>
-          </svg>
-        </div>
-        <h3>SQL</h3>
-        <p>I query and transform data to create reliable, analysis-ready datasets for dashboards and reporting.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"/>
-            <polyline points="8 6 2 12 8 18"/>
-            <line x1="14" y1="4" x2="10" y2="20"/>
-          </svg>
-        </div>
-        <h3>Python</h3>
-        <p>I use Python for automation, data processing, API integrations, and deeper analytical tasks that go beyond spreadsheets.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
             <line x1="2" y1="12" x2="22" y2="12"/>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -102,17 +113,6 @@ title: Home
         </div>
         <h3>Web Scraping</h3>
         <p>I build custom scrapers that pull external signals into the same warehouse as internal data. Competitor moves, prices, regulatory feeds, job postings.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/>
-            <circle cx="12" cy="12" r="1.6"/>
-          </svg>
-        </div>
-        <h3>AI Workflows</h3>
-        <p>I build Claude and GPT workflows that classify, enrich, and summarise data. AI sits inside the pipeline, not bolted on top.</p>
       </div>
 
     </div>
