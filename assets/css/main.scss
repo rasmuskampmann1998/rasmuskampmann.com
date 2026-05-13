@@ -894,6 +894,57 @@ section .section-sub {
     border: 1px solid var(--border);
   }
 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-secondary, #141414);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead {
+      background: rgba(181, 232, 83, 0.06);
+
+      th {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent-green);
+        font-weight: 600;
+        padding: 14px 18px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+        &:last-child { border-bottom: none; }
+        &:hover { background: rgba(255, 255, 255, 0.02); }
+      }
+
+      td {
+        padding: 14px 18px;
+        color: var(--text-secondary);
+        line-height: 1.55;
+        vertical-align: top;
+
+        &:first-child {
+          font-family: 'JetBrains Mono', monospace;
+          color: var(--accent-green);
+          font-weight: 500;
+          width: 56px;
+        }
+      }
+    }
+  }
+
   blockquote {
     border-left: 3px solid var(--accent-green);
     background: rgba(181, 232, 83, 0.05);
