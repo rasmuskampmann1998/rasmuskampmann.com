@@ -890,8 +890,27 @@ section .section-sub {
 
   img {
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 24px 0 8px;
     border: 1px solid var(--border);
+    display: block;
+    max-width: 100%;
+  }
+
+  // A paragraph containing only an <em> after an image-only paragraph
+  // renders as a caption. Tightens spacing, mutes color, smaller font.
+  p:has(> img:only-child) {
+    margin-bottom: 0;
+  }
+  p:has(> img:only-child) + p > em:only-child {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--text-muted, #888);
+    line-height: 1.5;
+    font-style: italic;
+    margin-top: 6px;
+    margin-bottom: 28px;
+    padding-left: 14px;
+    border-left: 2px solid var(--border);
   }
 
   table {
