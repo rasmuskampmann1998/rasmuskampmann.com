@@ -6,7 +6,7 @@ title: Home
 <section class="hero-centered">
   <div class="container">
     <div class="hero-avatar">
-      <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
+      <img src="{{ '/assets/images/me/hero-portrait.jpg?v=2' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
     <h1>Data Analyst &amp; BI Developer</h1>
