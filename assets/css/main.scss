@@ -1246,6 +1246,28 @@ section .section-sub {
     }
   }
 
+  .hero-slogan {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+    font-weight: 600;
+    color: var(--text-muted);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    max-width: 700px;
+    margin: 0 auto 14px;
+
+    .highlight { color: var(--accent-green); }
+  }
+
+  .hero-background {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    max-width: 620px;
+    margin: 0 auto 32px;
+  }
+
   .hero-social {
     display: flex;
     justify-content: center;
