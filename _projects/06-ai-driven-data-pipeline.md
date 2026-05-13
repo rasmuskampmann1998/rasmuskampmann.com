@@ -2,7 +2,7 @@
 layout: project
 title: End-to-End AI-Driven Data Pipeline
 tagline: "Multi-stage system orchestrating scraping, scoring, AI-driven content generation, and real-time data routing. Built around methodology, not metrics. Around 50% cold connection acceptance rate."
-tools: [Node.js, Python, Claude API, Apify, Airtable, PostgreSQL, Pipedrive, HeyReach, GitHub Actions]
+tools: [Node.js, Python, Claude API, Apify, Clay, Airtable, PostgreSQL, Pipedrive, HeyReach, GitHub Actions]
 outcome_headline: "Nine-stage pipeline combining public data extraction, ML scoring, multi-model AI orchestration, and real-time routing into operational systems"
 outcome_detail: "Built around methodology, not metrics. Validator logic, deterministic fallbacks, queue-based stage isolation, multi-model routing. Around 50% cold connection acceptance rate."
 order: 6
@@ -101,4 +101,4 @@ The fix taught me a rule I should have built in from day one: every fallback dec
 
 ## Tools
 
-Node.js for the main pipeline orchestration. Python for analytics, the ML scoring model, and a small control layer. Claude API (Haiku + Sonnet, routed by task) for the AI layer, with tool-use for structured outputs. Apify for scraping. Custom Python scrapers for niche sources. Airtable as the operational queue. PostgreSQL for the analytics warehouse. Pipedrive as the operational system destination. HeyReach for the cadence layer. GitHub Actions for scheduled runs and monthly retraining of the scoring model.
+Node.js for the main pipeline orchestration. Python for analytics, the ML scoring model, and a small control layer. Claude API (Haiku + Sonnet, routed by task) for the AI layer, with tool-use for structured outputs. Apify and Clay for scraping and enrichment. Custom Python scrapers for niche sources. Airtable as the operational queue. PostgreSQL for the analytics warehouse. Pipedrive as the operational system destination. HeyReach for the cadence layer. GitHub Actions for scheduled runs and monthly retraining of the scoring model.
