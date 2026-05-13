@@ -129,7 +129,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Seven production data, BI, and AI systems I built across operations, finance, ML, and market intelligence. Written for non-technical readers.</p>
+    <p class="section-sub">Seven production systems built end-to-end. From scattered commercial data to decisions teams trust. Written for non-technical readers.</p>
     <div class="projects-grid-large">
       {% assign sorted_projects = site.projects | sort: "order" %}
       {% for project in sorted_projects %}
