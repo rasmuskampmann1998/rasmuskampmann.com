@@ -5,7 +5,7 @@
 {% endif %}
   {% if project.cover_image %}
   <div class="card-image">
-    <img src="{{ project.cover_image | relative_url }}" alt="{{ project.title }}" loading="lazy" />
+    <img src="{{ project.cover_image | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.title }}" loading="lazy" />
     {% if project.coming_soon %}
     <span class="coming-soon-badge">Coming soon</span>
     {% endif %}

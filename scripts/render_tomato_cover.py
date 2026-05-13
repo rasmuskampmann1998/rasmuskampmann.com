@@ -16,13 +16,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE_ROOT = os.path.abspath(os.path.join(HERE, ".."))
 OUT = os.path.join(SITE_ROOT, "assets", "images", "projects", "tomato-intel-cover.png")
 
-BG = "#0A0A0A"
-CARD = "#141414"
-BORDER = "#2A2A2A"
+BG = "#FFFFFF"
+CARD = "#0A0A0A"
+BORDER = "#0A0A0A"
 ACCENT = "#B5E853"
+ACCENT_DARK = "#6B9F1F"
 TEXT = "#FFFFFF"
-SUBTLE = "#8A8A8A"
+ON_BG_DARK = "#0A0A0A"
+ON_BG_SUBTLE = "#666666"
 DIM = "#B0B0B0"
+SUBTLE_NUM = "#8A8A8A"
 
 W, H = 1600, 900
 
@@ -94,9 +97,9 @@ def main() -> None:
     ax.axis("off")
 
     ax.text(60, H - 70, "Agentic External Intelligence Platform",
-            fontsize=30, color=TEXT, fontname=title_font, fontweight="bold")
+            fontsize=30, color=ON_BG_DARK, fontname=title_font, fontweight="bold")
     ax.text(60, H - 110, "From 218 sources to a personalised briefing",
-            fontsize=15, color=SUBTLE, fontname=mono_font)
+            fontsize=15, color=ON_BG_SUBTLE, fontname=mono_font)
 
     n = len(BOXES)
     margin = 60
@@ -116,7 +119,7 @@ def main() -> None:
         ax.add_patch(rect)
 
         ax.text(x + 26, box_y + box_h - 50, b["num"],
-                fontsize=14, color=SUBTLE, fontname=mono_font, va="top")
+                fontsize=14, color=SUBTLE_NUM, fontname=mono_font, va="top")
         ax.text(x + 26, box_y + box_h - 88, b["title"],
                 fontsize=26, color=TEXT, fontname=title_font, fontweight="bold", va="top")
 
@@ -135,21 +138,21 @@ def main() -> None:
             arrow_y = box_y + box_h / 2
             arr = FancyArrowPatch(
                 (arrow_x_start, arrow_y), (arrow_x_end, arrow_y),
-                arrowstyle="-|>", mutation_scale=18,
-                color=ACCENT, linewidth=2.0, zorder=3,
+                arrowstyle="-|>", mutation_scale=22,
+                color=ON_BG_DARK, linewidth=2.6, zorder=3,
             )
             ax.add_patch(arr)
 
     callout_y = box_y - 70
-    ax.plot([60, 90], [callout_y + 8, callout_y + 8], color=ACCENT, linewidth=3, solid_capstyle="round")
+    ax.plot([60, 90], [callout_y + 8, callout_y + 8], color=ACCENT_DARK, linewidth=3, solid_capstyle="round")
     ax.text(105, callout_y, "Intelligence layer",
-            fontsize=14, color=ACCENT, fontname=mono_font, fontweight="bold", va="center")
+            fontsize=14, color=ACCENT_DARK, fontname=mono_font, fontweight="bold", va="center")
     ax.text(105, callout_y - 28,
             "Agentic scraper plans its own tool sequence  ·  Multi-LLM router picks the right model per query",
-            fontsize=13, color=DIM, fontname=mono_font, va="center")
+            fontsize=13, color=ON_BG_SUBTLE, fontname=mono_font, va="center")
 
     ax.text(W - 60, 40, "Live  ·  tomato-intel-api.onrender.com",
-            fontsize=12, color=SUBTLE, fontname=mono_font, ha="right", va="center")
+            fontsize=12, color=ON_BG_SUBTLE, fontname=mono_font, ha="right", va="center")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     fig.savefig(OUT, facecolor=BG, dpi=100)
