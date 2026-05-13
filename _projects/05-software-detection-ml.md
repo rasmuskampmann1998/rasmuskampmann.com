@@ -32,7 +32,7 @@ Most SMB sales teams burn outbound capacity on companies that aren't a fit. The 
 
 For this team specifically:
 
-- The CRM had labelled outcomes — companies known to use the target software, companies known to use a competitor — but no way to score new prospects against those labels.
+- The CRM had labelled outcomes for companies known to use the target software and companies known to use a competitor. There was no way to score new prospects against those labels.
 - Buying the signal externally cost more per record than the expected revenue per dial.
 - The dialler ran on autopilot. Manual prospecting before the queue loaded would have eaten the time-saving the autopilot was designed to give. Whatever ranking the queue had at 9am was what reps worked that day.
 
@@ -42,7 +42,7 @@ Can the label be predicted from public Danish company-registry data alone, well 
 
 Four problems the model had to solve:
 
-**Predict.** Get an accuracy that's worth deploying. Not 99%, not "high accuracy" — a real number on a real holdout. Anything that meaningfully outperforms random gives the team a queue reorder worth caring about.
+**Predict.** Get an accuracy that's worth deploying. Not 99%, not "high accuracy." A real number on a real holdout. Anything that meaningfully outperforms random gives the team a queue reorder worth caring about.
 
 **Explain.** A sales rep working a flagged lead wants to know *why* the model flagged it. Black-box scores get ignored. The model needs to surface, per prediction, which features pushed the score up.
 
@@ -59,16 +59,16 @@ Four problems the model had to solve:
 
 The schema is normalised. Each row is one company, one label, one timestamp. No duplicates, no future information leaking into past records. Categorical columns typed as enums so the same value can't appear in five spellings.
 
-**The model.** XGBoost binary classifier on 14 cold-observable features. 4,658 deduplicated training rows. The split between positive (uses target software) and negative was almost balanced — 2,275 vs 2,383 — so no class weighting needed.
+**The model.** XGBoost binary classifier on 14 cold-observable features. 4,658 deduplicated training rows. The split between positive (uses target software) and negative was almost balanced at 2,275 vs 2,383. No class weighting needed.
 
 Why XGBoost over logistic regression. Logistic regression assumes additive log-odds and handles feature interactions only through manual engineering. Tree ensembles pick interactions up natively and tolerate the mix of categorical and numeric features. I trained both. The tree ensemble landed roughly 5 AUC points higher on the same holdout.
 
-![SHAP feature impact — top 15 features]({{ '/assets/images/projects/software-detection-ml-shap.png' | relative_url }})
-*SHAP impact distribution per feature. Each dot is one prediction. Position on the x-axis shows whether that feature pushed the score up (uses target software) or down. Colour shows the feature value. Employee band, company form, founded year, and VAT frequency carry most of the signal.*
+![SHAP feature impact: top 15 features]({{ '/assets/images/projects/software-detection-ml-shap.png' | relative_url }})
+*SHAP impact distribution per feature. Each dot is one prediction. Position on the x-axis shows whether that feature pushed the score up (uses target software) or down. Colour shows the feature value. Feature names are anonymised in the public version. The real schema is grouped by company size, legal form, age, industry, and filing cadence.*
 
 **The evaluation.** I evaluated the model at five levels, not just AUC:
 
-- **ROC and AUC.** Holdout AUC 0.7475, cross-validation 0.7046. Permutation test p < 0.0001 — the model is meaningfully better than random.
+- **ROC and AUC.** Holdout AUC 0.7475, cross-validation 0.7046. Permutation test p < 0.0001. The model is meaningfully better than random.
 - **Confusion matrix at threshold 0.5.** False-positive rate inside acceptable range for downstream use.
 - **Precision-recall.** Top-decile precision answers the operational question.
 - **Probability calibration.** A score of 0.7 should mean roughly a 70% positive rate. If miscalibrated, the +15 score boost downstream gets miscalibrated too.
@@ -78,8 +78,8 @@ The top features are unsurprising on their own: employee band, company form, VAT
 
 ## The outcome
 
-![Probability calibration plot — predicted vs actual]({{ '/assets/images/projects/software-detection-ml-calibration.png' | relative_url }})
-*Calibration check: predicted probabilities track actual positive rates closely enough that the downstream score boost stays honest.*
+![Probability calibration plot: predicted vs actual]({{ '/assets/images/projects/software-detection-ml-calibration.png' | relative_url }})
+*Calibration check. Predicted probabilities track actual positive rates closely enough that the downstream score boost stays honest.*
 
 The model sits inside the lead-scoring pipeline. Companies above threshold get a +15 score boost before they reach the dialler queue. The dialler runs on autopilot, so the queue order is what gets worked. Every morning, the highest-probability prospects move to the top automatically. Retraining is monthly, triggered by a GitHub Actions workflow that fires when new labelled outcomes arrive in the CRM.
 
@@ -89,7 +89,7 @@ The numbers that matter: 4,658 training rows, 14 features, holdout AUC 0.7475, p
 
 ## What I'd do differently
 
-The first version was a 3-class model. I wanted to distinguish three accounting products at once. The two minority classes were indistinguishable from cold registry features alone — the model collapsed to AUC 0.527, barely above random. I dropped to binary (target product yes/no), which unlocked the full 4,658 training rows and gave the model something it could actually learn.
+The first version was a 3-class model. I wanted to distinguish three accounting products at once. The two minority classes were indistinguishable from cold registry features alone. The model collapsed to AUC 0.527, barely above random. I dropped to binary (target product yes/no), which unlocked the full 4,658 training rows and gave the model something it could actually learn.
 
 One feature, `has_revisor` (whether the company has an external auditor on file), only had 4,241 of 4,658 rows populated. I imputed the missing 8%. If I rebuilt the pipeline I'd scrape the missing records from the CVR website directly before training, not after.
 
