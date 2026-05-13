@@ -178,7 +178,7 @@ title: Home
     <div class="experience-timeline">
 
       <div class="experience-card">
-        <p class="experience-date">Feb 2026 – May 2026 · Contract · Remote</p>
+        <p class="experience-date">Feb 2026 – May 2026 · Full-time · Hybrid</p>
         <h4 class="experience-role">GTM Engineer &amp; Data Analyst</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
         <ul class="experience-bullets">
@@ -209,7 +209,7 @@ title: Home
         <p class="experience-company">Sira Logic</p>
         <ul class="experience-bullets">
           <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
-          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30 to 40%.</li>
+          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30–40%.</li>
           <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
           <li>Built custom web scraping systems for industry-specific data sources.</li>
         </ul>
