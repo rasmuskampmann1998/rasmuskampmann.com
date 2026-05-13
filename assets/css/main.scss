@@ -1389,6 +1389,25 @@ section .section-sub {
   }
 }
 
+// ── HERO TAGLINE BAND (between Skills and Projects) ─────────────────────────
+.hero-tagline-band {
+  padding: 80px 0;
+  text-align: center;
+
+  .hero-tagline {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    max-width: 820px;
+    margin: 0 auto;
+
+    .highlight { color: var(--accent-green); }
+  }
+}
+
 // ── PROJECTS GRID (larger 2-col reference style) ─────────────────────────────
 .projects-grid-large {
   display: grid;
