@@ -102,7 +102,7 @@ permalink: /services/
         <span class="step-num">•</span>
         <div class="step-body">
           <h4>Web scraping for external data</h4>
-          <p>Custom scrapers for industry-specific sources where third-party providers don't deliver. Competitor signals, pricing, regulations, market intelligence — fed into the same source of truth.</p>
+          <p>Custom scrapers for industry-specific sources where third-party providers don't deliver. Competitor signals, pricing, regulations, market intelligence, fed into the same source of truth.</p>
         </div>
       </li>
       <li>
