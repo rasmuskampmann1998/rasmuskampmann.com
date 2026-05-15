@@ -8,8 +8,8 @@ permalink: /services/
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">Work with me</span>
-    <h1>Free Data Audit</h1>
-    <p>A written report on your current data setup. What's working, what's not, and the biggest fixes to make. No obligation, no sales call required.</p>
+    <h1>Data infrastructure, analytics, and AI workflows for B2B commercial teams</h1>
+    <p>I build the reporting, analysis, and AI workflows that turn scattered commercial data into decisions you can trust.</p>
     <div style="margin-top: 28px;">
       <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
     </div>
@@ -24,17 +24,116 @@ permalink: /services/
   </div>
 </section>
 
+<section class="process">
+  <div class="container">
+    <span class="eyebrow">How I work</span>
+    <h2>A 3-step delivery process</h2>
+    <p class="section-sub">Every engagement follows the same flow. The audit defines the scope; the build delivers the fix; the optional ongoing phase keeps it running and extends it.</p>
+
+    <ol class="process-steps">
+      <li>
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h4>Free audit</h4>
+          <p>Map the data, spreadsheets, and reporting as they exist today. Identify gaps, brittleness, and the highest-leverage fixes. Delivered as a written PDF.</p>
+          <p><strong>2 to 3 days · Free</strong></p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h4>Scoped build</h4>
+          <p>Deliver the prioritised fixes from the audit. Typical engagements run 4 to 8 weeks and focus on one or more core services below.</p>
+          <p><strong>4 to 8 weeks · Fixed scope</strong></p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h4>Ongoing</h4>
+          <p>Monthly retainer covering analysis, dashboard maintenance, incremental builds, and follow-on AI workflows.</p>
+          <p><strong>Monthly · Optional</strong></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <span class="eyebrow">Core services</span>
+    <h2>What I deliver inside the build</h2>
+    <p class="section-sub">Most engagements combine two or three of these. The audit clarifies the mix.</p>
+
+    <ol class="process-steps">
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>Data analysis</h4>
+          <p>Pipeline analysis, churn, cohort retention, channel performance, forecasting. The questions your team has been asking but couldn't answer because the data was in too many places.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>Data infrastructure</h4>
+          <p>SQL warehouses, ETL pipelines, data modelling. A single source of truth that replaces brittle Excel workflows and reconciles conflicting source data.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>AI-powered reporting</h4>
+          <p>Power BI dashboards with Claude and Python workflows wired in. Classification, summarisation, and enrichment that reduce manual cleanup and surface signals your CRM doesn't have.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="process" style="opacity:.78">
+  <div class="container">
+    <span class="eyebrow">Add-ons</span>
+    <h2>Additional services</h2>
+    <p class="section-sub">Some engagements grow beyond the core. These are the extensions clients ask for once the foundation is in place.</p>
+
+    <ol class="process-steps">
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>Web scraping for external data</h4>
+          <p>Custom scrapers for industry-specific sources where third-party providers don't deliver. Competitor signals, pricing, regulations, market intelligence — fed into the same source of truth.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>ML models</h4>
+          <p>Predictive models trained on your data. Lead scoring, churn prediction, software detection, forecasting models deployed into the workflows that drive revenue.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">•</span>
+        <div class="step-body">
+          <h4>Agentic workflows and apps</h4>
+          <p>Custom AI agents and lightweight apps built on top of your data. Recommendation systems, internal tools, decision support for sales and ops teams.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
 <section class="audit-section">
   <div class="container">
     <span class="eyebrow">The offer</span>
-    <h2>What you get from the audit</h2>
-    <p class="section-sub">Most B2B teams know their data is messy but can't see where the biggest leaks are. The audit gives you that map.</p>
+    <h2>Free Data Audit</h2>
+    <p class="section-sub">A written report on your current data setup. What's working, what's not, and the biggest fixes to make. No obligation, no sales call required.</p>
 
     <div class="audit-grid">
       <div class="audit-left">
         <p>After the audit, we discuss whether scoped project work makes sense. There is no productized tier menu. Every engagement is shaped around what the audit surfaces.</p>
         <div class="audit-meta">
-          <p><strong>Duration:</strong> 1 to 2 weeks</p>
+          <p><strong>Duration:</strong> 2 to 3 days</p>
           <p><strong>For:</strong> Founders, CFOs, and commercial leaders at B2B SMBs</p>
           <p><strong>Cost:</strong> Free, no obligation</p>
         </div>
@@ -49,73 +148,6 @@ permalink: /services/
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="process">
-  <div class="container">
-    <span class="eyebrow">How I work</span>
-    <h2>The delivery roadmap behind every engagement</h2>
-    <p class="section-sub">Every engagement starts with the free audit. The eight stages below describe the full delivery flow when projects move forward. Not every project touches every stage.</p>
-
-    <ol class="process-steps">
-      <li>
-        <span class="step-num">01</span>
-        <div class="step-body">
-          <h4>Free audit of current setup</h4>
-          <p>Map the data, spreadsheets, and reporting as they exist today. Identify gaps, brittleness, and the highest-leverage fixes.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">02</span>
-        <div class="step-body">
-          <h4>Data collection &amp; consolidation</h4>
-          <p>Pull internal data from CRM, sales, finance, and ops into one clean, joined dataset.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">03</span>
-        <div class="step-body">
-          <h4>Data analysis &amp; insight surfacing</h4>
-          <p>Funnel analysis, cohort retention, churn drivers, segment performance. The questions your team has been asking but couldn't answer.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">04</span>
-        <div class="step-body">
-          <h4>Data infrastructure build</h4>
-          <p>SQL warehouse, ETL pipelines, a single source of truth that replaces brittle Excel workflows.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">05</span>
-        <div class="step-body">
-          <h4>Reporting &amp; dashboards</h4>
-          <p>Power BI dashboards built around the decisions leadership actually makes. Not just the data that happens to be there.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">06</span>
-        <div class="step-body">
-          <h4>AI &amp; automation in the data flow</h4>
-          <p>Claude and GPT workflows layered into the pipeline. Classification, enrichment, summarisation. Less manual cleanup.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">07</span>
-        <div class="step-body">
-          <h4>Scraping for external context</h4>
-          <p>When internal data isn't enough. Competitor moves, prices, regulations, signals. Custom scrapers feed the same source of truth.</p>
-        </div>
-      </li>
-      <li>
-        <span class="step-num">08</span>
-        <div class="step-body">
-          <h4>AI implementation tied to outcomes</h4>
-          <p>Models trained on your data, deployed into the workflows that drive revenue. GTM scoring, financial forecasting, ops optimisation.</p>
-        </div>
-      </li>
-    </ol>
   </div>
 </section>
 
