@@ -154,7 +154,7 @@ permalink: /services/
 <section class="cta-band">
   <div class="container">
     <h2>Want a free Data Audit?</h2>
-    <p>1 to 2 weeks. Written report on your current setup. No obligation, no sales call required.</p>
+    <p>2 to 3 days. Written report on your current setup. No obligation, no sales call required.</p>
     <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
   </div>
 </section>
