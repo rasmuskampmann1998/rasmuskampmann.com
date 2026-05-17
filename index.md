@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Data Analyst, BI Developer &amp; AI Automation Specialist</h1>
+    <h1>Data Analyst | BI Developer | AI Automation Specialist</h1>
     <ul class="hero-stack">
       <li>SQL</li>
       <li>Power BI</li>
