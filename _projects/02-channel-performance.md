@@ -1,10 +1,11 @@
 ---
 layout: project
 title: Channel Performance & Churn Analysis
-tagline: "Ten acquisition channels reported as one blended number. Split apart on win rate, cost, speed, and churn, the biggest channel was the worst. Synthetic data, real method."
+tagline: "Ten acquisition channels treated as one mix. Scored on win rate, sales-rep capacity, speed, and twelve-month churn. Synthetic data, real method."
+description: "Ten acquisition channels scored on win rate, sales-rep capacity, speed, and twelve-month churn. The blended report hid a 12x split between the warm and outbound clusters. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
 tools: [Python, SQL, Power BI]
-outcome_headline: "Five warm channels were 21% of deals but 78% of the revenue that survived the first year, at zero dialer cost"
-outcome_detail: "The largest channel by volume won 8.6% of the time, carried 91% of all sales-dialer hours, and churned half its customers within twelve months."
+outcome_headline: "Five warm channels were 21% of deals but 78% of the revenue that survived the first year, with no sales-rep time spent winning them"
+outcome_detail: "The largest channel by volume won 8.6% of the time, consumed 91% of all sales-rep dialer hours, and churned half its customers within twelve months. The scorecard handled the split with a rule, not a model, so the revenue-ops lead could re-run it each quarter without a data team in the room."
 order: 2
 cover_image: /assets/images/projects/channel-performance-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/02-channel-performance-analysis
@@ -12,7 +13,7 @@ github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/t
 
 Built in SQL, Python, and Power BI. Validated in DuckDB. Reproducible from a seeded synthetic generator.
 
-A sales team ran ten acquisition channels and reported them as one blended win rate. Underneath: win rates from 4.5% to 79%, twelve-month churn from 4% to 50%, time-to-won from a week to a month. The blend hid which channels earned their cost and which burned it. The deliverable is a four-factor scorecard a revenue-operations lead reruns each quarter to decide where dialer hours and budget go next.
+A sales team ran ten acquisition channels and reported them as one blended win rate. Below the blend: win rates from 4.5% (re-bookings) to 79% (referral), twelve-month churn from 4% to 50%, time-to-won from a week to a month. The method was to score each channel on four axes the sales team actually controls, win rate, sales-rep hours consumed, time-to-won, and churn, and let the rule sort them. The deliverable is the scorecard the revenue-operations lead re-runs each quarter to decide where sales-rep capacity goes.
 
 The figures are synthetic, generated from a seeded model that reproduces the shape of a real CRM engagement whose data cannot be published. The method is the point.
 
@@ -20,99 +21,101 @@ Schema, scorecard rule, and Power BI model on [GitHub]({{ page.github_url }}).
 
 ## The business question
 
-The revenue-operations lead decides every quarter where dialer hours and budget go. They were deciding it on a single blended win rate that hid which channels actually earned the spend. The brief was a quarterly cadence: bands reviewed together, the lead reruns the scorecard themselves between reviews, no data team in the loop.
+The revenue-operations lead decides every quarter where sales-rep capacity goes: which channels to invest hours in, which to leave alone. They were making that call from a single blended win rate that flattened the real differences between channels.
 
-The question: across ten channels, which produces the most won revenue fastest, retains the customers it wins, and where is dialer time being spent that does not come back? The answer had to be something the lead could act on without a data team in the room: a ranking they could defend to a CFO and rerun themselves each quarter. That constraint is why the deliverable is a scorecard, not a model, and why churn had to be in scope alongside win rate.
+The question I had to answer: across ten channels, which return retained revenue per sales-rep hour, which return revenue that leaves within twelve months, and which absorb hours without returning either. The output had to be something the lead could act on without a data team in the room, a ranking they could defend to a CFO and re-run themselves each quarter. That requirement is why the output is a scorecard rule, not a model, and why churn had to be measured alongside win rate.
 
 ## Where the data came from
 
-The original engagement ran on a private CRM export from a Danish SMB accounting firm: deals, the activities behind them, the meetings they produced. That export can't be published, so this version runs on a seeded synthetic generator that emits ten CSVs with the same schema and shape. Byte-stable: same script, same data every run. Everything below is the real process on that stand-in.
+The original engagement ran on a private CRM export from a Danish SMB accounting firm: deals, the activities that created them, the meetings they generated. That export cannot be published, so this version runs on a seeded synthetic generator that produces ten CSVs with the same schema and shape. Same script, same data on every run. The process from this point is the real one, applied to the stand-in.
 
-The raw grain mirrors how a CRM stores it: one record per deal, separate streams for the touches that created it and the meetings it generated. Three things were not in the raw export and had to be derived: the channel attributed to each deal (first-touch), the sales-dialer hours consumed per deal, and the post-won lifecycle (whether and when a won customer churned). The post-won lifecycle is the column the original reporting never had, and the one that changed the answer.
+The grain matches how the CRM stores the data: one row per deal, with separate streams for the touches that created it and the meetings it generated. Three things had to be derived from the raw export. First, the channel attributed to each deal, using first-touch attribution. Second, the sales-rep dialer hours consumed per deal. Third, the post-won lifecycle: whether the customer was still active at twelve months, and if not, when they left. The post-won column did not exist in the original reporting. Adding it is what shifted the conclusion.
 
 ## The data model
 
-A star schema, channel as the primary dimension, three fact grains:
+I modeled the data as a star schema with channel as the primary dimension and three fact grains, one per stage of the funnel I needed to cut:
 
 - `fact_deals`: one row per deal, channel-attributed, carrying the close outcome, the dialer hours spent on it, and the post-won columns (`is_churned`, `retained_months`, `churned_mrr`).
-- `fact_touches`: one row per acquisition touch, used for first-touch attribution and the dialer-cost rollup.
+- `fact_touches`: one row per acquisition touch, used for first-touch attribution and the dialer-hour rollup.
 - `fact_meetings`: one row per booked meeting, used for the show-rate and cancellation cuts.
 
-Seven conformed dimensions hang off those facts: date, channel, campaign, company, rep, stage, lost reason. Channel is a dimension, not a column on the deal, so every measure cuts by channel without rewriting a query. Relationships are single-direction, one row per deal. `dim_campaign` deliberately doesn't join `dim_channel`; channel context arrives through `fact_deals`, keeping the schema a clean star. Small choices like that are the difference between a model a revenue lead can extend and one only its author can.
+Seven conformed dimensions sit on the facts: date, channel, campaign, company, rep, stage, lost reason. I made channel a dimension rather than a column on the deal so that every measure could cut by channel without rewriting a query. Relationships are single-direction, one row per deal. I left `dim_campaign` unjoined to `dim_channel` on purpose, because channel context already arrives through `fact_deals`, so joining them would have snowflaked the schema without adding anything. The decision matters because the analyst who inherits this model needs to extend it, not rebuild it.
 
 ## Cleaning and validation
 
-Every finding here rests on attributing each deal to one channel. Three things had to be true before any chart was drawn, and a findings report skips all three.
+Every conclusion in this analysis depends on attributing each deal to one channel. Three things had to be true before I drew any chart, and most reports skip all three.
 
-A dangling channel key would silently drop deals from a rollup and bias the ranking toward whichever channel kept its keys clean, so I joined every foreign key in the fact tables back to its dimension in DuckDB and required zero orphans, including the post-won `churn_date_key`. It came back clean; if it had not, the win-rate cliff could have been an artefact of lost rows rather than a real split.
+A broken channel key would have quietly dropped deals from a rollup, which would have biased the ranking toward whichever channel kept its keys clean. I joined every foreign key in the fact tables back to its dimension in DuckDB and required zero orphans, including the post-won `churn_date_key`. The check came back clean. If it had not, the win-rate split could have been a data-quality issue rather than a real one.
 
-A deal with three meetings must count as one deal, not three, or every channel that books more meetings looks like it wins more revenue. The touch and meeting streams stay at their own grain and roll up before they reach the deal grain, so revenue is counted once per deal and the dialer-cost rollup is not inflated by chatty channels.
+A deal with three meetings must count as one deal, not three, or any channel that books more meetings would appear to win more revenue than it actually does. I kept the touch and meeting streams at their own grain and rolled them up before joining to the deal grain. That way revenue gets counted once per deal, and the dialer-hour rollup is not inflated by channels that schedule more meetings per deal than others.
 
-The last gate catches the silent error: the scorecard quotes a number, and the rule that produces the band has to agree with it. One verification script recomputes every figure in this write-up, the dashboard, and the scorecard from the CSVs, and reassigns the bands from the same rule. If a measure moves, the script fails before the chart ships.
+The last check catches the kind of error that does not show up in a single review: the scorecard quotes a number, and the rule that produces the band has to agree with it. I wrote one verification script that recomputes every figure in this write-up, the dashboard, and the scorecard directly from the CSVs, and then reassigns the bands using the same rule. If any measure changes, the script fails before the chart can ship.
 
 ## The approach
 
-Channel is the unit of analysis. Every deal is cut by the channel that acquired it, scored on four things, because no single one is enough.
+I worked at the channel grain because the decision the analysis served was a per-channel one. Every deal got cut by the channel that acquired it, and each channel got scored on four measures. No single measure was enough on its own to rank a channel, so the score combines them.
 
-**Win rate.** The base rate. A channel can win often and still lose money if those wins leave.
+**Win rate.** The base measure: deals won as a share of held meetings. A channel that wins often can still lose money if those customers leave, so this only tells half the story.
 
-**Dialer cost.** The scarce resource: won revenue returned per dialer hour. It only matters for the two channels that spend it. Everything else returns revenue at zero dialer cost, which is itself the finding.
+**Sales-rep capacity.** Won revenue returned per sales-rep hour spent. The two outbound dialer channels are the only ones that consume rep hours; everything else returns revenue without using the dialer at all. That asymmetry is one of the central findings the scorecard depends on.
 
-**Time-to-won.** A cost in disguise. A channel that closes in a week frees a rep's capacity that a channel taking a month does not.
+**Time-to-won.** Days from first touch to closed-won. A channel that closes in a week frees a rep's capacity that a channel taking a month does not, which compounds over a quarter.
 
-**Churn.** The post-sale axis, and the one that changed the verdict. Measured through twelve-month retention and net revenue retention, tied back to the acquiring channel. The half of the picture win rate cannot show.
+**Churn.** The post-sale measure I added in the second pass. Twelve-month retention by acquiring channel, and net revenue retention layered on top to catch contract expansions and contractions. Without this measure, the analysis would have ranked channels on win rate alone, which is the same blended view the original reporting already had.
 
-These collapse into one additive score, then four bands: scale, maintain, cap, kill. A rule, not a model, deliberately. A model would be more precise and useless here, because nobody on the revenue team could audit it or rebuild it next quarter. Every point is traceable to a number in the tables.
+Two things sat outside the scorecard on purpose. Financial cost by channel, paid media spend, content production, partner commissions, was on a separate ledger the marketing team owned, not a sales-ops input. And cross-sell and upsell are expansion motions on existing customers rather than new-customer acquisition. I included them in the scorecard because the sales team's quarterly capacity decision treated all motions as competing for the same SDR and AE hours. A pure-acquisition analysis would split them out.
+
+The four measures combine into one additive score that drops each channel into one of four bands: scale, maintain, cap, kill. I built the score as a rule rather than a model on purpose. A regression would have been more precise and unusable, because the revenue-ops lead could not have audited it or rebuilt it next quarter. Every point in this rule traces back to a number in the dimensional tables, so the lead can defend any band assignment by pointing at the underlying measures.
 
 ## The findings
 
-**Win rate splits the channels into two populations, and the biggest one is in the wrong half.**
+**I started with win rate by channel, because that's the measure the original reporting blended. The cut showed two clusters with nothing between them.**
 
 ![Win rate by channel]({{ '/assets/images/projects/channel-performance-winrate.png' | relative_url }})
-*Win rate per channel, sorted, sales-dialer channels in red. There is no gradient here, there is a cliff. Referral, cross-sell, upsell, inbound, and LinkedIn all clear 61%. Everything else is under 15%. Cold calling, the channel that books the most deals, sits at 8.6%, third from the bottom.*
+*Win rate per channel, sorted, with outbound dialer channels marked in red. Five channels (referral, cross-sell, upsell, inbound, LinkedIn) sit above 61%. Five sit below 15%. Nothing falls between. Cold calling, which books the most deals of any channel, sits at 8.6%.*
 
-The win-rate chart is the case for abandoning the blend in one image. The channels do not sit on a smooth curve from good to bad. They form two clusters with nothing in between: five warm channels above 61%, five channels below 15%. A blended average of those two populations describes none of them. Cold calling at 8.6% is not "a bit below average", it is in the bottom cluster, and it is the largest channel the team runs.
+Once the channels are split out, the case for abandoning the blend is in one chart. The channels do not sit on a smooth curve from good to bad. They form two clusters with nothing between them. Averaging across them describes neither cluster. Cold calling at 8.6% is not slightly below the blended mean. It is in the bottom cluster, and it is the largest channel the team runs by deal volume.
 
-**Volume is concentrated exactly where win rate is weakest.**
+**Next I cut by deal volume per channel, to see whether the team was investing time in proportion to channel quality.**
 
 ![Deal volume by channel]({{ '/assets/images/projects/channel-performance-volume.png' | relative_url }})
 *Deals created per channel. Cold calling is roughly ten times the next-biggest channel. The single bar that dominates the volume chart is the same channel sitting third from the bottom on win rate.*
 
-Put the two bar charts next to each other and the structural problem is obvious. The channel with the most deals has nearly the worst win rate. The team's capacity was being spent in proportion to volume, and volume was inversely related to quality. This is the dilution trap: a high-volume, low-conversion channel makes the pipeline look busy and the blended number look stable while consuming the capacity that the high-conversion channels needed.
+The channel with the most deals has nearly the worst win rate. The team's capacity was being spent in proportion to volume, and volume was inversely related to channel quality. A high-volume, low-conversion channel keeps the pipeline looking busy and the blended win rate looking stable, while consuming the capacity that the high-conversion channels needed.
 
-**Churn is the second axis, and it punishes the same channels again.**
+**The third cut was twelve-month retention by channel, to test whether the win-rate ranking held after the contract was signed.**
 
 ![Net revenue retention by channel]({{ '/assets/images/projects/channel-performance-nrr.png' | relative_url }})
-*Net revenue retention at twelve months, per channel. Expansion and referral channels keep 87% to 94% of the revenue they win. Cold calling keeps 50%. The dialer channels are red, at the bottom, again.*
+*Net revenue retention at twelve months by channel. Expansion and referral channels retain 87% to 94% of the revenue they won. Cold calling retains 50%. The two outbound dialer channels sit at the bottom of the ranking.*
 
-This is the chart the original reporting could not produce. Win rate stops at the signature; this starts there. Cold calling wins less often and then loses half of what it does win within a year. Its 23.5% share of won revenue shrinks to 15.7% once churn is taken out. The warm channels are the mirror image: they win more often and the revenue stays. Win rate and twelve-month retention rank the channels in nearly the same order. On a real dataset, two independent measures agreeing tells you the conclusion isn't a single-metric artefact. In this synthetic version the agreement is built into the model, so the takeaway is the method of cross-checking one axis against a second, not the figures themselves.
+This is the chart the original reporting did not produce. The original analysis stopped at the contract signature. This one continues past it. Cold calling wins less often and then loses half of what it does win within twelve months. Its 23.5% share of won revenue shrinks to 15.7% on a net revenue retention basis. The warm channels show the opposite pattern: higher win rates and revenue that stays. Win rate and twelve-month retention rank the channels in nearly the same order. On a real dataset, two independent measures agreeing would tell you the conclusion is not driven by a single metric. In this synthetic version the agreement is built into the model, so the takeaway is the method of cross-checking one axis against another, not the figures themselves.
 
-**The wins that stay, stay from day one.**
+**To check whether the retention gap was an onboarding issue or a customer-fit issue, I plotted the survival curve by channel group.**
 
 ![Logo survival by channel group]({{ '/assets/images/projects/channel-performance-retention-curve.png' | relative_url }})
-*Share of won customers still active by month since the deal closed, grouped by channel type. The x-axis is months retained, a real ordered axis. Expansion holds near the top across all twelve months. The outbound dialer line bleeds from the first month and never recovers.*
+*Share of won customers still active by month since the deal closed, grouped by channel type. The x-axis is months retained. Expansion customers stay near 100% retention across all twelve months. The outbound dialer line declines from the first month and continues declining without leveling off.*
 
-The survival curve shows the churn gap is not a late-life cliff that better onboarding could fix. The outbound line separates from the others in month one and the gap only widens. When churn starts that early and never recovers, the reading is that the channel is selecting weaker-fit customers rather than serving the same customers worse, which is the difference between "improve retention on this channel" and "stop scaling this channel". On a real dataset that distinction is what the survival shape would tell you; here the shape is generated to demonstrate the method, so treat the conclusion as the method, not as an observed result.
+The survival curve shows that the retention gap is not a late-stage drop-off that better onboarding could address. The outbound line separates from the others in month one and the gap widens from there. Early-stage attrition that does not stabilize points to a customer-fit problem at the acquisition stage rather than a retention failure post-sale. That distinction matters because it changes the recommendation, from "improve onboarding on this channel" to "stop scaling this channel". On a real dataset the survival shape is what surfaces that distinction. Here the shape is constructed to show the method, so the takeaway is the cross-check itself, not the specific result.
 
-**Speed tells the same story a third time.**
+**The fourth cut was time-to-won by channel, to check whether speed cut the same direction as win rate and retention.**
 
 ![Time to won by channel]({{ '/assets/images/projects/channel-performance-time-to-won.png' | relative_url }})
 *Median and 90th-percentile days from first touch to won, per channel. Expansion closes in under a week at the median. Cold calling takes 20 days, re-bookings 31, with long tails behind both.*
 
-Every axis points the same way. The channels that win more and retain more also close faster, which means they return capacity to the team sooner and can be worked again within the quarter. The channels that win least and churn most are also the slowest, so the same dialer hour buys fewer attempts. There is no axis on which the dialer channels are the better investment.
+All four cuts point in the same direction. The channels that win more often and retain more revenue also close faster, which means they free up sales-rep capacity sooner and can be re-engaged within the same quarter. The channels that win least and churn most are also the slowest, so a sales-rep hour spent on them buys fewer chances to close. On none of the four cuts does scaling the dialer channels further pay off.
 
 ## The deliverable
 
-The four factors collapse into one additive scorecard. Each channel earns points on win rate, dialer cost, time-to-won, and twelve-month retention, and the total drops it into one of four bands.
+The four measures combine into one additive scorecard. Each channel earns points on win rate, sales-rep capacity, time-to-won, and twelve-month retention. The total assigns the channel to one of four bands.
 
-- **Scale** (LinkedIn, referral, inbound, cross-sell, upsell): 21% of deals, 69% of won revenue, **78% of the revenue that survived the first year**, 83% retained at twelve months, zero dialer cost. Move budget and capacity here first.
+- **Scale** (LinkedIn, referral, inbound, cross-sell, upsell): 21% of deals, 69% of won revenue, **78% of the revenue that survived the first year**, 83% retained at twelve months, no dialer hours consumed. These channels still carry non-dialer costs (paid media, content production, CSM time) which sat outside this analysis. Move sales-rep capacity here first.
 - **Maintain** (Facebook, SEO, Instagram): 14% of deals, 7% of won revenue, mid retention. Hold spend, no new investment.
-- **Cap** (cold calling): 60% of deals, 23.5% of won revenue that shrinks to 15.7% net of churn, 91% of dialer hours, 51% retained. It still books real volume, so the call is freeze it, do not grow it. Capping, not killing, because the volume is real even though the quality is not.
+- **Cap** (cold calling): 60% of deals, 23.5% of won revenue that contracts to 15.7% on a net revenue retention basis, 91% of sales-rep dialer hours, 51% retained at twelve months. The volume is real enough that pulling the channel entirely would leave deals on the table, but the per-hour return does not justify scaling it further. Freeze the channel at current capacity, do not grow it.
 - **Kill** (re-bookings): a 4.5% win rate on 312 deals. Stop it as a standalone motion and fold confirmed reschedules back into the channel that originally booked the meeting.
 
-The retention factor is a non-negative bonus by design, not a penalty. Win rate and dialer cost already separate the channels cleanly; retention is there to confirm that split, not to be powerful enough to flip a band on its own. That keeps the rule honest: it cannot be gamed by one strong quarter on a single axis, and a revenue lead can defend every band assignment by pointing at the underlying numbers.
+I built the retention factor as a positive-only bonus rather than a penalty. Win rate and sales-rep capacity already separate the channels into clusters; retention confirms the split rather than driving it. That keeps the rule defensible. It cannot be tilted by one strong quarter on a single measure, and the lead can defend every band assignment by pointing at the underlying numbers.
 
-The scorecard is built so a revenue-operations lead can rerun it each quarter, defend each band to a CFO from the underlying numbers, and reassign channels as the mix shifts. The recommendation it points to is concrete: move a third of cold-call dialer hours to the warm follow-up motions, retire the standalone re-booking queue, rerun monthly from the same tables so the bands track reality instead of last quarter's assumptions.
+The scorecard is built so the revenue-operations lead can re-run it each quarter, defend each band to a CFO from the underlying measures, and reassign channels as the mix shifts. The concrete recommendation it produces: move a third of the cold-call SDR capacity to warm-channel follow-up motions, referral nurture, LinkedIn engagement, inbound qualification, where the same hour returns more retained revenue. Retire the standalone re-booking queue. Re-run the scorecard monthly from the same tables, so the bands track the current channel mix rather than last quarter's assumptions.
 
 ## What I'd do differently
 
@@ -130,8 +133,8 @@ The same tools most analysts list, but used at a specific step for a specific re
 | Modelling | SQL (Postgres-style DDL) | The star schema: three fact grains, seven conformed dimensions, channel as the primary axis |
 | Cleaning and validation | DuckDB | Referential-integrity checks (zero FK orphans), grain dedupe, query validation before any finding |
 | Churn analysis | Python (pandas) | Twelve-month retention curves, net revenue retention, and survival shape by channel group |
-| Analysis | Python (pandas, numpy) | The four-factor scoring and a verification script that recomputes every quoted number |
+| Analysis | Python (pandas, numpy) | The four-factor scoring across win rate, sales-rep capacity, time-to-won, and churn, plus a verification script that recomputes every quoted number |
 | Dashboard | Power BI (PBIP/TMDL, validated headless with pbi-cli) | The channel scorecard as something the revenue lead reruns each quarter |
-| Reproduction | One seeded script | The whole pipeline regenerates byte-identically from source with no real client data |
+| Reproduction | One seeded script | The whole pipeline regenerates identically from source on every run, with no real client data |
 
-Every chart in this case study is a bar or a line, one comparison grammar, nothing that needs a second encoding to decode.
+Every chart in this case study is a bar or a line. One comparison type. No chart requires a second visual encoding to interpret.
