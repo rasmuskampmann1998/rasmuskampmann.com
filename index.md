@@ -145,7 +145,7 @@ title: Home
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus.</p>
         <p>I build the data infrastructure, BI reporting, and AI automation that turn scattered commercial data into systems leadership can trust. SQL pipelines, Power BI, web scraping, and AI workflows wired into one system.</p>
-        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've built BI models, automated data pipelines, ML detection systems, and end-to-end GTM infrastructure across sales, finance, operations, production, and ERP sources.</p>
+        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've built BI models, automated data pipelines, and an ML detection model on data from sales, finance, operations, production, ERP, and GTM systems.</p>
         <p>Most analysts build dashboards on top of someone else's data. I build the infrastructure underneath, so data and AI talk to each other. Analysis is only as reliable as the infrastructure under it. That's why I build both.</p>
         <p><strong>How I work:</strong></p>
         <ul>
