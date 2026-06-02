@@ -1,10 +1,10 @@
 ---
 layout: project
 title: Agentic External Intelligence Platform
-tagline: "Personalised research, competitor monitoring, and weekly briefings replaced manual work for a B2B agriculture company. Live RAG dashboard, multi-LLM interpretation, 218 sources."
+tagline: "Personalised research, competitor monitoring, and weekly briefings replaced manual work for a B2B agriculture company. Live RAG dashboard, multi-LLM interpretation, cross-source signal detection, 228 sources."
 tools: [FastAPI, Python, Supabase, pgvector, Apify, Claude API, Voyage AI, DeepSeek, Perplexity, APScheduler, React, Render]
 outcome_headline: "Personalised research and competitor monitoring that cut manual hours and feeds leadership with better signal for decisions"
-outcome_detail: "218 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations. Live at tomato-intel-api.onrender.com."
+outcome_detail: "228 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations, and a cross-source signal detector. Live at tomato-intel-api.onrender.com."
 order: 8
 cover_image: /assets/images/projects/tomato-intel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/07-tomato-intel
@@ -38,9 +38,9 @@ The root cause was straightforward. Manual monitoring at this scope is impossibl
 
 ## The approach
 
-I framed the build as four jobs the system has to do, each replacing a different piece of the manual workflow.
+I framed the build as five jobs the system has to do, each replacing a different piece of the manual workflow.
 
-**Job one: scraping.** Get content from 200+ sources reliably, including the ones that fight back. I built a cost-sorted fallback chain. Free layers run first (RSS, raw HTML, Crawl4AI, Playwright, Jina). Money-spending layers (Firecrawl, Apify) only fire when free layers fail. A `is_required` flag unlocks a final Claude rescue for must-have sources. Result: 191 of 218 sources healthy.
+**Job one: scraping.** Get content from 200+ sources reliably, including the ones that fight back. I built a cost-sorted fallback chain. Free layers run first (RSS, raw HTML, Crawl4AI, Playwright, Jina). Money-spending layers (Firecrawl, Apify) only fire when free layers fail. A `is_required` flag unlocks a final Claude rescue for must-have sources. 228 sources across 10 categories.
 
 **Job two: interpretation.** Don't store raw articles. Read them. Every incoming item runs through Claude Haiku on a 90-minute cron. The model detects language, translates if needed, generates an English title and summary, scores relevance 0-10, and tags by topic and region. Boilerplate (relevance 1) gets filtered out before the frontend ever sees it.
 
@@ -48,15 +48,19 @@ I framed the build as four jobs the system has to do, each replacing a different
 
 **Job four: routing.** Use the right model for the right job. Claude Haiku does bulk classification cheaply. Claude Sonnet does cross-source synthesis when the question is hard. DeepSeek-V3 covers non-English sources. Perplexity covers real-time web search. A judge pattern fans out hard questions to multiple models and lets Sonnet reconcile the answers.
 
+**Job five: signal detection.** Reading articles tells you what each one says. It doesn't tell you what's happening *across* them. A competitor filing a patent is a data point; that same competitor filing a patent, raising money, and showing up in a regulatory notice in the same week is a move, and no single article reports it as one. So the system reduces articles to named entities, then runs a deterministic rule engine over the entity-to-source graph: it flags when one entity surfaces across several unrelated sources, or across several different kinds of source (patent, funding, regulation) at once. Signals rank against each customer's watchlist, and every signal links back to the verbatim quotes it was built from — so a flagged "move" is always one click from its evidence, never a model's unsupported guess.
+
 ## The build
 
 The platform runs as one FastAPI service on Render. It serves the API and the React dashboard from the same origin so there's no CORS surface and no second host to maintain. APScheduler runs the cron jobs in-process. Supabase Postgres holds everything, with pgvector for embeddings and row-level security for access control.
 
-Two things matter most in the build.
+Three things matter most in the build.
 
 **The agentic scraper.** Traditional scrapers are scripted. They break when a source changes layout. This one isn't. The agent has a small toolset (`apify_actor.run`, `http_get`, `parse_article`, `store`, `mark_source_failed`) and plans its own sequence using Claude's tool-use API. When a source fails, the agent picks a different tool and tries again. When it can't recover, it flags the source for review. No human babysits the scrape.
 
 **The RAG chat.** This is the surface leadership actually uses. The user asks a question in plain English. The system retrieves the top-k relevant interpreted items via pgvector. A `query_company_context` tool pre-pends the company's profile and their tracked competitors to the prompt so the answer is personalised. Claude generates the response with `[1]`, `[2]`, `[3]` citation markers that the frontend renders as clickable pills.
+
+**The signal detector.** Deliberately not an LLM. Every rule is a SQL aggregation or a numeric comparison, so a signal is auditable and reproducible rather than a model's opinion. Five rules run over the entity graph — cross-source convergence, weak signal, anomaly versus a 30-day baseline, first-mover, geographic spread — and each rule suppresses itself with a logged reason when its data precondition isn't met, instead of firing noise. The honest limit: convergence only triggers when the same specific entity recurs across sources, which is uncommon in any single week at this volume, so signal density grows as history accumulates. The mechanism is built and verified end-to-end; the discipline is that it would rather show nothing than show a generic non-signal.
 
 ![Chat panel with citation pills]({{ '/assets/images/projects/tomato-intel-chat-citations.png' | relative_url }})
 *Chat answers compose from retrieved articles. Citations render as clickable pills back to source.*
@@ -74,7 +78,7 @@ Manual hours dropped. The weekly briefing job that used to take most of a week n
 
 Decisions improved. Leadership stopped getting blindsided by regulatory shifts and competitor launches. The chat panel turned weekly questions into Monday-morning lookups. Personalisation against tracked competitors made the signal actually relevant, not just "agriculture news."
 
-The numbers that matter: 218 active sources across 10 categories, 191 healthy, 21 empty, 0 failing. Hundreds of articles interpreted a day. ~470 junk rows purged in cleanup passes. 13 external services wired together. $7 a month to host, $35 every three months for the Apify budget. One person built it.
+The numbers that matter: 228 active sources across 10 categories. Hundreds of articles interpreted a day. ~470 junk rows purged in cleanup passes. 13 external services wired together. A five-rule signal detector over a conformed entity graph. $7 a month to host, $35 every three months for the Apify budget. One person built it.
 
 The deeper outcome is harder to measure. Leadership stopped asking "is anyone watching this?" and started asking "what should we do about it?" That shift is the actual product. The platform underneath is just what it took to get there.
 
