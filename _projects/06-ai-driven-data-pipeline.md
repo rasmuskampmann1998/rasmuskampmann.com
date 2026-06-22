@@ -1,11 +1,11 @@
 ---
 layout: project
-title: End-to-End AI-Driven Data Pipeline
+title: B2B Outbound Data Pipeline
 tagline: "Multi-stage pipeline orchestrating scraping, scoring, and personalised AI generation for B2B outbound. Multi-model routing, validator catches AI-pattern output, around 50% cold connection acceptance."
 tools: [Node.js, Python, Claude API, Apify, Clay, Airtable, PostgreSQL, Pipedrive, HeyReach, GitHub Actions]
 outcome_headline: "Nine-stage pipeline combining public data extraction, ML scoring, multi-model AI orchestration, and real-time routing into operational systems"
 outcome_detail: "Built around methodology, not metrics. Validator logic, deterministic fallbacks, queue-based stage isolation, multi-model routing. Around 50% cold connection acceptance rate."
-order: 6
+order: 7
 cover_image: /assets/images/projects/ai-pipeline-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies
 ---
