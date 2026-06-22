@@ -75,13 +75,15 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 3v18h18"/>
-            <polyline points="7 14 11 9 14 12 20 5"/>
-            <polyline points="20 9 20 5 16 5"/>
+            <rect x="3" y="4" width="18" height="16" rx="1.5"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="3" y1="14" x2="21" y2="14"/>
+            <line x1="9" y1="4" x2="9" y2="20"/>
+            <line x1="15" y1="4" x2="15" y2="20"/>
           </svg>
         </div>
-        <h3>Business controlling</h3>
-        <p>I work across the financial and operational reporting leadership runs on. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production.</p>
+        <h3>Excel</h3>
+        <p>I run the controlling work in Excel where it belongs. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production, modelled in the tool the business already uses.</p>
       </div>
 
       <div class="skill-card">
