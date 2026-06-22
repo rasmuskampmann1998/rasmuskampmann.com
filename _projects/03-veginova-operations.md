@@ -5,7 +5,7 @@ tagline: "Sales pipeline, raw-material inventory, and rolling production forecas
 tools: [Python, PostgreSQL, Supabase, Power BI]
 outcome_headline: "Replaced four disconnected Excel workbooks with a live ops dashboard refreshed daily"
 outcome_detail: "Sales pulse, inventory cover bands, production-vs-delivery mismatch flags, and a rolling 24-month forecast."
-order: 3
+order: 2
 cover_image: /assets/images/projects/veginova-operations.jpg
 coming_soon: true
 ---

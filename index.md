@@ -9,15 +9,15 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Data Analyst | BI Developer | AI Automation Specialist</h1>
+    <h1>Data Analyst | BI Developer | Business Controller</h1>
     <ul class="hero-stack">
-      <li>SQL</li>
       <li>Power BI</li>
+      <li>SQL</li>
       <li>Python</li>
-      <li>AI Workflows</li>
+      <li>AI workflows</li>
     </ul>
     <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you trust.</span></p>
-    <p class="hero-background">Three years across data, AI, and commercial systems at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>.</p>
+    <p class="hero-background">Three years working across reporting, analysis, and commercial systems, in agriculture and beyond.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -34,7 +34,9 @@ title: Home
       <a href="{{ '/contact' | relative_url }}" class="btn-pill btn-pill--primary">Get in touch</a>
     </div>
     <p class="hero-cv-link">
-      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>↓ Download CV</a>
+      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>↓ CV (EN)</a>
+      <span style="margin: 0 10px; color: var(--text-muted);">·</span>
+      <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>↓ CV (DA)</a>
     </p>
   </div>
 </section>
@@ -73,6 +75,18 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <polyline points="7 14 11 9 14 12 20 5"/>
+            <polyline points="20 9 20 5 16 5"/>
+          </svg>
+        </div>
+        <h3>Business controlling</h3>
+        <p>I work across the financial and operational reporting leadership runs on. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"/>
             <polyline points="8 6 2 12 8 18"/>
             <line x1="14" y1="4" x2="10" y2="20"/>
@@ -89,22 +103,8 @@ title: Home
             <circle cx="12" cy="12" r="1.6"/>
           </svg>
         </div>
-        <h3>AI Workflows</h3>
-        <p>I build AI into the pipeline where it changes the work. Lead scoring, qualification, software detection, market intelligence. Models trained on your data, deployed where decisions get made.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="16" rx="1.5"/>
-            <line x1="3" y1="9" x2="21" y2="9"/>
-            <line x1="3" y1="14" x2="21" y2="14"/>
-            <line x1="9" y1="4" x2="9" y2="20"/>
-            <line x1="15" y1="4" x2="15" y2="20"/>
-          </svg>
-        </div>
-        <h3>Excel</h3>
-        <p>I turn messy spreadsheets into clean, validated data the rest of the stack can rely on. The foundation every downstream system depends on.</p>
+        <h3>AI workflows</h3>
+        <p>I use AI where it removes manual reporting work. Automating data prep, enrichment, and the repetitive parts of analysis, built into the pipeline rather than added afterward. A tool in the stack, not the headline.</p>
       </div>
 
       <div class="skill-card">
@@ -115,8 +115,8 @@ title: Home
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
-        <h3>Web Scraping</h3>
-        <p>I build custom scrapers that pull external signals into the same warehouse as internal data. Competitor moves, prices, regulatory feeds, job postings, so your team sees the full picture, not just what's already inside.</p>
+        <h3>Web scraping</h3>
+        <p>I pull external signals into the same warehouse as internal data. Weather and market data, prices, and outside context that planning and forecasts depend on, so decisions account for what's happening outside the business, not just inside it.</p>
       </div>
 
     </div>
@@ -127,7 +127,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Seven production systems built end-to-end. From scattered commercial data to decisions teams trust. Written for non-technical readers.</p>
+    <p class="section-sub">Production systems behind reporting, forecasting, and commercial decisions. Written for non-technical readers.</p>
     <div class="projects-grid-large">
       {% assign sorted_projects = site.projects | sort: "order" %}
       {% for project in sorted_projects %}
@@ -144,9 +144,9 @@ title: Home
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus.</p>
-        <p>I build the data infrastructure, BI reporting, and AI automation that turn scattered commercial data into systems leadership can trust. SQL pipelines, Power BI, web scraping, and AI workflows wired into one system.</p>
-        <p>Through my work at <strong>Veginova Seeds</strong>, <strong>Sira Logic</strong>, and <strong>Digi-Tal Regnskab</strong>, I've built BI models, automated data pipelines, and an ML detection model on data from sales, finance, operations, production, ERP, and GTM systems.</p>
-        <p>Most analysts build dashboards on top of someone else's data. I build the infrastructure underneath, so data and AI talk to each other. Analysis is only as reliable as the infrastructure under it. That's why I build both.</p>
+        <p>I build the business intelligence, reporting, and financial analysis that turn scattered commercial and operational data into decisions leadership can act on.</p>
+        <p>My background is in commercial operations in agriculture, and that domain knowledge is what sets the work apart. I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, operations, and finance actually use them.</p>
+        <p>At <strong>Veginova</strong>, an agricultural seed business, I own the BI and reporting stack across sales, operations, and production, and work across the financial and operational layer: forecasting, reporting, and the controlling leadership makes decisions on.</p>
         <p><strong>How I work:</strong></p>
         <ul>
           <li>Build clean, consistent data structures as the foundation</li>
@@ -156,9 +156,9 @@ title: Home
           <li>Build dashboards around the decisions leadership makes</li>
           <li>Use AI where it makes the work faster or more accurate</li>
         </ul>
-        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude, LLM pipelines, MCP servers, machine learning, and agentic frameworks.</p>
+        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude Code, n8n, and Python ML for automating reporting and analysis.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
-        <p><em>Available for freelance projects and the right full-time role.</em></p>
+        <p><em>Open to data, BI, and business controller roles in Denmark.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
@@ -245,6 +245,6 @@ title: Home
     <span class="eyebrow">Want to work together?</span>
     <h2>See my freelance services</h2>
     <a href="{{ '/services' | relative_url }}" class="btn-primary">View Services →</a>
-    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>CV</a>.</p>
+    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
   </div>
 </section>

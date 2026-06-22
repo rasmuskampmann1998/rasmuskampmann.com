@@ -6,7 +6,7 @@ description: "Auto-dialer funnel analysis: 102,007 calls reduced to one decision
 tools: [Python, SQL, Power BI]
 outcome_headline: "Companies with 6 to 20 employees closed held meetings at 37.5%. Everyone else closed at 3.0%, a 12.7x split on the single decisive segment cut in the dataset"
 outcome_detail: "Only 12.8% of held meetings became wins, so the pipeline leaked after the first conversation, not before it. The deliverable is an additive lead score that gates the dial list."
-order: 1
+order: 6
 cover_image: /assets/images/projects/cold-call-funnel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/01-cold-call-funnel-analysis
 ---

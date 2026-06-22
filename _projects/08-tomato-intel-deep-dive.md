@@ -5,7 +5,7 @@ tagline: "Personalised research, competitor monitoring, and weekly briefings rep
 tools: [FastAPI, Python, Supabase, pgvector, Apify, Claude API, Voyage AI, DeepSeek, Perplexity, APScheduler, React, Render]
 outcome_headline: "Personalised research and competitor monitoring that cut manual hours and feeds leadership with better signal for decisions"
 outcome_detail: "228 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations, and a cross-source signal detector. Live at tomato-intel-api.onrender.com."
-order: 8
+order: 4
 cover_image: /assets/images/projects/tomato-intel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/07-tomato-intel
 ---
