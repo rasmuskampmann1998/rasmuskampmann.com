@@ -16,7 +16,7 @@ title: Home
       <li>Python</li>
       <li>AI workflows</li>
     </ul>
-    <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you trust.</span></p>
+    <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
     <p class="hero-background">Three years working across reporting, analysis, and commercial systems, in agriculture and beyond.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -145,10 +145,10 @@ title: Home
       <div class="about-two-col-text">
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
-        <p>Hi, I'm Rasmus.</p>
+        <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
         <p>I build the business intelligence, reporting, and financial analysis that turn scattered commercial and operational data into decisions leadership can act on.</p>
         <p>My background is in commercial operations in agriculture, and that domain knowledge is what sets the work apart. I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, operations, and finance actually use them.</p>
-        <p>At <strong>Veginova</strong>, an agricultural seed business, I own the BI and reporting stack across sales, operations, and production, and work across the financial and operational layer: forecasting, reporting, and the controlling leadership makes decisions on.</p>
+        <p>At <strong>Veginova</strong>, an agricultural seed business, I own the BI and reporting stack across sales, operations, and production, and work across the financial and operational layer: forecasting, reporting, and the controlling leadership makes decisions on. The work cut reporting time by 10+ hours a week and lifted KPI accuracy by 40%+.</p>
         <p><strong>How I work:</strong></p>
         <ul>
           <li>Build clean, consistent data structures as the foundation</li>
@@ -179,7 +179,7 @@ title: Home
 
       <div class="experience-card">
         <p class="experience-date">Feb 2026 – May 2026 · Full-time · Hybrid</p>
-        <h4 class="experience-role">GTM Engineer &amp; Data Analyst</h4>
+        <h4 class="experience-role">Data Analyst &amp; GTM Engineer</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
         <ul class="experience-bullets">
           <li>Built the LinkedIn outbound infrastructure and analytics layer for a Danish SMB accounting firm.</li>
@@ -195,7 +195,7 @@ title: Home
         <h4 class="experience-role">Data Analyst &amp; RevOps</h4>
         <p class="experience-company">Veginova Seeds</p>
         <ul class="experience-bullets">
-          <li>Owned the BI and reporting stack across sales, operations, and production. Single source of truth for the business.</li>
+          <li>Owned the BI and reporting stack across sales, operations, and production. Built the finance source of truth, now extending to operations and forecasting.</li>
           <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
           <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
           <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
@@ -205,7 +205,7 @@ title: Home
 
       <div class="experience-card">
         <p class="experience-date">Jun 2024 – Aug 2025 · Self-employed · Remote</p>
-        <h4 class="experience-role">Founder · GTM Engineer &amp; RevOps</h4>
+        <h4 class="experience-role">Founder · Data &amp; RevOps</h4>
         <p class="experience-company">Sira Logic</p>
         <ul class="experience-bullets">
           <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
