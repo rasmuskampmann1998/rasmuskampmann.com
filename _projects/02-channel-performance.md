@@ -6,7 +6,7 @@ description: "Ten acquisition channels scored on win rate, sales-rep capacity, s
 tools: [Python, SQL, Power BI]
 outcome_headline: "Five warm channels were 21% of deals but 78% of the revenue that survived the first year"
 outcome_detail: "The largest channel by volume won 8.6% of the time, consumed 91% of all sales-rep dialer hours, and churned half its customers within twelve months. The scorecard handled the split with a rule, not a model, so the revenue-ops lead could re-run it each quarter without a data team in the room."
-order: 5
+order: 6
 cover_image: /assets/images/projects/channel-performance-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/02-channel-performance-analysis
 ---

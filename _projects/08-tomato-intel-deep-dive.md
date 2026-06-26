@@ -5,7 +5,7 @@ tagline: "Personalised research, competitor monitoring, and weekly briefings rep
 tools: [FastAPI, Python, Supabase, pgvector, Apify, Claude API, Voyage AI, DeepSeek, Perplexity, APScheduler, React, Render]
 outcome_headline: "Personalised research and competitor monitoring that cut manual hours and feeds leadership with better signal for decisions"
 outcome_detail: "228 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations, and a cross-source signal detector. Live at tomato-intel-api.onrender.com."
-order: 4
+order: 5
 cover_image: /assets/images/projects/tomato-intel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/07-tomato-intel
 ---
@@ -81,6 +81,10 @@ Decisions improved. Leadership stopped getting blindsided by regulatory shifts a
 The numbers that matter: 228 active sources across 10 categories. Hundreds of articles interpreted a day. ~470 junk rows purged in cleanup passes. 13 external services wired together. A five-rule signal detector over a conformed entity graph. $7 a month to host, $35 every three months for the Apify budget. One person built it.
 
 The deeper outcome is harder to measure. Leadership stopped asking "is anyone watching this?" and started asking "what should we do about it?" That shift is the actual product. The platform underneath is just what it took to get there.
+
+## What the business should do next
+
+The platform works; the next gain isn't technical, it's behavioural. The recommendation is to make the Monday briefing the start of one standing decision meeting, not a document people skim alone. The system already surfaces what's moving — a competitor converging across patent, funding, and regulatory sources in the same week, a price break against the 30-day baseline — but a signal only pays off if someone owns the response. Assign each tracked competitor and each signal category an owner, and give the meeting a single job: for every signal the platform raised that week, decide act, watch, or ignore, and write the decision down. That turns the tool from a feed into a habit, and it produces the one thing the platform can't generate on its own — a record of which signals led to a good call, which the team can use to tune the watchlist over time. The build replaced a week of manual reading; this turns the hours it gave back into decisions.
 
 ## What I'd do differently
 
