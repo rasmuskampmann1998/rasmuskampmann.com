@@ -147,7 +147,7 @@ title: Home
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
         <p>I build the business intelligence, reporting, and financial analysis that turn scattered commercial and operational data into decisions leadership can act on.</p>
-        <p>My background is in commercial operations in agriculture, and that domain knowledge is what sets the work apart. I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, operations, and finance actually use them.</p>
+        <p>My background is in commercial operations, across sales, marketing, finance, and the day-to-day of running a business. That's what sets the work apart: I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, finance, and operations actually use them, because I've worked in those functions, not just reported on them.</p>
         <p>At <strong>Veginova</strong>, an agricultural seed business, I own the BI and reporting stack across sales, operations, and production, and work across the financial and operational layer: forecasting, reporting, and the controlling leadership makes decisions on. The work cut reporting time by 10+ hours a week and lifted KPI accuracy by 40%+.</p>
         <p><strong>How I work:</strong></p>
         <ul>
@@ -158,7 +158,7 @@ title: Home
           <li>Build dashboards around the decisions leadership makes</li>
           <li>Use AI where it makes the work faster or more accurate</li>
         </ul>
-        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across CRMs, ERPs, dialers, and the full commercial tooling layer. On the AI side: Claude Code, n8n, and Python ML for automating reporting and analysis.</p>
+        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.<br />On the AI side: I use AI to automate reporting and analysis, scrape and structure commercial data, and build agentic systems that surface information without manual work, using Claude Code, n8n, Python ML, RAG, and multi-LLM workflows.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
         <p><em>Open to data, BI, and business controller roles in Denmark.</em></p>
       </div>
