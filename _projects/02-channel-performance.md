@@ -1,19 +1,19 @@
 ---
 layout: project
-title: Channel Performance & Churn Analysis
-tagline: "Ten acquisition channels treated as one mix. Scored on win rate, sales-rep capacity, speed, and twelve-month churn. Synthetic data, real method."
-description: "Ten acquisition channels scored on win rate, sales-rep capacity, speed, and twelve-month churn. The blended report hid a 12x split between the warm and outbound clusters. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
-tools: [Python, SQL, Power BI]
-outcome_headline: "Five warm channels were 21% of deals but 78% of the revenue that survived the first year"
+title: Channel & Churn Analysis
+tagline: "Multi-factor scoring and twelve-month survival analysis across ten channels reported as one blended mix. Scored on win rate, capacity, speed, and churn. Synthetic data, real method."
+description: "Multi-factor channel scoring plus twelve-month survival and churn analysis across ten acquisition channels. The blended report hid a 12x split between the warm and outbound clusters. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
+tools: [Power BI, SQL, Python]
+outcome_headline: "Survival analysis revealed five channels at 21% of deals but 78% of the revenue that lasted the first year"
 outcome_detail: "The largest channel by volume won 8.6% of the time, consumed 91% of all sales-rep dialer hours, and churned half its customers within twelve months. The scorecard handled the split with a rule, not a model, so the revenue-ops lead could re-run it each quarter without a data team in the room."
 order: 6
 cover_image: /assets/images/projects/channel-performance-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/02-channel-performance-analysis
 ---
 
-Built in SQL, Python, and Power BI. Validated in DuckDB. Reproducible from a seeded synthetic generator.
+Built in Power BI, SQL, and Python. Validated in DuckDB. Reproducible from a seeded synthetic generator.
 
-A sales team ran ten acquisition channels and reported them as one blended win rate. Below the blend: win rates from 4.5% (re-bookings) to 79% (referral), twelve-month churn from 4% to 50%, time-to-won from a week to a month. The method was to score each channel on four axes the sales team actually controls, win rate, auto-dialer hours consumed, time-to-won, and churn, and let the rule sort them. The deliverable is the scorecard the revenue-operations lead re-runs each quarter to decide where sales-rep capacity goes.
+Ten acquisition channels were being reported as one blended win rate. A multi-factor analysis scored each channel on four axes, win rate, capacity consumed, time-to-won, and churn, and a twelve-month survival analysis tracked how much of each channel's revenue actually lasted. The blend hid the structure: win rates ran from 4.5% to 79%, twelve-month churn from 4% to 50%, time-to-won from a week to a month. The deliverable is a scorecard rule that re-runs each quarter from the same tables.
 
 The figures are synthetic, generated from a seeded model that reproduces the shape of a real CRM engagement whose data cannot be published. The method is the point.
 

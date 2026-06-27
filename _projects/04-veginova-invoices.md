@@ -3,7 +3,7 @@ layout: project
 title: Invoice & Financial Dashboard
 tagline: "One trusted view of profit per product, profit per customer, and the cash owed, built from invoices and reconciled to the accounts within 1.25%. Commercial figures below are illustrative; the reconciliation is real."
 description: "A seed business had two sets of numbers that disagreed: tax accounts that hid the commercial picture, and invoices that held the truth. I made the invoices the source, reconciled them to the official 2024 revenue within 1.25%, and put profit per product, profit per customer, and accounts receivable on one trusted view."
-tools: [Python, PostgreSQL, Supabase, Power BI]
+tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Reconciled three conflicting revenue numbers to one trusted figure, then made profit visible per product and per customer for the first time"
 outcome_detail: "2024 revenue tied to the official accounts within 1.25%, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
 order: 1
