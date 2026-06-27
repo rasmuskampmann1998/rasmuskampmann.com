@@ -47,12 +47,12 @@ The real test of a planning system is whether it matches reality. I validated th
 **It reproduced the planning figures exactly, with zero mismatches.** That's what made it trustworthy: it wasn't a different answer, it was *the planner's* answer, made live and able to update itself. A planner doesn't adopt a system that argues with them. They adopt one that agrees with the sheet they trust, and then keeps up when the sheet can't.
 
 ![Production plan, what to produce per variety, coloured by red/green status]({{ '/assets/images/projects/veginova-operations-production.png' | relative_url }})
-*The production plan: what to produce per variety, with the ones below the safety line in red. The planner's red/green sheet, made live and always current. Illustrative data.*
+*The production plan: total to produce, varieties needing production, and varieties at risk, with the produce quantity per variety. The planner's red/green sheet, made live and always current. The real Power BI dashboard, shown on illustrative data (the figures here are synthetic, not the real engagement's).*
 
 Across the active varieties, the live snapshot showed **500 units to produce, 13 varieties red (below the safety line), and 9 needing production this cycle**. Two of those numbers look like they should match but don't, and the gap is the point: a variety can be red (its ending stock is below the safety line) yet still need zero production, because it has enough to cover its own expected sales. The system shows both, so a warning light is never mistaken for a production order.
 
 ![Need versus plan, computed production need beside the planner's batch target]({{ '/assets/images/projects/veginova-operations-need-vs-plan.png' | relative_url }})
-*Computed need beside the planner's own batch target, variety by variety, so the gap between "just enough" and the planner's lot size is visible, not buried. Illustrative data.*
+*Computed need beside the planner's own batch target, variety by variety, so the gap between "just enough" and the planner's lot size is visible, not buried. The real Power BI dashboard, shown on illustrative data.*
 
 ## The business impact
 

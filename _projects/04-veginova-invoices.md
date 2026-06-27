@@ -52,7 +52,7 @@ With trustworthy numbers, the commercial picture finally became visible:
 - **Accounts receivable.** Around 1.2M DKK was outstanding, of which roughly a quarter had aged past 90 days and was quietly at risk. <!-- PLACEHOLDER: illustrative, replace with real AR total and ageing split -->
 
 ![Finance overview, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
-*Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. Illustrative data.*
+*Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. The real Power BI dashboard, shown on illustrative data.*
 
 ## The business impact
 
@@ -62,7 +62,7 @@ With trustworthy numbers, the commercial picture finally became visible:
 - **Receivables made visible** surfaced overdue invoices that had been sitting unchased, cash the business was owed but couldn't see. <!-- PLACEHOLDER: illustrative, replace with real recovered/flagged AR figure if quoting one -->
 
 ![Receivables ageing, what's owed, how old, and what's at risk]({{ '/assets/images/projects/veginova-finance-receivables.png' | relative_url }})
-*Accounts receivable by age. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, how old it is, and what's slipping past 90 days. Illustrative data.*
+*Accounts receivable by customer and invoice. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, the collection rate, and days outstanding. The real Power BI dashboard, shown on illustrative data.*
 
 ## What the business does now
 
