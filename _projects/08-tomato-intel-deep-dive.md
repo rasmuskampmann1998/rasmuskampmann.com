@@ -12,7 +12,7 @@ github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/t
 
 ## Outcome first
 
-I built an agentic external intelligence platform for a B2B agriculture company. It does personalised research, competitor monitoring, and weekly briefings that used to take a person most of a week. Now the system does it in a few hours of compute, surfaces more than the manual version did, and runs for $7 a month.
+I built an agentic external intelligence platform for a B2B agriculture company. It does personalised research, competitor monitoring, and weekly briefings that used to take a person most of a week. Now the system does it in a few hours of compute and surfaces more than the manual version did.
 
 The platform is live at [tomato-intel-api.onrender.com](https://tomato-intel-api.onrender.com). Leadership opens it on Monday morning, scans the weekly briefing, asks the chat panel a question, and acts on what they see. The job that used to require a full-time analyst is now a tool that the analyst uses.
 
@@ -34,7 +34,7 @@ This client was no exception. The team was making weekly commercial decisions on
 - A competitor would launch a new product in a region. The team would hear about it months later from a sales rep who lost a deal.
 - A price movement would break a recent trend. By the time it hit the briefing, the window to react was closed.
 
-The root cause was straightforward. Manual monitoring at this scope is impossible. One person reading 200+ sources in three languages misses things. Two people miss different things. Hiring three more analysts doesn't fix the structural problem.
+This is a structural problem, not a staffing one. One person reading 200+ sources in three languages misses things, two people miss different things, and hiring three more analysts doesn't change that.
 
 ## The approach
 
@@ -48,7 +48,7 @@ I framed the build as five jobs the system has to do, each replacing a different
 
 **Job four: routing.** Use the right model for the right job. Claude Haiku does bulk classification cheaply. Claude Sonnet does cross-source synthesis when the question is hard. DeepSeek-V3 covers non-English sources. Perplexity covers real-time web search. A judge pattern fans out hard questions to multiple models and lets Sonnet reconcile the answers.
 
-**Job five: signal detection.** Reading articles tells you what each one says. It doesn't tell you what's happening *across* them. A competitor filing a patent is a data point; that same competitor filing a patent, raising money, and showing up in a regulatory notice in the same week is a move, and no single article reports it as one. So the system reduces articles to named entities, then runs a deterministic rule engine over the entity-to-source graph: it flags when one entity surfaces across several unrelated sources, or across several different kinds of source (patent, funding, regulation) at once. Signals rank against each customer's watchlist, and every signal links back to the verbatim quotes it was built from — so a flagged "move" is always one click from its evidence, never a model's unsupported guess.
+**Job five: signal detection.** Reading articles tells you what each one says. It doesn't tell you what's happening *across* them. A competitor filing a patent is a data point; that same competitor filing a patent, raising money, and showing up in a regulatory notice in the same week is a move, and no single article reports it as one. So the system reduces articles to named entities, then runs a deterministic rule engine over the entity-to-source graph: it flags when one entity surfaces across several unrelated sources, or across several different kinds of source (patent, funding, regulation) at once. Signals rank against each customer's watchlist, and every signal links back to the verbatim quotes it was built from, so a flagged "move" is always one click from its evidence, never a model's unsupported guess.
 
 ## The build
 
@@ -60,7 +60,7 @@ Three things matter most in the build.
 
 **The RAG chat.** This is the surface leadership actually uses. The user asks a question in plain English. The system retrieves the top-k relevant interpreted items via pgvector. A `query_company_context` tool pre-pends the company's profile and their tracked competitors to the prompt so the answer is personalised. Claude generates the response with `[1]`, `[2]`, `[3]` citation markers that the frontend renders as clickable pills.
 
-**The signal detector.** Deliberately not an LLM. Every rule is a SQL aggregation or a numeric comparison, so a signal is auditable and reproducible rather than a model's opinion. Five rules run over the entity graph — cross-source convergence, weak signal, anomaly versus a 30-day baseline, first-mover, geographic spread — and each rule suppresses itself with a logged reason when its data precondition isn't met, instead of firing noise. The honest limit: convergence only triggers when the same specific entity recurs across sources, which is uncommon in any single week at this volume, so signal density grows as history accumulates. The mechanism is built and verified end-to-end; the discipline is that it would rather show nothing than show a generic non-signal.
+**The signal detector.** Deliberately not an LLM. Every rule is a SQL aggregation or a numeric comparison, so a signal is auditable and reproducible rather than a model's opinion. Five rules run over the entity graph (cross-source convergence, weak signal, anomaly versus a 30-day baseline, first-mover, geographic spread), and each rule suppresses itself with a logged reason when its data precondition isn't met, instead of firing noise. The honest limit: convergence only triggers when the same specific entity recurs across sources, which is uncommon in any single week at this volume, so signal density grows as history accumulates. The mechanism is built and verified end-to-end; the discipline is that it would rather show nothing than show a generic non-signal.
 
 ![Chat panel with citation pills]({{ '/assets/images/projects/tomato-intel-chat-citations.png' | relative_url }})
 *Chat answers compose from retrieved articles. Citations render as clickable pills back to source.*
@@ -84,7 +84,7 @@ The deeper outcome is harder to measure. Leadership stopped asking "is anyone wa
 
 ## What the business should do next
 
-The platform works; the next gain isn't technical, it's behavioural. The recommendation is to make the Monday briefing the start of one standing decision meeting, not a document people skim alone. The system already surfaces what's moving — a competitor converging across patent, funding, and regulatory sources in the same week, a price break against the 30-day baseline — but a signal only pays off if someone owns the response. Assign each tracked competitor and each signal category an owner, and give the meeting a single job: for every signal the platform raised that week, decide act, watch, or ignore, and write the decision down. That turns the tool from a feed into a habit, and it produces the one thing the platform can't generate on its own — a record of which signals led to a good call, which the team can use to tune the watchlist over time. The build replaced a week of manual reading; this turns the hours it gave back into decisions.
+The platform works; the next gain isn't technical, it's behavioural. The recommendation is to make the Monday briefing the start of one standing decision meeting, not a document people skim alone. The system already surfaces what's moving, a competitor converging across patent, funding, and regulatory sources in the same week, or a price break against the 30-day baseline. But a signal only pays off if someone owns the response. Assign each tracked competitor and each signal category an owner, and give the meeting a single job: for every signal the platform raised that week, decide act, watch, or ignore, and write the decision down. That turns the tool from a feed into a habit, and it produces the one thing the platform can't generate on its own, a record of which signals led to a good call, which the team can use to tune the watchlist over time. The build replaced a week of manual reading; this turns the hours it gave back into decisions.
 
 ## What I'd do differently
 

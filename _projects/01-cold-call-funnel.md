@@ -102,7 +102,7 @@ The cycle is short: median 11 days, 90th percentile 24. Deals that close do not 
 
 The findings combine into one additive lead score that gates the dial list. Each company earns points on the two fields that carried signal, employee band and industry, and the total decides dial or skip.
 
-- Employee band 6-20: the dominant positive weight. This is the 37.5%-vs-3.0% segment split.
+- Employee band 6-20: the dominant positive weight. This is the segment split the second cut found.
 - Excluded industries (Consulting, Transport, Marketing): a hard negative that zeros the score regardless of company size.
 - Everything else: small or zero weight, because no other field in the dataset showed signal.
 

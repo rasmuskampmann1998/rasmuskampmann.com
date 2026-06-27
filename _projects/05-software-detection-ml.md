@@ -1,10 +1,10 @@
 ---
 layout: project
 title: Software Detection ML Model
-tagline: "A binary classifier that predicts accounting-software adoption from public Danish company-registry data alone. ~75% accuracy, deployed as a +15 score boost on the cold-outbound dialler queue."
+tagline: "Reorders the cold-outbound dialler queue around the companies most likely to fit, before reps make a single call. Predicts accounting-software adoption from public Danish company-registry data alone, no paid data vendor."
 tools: [Python, scikit-learn, XGBoost, SHAP, pandas, PostgreSQL, GitHub Actions]
 outcome_headline: "Reordered the cold-outbound dialler queue around companies the model thinks are most likely to fit, before reps make a single call"
-outcome_detail: "4,658 training rows, holdout AUC 0.7475, permutation p < 0.0001. Deployed as a score boost in the lead-scoring pipeline. Retrains monthly. Reproducible on a 5,000-row synthetic dataset."
+outcome_detail: "Deployed as a score boost in the lead-scoring pipeline, reordering the queue automatically every morning and retraining itself monthly. Built on 4,658 training rows of public registry data. Reproducible on a 5,000-row synthetic dataset."
 order: 3
 cover_image: /assets/images/projects/software-detection-ml-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/03-software-detection-ml
@@ -83,13 +83,13 @@ The top features are unsurprising on their own: employee band, company form, VAT
 
 The model sits inside the lead-scoring pipeline. Companies above threshold get a +15 score boost before they reach the dialler queue. The dialler runs on autopilot, so the queue order is what gets worked. Every morning, the highest-probability prospects move to the top automatically. Retraining is monthly, triggered by a GitHub Actions workflow that fires when new labelled outcomes arrive in the CRM.
 
-No manual prospecting was added to the workflow. The dialler started spending its first hours on the segment ICP analysis flagged as the highest-converting. The reorder compounds over the quarter.
+No manual prospecting was added to the workflow. The dialler started spending its first hours on the segment ICP analysis flagged as the highest-converting, with no paid data vendor and no extra step in the reps' day. One person built it.
 
-The numbers that matter: 4,658 training rows, 14 features, holdout AUC 0.7475, p < 0.0001 against the permutation null, monthly retraining loop. One person built it.
+One honest gap: I can't put a conversion-lift number on the deployed model. The historical per-dial conversion data needed to measure whether the reorder actually moved revenue wasn't available, so the impact is the reorder itself, not a quantified lift. Measuring that lift is the first thing the business should do next, and it's cheap to do (see below). Claiming a revenue number I didn't measure would be the wrong call here.
 
 ## What the business should do next
 
-The model earns its keep by reordering the queue, but the team isn't measuring what that reorder is worth yet. The recommendation is one quarter of disciplined logging: tag every dial as flagged or unflagged, record the outcome, and at the end of the quarter compare the conversion rate of the two groups. That single number — the lift on a flagged dial versus an unflagged one — tells leadership whether the model is moving revenue or just moving rows. If the lift is real (and the holdout says it should be), the next move is to push the score boost higher so the flagged segment dominates the first calling hours of every day, when reps are sharpest. If it isn't, the logging will say so cheaply, before anyone has bet the outbound strategy on it. Either way, the team replaces a model assumption with a measured business fact for the cost of one tracking column.
+The model earns its keep by reordering the queue, but the team isn't measuring what that reorder is worth yet. The recommendation is one quarter of disciplined logging: tag every dial as flagged or unflagged, record the outcome, and at the end of the quarter compare the conversion rate of the two groups. That single number, the lift on a flagged dial versus an unflagged one, tells leadership whether the model is moving revenue or just moving rows. If the lift is real (and the holdout says it should be), the next move is to push the score boost higher so the flagged segment dominates the first calling hours of every day, when reps are sharpest. If it isn't, the logging will say so cheaply, before anyone has bet the outbound strategy on it. Either way, the team replaces a model assumption with a measured business fact for the cost of one tracking column.
 
 ## What I'd do differently
 
