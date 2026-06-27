@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>BI Developer | Financial Analyst | Operations</h1>
+    <h1>Data Analyst | BI Developer | Business Controller</h1>
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
@@ -160,7 +160,7 @@ title: Home
         </ul>
         <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.<br />On the AI side: I use AI to automate reporting and analysis, scrape and structure commercial data, and build agentic systems that surface information without manual work, using Claude Code, n8n, Python ML, RAG, and multi-LLM workflows.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
-        <p><em>Open to BI, financial analyst, and operations roles in Denmark.</em></p>
+        <p><em>Open to data, BI, and business controller roles in Denmark.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
@@ -179,7 +179,7 @@ title: Home
 
       <div class="experience-card">
         <p class="experience-date">Feb 2026 – May 2026 · Full-time · Hybrid</p>
-        <h4 class="experience-role">Data Analyst &amp; GTM Engineer</h4>
+        <h4 class="experience-role">Data Analyst &amp; Commercial Analytics</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
         <ul class="experience-bullets">
           <li>Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source through to operationalised scores feeding sales.</li>
