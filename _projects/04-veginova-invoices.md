@@ -7,7 +7,7 @@ tools: [Python, PostgreSQL, Supabase, Power BI]
 outcome_headline: "Reconciled three conflicting revenue numbers to one trusted figure, then made profit visible per product and per customer for the first time"
 outcome_detail: "2024 revenue tied to the official accounts within 1.25%, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
 order: 1
-cover_image: /assets/images/projects/veginova-invoices.jpg
+cover_image: /assets/images/projects/veginova-invoices-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/11-veginova-invoices
 coming_soon: false
 ---

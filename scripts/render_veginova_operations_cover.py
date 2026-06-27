@@ -1,9 +1,9 @@
 """
-Render 1600x900 cover for the Agentic External Intelligence Platform case study.
+Render 1600x900 cover for the Operations & Production Planning case study.
 
-Conceptual four-job flow showing how 228 sources become a personalised briefing:
-Scraping -> Interpretation -> Retrieval -> Routing. Dark theme matches the other
-case-study covers for visual coherence across the portfolio grid.
+Four-step flow showing how the planning system works: Inputs -> Engine -> Validate -> Plan.
+Dark theme matches the other case-study covers for visual coherence across the portfolio grid.
+A planning system with scenario testing, not a statistical forecast.
 """
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from matplotlib import font_manager
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE_ROOT = os.path.abspath(os.path.join(HERE, ".."))
-OUT = os.path.join(SITE_ROOT, "assets", "images", "projects", "tomato-intel-cover.png")
+OUT = os.path.join(SITE_ROOT, "assets", "images", "projects", "veginova-operations-cover.png")
 
 BG = "#FFFFFF"
 CARD = "#0A0A0A"
@@ -40,46 +40,46 @@ def pick_fonts() -> tuple[str, str]:
 BOXES = [
     {
         "num": "01",
-        "title": "Scraping",
-        "sub": "7-layer fallback chain",
+        "title": "Inputs",
+        "sub": "Refreshed, not retyped",
         "detail": [
-            "228 sources  ·  10 categories",
-            "RSS · HTML · Crawl4AI",
-            "Playwright · Jina",
-            "Firecrawl · Apify",
+            "Expected sales",
+            "Stock on hand",
+            "Incoming production",
+            "From the warehouse sheet",
         ],
     },
     {
         "num": "02",
-        "title": "Interpretation",
-        "sub": "Claude Haiku  ·  90-min cron",
+        "title": "Engine",
+        "sub": "One SQL view, not DAX",
         "detail": [
-            "Detect language",
-            "Translate to English",
-            "Summarise · score · tag",
-            "Drop boilerplate (score 1)",
+            "produce-to-safety,",
+            "floored at zero",
+            "ending = stock + in - sales",
+            "red / green per variety",
         ],
     },
     {
         "num": "03",
-        "title": "Retrieval",
-        "sub": "pgvector + Voyage AI",
+        "title": "Validate",
+        "sub": "Against the planner's sheet",
         "detail": [
-            "Top-k cosine similarity",
-            "Personalised by",
-            "tracked competitors",
-            "Citations as [1] [2] [3]",
+            "Reproduces their numbers",
+            "0 mismatches",
+            "Red can still need 0",
+            "(it covers its own sales)",
         ],
     },
     {
         "num": "04",
-        "title": "Routing",
-        "sub": "Multi-LLM judge pattern",
+        "title": "Plan",
+        "sub": "Live and forward-looking",
         "detail": [
-            "Haiku  ·  bulk classification",
-            "Sonnet  ·  hard synthesis",
-            "DeepSeek  ·  non-English",
-            "Perplexity  ·  live web",
+            "What to produce, when",
+            "1-year lead time, seen early",
+            "What-if scenarios",
+            "Need vs the batch plan",
         ],
     },
 ]
@@ -96,9 +96,9 @@ def main() -> None:
     ax.set_facecolor(BG)
     ax.axis("off")
 
-    ax.text(60, H - 70, "Agentic External Intelligence Platform",
+    ax.text(60, H - 70, "Operations & Production Planning",
             fontsize=30, color=ON_BG_DARK, fontname=title_font, fontweight="bold")
-    ax.text(60, H - 110, "From 228 sources to a personalised briefing",
+    ax.text(60, H - 110, "What to produce, how much, and when  ·  validated against the planner's own numbers",
             fontsize=15, color=ON_BG_SUBTLE, fontname=mono_font)
 
     n = len(BOXES)
@@ -145,13 +145,13 @@ def main() -> None:
 
     callout_y = box_y - 70
     ax.plot([60, 90], [callout_y + 8, callout_y + 8], color=ACCENT_DARK, linewidth=3, solid_capstyle="round")
-    ax.text(105, callout_y, "Intelligence layer",
+    ax.text(105, callout_y, "Planning system with scenario testing",
             fontsize=14, color=ACCENT_DARK, fontname=mono_font, fontweight="bold", va="center")
     ax.text(105, callout_y - 28,
-            "Agentic scraper plans its own tool sequence  ·  Multi-LLM router picks the right model per query",
+            "The logic lives in SQL  ·  Power BI renders only  ·  not a statistical forecast",
             fontsize=13, color=ON_BG_SUBTLE, fontname=mono_font, va="center")
 
-    ax.text(W - 60, 40, "Live  ·  tomato-intel-api.onrender.com",
+    ax.text(W - 60, 40, "SQL  ·  Python  ·  Supabase  ·  Power BI",
             fontsize=12, color=ON_BG_SUBTLE, fontname=mono_font, ha="right", va="center")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
