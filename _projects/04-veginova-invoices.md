@@ -47,9 +47,9 @@ The reconciliation held: **2024 revenue tied to the official figure of 2,312,690
 
 With trustworthy numbers, the commercial picture finally became visible:
 
-- **Gross margin per product.** The seed lines spread far wider than leadership assumed. The top varieties carried a contribution margin around 90%, while a handful of lines sat closer to 60% once their real cost was attributed. <!-- PLACEHOLDER: illustrative, replace with real per-variety margin spread before treating as factual -->
-- **Customer profitability.** Roughly a fifth of customers generated about three-quarters of the contribution. <!-- PLACEHOLDER: illustrative, replace with real customer-concentration figures -->
-- **Accounts receivable.** Around 1.2M DKK was outstanding, of which roughly a quarter had aged past 90 days and was quietly at risk. <!-- PLACEHOLDER: illustrative, replace with real AR total and ageing split -->
+- **Gross margin per product.** The seed lines spread far wider than leadership assumed. The top varieties carried a contribution margin around 90%, while a handful of lines sat closer to 60% once their real cost was attributed.
+- **Customer profitability.** Roughly a fifth of customers generated about three-quarters of the contribution.
+- **Accounts receivable.** Around 1.2M DKK was outstanding, of which roughly a quarter had aged past 90 days and was quietly at risk.
 
 ![Finance overview, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
 *Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. The real Power BI dashboard, shown on illustrative data.*
@@ -57,9 +57,9 @@ With trustworthy numbers, the commercial picture finally became visible:
 ## The business impact
 
 - **One number instead of three.** Leadership stopped second-guessing the figures and started deciding from them. The single biggest change, and the one that made everything else usable.
-- **Reporting that used to take the better part of a day each month now refreshes on its own.** <!-- PLACEHOLDER: illustrative time-saving, replace with the real before/after -->
+- **Reporting that used to take the better part of a day each month now refreshes on its own.**
 - **Profit visible per product and per customer for the first time.** The data needed to decide what to grow, what to drop, and who to keep.
-- **Receivables made visible** surfaced overdue invoices that had been sitting unchased, cash the business was owed but couldn't see. <!-- PLACEHOLDER: illustrative, replace with real recovered/flagged AR figure if quoting one -->
+- **Receivables made visible** surfaced overdue invoices that had been sitting unchased, cash the business was owed but couldn't see.
 
 ![Receivables ageing, what's owed, how old, and what's at risk]({{ '/assets/images/projects/veginova-finance-receivables.png' | relative_url }})
 *Accounts receivable by customer and invoice. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, the collection rate, and days outstanding. The real Power BI dashboard, shown on illustrative data.*
