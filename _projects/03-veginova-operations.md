@@ -9,7 +9,7 @@ outcome_detail: "The engine matches the hand-built spreadsheet on every variety 
 order: 2
 cover_image: /assets/images/projects/veginova-operations.jpg
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/10-veginova-operations
-coming_soon: true
+coming_soon: false
 ---
 
 Built for Veginova, a seed business with a hard constraint: seed takes about a year to produce. The validation in this piece (that the system reproduces the planner's own numbers, zero mismatches) is real. Where I quote how many varieties were at risk or how much to produce, those figures are real live-snapshot numbers from the build. The system, and the validation that proves it works, are the real ones.
@@ -46,15 +46,13 @@ The real test of a planning system is whether it matches reality. I validated th
 
 **It reproduced the planning figures exactly, with zero mismatches.** That's what made it trustworthy: it wasn't a different answer, it was *the planner's* answer, made live and able to update itself. A planner doesn't adopt a system that argues with them. They adopt one that agrees with the sheet they trust, and then keeps up when the sheet can't.
 
-<!-- SCREENSHOT NEEDED: Operations, Production page (red/green status per variety, produce quantities) -->
-![Operations dashboard, production plan with red/green status per variety]({{ '/assets/images/projects/veginova-operations-production.png' | relative_url }})
-*The production plan: each variety flagged red or green against its safety line, with the quantity to produce. The planner's red/green sheet, made live and always current.*
+![Production plan, what to produce per variety, coloured by red/green status]({{ '/assets/images/projects/veginova-operations-production.png' | relative_url }})
+*The production plan: what to produce per variety, with the ones below the safety line in red. The planner's red/green sheet, made live and always current. Illustrative data.*
 
 Across the active varieties, the live snapshot showed **500 units to produce, 13 varieties red (below the safety line), and 9 needing production this cycle**. Two of those numbers look like they should match but don't, and the gap is the point: a variety can be red (its ending stock is below the safety line) yet still need zero production, because it has enough to cover its own expected sales. The system shows both, so a warning light is never mistaken for a production order.
 
-<!-- SCREENSHOT NEEDED: Operations, Need vs Plan comparison (computed need beside the planner's target) -->
-![Need versus plan, computed production need beside the planner's target]({{ '/assets/images/projects/veginova-operations-need-vs-plan.png' | relative_url }})
-*Computed need beside the planner's own production target, variety by variety, so the gap between "just enough" and the planner's batch size is visible, not buried.*
+![Need versus plan, computed production need beside the planner's batch target]({{ '/assets/images/projects/veginova-operations-need-vs-plan.png' | relative_url }})
+*Computed need beside the planner's own batch target, variety by variety, so the gap between "just enough" and the planner's lot size is visible, not buried. Illustrative data.*
 
 ## The business impact
 
@@ -65,7 +63,7 @@ Across the active varieties, the live snapshot showed **500 units to produce, 13
 
 ## What the business does now
 
-The planner runs production off a system that updates itself and shows what's at risk before it's too late to act. They can commit production decisions with confidence, see months ahead which varieties will run short, and test the impact of a big sale or a capacity problem before it happens, instead of finding out a year later. <!-- [CONFIRM]: confirm/replace with the real recommendation and any specific varieties/figures before publishing -->
+The planner runs production off a system that updates itself and shows what's at risk before it's too late to act. They can commit production decisions with confidence, see months ahead which varieties will run short, and test the impact of a big sale or a capacity problem before it happens, instead of finding out a year later.
 
 **An honest note on what this is.** This is a planning system with scenario testing, validated against ground truth. It is **not** statistical forecasting, and that distinction matters. The business runs on named deals, not predictable trends, so the planner's judgment is the input; the system makes that judgment live, fast, and forward-looking. Claiming a forecast the data can't support would be the weaker move. Reproducing the planner's own numbers on every variety, and turning them into something that updates itself and looks a year ahead, is the stronger one, and it's the true one.
 

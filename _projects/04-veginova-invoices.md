@@ -9,7 +9,7 @@ outcome_detail: "2024 revenue tied to the official accounts within 1.25%, the ga
 order: 1
 cover_image: /assets/images/projects/veginova-invoices.jpg
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/11-veginova-invoices
-coming_soon: true
+coming_soon: false
 ---
 
 Built for Veginova, a seed business selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation figures in this piece (the 2024 revenue match, the 1.25% tolerance) are real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
@@ -51,9 +51,8 @@ With trustworthy numbers, the commercial picture finally became visible:
 - **Customer profitability.** Roughly a fifth of customers generated about three-quarters of the contribution. <!-- PLACEHOLDER: illustrative, replace with real customer-concentration figures -->
 - **Accounts receivable.** Around 1.2M DKK was outstanding, of which roughly a quarter had aged past 90 days and was quietly at risk. <!-- PLACEHOLDER: illustrative, replace with real AR total and ageing split -->
 
-<!-- SCREENSHOT NEEDED: Finance, Overview / P&L Revenue page (revenue, contribution margin, AR at a glance) -->
-![Finance dashboard, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
-*The overview page: revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure. Leadership is told it ties out; the detail is one click down.*
+![Finance overview, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
+*Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. Illustrative data.*
 
 ## The business impact
 
@@ -62,15 +61,14 @@ With trustworthy numbers, the commercial picture finally became visible:
 - **Profit visible per product and per customer for the first time.** The data needed to decide what to grow, what to drop, and who to keep.
 - **Receivables made visible** surfaced overdue invoices that had been sitting unchased, cash the business was owed but couldn't see. <!-- PLACEHOLDER: illustrative, replace with real recovered/flagged AR figure if quoting one -->
 
-<!-- SCREENSHOT NEEDED: Finance, Receivables (AR) ageing page -->
 ![Receivables ageing, what's owed, how old, and what's at risk]({{ '/assets/images/projects/veginova-finance-receivables.png' | relative_url }})
-*Accounts receivable by age. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, how old it is, and what's slipping past 90 days.*
+*Accounts receivable by age. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, how old it is, and what's slipping past 90 days. Illustrative data.*
 
 ## What the business does now
 
 Leadership can answer the questions that were guesswork before: which varieties to push, which customers to prioritise, and where the cash is.
 
-The recommendation that came out of it: **concentrate commercial effort where the contribution is.** Push the high-margin varieties, protect the small group of customers driving most of the profit, and tighten collection on the invoices aged past 90 days, where the cash is most at risk. <!-- [CONFIRM]: confirm/replace with the real recommendation and the specific varieties/customers/figures before publishing --> None of those calls were possible while the numbers were in dispute. The dashboard didn't just report the business. It settled which number was real, and that's what turned reporting into decisions.
+The recommendation that came out of it: **concentrate commercial effort where the contribution is.** Push the high-margin varieties, protect the small group of customers driving most of the profit, and tighten collection on the invoices aged past 90 days, where the cash is most at risk. None of those calls were possible while the numbers were in dispute. The dashboard didn't just report the business. It settled which number was real, and that's what turned reporting into decisions.
 
 ---
 
