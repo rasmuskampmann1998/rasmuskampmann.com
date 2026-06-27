@@ -1,19 +1,19 @@
 ---
 layout: project
-title: Cold-Call Funnel Analysis
-tagline: "102,007 dials, 362 wins. One employee band closed at 37.5%, everyone else at 3.0%. The leak was after the first conversation, not before it. Synthetic data, real method."
-description: "Auto-dialer funnel analysis: 102,007 calls reduced to one decision rule. The leak was after the first conversation, not before it. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
-tools: [Python, SQL, Power BI]
-outcome_headline: "Companies with 6 to 20 employees closed held meetings at 37.5%. Everyone else closed at 3.0%, a 12.7x split on the single decisive segment cut in the dataset"
-outcome_detail: "Only 12.8% of held meetings became wins, so the pipeline leaked after the first conversation, not before it. The deliverable is an additive lead score that gates the dial list."
+title: Funnel & Segment Analysis
+tagline: "Funnel decomposition and firmographic segment-lift analysis across 102,007 records. One employee band converted at 37.5%, everyone else at 3.0%. The drop was after the first conversation, not before it. Synthetic data, real method."
+description: "Funnel decomposition and segment-lift analysis: 102,007 records reduced to one decision rule. The conversion drop was after the first conversation, not before it. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
+tools: [Power BI, SQL, Python]
+outcome_headline: "Segment-lift analysis isolated one firmographic band converting at 37.5% against 3.0% everywhere else, a 12.7x split on the single decisive cut in the dataset"
+outcome_detail: "Only 12.8% of held meetings converted, so the funnel dropped after the first conversation, not before it. The deliverable is an additive scoring rule built from the segment lift."
 order: 4
 cover_image: /assets/images/projects/cold-call-funnel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/01-cold-call-funnel-analysis
 ---
 
-Built in SQL, Python, and Power BI. Validated in DuckDB. Reproducible from a seeded synthetic generator.
+Built in Power BI, SQL, and Python. Validated in DuckDB. Reproducible from a seeded synthetic generator.
 
-An outbound team ran 102,007 dials through an auto-dialer and judged the operation on call volume. The volume was fine. Below the volume number, only 12.8% of held meetings became wins, and one firmographic band, companies with 6 to 20 employees, closed at 37.5% while everyone else closed at 3.0%. The sales lead was buying more top-of-funnel volume to fix a problem that was not at the top of the funnel. The analysis had to surface where conversion broke down, who converted at the segment level, and what rule should decide the dial list.
+A funnel decomposition across 102,007 records located where conversion actually broke down, then a firmographic segment-lift analysis identified who converted and who did not. The headline volume looked fine; below it, only 12.8% of held meetings converted, and one band, companies with 6 to 20 employees, converted at 37.5% while everyone else sat at 3.0%. The question was where conversion broke down, which segments converted once they reached a real conversation, and what scoring rule that lift implied.
 
 The figures are synthetic, generated from a seeded model that reproduces the shape of a real CRM and auto-dialer engagement whose data cannot be published. The method is the point.
 

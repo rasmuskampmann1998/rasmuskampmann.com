@@ -3,7 +3,7 @@ layout: project
 title: Operations & Production Planning
 tagline: "A live system that tells a seed business what to produce, how much, and when. It reproduces the planner's own numbers exactly, validated against their spreadsheet. A planning system with scenario testing, not a forecast."
 description: "Production planning ran on a spreadsheet that went stale the moment a sale landed, dangerous when seed takes a year to grow. I rebuilt the planning logic as a live system that reproduces the planner's existing numbers exactly, flags shortages before the year-long lead time makes them unfixable, and tests scenarios before seed is committed."
-tools: [Python, PostgreSQL, Supabase, Power BI]
+tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Reproduced the planner's existing production numbers exactly, zero mismatches against their spreadsheet, then made the plan live, forward-looking, and testable"
 outcome_detail: "The engine matches the hand-built spreadsheet on every variety it was checked against. It computes what to produce from live sales, stock, and incoming orders, flags shortages early enough to act on a one-year production lead time, and lets the planner pressure-test a big sale or a capacity drop before committing seed."
 order: 2

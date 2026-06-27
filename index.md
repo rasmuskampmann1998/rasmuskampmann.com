@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Data Analyst | BI Developer | Business Controller</h1>
+    <h1>BI Developer | Financial Analyst | Operations</h1>
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
@@ -17,7 +17,7 @@ title: Home
       <li>AI workflows</li>
     </ul>
     <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
-    <p class="hero-background">Three years working across reporting, analysis, and commercial systems, in agriculture and beyond.</p>
+    <p class="hero-background">Three years building Power BI reporting, forecasting, and the operational controlling behind commercial decisions, in agriculture and beyond.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -51,18 +51,6 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <ellipse cx="12" cy="5" rx="9" ry="3"/>
-            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>
-          </svg>
-        </div>
-        <h3>SQL</h3>
-        <p>I build the data layer that everything else runs on. Joins, transformations, and pipelines that turn raw data into analysis-ready tables your team can trust.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="13" width="4" height="7" rx="0.5"/>
             <rect x="10" y="7" width="4" height="13" rx="0.5"/>
             <rect x="17" y="3" width="4" height="17" rx="0.5"/>
@@ -70,6 +58,18 @@ title: Home
         </div>
         <h3>Power BI</h3>
         <p>I build dashboards leadership actually uses. Built around the decisions teams need to make, so reporting drives action instead of just showing numbers.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>
+          </svg>
+        </div>
+        <h3>SQL</h3>
+        <p>I build the data layer that everything else runs on. Joins, transformations, and pipelines that turn raw data into analysis-ready tables your team can trust.</p>
       </div>
 
       <div class="skill-card">
@@ -160,7 +160,7 @@ title: Home
         </ul>
         <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.<br />On the AI side: I use AI to automate reporting and analysis, scrape and structure commercial data, and build agentic systems that surface information without manual work, using Claude Code, n8n, Python ML, RAG, and multi-LLM workflows.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
-        <p><em>Open to data, BI, and business controller roles in Denmark.</em></p>
+        <p><em>Open to BI, financial analyst, and operations roles in Denmark.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
@@ -182,10 +182,11 @@ title: Home
         <h4 class="experience-role">Data Analyst &amp; GTM Engineer</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
         <ul class="experience-bullets">
-          <li>Built the LinkedIn outbound infrastructure and analytics layer for a Danish SMB accounting firm.</li>
-          <li>Built end-to-end outbound pipeline: scraping, enrichment, scoring, sequence execution. Cold outreach hit around 50% acceptance rate.</li>
-          <li>Built predictive lead-scoring and accounting-software detection ML models (~75% accuracy across Danish SMBs).</li>
-          <li>Full-channel revenue analysis across Meta, Google, LinkedIn, cold calling, and inbound.</li>
+          <li>Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source through to operationalised scores feeding sales.</li>
+          <li>Built ICP and predictive lead-scoring models (strong holdout) plus an ML classifier identifying a prospect's accounting software (~75% accuracy across the Danish SMB market) from Playwright scraping and enrichment waterfalls.</li>
+          <li>Full-channel revenue analysis across Meta, Google, LinkedIn outbound, cold calling, and inbound: close rate, conversion, meeting time, and pipeline velocity by channel and segment. Identified which channels drove customers and which burned budget.</li>
+          <li>Customer, churn, and attribution analysis: segmented the network into customer, lead, lost, and inactive, and built a full-funnel attribution model joining campaign data, CRM deals, and the Danish business registry to isolate the signals separating payers from non-converters.</li>
+          <li>Rebuilt the sales commission model with forecasting weightings, shifting payouts toward subscription and MRR so sellers optimised for LTV instead of discounting to close. Operationalised the scores through an end-to-end LinkedIn pipeline (scraping, enrichment, scoring, sequencing).</li>
         </ul>
         <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Pipedrive · Clay · Playwright · Apify · HeyReach · Claude</p>
       </div>
