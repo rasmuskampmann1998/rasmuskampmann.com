@@ -1,7 +1,7 @@
 """
 Render 1600x900 cover for the Agentic External Intelligence Platform case study.
 
-Conceptual four-job flow showing how 218 sources become a personalised briefing:
+Conceptual four-job flow showing how 228 sources become a personalised briefing:
 Scraping -> Interpretation -> Retrieval -> Routing. Dark theme matches the other
 case-study covers for visual coherence across the portfolio grid.
 """
@@ -43,7 +43,7 @@ BOXES = [
         "title": "Scraping",
         "sub": "7-layer fallback chain",
         "detail": [
-            "218 sources  ·  191 healthy",
+            "228 sources  ·  10 categories",
             "RSS · HTML · Crawl4AI",
             "Playwright · Jina",
             "Firecrawl · Apify",
@@ -98,7 +98,7 @@ def main() -> None:
 
     ax.text(60, H - 70, "Agentic External Intelligence Platform",
             fontsize=30, color=ON_BG_DARK, fontname=title_font, fontweight="bold")
-    ax.text(60, H - 110, "From 218 sources to a personalised briefing",
+    ax.text(60, H - 110, "From 228 sources to a personalised briefing",
             fontsize=15, color=ON_BG_SUBTLE, fontname=mono_font)
 
     n = len(BOXES)
