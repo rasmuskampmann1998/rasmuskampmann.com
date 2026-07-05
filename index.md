@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Data Analyst | BI Developer | Business Controller</h1>
+    <h1>Data Analyst | BI Developer | Power BI</h1>
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
@@ -17,7 +17,7 @@ title: Home
       <li>AI workflows</li>
     </ul>
     <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
-    <p class="hero-background">Three years building Power BI reporting, forecasting, and the operational controlling behind commercial decisions, in agriculture and beyond.</p>
+    <p class="hero-background">Three years building the Power BI reporting, forecasting, and data models behind commercial decisions, in agriculture and beyond.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -83,7 +83,7 @@ title: Home
           </svg>
         </div>
         <h3>Excel</h3>
-        <p>I run the controlling work in Excel where it belongs. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production, modelled in the tool the business already uses.</p>
+        <p>I run the financial modelling in Excel where it belongs. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production, modelled in the tool the business already uses.</p>
       </div>
 
       <div class="skill-card">
@@ -148,7 +148,7 @@ title: Home
         <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
         <p>I build the business intelligence, reporting, and financial analysis that turn scattered commercial and operational data into decisions leadership can act on.</p>
         <p>My background is in commercial operations, across sales, marketing, finance, and the day-to-day of running a business. That's what sets the work apart: I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, finance, and operations actually use them, because I've worked in those functions, not just reported on them.</p>
-        <p>At <strong>Veginova</strong>, an agricultural seed business, I own the BI and reporting stack across sales, operations, and production, and work across the financial and operational layer: forecasting, reporting, and the controlling leadership makes decisions on. The work cut reporting time by 10+ hours a week and lifted KPI accuracy by 40%+.</p>
+        <p>At <strong>Veginova</strong>, an agricultural seed business, I'm building the operating system behind the data, BI, and reporting the business runs on. It builds on the BI and reporting stack I already own here, now extended into the financial and operational layer: forecasting, reporting, and the analysis leadership makes decisions on. The work cut reporting time by 10+ hours a week and lifted KPI accuracy by 40%+.</p>
         <p><strong>How I work:</strong></p>
         <ul>
           <li>Build clean, consistent data structures as the foundation</li>
@@ -160,7 +160,7 @@ title: Home
         </ul>
         <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.<br />On the AI side: I use AI to automate reporting and analysis, scrape and structure commercial data, and build agentic systems that surface information without manual work, using Claude Code, n8n, Python ML, RAG, and multi-LLM workflows.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
-        <p><em>Open to data, BI, and business controller roles in Denmark.</em></p>
+        <p><em>Open to data, BI, and Power BI developer roles in Denmark.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
@@ -192,8 +192,8 @@ title: Home
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Aug 2023 – Feb 2026 · Full-time · Hybrid</p>
-        <h4 class="experience-role">Data Analyst &amp; RevOps</h4>
+        <p class="experience-date">May 2025 – Feb 2026 · Full-time · Hybrid</p>
+        <h4 class="experience-role">Data Analyst &amp; BI Specialist</h4>
         <p class="experience-company">Veginova Seeds</p>
         <ul class="experience-bullets">
           <li>Owned the BI and reporting stack across sales, operations, and production. Built the finance source of truth, now extending to operations and forecasting.</li>
@@ -202,6 +202,17 @@ title: Home
           <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
         </ul>
         <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Clay · Claude Code</p>
+      </div>
+
+      <div class="experience-card">
+        <p class="experience-date">Aug 2023 – May 2025 · Full-time · Hybrid</p>
+        <h4 class="experience-role">Marketing Specialist &amp; RevOps</h4>
+        <p class="experience-company">Veginova Seeds</p>
+        <ul class="experience-bullets">
+          <li>B2B marketing and RevOps in agriculture, working with international wholesale, distributor, and grower customers.</li>
+          <li>Outbound lead sourcing, CRM hygiene, and lead scoring and prioritisation.</li>
+          <li>Trade-fair and grower-event sourcing, pipeline reporting, and channel attribution.</li>
+        </ul>
       </div>
 
       <div class="experience-card">
