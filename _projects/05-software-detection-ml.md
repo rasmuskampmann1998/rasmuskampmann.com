@@ -1,20 +1,20 @@
 ---
 layout: project
 title: Software Detection ML Model
-tagline: "Reorders the cold-outbound dialler queue around the companies most likely to fit, before reps make a single call. Predicts accounting-software adoption from public Danish company-registry data alone, no paid data vendor."
+tagline: "A model is only as good as the features under it. This one predicts accounting-software adoption from public Danish company-registry data alone, no paid data vendor, and reorders the cold-outbound dialler queue before reps make a single call."
+description: "An ML classifier built on public registry data instead of a paid vendor feed. The features are all cold-observable, no CRM and no sales history, and getting the label right (binary, not 3-class) is what made 4,658 rows learnable. Deployed as a score boost that reorders the dialler queue every morning and retrains monthly."
 tools: [Python, scikit-learn, XGBoost, SHAP, pandas, PostgreSQL, GitHub Actions]
 outcome_headline: "Reordered the cold-outbound dialler queue around companies the model thinks are most likely to fit, before reps make a single call"
 outcome_detail: "Deployed as a score boost in the lead-scoring pipeline, reordering the queue automatically every morning and retraining itself monthly. Built on 4,658 training rows of public registry data. Reproducible on a 5,000-row synthetic dataset."
-order: 3
+order: 5
+lane: 3
 cover_image: /assets/images/projects/software-detection-ml-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/03-software-detection-ml
 ---
 
-## Outcome first
-
 I built a model that reorders the cold-outbound queue at a Danish SMB accounting firm. Every morning, before the first call goes out, the highest-probability prospects move to the top. No manual prospecting, no paid data vendors. Just public registry data and a binary classifier.
 
-The reps never change how they work. They open the dialler and call from the top, the same as always. The only thing that changed is the order, and the order now puts the most-likely-to-fit companies first. The model is right about four times in five (~75% on a held-out test set). It runs as a score boost inside the existing pipeline and retrains itself every month.
+The reps never change how they work. They open the dialler and call from the top, the same as always. The only thing that changed is the order, and the order now puts the most-likely-to-fit companies first. The model separates the two classes meaningfully better than chance: holdout AUC 0.75, permutation test p < 0.0001. It runs as a score boost inside the existing pipeline and retrains itself every month.
 
 Want the technical deep-dive: training script, feature engineering, evaluation charts? See the [GitHub case study](https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/03-software-detection-ml).
 

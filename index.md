@@ -13,11 +13,11 @@ title: Home
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
+      <li>Microsoft Fabric</li>
       <li>Python</li>
-      <li>AI workflows</li>
     </ul>
     <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
-    <p class="hero-background">3+ years working in commercial, now building the Power BI reporting, forecasting, and data models behind commercial decisions, in agriculture and beyond.</p>
+    <p class="hero-background">3+ years working in commercial, now building the reporting a business runs on, and the data foundation AI gets layered on top of. Semantic models, dashboards, forecasting, in agriculture and beyond.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -45,7 +45,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Skills</span>
     <h2>What I Do</h2>
-    <p class="section-sub">The tools I use most, grouped by what I actually use them for.</p>
+    <p class="section-sub">Power BI and SQL are most of the work. The rest is what the work needs.</p>
     <div class="skills-grid">
 
       <div class="skill-card">
@@ -57,7 +57,7 @@ title: Home
           </svg>
         </div>
         <h3>Power BI</h3>
-        <p>I build dashboards leadership actually uses. Built around the decisions teams need to make, so reporting drives action instead of just showing numbers.</p>
+        <p>I build the semantic model first, then the dashboard on top. DAX, Power Query, and a model that stays maintainable, so reporting drives decisions instead of just showing numbers.</p>
       </div>
 
       <div class="skill-card">
@@ -69,7 +69,31 @@ title: Home
           </svg>
         </div>
         <h3>SQL</h3>
-        <p>I build the data layer that everything else runs on. Joins, transformations, and pipelines that turn raw data into analysis-ready tables your team can trust.</p>
+        <p>I build the data layer that everything else runs on. Data modeling, ETL, PostgreSQL. Raw source data in, analysis-ready tables out, and the team can query them without asking me first.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+        </div>
+        <h3>Microsoft Fabric</h3>
+        <p>Fabric puts ingestion, modelling, and reporting in one platform instead of three tools that don't talk to each other. I build the SQL and Power BI layer that lands in it. Pipelines and notebooks map straight across from the Postgres and Python stack I run today.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+            <line x1="14" y1="4" x2="10" y2="20"/>
+          </svg>
+        </div>
+        <h3>Python</h3>
+        <p>I build the automation and the models spreadsheets can't handle. The ML work runs on scikit-learn and pandas. The pipelines run on a schedule instead of by hand.</p>
       </div>
 
       <div class="skill-card">
@@ -83,19 +107,7 @@ title: Home
           </svg>
         </div>
         <h3>Excel</h3>
-        <p>I run the financial modelling in Excel where it belongs. Forecasts, budgets, margin and customer profitability, and KPI definitions that hold across sales, operations, and production, modelled in the tool the business already uses.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"/>
-            <polyline points="8 6 2 12 8 18"/>
-            <line x1="14" y1="4" x2="10" y2="20"/>
-          </svg>
-        </div>
-        <h3>Python</h3>
-        <p>I build the automation, models, and analytical work spreadsheets can't handle. From data pipelines to ML classifiers to deeper analysis at scale.</p>
+        <p>Financial modelling belongs in Excel. Forecasts, budgets, margin and customer profitability. KPI definitions that hold across sales, operations, and production.</p>
       </div>
 
       <div class="skill-card">
@@ -105,20 +117,8 @@ title: Home
             <circle cx="12" cy="12" r="1.6"/>
           </svg>
         </div>
-        <h3>AI workflows</h3>
-        <p>I use AI where it removes manual reporting work. Automating data prep, enrichment, and the repetitive parts of analysis, built into the pipeline rather than added afterward. A tool in the stack, not the headline.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-          </svg>
-        </div>
-        <h3>Web scraping</h3>
-        <p>I pull external signals into the same warehouse as internal data. Weather and market data, prices, and outside context that planning and forecasts depend on, so decisions account for what's happening outside the business, not just inside it.</p>
+        <h3>AI in the data flow</h3>
+        <p>AI goes on top of a data foundation, not instead of one. I use Claude Code and Copilot inside the work itself: data prep, SQL and DAX, documentation. A tool in the stack, not the headline.</p>
       </div>
 
     </div>
@@ -130,11 +130,21 @@ title: Home
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
     <p class="section-sub">Production systems behind reporting, forecasting, and commercial decisions. Written for non-technical readers.</p>
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    <h3 class="lane-title">The reporting a business runs on</h3>
+    <p class="lane-sub">Real client systems at an agricultural seed business. One source of truth reconciled to the accounts, and a production plan that stays live instead of going stale on every sale.</p>
     <div class="projects-grid-large">
-      {% assign sorted_projects = site.projects | sort: "order" %}
-      {% for project in sorted_projects %}
-        {% include project-card.html project=project %}
-      {% endfor %}
+      {% for project in sorted_projects %}{% if project.lane == 1 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
+    </div>
+    <h3 class="lane-title">Analysis on a model you can trust</h3>
+    <p class="lane-sub">The data model comes before the finding. Star schema in SQL, validated in DuckDB, and only then a number worth acting on. Synthetic data, real method.</p>
+    <div class="projects-grid-large">
+      {% for project in sorted_projects %}{% if project.lane == 2 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
+    </div>
+    <h3 class="lane-title">What AI can do once the foundation is there</h3>
+    <p class="lane-sub">Both of these are AI sitting on a data layer I had to build first. The registry features and the ingestion corpus are what these models stand on.</p>
+    <div class="projects-grid-large">
+      {% for project in sorted_projects %}{% if project.lane == 3 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
     </div>
   </div>
 </section>
@@ -146,9 +156,17 @@ title: Home
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
-        <p>I build the business intelligence, reporting, and financial analysis that turn scattered commercial and operational data into decisions leadership can act on.</p>
+        <p>I build the reporting a business runs on, and the data foundation AI gets layered on top of. One source of truth, semantic models, dashboards, forecasting.</p>
+        <p><strong>The problems I get called in for:</strong></p>
+        <ul>
+          <li>ERP, CRM, and spreadsheet data that don't agree</li>
+          <li>KPIs defined differently in every report</li>
+          <li>Reporting rebuilt by hand every week</li>
+          <li>Forecasting done on gut feel</li>
+          <li>AI on the roadmap with no data foundation under it</li>
+        </ul>
         <p>My background is in commercial operations, across sales, marketing, finance, and the day-to-day of running a business. That's what sets the work apart: I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, finance, and operations actually use them, because I've worked in those functions, not just reported on them.</p>
-        <p>At <strong>Veginova</strong>, an agricultural seed business, I'm building the operating system behind the data, BI, and reporting the business runs on. It builds on the BI and reporting stack I already own here, now extended into the financial and operational layer: forecasting, reporting, and the analysis leadership makes decisions on. The work cut reporting time by 10+ hours a week and lifted KPI accuracy by 40%+.</p>
+        <p>At <strong>Veginova</strong>, an agricultural seed business, I'm building the data, BI, and reporting the business runs on: the finance source of truth, the production planning engine, and the forecasting leadership decides on.</p>
         <p><strong>How I work:</strong></p>
         <ul>
           <li>Build clean, consistent data structures as the foundation</li>
@@ -156,10 +174,25 @@ title: Home
           <li>Keep pipelines lightweight, not over-engineered</li>
           <li>Build Power BI models that are easy to maintain and extend</li>
           <li>Build dashboards around the decisions leadership makes</li>
-          <li>Use AI where it makes the work faster or more accurate</li>
+          <li>Use AI inside the data flow, where it makes the work faster or more accurate</li>
         </ul>
-        <p style="margin-top: 28px;"><strong>Stack:</strong> SQL, Python, Power BI, Excel, data modeling, ETL, web scraping, AI workflows. Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.<br />On the AI side: I use AI to automate reporting and analysis, scrape and structure commercial data, and build agentic systems that surface information without manual work, using Claude Code, n8n, Python ML, RAG, and multi-LLM workflows.</p>
+        <p><strong>What I've delivered:</strong></p>
+        <ul>
+          <li>Standardised KPI definitions across sales, operations, and production. Accuracy up 40%+.</li>
+          <li>Automated reporting pipelines. 10+ hours of manual work cut per week.</li>
+          <li>Forecasting built into a production planning system that sets what to produce, how much, and when.</li>
+          <li>Financial data unified into a profitability dashboard, reconciled to the accounts.</li>
+        </ul>
+        <p style="margin-top: 28px;"><strong>Stack:</strong><br />
+        Power BI: semantic models, DAX, Power Query.<br />
+        SQL: data modeling, ETL, PostgreSQL.<br />
+        Microsoft Fabric: pipelines, Python notebooks for forecasting, Fabric apps.<br />
+        Excel: financial modelling, forecasts, budgets, margin.<br />
+        AI in the data flow: Claude Code, Copilot, and LLM workflows for data prep, SQL and DAX, and documentation.<br />
+        Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.</p>
+        <p>Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
+        <p>Danish, English, Spanish.</p>
         <p><em>Open to data, BI, and Power BI developer roles in Denmark.</em></p>
       </div>
       <div class="about-two-col-photo">
@@ -172,10 +205,23 @@ title: Home
 <section class="experience-section" id="experience">
   <div class="container">
     <span class="eyebrow">3+ years of experience</span>
-    <h2>Previous Experience</h2>
+    <h2>Experience</h2>
     <p class="section-sub">Roles where I built the data systems, dashboards, and automation behind real commercial decisions.</p>
 
     <div class="experience-timeline">
+
+      <div class="experience-card">
+        <p class="experience-date">Jun 2026 – Present · Full-time</p>
+        <h4 class="experience-role">Data Analyst &amp; BI Specialist</h4>
+        <p class="experience-company">Veginova Seeds</p>
+        <ul class="experience-bullets">
+          <li>Back at Veginova, building the data, BI, and reporting the business runs on. Extends the reporting stack I already owned here into the financial and operational layer.</li>
+          <li>Built the finance source of truth from invoice lines, reconciled to the official accounts, so profit per product and profit per customer are visible for the first time.</li>
+          <li>Built the production planning engine that sets what to produce, how much, and when, on a one-year seed lead time. It reproduces the planner's own numbers exactly and lets them test a scenario before committing seed.</li>
+          <li>Brought the scoring, forecasting, and revenue analysis I built at Digi-Tal into the finance and operations model here.</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> Power BI · SQL · PostgreSQL · Python · Supabase · Claude Code</p>
+      </div>
 
       <div class="experience-card">
         <p class="experience-date">Feb 2026 – May 2026 · Full-time · Hybrid</p>
@@ -183,7 +229,7 @@ title: Home
         <p class="experience-company">Digi-Tal Regnskab</p>
         <ul class="experience-bullets">
           <li>Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source through to operationalised scores feeding sales.</li>
-          <li>Built ICP and predictive lead-scoring models (strong holdout) plus an ML classifier identifying a prospect's accounting software (~75% accuracy across the Danish SMB market) from Playwright scraping and enrichment waterfalls.</li>
+          <li>Built ICP and predictive lead-scoring models plus an ML classifier identifying a prospect's accounting software (holdout AUC 0.75, permutation test p &lt; 0.0001) from Playwright scraping and enrichment waterfalls.</li>
           <li>Full-channel revenue analysis across Meta, Google, LinkedIn outbound, cold calling, and inbound: close rate, conversion, meeting time, and pipeline velocity by channel and segment. Identified which channels drove customers and which burned budget.</li>
           <li>Customer, churn, and attribution analysis: segmented the network into customer, lead, lost, and inactive, and built a full-funnel attribution model joining campaign data, CRM deals, and the Danish business registry to isolate the signals separating payers from non-converters.</li>
           <li>Rebuilt the sales commission model with forecasting weightings, shifting payouts toward subscription and MRR so sellers optimised for LTV instead of discounting to close. Operationalised the scores through an end-to-end LinkedIn pipeline (scraping, enrichment, scoring, sequencing).</li>
@@ -196,7 +242,7 @@ title: Home
         <h4 class="experience-role">Data Analyst &amp; BI Specialist</h4>
         <p class="experience-company">Veginova Seeds</p>
         <ul class="experience-bullets">
-          <li>Owned the BI and reporting stack across sales, operations, and production. Built the finance source of truth, now extending to operations and forecasting.</li>
+          <li>Owned the BI and reporting stack across sales, operations, and production. Consolidated the source data and stabilised the reporting the team ran on.</li>
           <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
           <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
           <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>

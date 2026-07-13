@@ -6,7 +6,8 @@ description: "Funnel decomposition and segment-lift analysis: 102,007 records re
 tools: [Power BI, SQL, Python]
 outcome_headline: "Segment-lift analysis isolated one firmographic band converting at 37.5% against 3.0% everywhere else, a 12.7x split on the single decisive cut in the dataset"
 outcome_detail: "Only 12.8% of held meetings converted, so the funnel dropped after the first conversation, not before it. The deliverable is an additive scoring rule built from the segment lift."
-order: 4
+order: 3
+lane: 2
 cover_image: /assets/images/projects/cold-call-funnel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/01-cold-call-funnel-analysis
 ---

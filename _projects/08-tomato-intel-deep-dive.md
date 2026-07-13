@@ -1,16 +1,16 @@
 ---
 layout: project
 title: Agentic External Intelligence Platform
-tagline: "Personalised research, competitor monitoring, and weekly briefings replaced manual work for a B2B agriculture company. Live RAG dashboard, multi-LLM interpretation, cross-source signal detection, 228 sources."
+tagline: "The RAG chat is the part you see. Underneath it sits a 228-source ingestion layer with a 7-layer scraper fallback. No corpus, no citations, no signal. Personalised research, competitor monitoring, and weekly briefings for a B2B agriculture company."
+description: "An external-intelligence platform where the ingestion layer came first: 228 sources, a 7-layer scraper fallback, and structured storage in Postgres with pgvector. That corpus is what the chat retrieves its answers from, and what the signal detector runs its SQL over. Live at tomato-intel-api.onrender.com."
 tools: [FastAPI, Python, Supabase, pgvector, Apify, Claude API, Voyage AI, DeepSeek, Perplexity, APScheduler, React, Render]
 outcome_headline: "Personalised research and competitor monitoring that cut manual hours and feeds leadership with better signal for decisions"
 outcome_detail: "228 sources, 7-layer scraper fallback, multi-LLM interpretation, RAG chat with citations, and a cross-source signal detector. Live at tomato-intel-api.onrender.com."
-order: 5
+order: 6
+lane: 3
 cover_image: /assets/images/projects/tomato-intel-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/07-tomato-intel
 ---
-
-## Outcome first
 
 I built an agentic external intelligence platform for a B2B agriculture company. It does personalised research, competitor monitoring, and weekly briefings that used to take a person most of a week. Now the system does it in a few hours of compute and surfaces more than the manual version did.
 
