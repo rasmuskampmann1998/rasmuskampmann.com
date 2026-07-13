@@ -81,7 +81,7 @@ title: Home
           </svg>
         </div>
         <h3>Microsoft Fabric</h3>
-        <p>Fabric puts ingestion, modelling, and reporting in one platform instead of three tools that don't talk to each other. I build the SQL and Power BI layer that lands in it. Pipelines and notebooks map straight across from the Postgres and Python stack I run today.</p>
+        <p>Pipelines, Python notebooks for forecasting, and Fabric apps. Ingestion, modelling, and reporting in one platform instead of three tools that don't talk to each other.</p>
       </div>
 
       <div class="skill-card">
