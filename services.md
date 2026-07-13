@@ -8,8 +8,8 @@ permalink: /services/
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">Work with me</span>
-    <h1>Data infrastructure, analytics, and AI workflows for B2B commercial teams</h1>
-    <p>I build the reporting, analysis, and AI workflows that turn scattered commercial data into decisions you can trust.</p>
+    <h1>The reporting your business runs on, and the data foundation AI needs</h1>
+    <p>One source of truth, semantic models, dashboards, forecasting. For B2B teams whose CRM, finance, and ops data don't agree.</p>
     <div style="margin-top: 28px;">
       <a href="{{ '/contact' | relative_url }}" class="btn-primary">Request your free audit →</a>
     </div>

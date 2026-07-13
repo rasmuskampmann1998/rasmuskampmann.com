@@ -6,7 +6,8 @@ description: "Multi-factor channel scoring plus twelve-month survival and churn 
 tools: [Power BI, SQL, Python]
 outcome_headline: "Survival analysis revealed five channels at 21% of deals but 78% of the revenue that lasted the first year"
 outcome_detail: "The largest channel by volume won 8.6% of the time, consumed 91% of all sales-rep dialer hours, and churned half its customers within twelve months. The scorecard handled the split with a rule, not a model, so the revenue-ops lead could re-run it each quarter without a data team in the room."
-order: 6
+order: 4
+lane: 2
 cover_image: /assets/images/projects/channel-performance-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/02-channel-performance-analysis
 ---
