@@ -6,3 +6,5 @@ vendor/
 Gemfile.lock
 .DS_Store
 *.swp
+
+cv/cv-annotated-review.html
