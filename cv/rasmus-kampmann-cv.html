@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rasmus Kampmann — CV (EN)</title>
+<style>
+  @page { size: A4; margin: 13mm 15mm 13mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 9.4pt; line-height: 1.38; color: #1a1d1a; }
+  a { color: #1a1d1a; text-decoration: none; }
+
+  .name { font-size: 21pt; font-weight: 700; letter-spacing: 0.5px; text-align: center; }
+  .headline { font-size: 10.5pt; text-align: center; color: #2e4a1f; font-weight: 600; margin-top: 2px; }
+  .contact { text-align: center; font-size: 8.8pt; color: #444; margin-top: 4px; }
+  .contact span { margin: 0 3px; color: #999; }
+  .accent-rule { height: 2.5px; background: #B5E853; margin: 8px auto 0; width: 100%; }
+
+  h2 { font-size: 9.6pt; text-transform: uppercase; letter-spacing: 1.4px; color: #2e4a1f;
+       border-bottom: 1px solid #c9cec6; padding-bottom: 2px; margin: 11px 0 5px; break-after: avoid; }
+
+  .summary { margin-top: 2px; }
+
+  .stack-table p { margin: 1.5px 0; }
+  .stack-table strong { color: #1a1d1a; }
+
+  .role { margin-bottom: 8px; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; break-after: avoid; }
+  .role-title { font-size: 10pt; font-weight: 700; }
+  .role-date { font-size: 8.8pt; color: #555; white-space: nowrap; }
+  .role-sub { display: flex; justify-content: space-between; font-size: 8.9pt; color: #555; font-style: italic; margin-bottom: 2px; }
+  .role-lead { margin: 1px 0 2px; }
+  ul { margin: 1px 0 2px 14px; }
+  li { margin-bottom: 1.5px; }
+  .stack-line { font-size: 8.6pt; color: #555; margin-top: 1px; }
+  .stack-line strong { color: #444; }
+
+  .inline-list { margin: 0; }
+  .avoid-break { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="name">RASMUS KAMPMANN</div>
+<div class="headline">Data Analyst&nbsp;|&nbsp;BI Specialist&nbsp;|&nbsp;Power BI Developer</div>
+<div class="contact">
+  Odense, Denmark <span>·</span> +45 2381 8782 <span>·</span> rasmus.kampmann@hotmail.com <span>·</span>
+  <a href="https://www.linkedin.com/in/rasmuskampmann/">linkedin.com/in/rasmuskampmann</a> <span>·</span>
+  <a href="https://rasmuskampmann.com">rasmuskampmann.com</a>
+</div>
+<div class="accent-rule"></div>
+
+<h2>Summary</h2>
+<p class="summary">
+Data Analyst and BI Specialist with 3+ years across sales, operations, and finance. I build the reporting a
+business runs on, and the data foundation AI gets layered on top of: one source of truth, semantic models,
+dashboards, forecasting. Delivered KPI accuracy up 40%+, 10+ hours of weekly manual reporting cut, and a finance
+source of truth reconciled to the official accounts. Power BI, SQL, Python, Microsoft Fabric. Native Danish,
+full professional English.
+</p>
+
+<h2>Core Stack</h2>
+<div class="stack-table">
+  <p><strong>Reporting &amp; BI:</strong> Power BI (DAX, semantic models, Power Query, RLS), Excel (advanced)</p>
+  <p><strong>Microsoft ecosystem:</strong> Microsoft Fabric (Dataflows Gen2, Data Pipelines, Python notebooks, Direct Lake semantic models, Activator), Power Automate, OneLake</p>
+  <p><strong>Data Infrastructure:</strong> SQL, PostgreSQL, Supabase, ETL pipelines, data modeling, reconciliation gates</p>
+  <p><strong>Analysis &amp; Modelling:</strong> Python, pandas, scikit-learn, XGBoost, SHAP, forecasting, funnel analytics</p>
+  <p><strong>AI &amp; Automation:</strong> Claude Code, Claude API, MCP, LLM pipelines, n8n, FastAPI, GitHub Actions</p>
+  <p><strong>CRM &amp; Commercial Tooling:</strong> Pipedrive, HubSpot, Clay, HeyReach</p>
+  <p><strong>Cross-functional:</strong> Stakeholder management, requirements translation, documentation, user training, presenting to leadership</p>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Data Analyst &amp; BI Specialist</span><span class="role-date">Jun 2026 – Present</span></div>
+  <div class="role-sub"><span>Veginova Seeds</span><span>Odense, Denmark · Full-time</span></div>
+  <p class="role-lead">Back at Veginova to build the data, BI, and reporting the business runs on. Extends the reporting stack I owned in 2025 into the finance and production layer.</p>
+  <ul>
+    <li>Built the finance source of truth in Power BI and PostgreSQL by modelling invoice lines into a semantic model reconciled line by line to the official accounts, making profit per product and per customer visible for the first time.</li>
+    <li>Built the production planning engine in SQL that sets what to produce, how much, and when on a one-year seed lead time. It reproduces the planner's own numbers exactly and tests a scenario before seed is committed.</li>
+    <li>Shipped forecasting into the planning model with Python and SQL views, so next season's production need updates on every sale instead of going stale in a spreadsheet.</li>
+    <li>Designed the Microsoft Fabric migration path for the reporting stack (Dataflows Gen2 ingestion, warehouse models, notebook forecasting, Direct Lake semantic models), with the current reconciliation totals as the acceptance test.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> Power BI, SQL, PostgreSQL, Python, Supabase, Claude Code</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Data Analyst &amp; Commercial Analytics</span><span class="role-date">Feb 2026 – May 2026</span></div>
+  <div class="role-sub"><span>Digi-Tal Regnskab</span><span>Denmark · Hybrid</span></div>
+  <p class="role-lead">Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source to scores feeding sales.</p>
+  <ul>
+    <li>Built an ML classifier in scikit-learn on Playwright-scraped features that identified a prospect's accounting software across the Danish SMB market at holdout AUC 0.75 (permutation test p &lt; 0.0001), surfacing high-fit prospects on competing platforms.</li>
+    <li>Broke down close rate, conversion, meeting time, and pipeline velocity across five channels (Meta, Google, LinkedIn outbound, cold calling, inbound) in SQL and Python, identifying which channels drove customers and which burned budget.</li>
+    <li>Built ICP and predictive lead-scoring models on CRM and Danish business-registry data that cut low-quality leads reaching sales and sharpened outbound prioritisation.</li>
+    <li>Rebuilt the sales commission model with forecasting weightings toward subscription and MRR, removing the incentive to discount monthly deals to close.</li>
+    <li>Shipped the scores into an end-to-end LinkedIn pipeline (scraping, enrichment, scoring, sequencing) with ~50% cold acceptance.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> SQL, Python, Power BI, Pipedrive, Clay, Playwright, Apify, HeyReach, Claude Code</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Data Analyst &amp; BI Specialist</span><span class="role-date">May 2025 – Feb 2026</span></div>
+  <div class="role-sub"><span>Veginova Seeds</span><span>Odense, Denmark · Hybrid</span></div>
+  <p class="role-lead">Promoted into BI ownership: the data infrastructure, Power BI dashboards, and analytics across sales, operations, and production.</p>
+  <ul>
+    <li>Improved KPI accuracy by 40%+ by standardising metric definitions in the semantic model across sales, operations, and production and fixing the source data underneath the dashboards.</li>
+    <li>Cut reporting time by 10+ hours per week by replacing weekly manual rebuilds with repeatable SQL and Power BI pipelines.</li>
+    <li>Owned the single source of truth: Power BI dashboards, SQL data models, and automated reporting pipelines across the business.</li>
+    <li>Resolved data inconsistencies across ERP, CRM, and operational tools by finding where the flows broke and rebuilding them with reliable source logic.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> SQL, Power BI, DAX, Python, Excel, Supabase, Claude Code</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Marketing Specialist &amp; RevOps</span><span class="role-date">Aug 2023 – May 2025</span></div>
+  <div class="role-sub"><span>Veginova Seeds</span><span>Odense, Denmark · Hybrid</span></div>
+  <p class="role-lead">Started in marketing and lead sourcing, moved into RevOps. Built the operational data layer between sales, marketing, and production that grew into the Data Analyst role.</p>
+  <ul>
+    <li>Built automated data collection and enrichment pipelines in Clay and n8n for prospecting, replacing manual spreadsheet work.</li>
+    <li>Connected ERP, CRM, and operational tools into reliable cross-functional data flows, and built the reporting leadership used for weekly decisions.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> SQL, Power BI, Clay, n8n, Supabase, Apify, Excel</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Founder · Data &amp; RevOps</span><span class="role-date">Jun 2024 – Aug 2025</span></div>
+  <div class="role-sub"><span>Sira Logic</span><span>Remote · Self-employed</span></div>
+  <p class="role-lead">Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies. It closed without customers; it's where I learned which automation is worth building.</p>
+  <ul>
+    <li>Built lead enrichment and scoring workflows wiring collection, enrichment, and qualification into one pipeline, improving qualification accuracy by 30–40%.</li>
+    <li>Integrated HubSpot and GoHighLevel with external data sources and outreach tools so prospects flowed from collection to sales-ready.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> SQL, Python, Clay, n8n, Apify, HubSpot, GoHighLevel, HeyReach</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AI &amp; LLM Data Analyst</span><span class="role-date">Jan 2025 – Jan 2026</span></div>
+  <div class="role-sub"><span>Outlier</span><span>Remote · Freelance</span></div>
+  <ul>
+    <li>Reviewed and annotated 1,000+ Danish-language AI conversations, feeding model failure patterns back into training data. The same understanding of where LLMs break powers the AI scoring workflows I build today.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Marketing &amp; Digital Graduate</span><span class="role-date">Jan 2023 – Aug 2023</span></div>
+  <div class="role-sub"><span>Damstahl Danmark</span><span>Region Midtjylland, Denmark · Part-time</span></div>
+  <ul>
+    <li>Managed product and marketing data in ERP and CRM platforms across European markets and built Excel dashboards for campaign reporting.</li>
+  </ul>
+</div>
+
+<div class="avoid-break">
+<h2>Education</h2>
+<div class="role-head"><span class="role-title">Bachelor of Business Administration (BBA)</span><span class="role-date">Aug 2020 – Jun 2023</span></div>
+<div class="role-sub"><span>Aarhus BSS, Aarhus University</span><span>Aarhus, Denmark</span></div>
+</div>
+
+<div class="avoid-break">
+<h2>Portfolio</h2>
+<p class="inline-list">Case studies across reporting infrastructure, commercial analytics, and ML: <a href="https://rasmuskampmann.com">rasmuskampmann.com</a></p>
+</div>
+
+<div class="avoid-break">
+<h2>Certifications</h2>
+<p class="inline-list">Advanced SQL · Google Data Analytics Professional Certificate · Power BI Fundamentals · Python · AI: Implications for Business Strategy</p>
+</div>
+
+<div class="avoid-break">
+<h2>Languages</h2>
+<p class="inline-list">Danish (native) · English (full professional) · Spanish (professional working)</p>
+</div>
+
+</body>
+</html>
