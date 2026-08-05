@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Data Analyst | BI Specialist | Power BI Developer</h1>
+    <h1>Power BI Developer &amp; Data Analyst</h1>
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
@@ -17,7 +17,7 @@ title: Home
       <li>Python</li>
     </ul>
     <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
-    <p class="hero-background">3+ years working in commercial, now building the reporting a business runs on, and the data foundation AI gets layered on top of. Semantic models, dashboards, forecasting, in agriculture and beyond.</p>
+    <p class="hero-background">3+ years working in commercial, now building the end-to-end path from scattered data to decisions: integration, source of truth, semantic model, Power BI, then automation and forecasting where AI removes friction.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -156,7 +156,7 @@ title: Home
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
-        <p>I build the reporting a business runs on, and the data foundation AI gets layered on top of. One source of truth, semantic models, dashboards, forecasting.</p>
+        <p>I build the end-to-end path from scattered, untrusted data to decisions: integration, source of truth, semantic model, Power BI, then automation and forecasting where AI removes friction. AI is a working method built into the data layer, not the product.</p>
         <p><strong>The problems I get called in for:</strong></p>
         <ul>
           <li>ERP, CRM, and spreadsheet data that don't agree</li>
@@ -192,8 +192,9 @@ title: Home
         Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.</p>
         <p>Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
+        <p><strong>Certifications:</strong> Google Data Analytics · MIT Sloan: AI Implications for Business Strategy · Power BI Fundamentals · PL-300 (in progress).</p>
         <p>Danish, English, Spanish.</p>
-        <p><em>Open to data, BI, and Power BI developer roles in Denmark.</em></p>
+        <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
