@@ -15,23 +15,25 @@ coming_soon: false
 
 Built for Veginova, a seed business with a hard constraint: seed takes about a year to produce. The validation in this piece (that the system reproduces the planner's own numbers, zero mismatches) is real. Where I quote how many varieties were at risk or how much to produce, those figures are real live-snapshot numbers from the build. The system, and the validation that proves it works, are the real ones.
 
-## The problem
+**Pillars this case proves:** commercial · close to the decision makers · data depth
 
-At Veginova, production planning ran on a spreadsheet the planner maintained by hand. It worked, until it didn't. The moment a sale landed or stock changed, the spreadsheet was out of date, and the production decisions built on it were based on stale numbers.
+## The business question
 
-The stakes are high because of one brutal fact: **seed production takes about a year.** If you discover you're short of a variety, it's already twelve months too late to make more. You can't react to a stockout. You have to see it coming.
-
-The planner was effectively running the whole production, inventory, and sales triangle in their head:
-
-- How much will we sell of each variety?
-- How much do we have, and how much is arriving?
-- So how much must we produce, and when do we have to start?
+One question runs the whole operation: **how much of each variety must we produce, and when do we have to start?** The planner asked it every cycle, and leadership stood behind it, because the answer commits seed to a year in the ground. Behind it sit two inputs: how much will we sell of each variety, and how much do we have or already on the way.
 
 Get it wrong in either direction and it costs real money. Produce too little and you miss a year of sales you can't recover. Produce too much and you tie up cash in seed you don't need.
 
-## What I did
+## The data reality before
+
+Production planning ran on a spreadsheet the planner maintained by hand. It worked, until it didn't. The moment a sale landed or stock changed, the spreadsheet was out of date, and the production decisions built on it were based on stale numbers. The planner was effectively running the whole production, inventory, and sales triangle in their head, cross-referencing sales, stock, and incoming orders by hand.
+
+The stakes are high because of one brutal fact: **seed production takes about a year.** If you discover you're short of a variety, it's already twelve months too late to make more. You can't react to a stockout. You have to see it coming.
+
+## The build
 
 I took the logic the planner was running by hand and built it into a live system. For every seed variety, it computes the core question, **how much to produce**, from what's actually selling, what's in stock, and what's already on the way.
+
+The path from source to screen: sales, stock, and incoming orders load from the source sheets through automated Python ingestion into Postgres, the planning logic runs as one SQL view against a proper data model, and Power BI is the display layer on top. Building it this way is what lets the plan update itself and stay accurate as sales and stock change.
 
 Three things made it useful beyond the spreadsheet:
 
@@ -39,34 +41,38 @@ Three things made it useful beyond the spreadsheet:
 - **It respects the one-year lead time.** It flags which varieties are short, and *when* production has to start to cover each one in time.
 - **It tests scenarios.** The planner can ask "what if sales come in higher," "what if production capacity drops," or "what if we lose stock," and see which varieties go at risk.
 
-Like the finance work, this is a full pipeline, not a spreadsheet with charts. The planning logic runs in SQL against a proper data model, fed by automated ingestion in Python, with Power BI as the display layer. Building it this way is what lets the plan update itself and stay accurate as sales and stock change.
+The full technical detail (the SQL engine, the snapshot mechanism, the validation gate, the what-if layer) is in "How it's built" at the bottom.
 
-## What I found, and how I proved it
+## The numbers
 
 The real test of a planning system is whether it matches reality. I validated the engine against the planner's own existing spreadsheet, the numbers built by hand over years of running the business.
 
 **It reproduced the planning figures exactly, with zero mismatches.** That's what made it trustworthy: it wasn't a different answer, it was *the planner's* answer, made live and able to update itself. A planner doesn't adopt a system that argues with them. They adopt one that agrees with the sheet they trust, and then keeps up when the sheet can't.
 
 ![Production plan, what to produce per variety, coloured by red/green status]({{ '/assets/images/projects/veginova-operations-production.png' | relative_url }})
-*The production plan: total to produce, varieties needing production, and varieties at risk, with the produce quantity per variety. The planner's red/green sheet, made live and always current. The real Power BI dashboard, shown on illustrative data (the figures here are synthetic, not the real engagement's).*
+*The production plan: total to produce, varieties needing production, and varieties at risk, with the produce quantity per variety. The planner's red/green sheet, made live and always current. The real Power BI dashboard, shown on illustrative data.*
 
 Across the active varieties, the live snapshot showed **500 units to produce, 13 varieties red (below the safety line), and 9 needing production this cycle**. Two of those numbers look like they should match but don't, and the gap is the point: a variety can be red (its ending stock is below the safety line) yet still need zero production, because it has enough to cover its own expected sales. The system shows both, so a warning light is never mistaken for a production order.
 
 ![Need versus plan, computed production need beside the planner's batch target]({{ '/assets/images/projects/veginova-operations-need-vs-plan.png' | relative_url }})
 *Computed need beside the planner's own batch target, variety by variety, so the gap between "just enough" and the planner's lot size is visible, not buried. The real Power BI dashboard, shown on illustrative data.*
 
-## The business impact
+## What changed
 
 - **Production decisions from live data, not a stale spreadsheet.** The plan shows what's actually happening, not last month's snapshot.
 - **Stockouts visible before they're unfixable.** With a one-year lead time, seeing a shortage early is the entire game. It's the difference between covering it and missing a year of sales.
 - **The manual spreadsheet work each planning cycle largely disappears.** The system maintains the plan that used to be rebuilt by hand.
 - **Scenario testing** lets the planner pressure-test a decision (a big order, a capacity problem, a stock loss) before committing seed to a year in the ground.
 
-## What the business does now
-
 The planner runs production off a system that updates itself and shows what's at risk before it's too late to act. They can commit production decisions with confidence, see months ahead which varieties will run short, and test the impact of a big sale or a capacity problem before it happens, instead of finding out a year later.
 
 **An honest note on what this is.** This is a planning system with scenario testing, validated against ground truth. It is **not** statistical forecasting, and that distinction matters. The business runs on named deals, not predictable trends, so the planner's judgment is the input; the system makes that judgment live, fast, and forward-looking. Claiming a forecast the data can't support would be the weaker move. Reproducing the planner's own numbers on every variety, and turning them into something that updates itself and looks a year ahead, is the stronger one, and it's the true one.
+
+## Stack and role
+
+Built end-to-end, solo, close to the decision makers. The planner's mental model is the spec: I sat with them, took the logic they ran by hand, and rebuilt it as a system they could verify against their own sheet before trusting it.
+
+Power BI · PostgreSQL · SQL · Python · Supabase
 
 ---
 
