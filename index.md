@@ -129,22 +129,10 @@ title: Home
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Production systems behind reporting, forecasting, and commercial decisions. Written for non-technical readers.</p>
+    <p class="section-sub">Three builds at one company, in depth: the finance source of truth, the production planning engine, and the Microsoft Fabric platform they're consolidating onto. Power BI, Fabric, and Claude in the pipeline. Written for non-technical readers.</p>
     {% assign sorted_projects = site.projects | sort: "order" %}
-    <h3 class="lane-title">The reporting a business runs on</h3>
-    <p class="lane-sub">Real client systems at an agricultural seed business. One source of truth reconciled to the accounts, and a production plan that stays live instead of going stale on every sale.</p>
     <div class="projects-grid-large">
-      {% for project in sorted_projects %}{% if project.lane == 1 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
-    </div>
-    <h3 class="lane-title">Analysis on a model you can trust</h3>
-    <p class="lane-sub">The data model comes before the finding. Star schema in SQL, validated in DuckDB, and only then a number worth acting on. Synthetic data, real method.</p>
-    <div class="projects-grid-large">
-      {% for project in sorted_projects %}{% if project.lane == 2 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
-    </div>
-    <h3 class="lane-title">What AI can do once the foundation is there</h3>
-    <p class="lane-sub">Both of these are AI sitting on a data layer I had to build first. The registry features and the ingestion corpus are what these models stand on.</p>
-    <div class="projects-grid-large">
-      {% for project in sorted_projects %}{% if project.lane == 3 %}{% include project-card.html project=project %}{% endif %}{% endfor %}
+      {% for project in sorted_projects %}{% include project-card.html project=project %}{% endfor %}
     </div>
   </div>
 </section>
