@@ -212,22 +212,54 @@ title: Home
     <div class="experience-timeline">
 
       <div class="experience-card">
-        <p class="experience-date">Jun 2026 – Present · Full-time</p>
-        <h4 class="experience-role">Data Analyst &amp; BI Specialist</h4>
-        <p class="experience-company">Veginova Seeds</p>
-        <ul class="experience-bullets">
-          <li>Back at Veginova, building the data, BI, and reporting the business runs on. Extends the reporting stack I already owned here into the financial and operational layer.</li>
-          <li>Built the finance source of truth from invoice lines, reconciled to the official accounts, so profit per product and profit per customer are visible for the first time.</li>
-          <li>Built the production planning engine that sets what to produce, how much, and when, on a one-year seed lead time. It reproduces the planner's own numbers exactly and lets them test a scenario before committing seed.</li>
-          <li>Brought the scoring, forecasting, and revenue analysis I built at Digi-Tal into the finance and operations model here.</li>
-        </ul>
-        <p class="experience-stack"><strong>Stack:</strong> Power BI · SQL · PostgreSQL · Python · Supabase · Claude Code</p>
+        <p class="experience-date">Aug 2023 to now · Full-time</p>
+        <h4 class="experience-role">Veginova Seeds</h4>
+        <p class="experience-company">Family-owned seed company · Odense, Denmark</p>
+        <p class="experience-transition">Three roles in one company: marketing, then data, now Power BI development.</p>
+
+        <div class="experience-subrole">
+          <p class="experience-date">Jun 2026 to now</p>
+          <h5 class="experience-subrole-title">Power BI Developer</h5>
+          <p class="experience-transition">Back after the spring 2026 Data Analyst role at Digi-Tal Regnskab. Leading the Microsoft Fabric consolidation.</p>
+          <ul class="experience-bullets">
+            <li>Building the data, BI, and reporting the business runs on. Extends the reporting stack I already owned here into the financial and operational layer.</li>
+            <li>Built the finance source of truth from invoice lines, reconciled to the official accounts, so profit per product and profit per customer are visible for the first time.</li>
+            <li>Built the production planning engine that sets what to produce, how much, and when, on a one-year seed lead time. It reproduces the planner's own numbers exactly and lets them test a scenario before committing seed.</li>
+            <li>Brought the scoring, forecasting, and revenue analysis I built at Digi-Tal into the finance and operations model here.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Power BI · Microsoft Fabric · SQL · PostgreSQL · Python · Claude Code</p>
+        </div>
+
+        <div class="experience-subrole">
+          <p class="experience-date">2025 to 2026</p>
+          <h5 class="experience-subrole-title">Data Analyst</h5>
+          <p class="experience-transition">Promoted from Marketing &amp; Operations.</p>
+          <ul class="experience-bullets">
+            <li>Owned the BI and reporting stack across sales, operations, and production. Consolidated the source data and stabilised the reporting the team ran on.</li>
+            <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
+            <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
+            <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Claude Code</p>
+        </div>
+
+        <div class="experience-subrole">
+          <p class="experience-date">2023 to 2025</p>
+          <h5 class="experience-subrole-title">Marketing &amp; Operations</h5>
+          <ul class="experience-bullets">
+            <li>B2B marketing and operations in agriculture, working with international wholesale, distributor, and grower customers.</li>
+            <li>Production visits in Costa Rica, Panama, and Mexico, including company establishment and partner dialogue in Costa Rica.</li>
+            <li>Danish trade fairs with customers, pipeline reporting, and channel attribution.</li>
+            <li>Outbound lead sourcing, CRM hygiene, and lead scoring and prioritisation.</li>
+          </ul>
+        </div>
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Feb 2026 – May 2026 · Full-time · Hybrid</p>
-        <h4 class="experience-role">Data Analyst &amp; Commercial Analytics</h4>
+        <p class="experience-date">Feb to May 2026 · Full-time</p>
+        <h4 class="experience-role">Data Analyst (fully remote)</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
+        <p class="experience-transition">Recruited on the back of the Sira Logic pipeline work. Resigned when the family relocated back to Denmark: the role was fully remote, and I wanted to be on-site, close to the business.</p>
         <ul class="experience-bullets">
           <li>Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source through to operationalised scores feeding sales.</li>
           <li>Built ICP and predictive lead-scoring models plus an ML classifier identifying a prospect's accounting software (holdout AUC 0.75, permutation test p &lt; 0.0001) from Playwright scraping and enrichment waterfalls.</li>
@@ -239,36 +271,13 @@ title: Home
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">May 2025 – Feb 2026 · Full-time · Hybrid</p>
-        <h4 class="experience-role">Data Analyst &amp; BI Specialist</h4>
-        <p class="experience-company">Veginova Seeds</p>
-        <ul class="experience-bullets">
-          <li>Owned the BI and reporting stack across sales, operations, and production. Consolidated the source data and stabilised the reporting the team ran on.</li>
-          <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
-          <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
-          <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
-        </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Clay · Claude Code</p>
-      </div>
-
-      <div class="experience-card">
-        <p class="experience-date">Aug 2023 – May 2025 · Full-time · Hybrid</p>
-        <h4 class="experience-role">Marketing Specialist &amp; RevOps</h4>
-        <p class="experience-company">Veginova Seeds</p>
-        <ul class="experience-bullets">
-          <li>B2B marketing and RevOps in agriculture, working with international wholesale, distributor, and grower customers.</li>
-          <li>Outbound lead sourcing, CRM hygiene, and lead scoring and prioritisation.</li>
-          <li>Trade-fair and grower-event sourcing, pipeline reporting, and channel attribution.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <p class="experience-date">Jun 2024 – Aug 2025 · Self-employed · Remote</p>
-        <h4 class="experience-role">Founder · Data &amp; RevOps</h4>
+        <p class="experience-date">Jun 2024 to Aug 2025 · Independent</p>
+        <h4 class="experience-role">Data &amp; AI Consultant</h4>
         <p class="experience-company">Sira Logic</p>
+        <p class="experience-transition">Founded alongside the Veginova role.</p>
         <ul class="experience-bullets">
           <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
-          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30–40%.</li>
+          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30 to 40%.</li>
           <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
           <li>Built custom web scraping systems for industry-specific data sources.</li>
         </ul>
@@ -276,20 +285,10 @@ title: Home
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Jan 2025 – Jan 2026 · Freelance · Remote</p>
-        <h4 class="experience-role">AI &amp; LLM Data Analyst</h4>
-        <p class="experience-company">Outlier</p>
-        <ul class="experience-bullets">
-          <li>Reviewed and annotated 1,000+ Danish-language AI conversations to improve response quality.</li>
-          <li>Spotted patterns where models failed and fed that back into training data.</li>
-          <li>Built practical understanding of how LLMs work and where they break. The same insight powers the AI scoring and qualification workflows I build today.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <p class="experience-date">Jan 2023 – Aug 2023 · Part-time · Hybrid</p>
+        <p class="experience-date">Jan to Aug 2023 · Part-time</p>
         <h4 class="experience-role">Marketing &amp; Digital Graduate</h4>
         <p class="experience-company">Damstahl Danmark</p>
+        <p class="experience-transition">Student job during the BBA at Aarhus BSS.</p>
         <ul class="experience-bullets">
           <li>Managed product and marketing data in ERP and CRM platforms across European markets.</li>
           <li>Built Excel dashboards for campaign reporting.</li>
