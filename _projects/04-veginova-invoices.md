@@ -15,36 +15,44 @@ coming_soon: false
 
 Built for Veginova, a seed business selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation figures in this piece (the 2024 revenue match, the 1.25% tolerance) are real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
 
-## The problem
+**Pillars this case proves:** commercial · close to the decision makers · data depth
 
-Like many small businesses, Veginova's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture: which products actually made money, which customers were worth keeping, and how much cash was tied up in unpaid invoices.
+## The business question
 
-Leadership couldn't answer basic commercial questions with confidence:
+Leadership at Veginova, a family-owned seed company, asked three questions no report could answer:
 
 - What's the real gross margin on each seed variety?
 - Which customers drive profit, and which just drive volume?
 - How much money is owed to us right now, and when will it arrive?
 
+Three decisions hang on those answers: which varieties to push, which customers to prioritise, and which invoices to chase. The ask came straight from the people running the business, not from a reporting backlog.
+
+## The data reality before
+
+Like many small businesses, Veginova's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture. The invoices held the record of what was actually sold, to whom, at what price, but nothing proved the two sets of numbers tied together.
+
 The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly 40% of CFOs said they don't completely trust their own organisation's financial data. Veginova was living that problem.
 
-## What I did
+## The build
 
 I made one decision that shaped everything: **the invoices are the truth.** They're the record of what was actually sold, to whom, at what price. The tax accounts became a cross-check, not the source.
 
-Then I built one connected system that:
+The path from source to screen: raw invoice Excel exports land in a Postgres staging layer, SQL transforms them into a star schema at invoice-line grain, a reconcile gate proves the total ties to the official accounts before anything publishes, and Power BI reads the finished mart and aggregates. The logic lives in the data layer, not in the report, which is what lets it reconcile and stay trustworthy.
+
+The system:
 
 - Pulled every invoice down to the line item: product, customer, price, cost
 - **Reconciled the invoice revenue against the official accounts** to prove the numbers tied out
 - Calculated gross margin per seed variety and profit per customer
 - Tracked accounts receivable: what's owed, how old it is, when it's expected
 
-This wasn't a dashboard sitting on a spreadsheet. It's an end-to-end pipeline: I built the data ingestion in Python, modelled and transformed the invoice data in SQL, automated the refresh, and used Power BI only as the final layer. The logic lives in the data layer, not in the report, which is what lets it reconcile and stay trustworthy.
-
 There's a deliberate limit here, and it's an honest one: the dashboard measures **contribution margin** (revenue minus the direct cost of the seed), not bottom-line profit. Overhead lives in the bookkeeping system, and rebuilding it here would just duplicate the official accounts. So the margins below are contribution, the number that tells you which products carry the business, not statutory profit.
 
-## What I found
+The full technical detail (the model, the ingestion, the gate, the DAX) is in "How it's built" at the bottom.
 
-The reconciliation held: **2024 revenue tied to the official figure of 2,312,690 DKK, within 1.25%**, and the remaining gap was fully explained by currency timing, not error. That match is the whole foundation. It's the difference between "here's a number" and "here's a number you can act on," and it's the first thing a finance reader should be told: it ties out, and the proof is one click away.
+## The numbers
+
+The one that matters: **2024 revenue tied to the official accounts within 1.25%**, and the remaining gap was fully explained by currency timing, not error. That match is the whole foundation. It's the difference between "here's a number" and "here's a number you can act on," and it's the first thing a finance reader should be told: it ties out, and the proof is one click away.
 
 With trustworthy numbers, the commercial picture finally became visible:
 
@@ -55,7 +63,7 @@ With trustworthy numbers, the commercial picture finally became visible:
 ![Finance overview, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
 *Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. The real Power BI dashboard, shown on illustrative data.*
 
-## The business impact
+## What changed
 
 - **One number instead of three.** Leadership stopped second-guessing the figures and started deciding from them. The single biggest change, and the one that made everything else usable.
 - **Reporting that used to take the better part of a day each month now refreshes on its own.**
@@ -65,11 +73,15 @@ With trustworthy numbers, the commercial picture finally became visible:
 ![Receivables ageing, what's owed, how old, and what's at risk]({{ '/assets/images/projects/veginova-finance-receivables.png' | relative_url }})
 *Accounts receivable by customer and invoice. What used to require manual cross-referencing across spreadsheets is now a glance: what's owed, the collection rate, and days outstanding. The real Power BI dashboard, shown on illustrative data.*
 
-## What the business does now
-
 Leadership can answer the questions that were guesswork before: which varieties to push, which customers to prioritise, and where the cash is.
 
 The recommendation that came out of it: **concentrate commercial effort where the contribution is.** Push the high-margin varieties, protect the small group of customers driving most of the profit, and tighten collection on the invoices aged past 90 days, where the cash is most at risk. None of those calls were possible while the numbers were in dispute. The dashboard didn't just report the business. It settled which number was real, and that's what turned reporting into decisions.
+
+## Stack and role
+
+Built end-to-end, solo, close to the decision makers. I sat with the people who use the numbers, not at the end of a ticket queue: the questions came from leadership, the answers went straight back to them, and every layer in between is mine.
+
+Power BI · PostgreSQL · SQL · Python · Supabase
 
 ---
 
