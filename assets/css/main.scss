@@ -1723,6 +1723,29 @@ ul.hero-stack {
 
     strong { color: var(--text-primary); }
   }
+
+  .experience-subrole {
+    margin-top: 22px;
+    padding-left: 18px;
+    border-left: 1px solid var(--border);
+  }
+
+  .experience-subrole-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 4px 0 0;
+    letter-spacing: -0.01em;
+  }
+
+  .experience-transition {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 4px 0 0;
+    line-height: 1.55;
+  }
 }
 
 // ── SOFT CTA STRIP (homepage bottom → Services) ──────────────────────────────
