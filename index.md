@@ -154,7 +154,7 @@ title: Home
           <li>AI on the roadmap with no data foundation under it</li>
         </ul>
         <p>My background is in commercial operations, across sales, marketing, finance, and the day-to-day of running a business. That's what sets the work apart: I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, finance, and operations actually use them, because I've worked in those functions, not just reported on them.</p>
-        <p>At <strong>Veginova</strong>, an agricultural seed business, I'm building the data, BI, and reporting the business runs on: the finance source of truth, the production planning engine, and the forecasting leadership decides on.</p>
+        <p>At <strong>Veginova</strong>, my family's seed company in Odense, I'm building the data, BI, and reporting the business runs on: the finance source of truth, the production planning engine, and the forecasting leadership decides on. Right now I'm consolidating the whole data landscape onto Microsoft Fabric.</p>
         <p><strong>How I work:</strong></p>
         <ul>
           <li>Build clean, consistent data structures as the foundation</li>
@@ -180,7 +180,7 @@ title: Home
         Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.</p>
         <p>Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
-        <p><strong>Certifications:</strong> Google Data Analytics · MIT Sloan: AI Implications for Business Strategy · Power BI Fundamentals · PL-300 (in progress).</p>
+        <p><strong>Certifications:</strong> Google Data Analytics · Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Power BI Fundamentals (DataCamp) · Microsoft PL-300: Power BI Data Analyst (in preparation).</p>
         <p>Danish, English, Spanish.</p>
         <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
       </div>
@@ -200,87 +200,84 @@ title: Home
     <div class="experience-timeline">
 
       <div class="experience-card">
-        <p class="experience-date">Aug 2023 to now · Full-time</p>
+        <p class="experience-date">Aug 2023 to now</p>
         <h4 class="experience-role">Veginova Seeds</h4>
         <p class="experience-company">Family-owned seed company · Odense, Denmark</p>
-        <p class="experience-transition">Three roles in one company: marketing, then data, now Power BI development.</p>
+        <p class="experience-transition">International growers, distributors, and production partners across Europe and Latin America. (Spring 2026: role at Digi-Tal Regnskab, see below.)</p>
 
         <div class="experience-subrole">
           <p class="experience-date">Jun 2026 to now</p>
           <h5 class="experience-subrole-title">Power BI Developer</h5>
-          <p class="experience-transition">Back after the spring 2026 Data Analyst role at Digi-Tal Regnskab. Leading the Microsoft Fabric consolidation.</p>
+          <p class="experience-transition">Back at Veginova with responsibility for BI and reporting across sales, operations, and production. Driving the consolidation of the entire data landscape into one unified Microsoft ecosystem.</p>
           <ul class="experience-bullets">
-            <li>Building the data, BI, and reporting the business runs on. Extends the reporting stack I already owned here into the financial and operational layer.</li>
-            <li>Built the finance source of truth from invoice lines, reconciled to the official accounts, so profit per product and profit per customer are visible for the first time.</li>
-            <li>Built the production planning engine that sets what to produce, how much, and when, on a one-year seed lead time. It reproduces the planner's own numbers exactly and lets them test a scenario before committing seed.</li>
-            <li>Brought the scoring, forecasting, and revenue analysis I built at Digi-Tal into the finance and operations model here.</li>
+            <li>Architecture: Fabric SQL Database as the operational data layer, OneLake and Direct Lake semantic model, Power BI as the decision layer.</li>
+            <li>Automated line-level invoice extraction with the Claude API: confidence scores and human approval via Power BI translytical task flows. Power Automate for event-driven file synchronisation. Excel inputs as locked tables on SharePoint.</li>
+            <li>Sales and contribution margin dashboards, a seasonal sales forecast, and one unified source of truth reconciled to the accounts. Published as case studies on this site.</li>
           </ul>
-          <p class="experience-stack"><strong>Stack:</strong> Power BI · Microsoft Fabric · SQL · PostgreSQL · Python · Claude Code</p>
+          <p class="experience-stack"><strong>Stack:</strong> Microsoft Fabric · Power BI · DAX · T-SQL · Python · Power Automate · Claude Code</p>
         </div>
 
         <div class="experience-subrole">
-          <p class="experience-date">2025 to 2026</p>
+          <p class="experience-date">May 2025 to Feb 2026</p>
           <h5 class="experience-subrole-title">Data Analyst</h5>
-          <p class="experience-transition">Promoted from Marketing &amp; Operations.</p>
+          <p class="experience-transition">Promoted to ownership of reporting and data infrastructure across sales, operations, and production, and the analyses management steered by.</p>
           <ul class="experience-bullets">
-            <li>Owned the BI and reporting stack across sales, operations, and production. Consolidated the source data and stabilised the reporting the team ran on.</li>
-            <li>Improved KPI accuracy by 40%+. Standardised metric definitions across teams.</li>
-            <li>Cut reporting time by 10+ hours per week. Stabilised broken reporting workflows and consolidated data sources.</li>
-            <li>Resolved data inconsistencies across inventory, sales, and production systems.</li>
+            <li>Owned the shared data foundation: Power BI dashboards, SQL data models, and automated pipelines as one source of truth for sales, operations, and production.</li>
+            <li>Improved KPI accuracy by 40%+: standardised metric definitions across teams and reconciled source data so dashboards matched the underlying systems.</li>
+            <li>Reduced reporting time by 10+ hours per week: stabilised broken workflows, consolidated data sources, and built repeatable pipelines instead of weekly manual rebuilds.</li>
           </ul>
-          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · Python · Excel · Claude Code</p>
+          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · DAX · Python · Excel · Supabase · Claude Code</p>
         </div>
 
         <div class="experience-subrole">
-          <p class="experience-date">2023 to 2025</p>
+          <p class="experience-date">Aug 2023 to May 2025</p>
           <h5 class="experience-subrole-title">Marketing &amp; Operations</h5>
+          <p class="experience-transition">Broad commercial role in the family business. The foundation for everything I do with data today.</p>
           <ul class="experience-bullets">
-            <li>B2B marketing and operations in agriculture, working with international wholesale, distributor, and grower customers.</li>
-            <li>Production visits in Costa Rica, Panama, and Mexico, including company establishment and partner dialogue in Costa Rica.</li>
-            <li>Danish trade fairs with customers, pipeline reporting, and channel attribution.</li>
-            <li>Outbound lead sourcing, CRM hygiene, and lead scoring and prioritisation.</li>
+            <li>B2B marketing and lead sourcing (Clay) toward international wholesale, distributor, and grower customers. Trade fairs and customer events in Denmark.</li>
+            <li>Production visits in Costa Rica, Panama, and Mexico. In Costa Rica also company establishment and dialogue with local partners.</li>
+            <li>Connected ERP, CRM, and operational tools into reliable data flows. The role grew into the data work: the transition to data analyst came from there.</li>
           </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Microsoft Office · Clay · n8n · Supabase · Apify · API sources · GitHub</p>
         </div>
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Feb to May 2026 · Full-time</p>
+        <p class="experience-date">Feb to May 2026</p>
         <h4 class="experience-role">Data Analyst (fully remote)</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
-        <p class="experience-transition">Recruited on the back of the Sira Logic pipeline work. Resigned when the family relocated back to Denmark: the role was fully remote, and I wanted to be on-site, close to the business.</p>
+        <p class="experience-transition">Built the commercial data infrastructure in four months: CRM, ad, and registry data unified into one source of truth, and the models and analyses on top. Recruited on the back of my Sira Logic pipeline work.</p>
         <ul class="experience-bullets">
-          <li>Owned the data work behind a Danish SMB accounting and fintech firm: ICP, scoring, software detection, and full-channel revenue analysis, from raw source through to operationalised scores feeding sales.</li>
-          <li>Built ICP and predictive lead-scoring models plus an ML classifier identifying a prospect's accounting software (holdout AUC 0.75, permutation test p &lt; 0.0001) from Playwright scraping and enrichment waterfalls.</li>
-          <li>Full-channel revenue analysis across Meta, Google, LinkedIn outbound, cold calling, and inbound: close rate, conversion, meeting time, and pipeline velocity by channel and segment. Identified which channels drove customers and which burned budget.</li>
-          <li>Customer, churn, and attribution analysis: segmented the network into customer, lead, lost, and inactive, and built a full-funnel attribution model joining campaign data, CRM deals, and the Danish business registry to isolate the signals separating payers from non-converters.</li>
-          <li>Rebuilt the sales commission model with forecasting weightings, shifting payouts toward subscription and MRR so sellers optimised for LTV instead of discounting to close. Operationalised the scores through an end-to-end LinkedIn pipeline (scraping, enrichment, scoring, sequencing).</li>
+          <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
+          <li>Revenue channel analysis: close rate, conversion, and pipeline velocity across paid, outbound, and inbound, with revenue figures reconciled to the accounts.</li>
+          <li>Predictive models: ICP and lead scoring with strong holdout performance, plus an ML model predicting prospects' accounting software from public registry data (~75% accuracy).</li>
+          <li>Churn and segmentation analysis: customer and prospect base segmented into active, lead, lost, and inactive cohorts. Surfaced funnel drop-off and the patterns behind closed deals.</li>
         </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Pipedrive · Clay · Playwright · Apify · HeyReach · Claude</p>
+        <p class="experience-transition">Resigned when the family relocated back to Denmark. The role was fully remote, and I wanted to be back on-site, close to the business.</p>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Jun 2024 to Aug 2025 · Independent</p>
-        <h4 class="experience-role">Data &amp; AI Consultant</h4>
+        <p class="experience-date">Jun 2024 to Aug 2025</p>
+        <h4 class="experience-role">Data &amp; AI Consultant (independent, alongside Veginova)</h4>
         <p class="experience-company">Sira Logic</p>
-        <p class="experience-transition">Founded alongside the Veginova role.</p>
+        <p class="experience-transition">Own consulting business: end-to-end data and automation systems for B2B companies, from data collection to operationalised scoring in the clients' CRM.</p>
         <ul class="experience-bullets">
-          <li>Service business building AI-driven lead generation, enrichment, and CRM automation for B2B companies.</li>
-          <li>Built lead enrichment and scoring workflows. Qualification accuracy improved by 30 to 40%.</li>
-          <li>Built CRM automation pipelines integrating HubSpot and GoHighLevel with external data sources.</li>
-          <li>Built custom web scraping systems for industry-specific data sources.</li>
+          <li>Scraping, AI-assisted enrichment and qualification, scoring, CRM automation, and lead systems combined in one pipeline. Qualification accuracy up 30 to 40%.</li>
+          <li>Custom web scraping for industry-specific sources. Owned the full cycle: sales, scoping, build, deployment, handoff.</li>
         </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · Clay · Apify · HubSpot · GoHighLevel · HeyReach</p>
+        <p class="experience-transition">This work led directly to the Data Analyst role at Digi-Tal Regnskab.</p>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · n8n · Clay · Apify · HubSpot · GoHighLevel · Excel</p>
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Jan to Aug 2023 · Part-time</p>
-        <h4 class="experience-role">Marketing &amp; Digital Graduate</h4>
+        <p class="experience-date">Jan to Aug 2023</p>
+        <h4 class="experience-role">Marketing &amp; Digital Graduate (student job, part-time during BBA)</h4>
         <p class="experience-company">Damstahl Danmark</p>
-        <p class="experience-transition">Student job during the BBA at Aarhus BSS.</p>
+        <p class="experience-transition">Part-time student job alongside the BBA at Aarhus BSS.</p>
         <ul class="experience-bullets">
-          <li>Managed product and marketing data in ERP and CRM platforms across European markets.</li>
-          <li>Built Excel dashboards for campaign reporting.</li>
-          <li>Standardised regional data processes.</li>
+          <li>Product and marketing data in ERP and CRM across European markets.</li>
+          <li>Excel dashboards for campaign reporting and standardised regional data processes.</li>
         </ul>
       </div>
 
