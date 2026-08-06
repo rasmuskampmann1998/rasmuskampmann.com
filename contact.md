@@ -23,5 +23,5 @@ description: 2 to 3 days. Written report on your current data setup. No obligati
   <div style="margin-top: 32px;">
     <a href="https://calendly.com/rasmuskampmann1998/30min" class="btn-primary" target="_blank" rel="noopener">Book a 30-minute call →</a>
   </div>
-  <p style="margin-top: 28px;">Prefer email? Reach me at <a href="mailto:rasmuskampmann1998@gmail.com">rasmuskampmann1998@gmail.com</a> or on <a href="https://www.linkedin.com/in/rasmuskampmann/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  <p style="margin-top: 28px;">Prefer email? Reach me at <a href="mailto:rasmus.kampmann@hotmail.com">rasmus.kampmann@hotmail.com</a> or on <a href="https://www.linkedin.com/in/rasmuskampmann/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 </div>
