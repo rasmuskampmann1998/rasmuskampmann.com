@@ -144,7 +144,9 @@ title: Home
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
         <p>Hi, I'm Rasmus. I turn scattered commercial data into systems you can trust.</p>
-        <p>I build the end-to-end path from scattered, untrusted data to decisions: integration, source of truth, semantic model, Power BI, then automation and forecasting where AI removes friction. AI is a working method built into the data layer, not the product.</p>
+        <p>I didn't start in data. I started in marketing and operations at <strong>Veginova</strong>, my family's seed company in Odense: sourcing customers, running trade fairs, and visiting production in Costa Rica, Panama, and Mexico. I learned what the numbers meant by collecting them, years before I built a dashboard on them.</p>
+        <p>That's what makes the reporting different. When a report says a variety is running short or a customer isn't profitable, I know which process produced that number and where it breaks, because I worked in the process. The role grew into the data work, and I moved into it from there.</p>
+        <p>Today I own BI and reporting across sales, operations, and production, and I'm consolidating the whole data landscape onto Microsoft Fabric.</p>
         <p><strong>The problems I get called in for:</strong></p>
         <ul>
           <li>ERP, CRM, and spreadsheet data that don't agree</li>
@@ -153,17 +155,6 @@ title: Home
           <li>Forecasting done on gut feel</li>
           <li>AI on the roadmap with no data foundation under it</li>
         </ul>
-        <p>My background is in commercial operations, across sales, marketing, finance, and the day-to-day of running a business. That's what sets the work apart: I read the numbers from inside the business, so I know what they mean, where reporting breaks, and how sales, finance, and operations actually use them, because I've worked in those functions, not just reported on them.</p>
-        <p>At <strong>Veginova</strong>, my family's seed company in Odense, I'm building the data, BI, and reporting the business runs on: the finance source of truth, the production planning engine, and the forecasting leadership decides on. Right now I'm consolidating the whole data landscape onto Microsoft Fabric.</p>
-        <p><strong>How I work:</strong></p>
-        <ul>
-          <li>Build clean, consistent data structures as the foundation</li>
-          <li>Automate ingestion and transformation instead of rebuilding manually</li>
-          <li>Keep pipelines lightweight, not over-engineered</li>
-          <li>Build Power BI models that are easy to maintain and extend</li>
-          <li>Build dashboards around the decisions leadership makes</li>
-          <li>Use AI inside the data flow, where it makes the work faster or more accurate</li>
-        </ul>
         <p><strong>What I've delivered:</strong></p>
         <ul>
           <li>Standardised KPI definitions across sales, operations, and production. Accuracy up 40%+.</li>
@@ -171,20 +162,12 @@ title: Home
           <li>Forecasting built into a production planning system that sets what to produce, how much, and when.</li>
           <li>Financial data unified into a profitability dashboard, reconciled to the accounts.</li>
         </ul>
-        <p style="margin-top: 28px;"><strong>Stack:</strong><br />
-        Power BI: semantic models, DAX, Power Query.<br />
-        SQL: data modeling, ETL, PostgreSQL.<br />
-        Microsoft Fabric: pipelines, Python notebooks for forecasting, Fabric apps.<br />
-        Excel: financial modelling, forecasts, budgets, margin.<br />
-        AI in the data flow: Claude Code, Copilot, and LLM workflows for data prep, SQL and DAX, and documentation.<br />
-        Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.</p>
         <p id="two-layers-of-ai" style="margin-top: 28px;"><strong>Two layers of AI</strong></p>
         <p>AI in my work comes in two layers.</p>
         <p>The AI I implement for the business: LLM extraction with human approval, Copilot on the semantic model, and predictive modelling as classical ML: forecasting, scoring, classification.</p>
         <p>The AI I build with: an agentic setup where Claude Code operates in GitHub, pulls context from Supabase, runs my library of reusable skills, and connects to my tools through MCP. One person, the delivery speed of a small team.</p>
         <p>Between the two layers, the source of truth stays deterministic. Trust is engineering, not generation.</p>
         <p style="margin-top: 28px;">Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
-        <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
         <p><strong>Certifications:</strong> Google Data Analytics · Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Power BI Fundamentals (DataCamp) · Microsoft PL-300: Power BI Data Analyst (in preparation).</p>
         <p>Danish, English, Spanish.</p>
         <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
@@ -292,9 +275,9 @@ title: Home
 
 <section class="cta-soft">
   <div class="container">
-    <span class="eyebrow">Want to work together?</span>
-    <h2>See my freelance services</h2>
-    <a href="{{ '/services' | relative_url }}" class="btn-primary">View Services →</a>
-    <p class="cta-soft-footnote">Recruiters: see my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
+    <span class="eyebrow">Hiring?</span>
+    <h2>Open to on-site roles in Denmark</h2>
+    <a href="{{ '/contact' | relative_url }}" class="btn-primary">Get in touch →</a>
+    <p class="cta-soft-footnote">See my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
   </div>
 </section>
