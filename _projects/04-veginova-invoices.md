@@ -1,18 +1,18 @@
 ---
 layout: project
 title: Invoice & Financial Dashboard
-tagline: "One trusted view of profit per product, profit per customer, and the cash owed, built from invoices and reconciled to the accounts within 1.25%. Commercial figures below are illustrative; the reconciliation is real."
-description: "A seed business had two sets of numbers that disagreed: tax accounts that hid the commercial picture, and invoices that held the truth. I made the invoices the source, reconciled them to the official 2024 revenue within 1.25%, and put profit per product, profit per customer, and accounts receivable on one trusted view."
+tagline: "One trusted view of profit per product, profit per customer, and the cash owed, built from invoices and reconciled to the accounts. Commercial figures below are illustrative; the reconciliation is real."
+description: "A seed business had two sets of numbers that disagreed: tax accounts that hid the commercial picture, and invoices that held the truth. I made the invoices the source, reconciled them to the official 2024 revenue, and put profit per product, profit per customer, and accounts receivable on one trusted view."
 tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Reconciled three conflicting revenue numbers to one trusted figure, then made profit visible per product and per customer for the first time"
-outcome_detail: "2024 revenue tied to the official accounts within 1.25%, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
+outcome_detail: "2024 revenue tied to the official accounts, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
 order: 1
 cover_image: /assets/images/projects/veginova-invoices-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/11-veginova-invoices
 coming_soon: false
 ---
 
-Built for Veginova, a seed business selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation figures in this piece (the 2024 revenue match, the 1.25% tolerance) are real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
+Built for Veginova, a seed business selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation in this piece (the 2024 revenue match against the official accounts) is real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
 
 **Pillars this case proves:** commercial · close to the decision makers · data depth
 
@@ -51,7 +51,7 @@ The full technical detail (the model, the ingestion, the gate, the DAX) is in "H
 
 ## The numbers
 
-The one that matters: **2024 revenue tied to the official accounts within 1.25%**, and the remaining gap was fully explained by currency timing, not error. That match is the whole foundation. It's the difference between "here's a number" and "here's a number you can act on," and it's the first thing a finance reader should be told: it ties out, and the proof is one click away.
+The one that matters: **2024 revenue tied to the official accounts**, and the remaining gap was fully explained by currency timing, not error. That match is the whole foundation. It's the difference between "here's a number" and "here's a number you can act on," and it's the first thing a finance reader should be told: it ties out, and the proof is one click away.
 
 With trustworthy numbers, the commercial picture finally became visible:
 
