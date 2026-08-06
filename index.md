@@ -178,7 +178,12 @@ title: Home
         Excel: financial modelling, forecasts, budgets, margin.<br />
         AI in the data flow: Claude Code, Copilot, and LLM workflows for data prep, SQL and DAX, and documentation.<br />
         Hands-on across ERPs, CRMs, and spreadsheet/BI tools: the full commercial data layer.</p>
-        <p>Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
+        <p id="two-layers-of-ai" style="margin-top: 28px;"><strong>Two layers of AI</strong></p>
+        <p>AI in my work comes in two layers.</p>
+        <p>The AI I implement for the business: LLM extraction with human approval, Copilot on the semantic model, and predictive modelling as classical ML: forecasting, scoring, classification.</p>
+        <p>The AI I build with: an agentic setup where Claude Code operates in GitHub, pulls context from Supabase, runs my library of reusable skills, and connects to my tools through MCP. One person, the delivery speed of a small team.</p>
+        <p>Between the two layers, the source of truth stays deterministic. Trust is engineering, not generation.</p>
+        <p style="margin-top: 28px;">Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p>I replace manual spreadsheets and disconnected reporting with systems that run on their own and make the business easier to understand. The outcome teams hire me for: stop rebuilding reports every Monday, stop questioning the numbers, start making commercial decisions from data you trust.</p>
         <p><strong>Certifications:</strong> Google Data Analytics · Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Power BI Fundamentals (DataCamp) · Microsoft PL-300: Power BI Data Analyst (in preparation).</p>
         <p>Danish, English, Spanish.</p>
