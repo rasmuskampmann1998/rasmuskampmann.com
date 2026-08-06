@@ -1,27 +1,26 @@
 ---
 layout: default
-title: Request your free Data Audit
-description: 2 to 3 days. Written report on your current data setup. No obligation, no sales call required.
+title: Get in touch
+description: Power BI developer and data analyst based in Odense, Denmark. Open to on-site roles.
 ---
 
 <section class="page-hero">
   <div class="container">
-    <h1>Request your free Data Audit</h1>
-    <p>2 to 3 days. Written report on your current data setup. No obligation, no sales call required.</p>
+    <h1>Get in touch</h1>
+    <p>Based in Odense, Denmark. Open to on-site Power BI developer, BI developer, and data analyst roles.</p>
   </div>
 </section>
 
 <div class="page-body">
-  <h2>What you get</h2>
+  <h2>Reach me</h2>
   <ul>
-    <li>A review of your current spreadsheets, reporting, and data flow</li>
-    <li>A map of where your data lives and where it breaks</li>
-    <li>A prioritised list of fixes, ranked by impact and effort</li>
-    <li>A written PDF you can share with your team</li>
+    <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+    <li>LinkedIn: <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">rasmuskampmann</a></li>
+    <li>GitHub: <a href="{{ site.author.github }}" target="_blank" rel="noopener">rasmuskampmann1998</a></li>
+    <li>CV: <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a></li>
   </ul>
-  <p>Most B2B teams know their data is messy but can't see where the biggest leaks are. The audit gives you that map. After it, we decide together whether scoped project work makes sense.</p>
+  <p>Happy to talk through any of the builds on this site: the finance source of truth, the production planning engine, or the Microsoft Fabric consolidation. Email is the fastest way to reach me, or book a slot directly below.</p>
   <div style="margin-top: 32px;">
     <a href="https://calendly.com/rasmuskampmann1998/30min" class="btn-primary" target="_blank" rel="noopener">Book a 30-minute call →</a>
   </div>
-  <p style="margin-top: 28px;">Prefer email? Reach me at <a href="mailto:rasmus.kampmann@hotmail.com">rasmus.kampmann@hotmail.com</a> or on <a href="https://www.linkedin.com/in/rasmuskampmann/" target="_blank" rel="noopener">LinkedIn</a>.</p>
 </div>
