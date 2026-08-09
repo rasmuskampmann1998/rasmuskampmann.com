@@ -69,7 +69,7 @@ title: Home
           </svg>
         </div>
         <h3>SQL</h3>
-        <p>I build the data layer that everything else runs on. Data modeling, ETL, PostgreSQL. Raw source data in, analysis-ready tables out, and the team can query them without asking me first.</p>
+        <p>I build the data layer that everything else runs on. Data modeling and ETL: raw source data in, analysis-ready tables out, and the team can query them without asking me first. I connect to the sources the business already runs on: SQL Server, PostgreSQL, SharePoint, Excel, APIs, and third-party platforms.</p>
       </div>
 
       <div class="skill-card">
@@ -147,6 +147,8 @@ title: Home
         <p>I didn't start in data. I started in marketing and operations at <strong>Veginova</strong>, my family's seed company in Odense: sourcing customers, running trade fairs, and visiting production in Costa Rica, Panama, and Mexico. I learned what the numbers meant by collecting them, years before I built a dashboard on them.</p>
         <p>That's what makes the reporting different. When a report says a variety is running short or a customer isn't profitable, I know which process produced that number and where it breaks, because I worked in the process. The role grew into the data work, and I moved into it from there.</p>
         <p>Today I own BI and reporting across sales, operations, and production, and I'm consolidating the whole data landscape onto Microsoft Fabric.</p>
+        <p>I specialise in Power BI end to end: semantic models, DAX, Power Query, report design, distribution, and access management. I connect Power BI to the sources the business already runs on: SQL Server, PostgreSQL, Microsoft Fabric, SharePoint, Excel, APIs, and third-party platforms.</p>
+        <p>Beyond dashboards: data pipelines and ETL, workflow automation with Power Automate and Python, and forecasting in Fabric notebooks.</p>
         <p><strong>The problems I get called in for:</strong></p>
         <ul>
           <li>ERP, CRM, and spreadsheet data that don't agree</li>
@@ -169,7 +171,8 @@ title: Home
         <p>Between the two layers, the source of truth stays deterministic. Trust is engineering, not generation.</p>
         <p style="margin-top: 28px;">Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p><strong>Certifications:</strong> Google Data Analytics · Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Power BI Fundamentals (DataCamp) · Microsoft PL-300: Power BI Data Analyst (in preparation).</p>
-        <p>Danish, English, Spanish.</p>
+        <p>Danish, English, Spanish, with clients and partners across Europe and Latin America.</p>
+        <p style="margin-top: 28px;">Alongside my role at Veginova, I take on selected freelance reporting builds for small and mid-size companies: fixed scope, from your sources to the first trusted dashboard. Microsoft stack (Power BI, Fabric, Power Automate) or lean stack (Supabase, Python, Power BI, n8n).</p>
         <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
       </div>
       <div class="about-two-col-photo">
@@ -277,6 +280,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Hiring?</span>
     <h2>Open to on-site roles in Denmark</h2>
+    <p class="section-sub">Alongside my role at Veginova, I take on selected freelance reporting builds.</p>
     <a href="{{ '/contact' | relative_url }}" class="btn-primary">Get in touch →</a>
     <p class="cta-soft-footnote">See my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
   </div>
