@@ -16,19 +16,27 @@ Built for Veginova, a seed business with a hard constraint: seed takes about a y
 
 **Pillars this case proves:** commercial · close to the decision makers · data depth
 
-## The business question
+## Situation: one question runs the whole operation
 
 One question runs the whole operation: **how much of each variety must we produce, and when do we have to start?** The planner asked it every cycle, and leadership stood behind it, because the answer commits seed to a year in the ground. Behind it sit two inputs: how much will we sell of each variety, and how much do we have or already on the way.
 
 Get it wrong in either direction and it costs real money. Produce too little and you miss a year of sales you can't recover. Produce too much and you tie up cash in seed you don't need.
 
-## The data reality before
+## Task: make the planner's hand calculation current and testable
+
+The requirement was not a dashboard. It was a decision: which varieties will run short, and how much of each must be committed to now.
+
+Three constraints shaped it. The output had to match the planner's own numbers exactly, or it would not be trusted and would not be used. It had to recompute the moment sales or stock changed, because a plan built on last week's stock is the problem being solved.
+
+And it had to let the planner test a large order or a capacity drop before committing seed, without that test changing anything stored.
+
+### What the data looked like before
 
 Production planning ran on a spreadsheet the planner maintained by hand. It worked, until it didn't. The moment a sale landed or stock changed, the spreadsheet was out of date, and the production decisions built on it were based on stale numbers. The planner was effectively running the whole production, inventory, and sales triangle in their head, cross-referencing sales, stock, and incoming orders by hand.
 
 The stakes are high because of one brutal fact: **seed production takes about a year.** If you discover you're short of a variety, it's already twelve months too late to make more. You can't react to a stockout. You have to see it coming.
 
-## The build
+## Action: built the engine as one SQL view and kept Power BI out of the logic
 
 I took the logic the planner was running by hand and built it into a live system. For every seed variety, it computes the core question, **how much to produce**, from what's actually selling, what's in stock, and what's already on the way.
 
@@ -42,7 +50,7 @@ Three things made it useful beyond the spreadsheet:
 
 The full technical detail (the SQL engine, the snapshot mechanism, the validation gate, the what-if layer) is in "How it's built" at the bottom.
 
-## The numbers
+## Result: zero mismatches against the planner's sheet, enforced on every build
 
 The real test of a planning system is whether it matches reality. I validated the engine against the planner's own existing spreadsheet, the numbers built by hand over years of running the business.
 
@@ -65,7 +73,17 @@ Across the active varieties, the live snapshot showed **500 units to produce, 13
 
 The planner runs production off a system that updates itself and shows what's at risk before it's too late to act. They can commit production decisions with confidence, see months ahead which varieties will run short, and test the impact of a big sale or a capacity problem before it happens, instead of finding out a year later.
 
-**An honest note on what this is.** This is a planning system with scenario testing, validated against ground truth. It is **not** statistical forecasting, and that distinction matters. The business runs on named deals, not predictable trends, so the planner's judgment is the input; the system makes that judgment live, fast, and forward-looking. Claiming a forecast the data can't support would be the weaker move. Reproducing the planner's own numbers on every variety, and turning them into something that updates itself and looks a year ahead, is the stronger one, and it's the true one.
+## What it does not do
+
+**This is not statistical forecasting.** It is a planning system with scenario testing, validated against ground truth. The business runs on named deals, not predictable trends, so the planner's judgment is the input and the system makes that judgment live, fast and forward-looking. Claiming a forecast the data can't support would be the weaker move.
+
+**Production is never measured.** `implied_production` is inferred from stock movement. When stock rises with no recorded arrival, the system attributes the difference to production. That is an inference, and where it comes out negative the transparency page flags it rather than absorbing it.
+
+**Stock history is two observations.** Everything drawn between them is interpolation. The line looks like a trend and is not one. It is two audited year-ends with a straight line between them.
+
+**The safety buffer is unseeded.** `safety_floor` and `safety_months` have no per-variety values yet, so the engine currently produces just enough not to go negative rather than a real batch size. Setting them is a growing decision, not a modelling one I can make.
+
+**Year two is built and unvalidated.** The multi-year view's first year is checked against the live plan. The recursion beyond it runs, but only one sales year is seeded, so it has never been proven.
 
 ## Stack and role
 

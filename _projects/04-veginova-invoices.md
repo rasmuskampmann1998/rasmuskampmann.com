@@ -16,7 +16,7 @@ Built for Veginova, a seed business selling tomato, pepper, and nightshade varie
 
 **Pillars this case proves:** commercial · close to the decision makers · data depth
 
-## The business question
+## Situation: three questions no report could answer
 
 Leadership at Veginova, a family-owned seed company, asked three questions no report could answer:
 
@@ -26,13 +26,21 @@ Leadership at Veginova, a family-owned seed company, asked three questions no re
 
 Three decisions hang on those answers: which varieties to push, which customers to prioritise, and which invoices to chase. The ask came straight from the people running the business, not from a reporting backlog.
 
-## The data reality before
+## Task: produce one revenue figure the owner would sign his name to
+
+The deliverable was a dashboard. The actual requirement was narrower and harder: one revenue number, reconciled to the audited ledger, with the gap between the two sources explained line by line rather than waved at.
+
+Three constraints came with it. It had to run on the existing e-conomic export, with no new bookkeeping process. It had to survive a fresh data load without silently drifting.
+
+And it had to attribute cost per variety, which the official accounts do not do at all.
+
+### What the data looked like before
 
 Like many small businesses, Veginova's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture. The invoices held the record of what was actually sold, to whom, at what price, but nothing proved the two sets of numbers tied together.
 
 The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly 40% of CFOs said they don't completely trust their own organisation's financial data. Veginova was living that problem.
 
-## The build
+## Action: made the invoices the source and the accounts the cross-check
 
 I made one decision that shaped everything: **the invoices are the truth.** They're the record of what was actually sold, to whom, at what price. The tax accounts became a cross-check, not the source.
 
@@ -49,7 +57,7 @@ There's a deliberate limit here, and it's an honest one: the dashboard measures 
 
 The full technical detail (the model, the ingestion, the gate, the DAX) is in "How it's built" at the bottom.
 
-## The numbers
+## Result: 2024 revenue tied to the audited figure, and it stays tied
 
 The one that matters: **2024 revenue tied to the official accounts**, and the remaining gap was fully explained by currency timing, not error. That match is the whole foundation. It's the difference between "here's a number" and "here's a number you can act on," and it's the first thing a finance reader should be told: it ties out, and the proof is one click away.
 
@@ -75,6 +83,20 @@ With trustworthy numbers, the commercial picture finally became visible:
 Leadership can answer the questions that were guesswork before: which varieties to push, which customers to prioritise, and where the cash is.
 
 The recommendation that came out of it: **concentrate commercial effort where the contribution is.** Push the high-margin varieties, protect the small group of customers driving most of the profit, and tighten collection on the invoices aged past 90 days, where the cash is most at risk. None of those calls were possible while the numbers were in dispute. The dashboard didn't just report the business. It settled which number was real, and that's what turned reporting into decisions.
+
+## What it does not do
+
+The parts worth knowing before believing the rest.
+
+**It measures contribution margin, not profit.** Revenue minus the direct cost of the seed. Overhead stays in the bookkeeping system, because rebuilding it here would duplicate the official accounts. Contribution tells you which varieties carry the business. It does not tell you whether the business made money.
+
+**Part of the forward view rests on a price assumption.** Forecast revenue is derived at historical prices and is not booked. It is labelled as derived everywhere it appears, and it is not a commitment.
+
+**There is a gap in 2026.** Invoices for January to July 2026 are not loaded, so any period crossing that window is incomplete rather than zero. The report says so on the page, not in a footnote.
+
+**A chatbot was specified and I refused to build it.** The proposed design reached the database through a `service_role` key and an `exec_sql` wrapper capable of running `DROP`. A natural-language layer with that much authority is one prompt away from dropping a table, and no amount of prompt filtering fixes a permission model. It needs a read-only role and a query allow-list first. That work has not been done, so the feature does not exist.
+
+Saying that out loud costs a feature. Building it would have cost the client their data.
 
 ## Stack and role
 
