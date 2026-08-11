@@ -68,7 +68,7 @@ With trustworthy numbers, the commercial picture finally became visible:
 - **Accounts receivable.** Around 1.2M DKK was outstanding, of which roughly a quarter had aged past 90 days and was quietly at risk.
 
 ![Finance overview, revenue, contribution margin, and receivables on one view]({{ '/assets/images/projects/veginova-finance-overview.png' | relative_url }})
-*Revenue, contribution margin, and accounts receivable on a single trusted view. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. The real Power BI dashboard, shown on illustrative data.*
+*Total and operating revenue, contribution margin, and margin percentage, with revenue by month against revenue by bucket. The reconciliation result sits behind the revenue figure: leadership is told it ties out; the detail is one click down. The real Power BI dashboard, shown on illustrative data.*
 
 ## What changed
 
