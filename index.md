@@ -113,6 +113,16 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 4 21 4 14 12 14 19 10 21 10 12"/>
+          </svg>
+        </div>
+        <h3>Commercial &amp; GTM data</h3>
+        <p>Channel revenue analysis: close rate, conversion, and pipeline velocity by channel and segment. Attribution models joining campaign data and CRM deals. Lead scoring and ICP definition built from closed-won data instead of opinion. CRM enrichment pipelines that feed sales-ready records automatically.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/>
             <circle cx="12" cy="12" r="1.6"/>
           </svg>
@@ -172,7 +182,7 @@ title: Home
         <p style="margin-top: 28px;">Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
         <p><strong>Certifications:</strong> Google Data Analytics · Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Power BI Fundamentals (DataCamp) · Microsoft PL-300: Power BI Data Analyst (in preparation).</p>
         <p>Danish, English, Spanish, with clients and partners across Europe and Latin America.</p>
-        <p style="margin-top: 28px;">Alongside my role at Veginova, I take on selected freelance reporting builds for small and mid-size companies: fixed scope, from your sources to the first trusted dashboard. Microsoft stack (Power BI, Fabric, Power Automate) or lean stack (Supabase, Python, Power BI, n8n).</p>
+        <p style="margin-top: 28px;">Alongside my role at Veginova, I take on selected freelance builds for sales and RevOps teams at product companies: fixed scope, from your CRM, ERP, and channel data to the first dashboard your team actually decides on. Microsoft stack (Power BI, Fabric, Power Automate) or lean stack (Supabase, Python, Power BI, n8n).</p>
         <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
       </div>
       <div class="about-two-col-photo">
@@ -198,7 +208,7 @@ title: Home
 
         <div class="experience-subrole">
           <p class="experience-date">Jun 2026 to now</p>
-          <h5 class="experience-subrole-title">Power BI Developer</h5>
+          <h5 class="experience-subrole-title">Power BI Developer &amp; Data Analyst</h5>
           <p class="experience-transition">Back at Veginova with responsibility for BI and reporting across sales, operations, and production. Driving the consolidation of the entire data landscape into one unified Microsoft ecosystem.</p>
           <ul class="experience-bullets">
             <li>Architecture: Fabric SQL Database as the operational data layer, OneLake and Direct Lake semantic model, Power BI as the decision layer.</li>
@@ -241,7 +251,7 @@ title: Home
         <ul class="experience-bullets">
           <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
           <li>Revenue channel analysis: close rate, conversion, and pipeline velocity across paid, outbound, and inbound, with revenue figures reconciled to the accounts.</li>
-          <li>Predictive models: ICP and lead scoring with strong holdout performance, plus an ML model predicting prospects' accounting software from public registry data (~75% accuracy).</li>
+          <li>Predictive models: ICP and lead scoring with strong holdout performance, plus an ML model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
           <li>Churn and segmentation analysis: customer and prospect base segmented into active, lead, lost, and inactive cohorts. Surfaced funnel drop-off and the patterns behind closed deals.</li>
         </ul>
         <p class="experience-transition">Resigned when the family relocated back to Denmark. The role was fully remote, and I wanted to be back on-site, close to the business.</p>
@@ -280,7 +290,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Hiring?</span>
     <h2>Open to on-site roles in Denmark</h2>
-    <p class="section-sub">Alongside my role at Veginova, I take on selected freelance reporting builds.</p>
+    <p class="section-sub">Alongside my role at Veginova, I take on selected freelance builds for sales and RevOps teams at product companies.</p>
     <a href="{{ '/contact' | relative_url }}" class="btn-primary">Get in touch →</a>
     <p class="cta-soft-footnote">See my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
   </div>
