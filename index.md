@@ -85,18 +85,6 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-            <polyline points="2 17 12 22 22 17"/>
-            <polyline points="2 12 12 17 22 12"/>
-          </svg>
-        </div>
-        <h3>Microsoft Fabric</h3>
-        <p>Pipelines, Python notebooks for forecasting, and Fabric apps. Ingestion, modelling, and reporting in one platform instead of three tools that don't talk to each other.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"/>
             <polyline points="8 6 2 12 8 18"/>
             <line x1="14" y1="4" x2="10" y2="20"/>
