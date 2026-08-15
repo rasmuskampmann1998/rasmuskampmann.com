@@ -16,8 +16,8 @@ title: Home
       <li>Microsoft Fabric</li>
       <li>Python</li>
     </ul>
-    <p class="hero-slogan">I turn scattered commercial data into <span class="highlight">systems you can trust.</span></p>
-    <p class="hero-background">3+ years working in commercial, now building the end-to-end path from scattered data to decisions: integration, source of truth, semantic model, Power BI, then automation and forecasting where AI removes friction.</p>
+    <p class="hero-slogan">I build the data layer <span class="highlight">sales and RevOps teams run on.</span></p>
+    <p class="hero-background">3+ years working in commercial, now building the end-to-end path from scattered data to decisions: CRM, ERP, and channel data into one set of numbers, then the model, the dashboard, and the scoring that tells the team who to call.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -45,8 +45,18 @@ title: Home
   <div class="container">
     <span class="eyebrow">Skills</span>
     <h2>What I Do</h2>
-    <p class="section-sub">Power BI and SQL are most of the work. The rest is what the work needs.</p>
+    <p class="section-sub">The commercial work is the point. Power BI and SQL are how it gets built.</p>
     <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 4 21 4 14 12 14 19 10 21 10 12"/>
+          </svg>
+        </div>
+        <h3>Commercial &amp; GTM data</h3>
+        <p>Channel revenue analysis: close rate, conversion, and pipeline velocity by channel and segment. Attribution models joining campaign data and CRM deals. Lead scoring and ICP definition built from closed-won data instead of opinion. CRM enrichment pipelines that feed sales-ready records automatically.</p>
+      </div>
 
       <div class="skill-card">
         <div class="skill-icon">
@@ -113,16 +123,6 @@ title: Home
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="3 4 21 4 14 12 14 19 10 21 10 12"/>
-          </svg>
-        </div>
-        <h3>Commercial &amp; GTM data</h3>
-        <p>Channel revenue analysis: close rate, conversion, and pipeline velocity by channel and segment. Attribution models joining campaign data and CRM deals. Lead scoring and ICP definition built from closed-won data instead of opinion. CRM enrichment pipelines that feed sales-ready records automatically.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/>
             <circle cx="12" cy="12" r="1.6"/>
           </svg>
@@ -139,7 +139,7 @@ title: Home
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Three builds at one company, in depth: the finance source of truth, the production planning engine, and the Microsoft Fabric platform they're consolidating onto. Power BI, Fabric, and Claude in the pipeline. Written for non-technical readers.</p>
+    <p class="section-sub">Four builds, following one commercial question from top to bottom: which channels are worth the spend, where the funnel actually leaks, which accounts to call first, and what each customer is really worth. Three use synthetic data and name no client. The fourth is a real finance build. Written for non-technical readers.</p>
     {% assign sorted_projects = site.projects | sort: "order" %}
     <div class="projects-grid-large">
       {% for project in sorted_projects %}{% include project-card.html project=project %}{% endfor %}
@@ -161,10 +161,11 @@ title: Home
         <p>Beyond dashboards: data pipelines and ETL, workflow automation with Power Automate and Python, and forecasting in Fabric notebooks.</p>
         <p><strong>The problems I get called in for:</strong></p>
         <ul>
-          <li>ERP, CRM, and spreadsheet data that don't agree</li>
-          <li>KPIs defined differently in every report</li>
+          <li>CRM, ERP, and spreadsheet data that don't agree</li>
+          <li>Channel spend with no line back to invoiced revenue</li>
+          <li>Lead scoring and ICP decided by opinion, not by closed-won data</li>
+          <li>No ranked view of which accounts to work this week</li>
           <li>Reporting rebuilt by hand every week</li>
-          <li>Forecasting done on gut feel</li>
           <li>AI on the roadmap with no data foundation under it</li>
         </ul>
         <p><strong>What I've delivered:</strong></p>
@@ -232,7 +233,7 @@ title: Home
 
         <div class="experience-subrole">
           <p class="experience-date">Aug 2023 to May 2025</p>
-          <h5 class="experience-subrole-title">Marketing &amp; Operations</h5>
+          <h5 class="experience-subrole-title">Marketing &amp; Operations (GTM)</h5>
           <p class="experience-transition">Broad commercial role in the family business. The foundation for everything I do with data today.</p>
           <ul class="experience-bullets">
             <li>B2B marketing and lead sourcing (Clay) toward international wholesale, distributor, and grower customers. Trade fairs and customer events in Denmark.</li>
@@ -245,7 +246,7 @@ title: Home
 
       <div class="experience-card">
         <p class="experience-date">Feb to May 2026</p>
-        <h4 class="experience-role">Data Analyst (fully remote)</h4>
+        <h4 class="experience-role">Data Analyst (Commercial) &amp; GTM Engineer</h4>
         <p class="experience-company">Digi-Tal Regnskab</p>
         <p class="experience-transition">Built the commercial data infrastructure in four months: CRM, ad, and registry data unified into one source of truth, and the models and analyses on top. Recruited on the back of my Sira Logic pipeline work.</p>
         <ul class="experience-bullets">
@@ -260,7 +261,7 @@ title: Home
 
       <div class="experience-card">
         <p class="experience-date">Jun 2024 to Aug 2025</p>
-        <h4 class="experience-role">Data &amp; AI Consultant (independent, alongside Veginova)</h4>
+        <h4 class="experience-role">Data Consultant &amp; GTM Engineer (Independent)</h4>
         <p class="experience-company">Sira Logic</p>
         <p class="experience-transition">Own consulting business: end-to-end data and automation systems for B2B companies, from data collection to operationalised scoring in the clients' CRM.</p>
         <ul class="experience-bullets">
