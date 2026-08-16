@@ -5,6 +5,9 @@ layout: default
   <header class="project-hero">
     <div class="container">
       <a href="{{ '/#projects' | relative_url }}" class="back-link">&larr; All case studies</a>
+      {% if page.archived %}
+      <p class="archived-notice">Archived analysis work. My current focus is here: <a href="{{ '/' | relative_url }}">rasmuskampmann.com</a>.</p>
+      {% endif %}
       <div class="project-tools-header">
         {% for tool in page.tools %}
         <span class="tag">{{ tool }}</span>

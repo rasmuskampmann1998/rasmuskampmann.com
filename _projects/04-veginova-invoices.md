@@ -1,12 +1,12 @@
 ---
 layout: project
 title: Invoice & Financial Dashboard
-tagline: "One trusted view of profit per product, profit per customer, and the cash owed, built from invoices and reconciled to the accounts. Commercial figures below are illustrative; the reconciliation is real."
+tagline: "One trusted view of profit per product, profit per customer, and the money owed. Built from invoices and checked line by line against the accounts."
 description: "A seed business had two sets of numbers that disagreed: tax accounts that hid the commercial picture, and invoices that held the truth. I made the invoices the source, reconciled them to the official 2024 revenue, and put profit per product, profit per customer, and accounts receivable on one trusted view."
 tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Reconciled three conflicting revenue numbers to one trusted figure, then made profit visible per product and per customer for the first time"
 outcome_detail: "2024 revenue tied to the official accounts, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
-order: 4
+order: 1
 cover_image: /assets/images/projects/veginova-invoices-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/11-veginova-invoices
 coming_soon: false
@@ -38,7 +38,7 @@ And it had to attribute cost per variety, which the official accounts do not do 
 
 Like many small businesses, Veginova's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture. The invoices held the record of what was actually sold, to whom, at what price, but nothing proved the two sets of numbers tied together.
 
-The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly 40% of CFOs said they don't completely trust their own organisation's financial data. Veginova was living that problem.
+The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly four in ten CFOs said they don't completely trust their own organisation's financial data. Veginova was living that problem.
 
 ## Action: made the invoices the source and the accounts the cross-check
 
