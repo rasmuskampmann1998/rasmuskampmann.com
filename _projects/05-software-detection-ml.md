@@ -7,6 +7,7 @@ tools: [Python, scikit-learn, XGBoost, SHAP, pandas, PostgreSQL, GitHub Actions]
 outcome_headline: "Reordered the cold-outbound dialler queue around companies the model thinks are most likely to fit, before reps make a single call"
 outcome_detail: "Deployed as a score boost in the lead-scoring pipeline, reordering the queue automatically every morning and retraining itself monthly. Built on 4,658 training rows of public registry data. Reproducible on a 5,000-row synthetic dataset."
 order: 3
+archived: true
 cover_image: /assets/images/projects/software-detection-ml-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/03-software-detection-ml
 ---

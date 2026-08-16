@@ -795,6 +795,17 @@ section .section-sub {
     &:hover { color: var(--text-primary); }
   }
 
+  .archived-notice {
+    border-left: 2px solid var(--border);
+    padding-left: 14px;
+    margin: 0 0 24px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+
+    a { color: var(--accent-green); }
+    a:hover { color: var(--text-primary); }
+  }
+
   .project-tools-header {
     display: flex;
     flex-wrap: wrap;
@@ -1406,10 +1417,14 @@ section .section-sub {
 
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // Six tracks so five cards sit 3 + 2 with the short row centred.
+    grid-template-columns: repeat(6, 1fr);
     gap: 28px;
     margin-top: 8px;
     text-align: center;
+
+    > .skill-card { grid-column: span 2; }
+    > .skill-card:nth-child(4) { grid-column: 2 / span 2; }
   }
 
   .skill-card {
@@ -1796,7 +1811,13 @@ ul.hero-stack {
     margin: 0 auto;
   }
 
-  .skills-grid-section .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .skills-grid-section .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    // Drop the six-track centring: two cards per row, last one sits alone.
+    > .skill-card,
+    > .skill-card:nth-child(4) { grid-column: auto; }
+  }
   .projects-grid-large { grid-template-columns: 1fr; }
 
   .about-two-col .about-two-col-grid {
