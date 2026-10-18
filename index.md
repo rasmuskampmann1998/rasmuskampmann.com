@@ -59,7 +59,7 @@ description: Know what to produce, stock and sell next season. Custom operations
       <article class="offer-card">
         <span class="offer-step">3</span>
         <h3>Operations System</h3>
-        <p>Orders, invoicing, accounting integration, production partner quality data and reporting in one connected system. Or only the parts you need.</p>
+        <p>Orders, international invoices, production partner quality data and reporting in one connected system. Or only the parts you need.</p>
       </article>
     </div>
     <p class="offer-note">Prefer to keep it simple? A season planning retainer keeps your forecast and production plan up to date every season.</p>
@@ -72,7 +72,7 @@ description: Know what to produce, stock and sell next season. Custom operations
     <h2>Built around how you already work</h2>
     <ul class="offer-list">
       <li><strong>We start with a short call</strong> about how you plan, track stock and sell today, and where it breaks.</li>
-      <li><strong>I build on the tools you already use.</strong> Excel stays your front end. Behind it, the Microsoft tools (Power BI, Power Apps, Power Automate) connect your data and keep it in sync automatically. Your accounting software is integrated, not replaced.</li>
+      <li><strong>I build on the tools you already use.</strong> Excel stays your front end. Behind it, the Microsoft tools (Power BI, Power Apps, Power Automate) connect your data and keep it in sync automatically. Your accounting software stays as it is.</li>
       <li><strong>You get a system your team can use without me,</strong> documented and handed over properly.</li>
       <li><strong>AI where it helps.</strong> Your team can ask the data questions in plain language and get an alert when a lot is due for a retest or a variety is running short.</li>
     </ul>
