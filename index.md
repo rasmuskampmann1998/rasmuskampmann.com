@@ -12,7 +12,10 @@ description: Know what to produce, stock and sell next season. Custom operations
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 30-minute call</a>
       <a href="#demo" class="offer-btn">See the demo</a>
     </div>
-    <p class="offer-byline">Rasmus Kampmann, Power BI Consultant for seed and agriculture companies.</p>
+    <div class="offer-badge">
+      <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="" width="44" height="44" />
+      <p><strong>Rasmus Kampmann, Power BI Consultant for seed and agriculture companies.</strong> The call is with me. You get a straight answer, not a sales pitch.</p>
+    </div>
   </div>
 </section>
 
@@ -87,14 +90,23 @@ description: Know what to produce, stock and sell next season. Custom operations
   </div>
 </section>
 
-<section class="offer-section" id="why">
-  <div class="container offer-narrow">
-    <h2>Built by someone who works inside a seed company</h2>
-    <ul class="offer-list">
-      <li>I build and run the operations system for a family-owned seed company with operations in Europe and Latin America: stock, lots, production, quality tests, forecasting and invoicing.</li>
-      <li>I know the seed business from the inside: varieties, seasons, production partners, distributors and export markets.</li>
-      <li>I work in English and fluent Spanish, so Latin American teams, growers and distributors can use the system too.</li>
-    </ul>
+<section class="offer-section" id="about">
+  <div class="container">
+    <div class="offer-about">
+      <div class="offer-about-photo">
+        <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="Rasmus Kampmann" width="800" height="800" loading="lazy" />
+      </div>
+      <div class="offer-about-text">
+        <h2>Built by someone who works inside a seed company</h2>
+        <p class="offer-about-intro">I'm Rasmus Kampmann, a Power BI Consultant based in Odense, Denmark.</p>
+        <ul class="offer-list">
+          <li>I started in marketing and operations at a family-owned seed company with operations in Europe and Latin America, and visited its production in Costa Rica, Panama and Mexico. Today I build and run its operations system: stock, lots, production, quality tests, forecasting and invoicing.</li>
+          <li>I know the seed business from the inside: varieties, seasons, production partners, distributors and export markets.</li>
+          <li>I work in English and fluent Spanish, so Latin American teams, growers and distributors can use the system too.</li>
+        </ul>
+        <p class="offer-about-links"><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="{{ '/portfolio/' | relative_url }}">Portfolio and CV</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -140,6 +152,10 @@ description: Know what to produce, stock and sell next season. Custom operations
     <div class="offer-ctas">
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 30-minute call</a>
       <a href="mailto:{{ site.author.email }}" class="offer-btn">Email me</a>
+    </div>
+    <div class="offer-badge">
+      <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="" width="44" height="44" />
+      <p>The call is with me, Rasmus. You get a straight answer on whether I can help, not a sales pitch.</p>
     </div>
   </div>
 </section>
