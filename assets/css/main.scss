@@ -2094,3 +2094,68 @@ ul.hero-stack {
   .offer-section .container,
   .offer-hero .container { padding: 0 16px; }
 }
+
+// Offer page: founder badge under the booking buttons, and the about block
+.offer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 560px;
+  margin: 26px auto 0;
+  text-align: left;
+
+  img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-green);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.45; }
+  strong { color: var(--text-secondary); font-weight: 600; }
+}
+
+.offer-about {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  h2 { text-align: left; margin-bottom: 18px; }
+}
+
+.offer-about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border-strong);
+}
+
+.offer-about-intro {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+
+.offer-about-links {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .offer-about {
+    grid-template-columns: 1fr;
+    gap: 28px;
+
+    h2 { text-align: center; }
+  }
+
+  .offer-about-photo { max-width: 260px; margin: 0 auto; }
+}
