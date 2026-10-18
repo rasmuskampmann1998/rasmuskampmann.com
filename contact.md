@@ -19,7 +19,6 @@ description: Book a 30-minute call about how you plan production and track stock
   <ul>
     <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
     <li>LinkedIn: <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">rasmuskampmann</a></li>
-    <li>CV: <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>, and the case studies on the <a href="{{ '/portfolio/' | relative_url }}">portfolio page</a>.</li>
   </ul>
   <p>I work in English and Spanish. Email is fine if you would rather write first.</p>
 </div>
