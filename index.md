@@ -9,7 +9,7 @@ description: Know what to produce, stock and sell next season. Custom operations
     <h1>Know what to produce, stock and sell next season.</h1>
     <p class="offer-sub">Operations systems for seed and agriculture companies, built inside Excel and the Microsoft tools you already use. In English and Spanish.</p>
     <div class="offer-ctas">
-      <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 20-minute call</a>
       <a href="#how" class="offer-btn">How it works</a>
     </div>
     <div class="offer-badge">
@@ -49,12 +49,12 @@ description: Know what to produce, stock and sell next season. Custom operations
       <article class="offer-card">
         <span class="offer-step">1</span>
         <h3>Production Planner</h3>
-        <p>Your sales forecast per variety and market, set against your stock and turned into a production plan. Including whether counter-season production closes the gap in time.</p>
+        <p>Your sales forecast per variety, set against your released stock and turned into a production plan: the need per month, with shortage warnings while there is still time to act.</p>
       </article>
       <article class="offer-card">
         <span class="offer-step">2</span>
         <h3>Stock &amp; Lot Control</h3>
-        <p>Live stock per variety, lot and location. Germination tests and retest alerts. A clear view of what is reserved and what is free to sell.</p>
+        <p>Live stock per variety, lot and location, calculated from every movement since the last count. Germination tests and retest alerts. A clear view of what can be sold today, lot by lot.</p>
       </article>
       <article class="offer-card">
         <span class="offer-step">3</span>
@@ -90,7 +90,7 @@ put the hero button back to href="#demo" "See the demo", and add the Demo link t
       <!-- VIDEO EMBED: replace this paragraph with the 2-minute walkthrough (iframe or video, 16:9) -->
       <p>Video walkthrough coming soon</p>
     </div>
-    <p class="offer-caption">Demo with example data. On a call I can show it with your own varieties and markets.</p>
+    <p class="offer-caption">Demo with example data. On a call I can show it with your own varieties.</p>
   </div>
 </section>
 {% endcomment %}
@@ -117,8 +117,8 @@ put the hero button back to href="#demo" "See the demo", and add the Demo link t
 
 <section class="offer-section offer-section--alt" id="guarantee">
   <div class="container offer-narrow">
-    <h2>No cure, no pay</h2>
-    <p class="offer-lead">We agree the scope in writing before we start. If I don't deliver what we agreed, you don't pay.</p>
+    <h2>No cure, no second payment</h2>
+    <p class="offer-lead">We agree the scope and the acceptance test in writing before we start. The first payment covers the work done. If what we agreed is not met, you don't pay the second half.</p>
   </div>
 </section>
 
@@ -153,9 +153,9 @@ put the hero button back to href="#demo" "See the demo", and add the Demo link t
 <section class="offer-section offer-final" id="contact">
   <div class="container offer-narrow">
     <h2>Planning next season?</h2>
-    <p class="offer-lead">Tell me how you plan production and track stock today. In 30 minutes we'll know if I can help.</p>
+    <p class="offer-lead">Tell me how you plan production and track stock today. In 20 minutes we'll know if I can help.</p>
     <div class="offer-ctas">
-      <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 20-minute call</a>
       <a href="mailto:{{ site.author.email }}" class="offer-btn">Email me</a>
     </div>
     <div class="offer-badge">
