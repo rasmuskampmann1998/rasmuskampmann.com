@@ -1893,3 +1893,272 @@ ul.hero-stack {
 @media (max-width: 480px) {
   .impact .impact-grid { grid-template-columns: 1fr; }
 }
+
+// ── OFFER PAGE (homepage since 2026-10, one-page offer for seed and agri) ────
+.offer-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent-green);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.15s;
+
+  &:hover { background: var(--accent-green); color: var(--bg-primary); }
+  &:focus-visible { outline: 2px solid var(--text-primary); outline-offset: 3px; }
+
+  &.offer-btn--primary {
+    background: var(--accent-green);
+    color: var(--bg-primary);
+    font-weight: 700;
+
+    &:hover { background: #9FCC47; border-color: #9FCC47; }
+  }
+}
+
+.offer-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.offer-hero {
+  padding: 96px 0 80px;
+  text-align: center;
+
+  h1 {
+    font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+    max-width: 880px;
+    margin: 0 auto 22px;
+  }
+
+  .offer-sub {
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto 34px;
+  }
+
+  .offer-byline {
+    margin-top: 22px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+}
+
+.offer-section {
+  border-top: 1px solid var(--border);
+
+  h2 {
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &.offer-section--alt { background: var(--bg-secondary); }
+}
+
+.offer-narrow { max-width: 760px; }
+
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.offer-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+
+  p + p { margin-top: 10px; }
+}
+
+.offer-section--alt .offer-card { background: var(--bg-tertiary); }
+
+.offer-cost { color: var(--text-muted); }
+
+.offer-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent-green);
+  color: var(--accent-green);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.offer-note {
+  text-align: center;
+  max-width: 680px;
+  margin: 28px auto 0;
+
+  & + .offer-note { margin-top: 8px; color: var(--text-muted); }
+}
+
+.offer-list {
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      background: var(--accent-green);
+    }
+  }
+
+  strong { color: var(--text-primary); }
+}
+
+.offer-lead {
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+#guarantee .offer-lead { margin-bottom: 0; }
+
+.demo-slot {
+  aspect-ratio: 16 / 9;
+  border: 1.5px dashed var(--border-strong);
+  border-radius: 12px;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  overflow: hidden;
+
+  iframe, video { width: 100%; height: 100%; border: 0; }
+}
+
+.offer-caption {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-top: 14px;
+}
+
+.offer-faq {
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+
+  summary {
+    cursor: pointer;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.05rem;
+    list-style-position: outside;
+
+    &:focus-visible { outline: 2px solid var(--accent-green); outline-offset: 4px; }
+  }
+
+  details p { margin-top: 10px; }
+}
+
+.offer-final { background: var(--bg-secondary); }
+
+@media (max-width: 900px) {
+  .offer-cards { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .offer-hero { padding: 56px 0 48px; }
+  .offer-ctas { flex-direction: column; align-items: stretch; }
+  .offer-section .container,
+  .offer-hero .container { padding: 0 16px; }
+}
+
+// Offer page: founder badge under the booking buttons, and the about block
+.offer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 560px;
+  margin: 26px auto 0;
+  text-align: left;
+
+  img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-green);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.45; }
+  strong { color: var(--text-secondary); font-weight: 600; }
+}
+
+.offer-about {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  h2 { text-align: left; margin-bottom: 18px; }
+}
+
+.offer-about-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border-strong);
+}
+
+.offer-about-intro {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+
+.offer-about-links {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .offer-about {
+    grid-template-columns: 1fr;
+    gap: 28px;
+
+    h2 { text-align: center; }
+  }
+
+  .offer-about-photo { max-width: 260px; margin: 0 auto; }
+}
+
+// Anchor jumps land below the sticky 68px header
+.offer-section, .offer-hero { scroll-margin-top: 68px; }
