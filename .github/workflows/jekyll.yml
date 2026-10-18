@@ -2,7 +2,7 @@ name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main", "offer-site"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -36,7 +36,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
