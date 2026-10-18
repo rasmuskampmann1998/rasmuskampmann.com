@@ -10,7 +10,7 @@ description: Know what to produce, stock and sell next season. Custom operations
     <p class="offer-sub">Operations systems for seed and agriculture companies, built inside Excel and the Microsoft tools you already use. In English and Spanish.</p>
     <div class="offer-ctas">
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a 30-minute call</a>
-      <a href="#demo" class="offer-btn">See the demo</a>
+      <a href="#how" class="offer-btn">How it works</a>
     </div>
     <div class="offer-badge">
       <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="" width="44" height="44" />
@@ -79,6 +79,10 @@ description: Know what to produce, stock and sell next season. Custom operations
   </div>
 </section>
 
+{% comment %}
+DEMO SECTION: hidden until the video exists. To restore: delete this comment wrapper,
+put the hero button back to href="#demo" "See the demo", and add the Demo link to _includes/header.html.
+{% endcomment %}{% comment %}
 <section class="offer-section offer-section--alt" id="demo">
   <div class="container offer-narrow">
     <h2>See the Production Planner</h2>
@@ -89,6 +93,7 @@ description: Know what to produce, stock and sell next season. Custom operations
     <p class="offer-caption">Demo with example data. On a call I can show it with your own varieties and markets.</p>
   </div>
 </section>
+{% endcomment %}
 
 <section class="offer-section" id="about">
   <div class="container">
@@ -104,7 +109,7 @@ description: Know what to produce, stock and sell next season. Custom operations
           <li>I know the seed business from the inside: varieties, seasons, production partners, distributors and export markets.</li>
           <li>I work in English and fluent Spanish, so Latin American teams, growers and distributors can use the system too.</li>
         </ul>
-        <p class="offer-about-links"><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · <a href="{{ '/portfolio/' | relative_url }}">Portfolio and CV</a></p>
+        <p class="offer-about-links"><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">Find me on LinkedIn</a></p>
       </div>
     </div>
   </div>
