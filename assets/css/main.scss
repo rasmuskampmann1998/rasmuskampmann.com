@@ -2159,3 +2159,6 @@ ul.hero-stack {
 
   .offer-about-photo { max-width: 260px; margin: 0 auto; }
 }
+
+// Anchor jumps land below the sticky 68px header
+.offer-section, .offer-hero { scroll-margin-top: 68px; }
