@@ -2,7 +2,7 @@
 layout: home
 description: Know what to produce, stock and sell next season. Custom operations systems for seed and agriculture companies, built on Excel and the Microsoft tools you already use.
 ---
-{% assign booking = "https://calendly.com/rasmuskampmann1998/30min" %}
+{% assign booking = "https://calendly.com/rasmuskampmann-info/30min" %}
 
 <section class="offer-hero" id="top">
   <div class="container">

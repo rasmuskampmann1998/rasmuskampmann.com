@@ -13,7 +13,7 @@ description: Book a 30-minute call about how you plan production and track stock
 
 <div class="page-body">
   <div style="margin-bottom: 32px;">
-    <a href="https://calendly.com/rasmuskampmann1998/30min" class="btn-primary" target="_blank" rel="noopener">Book a 30-minute call →</a>
+    <a href="https://calendly.com/rasmuskampmann-info/30min" class="btn-primary" target="_blank" rel="noopener">Book a 30-minute call →</a>
   </div>
   <h2>Reach me</h2>
   <ul>
