@@ -49,19 +49,20 @@ description: Know what to produce, stock and sell next season. Custom operations
       <article class="offer-card">
         <span class="offer-step">1</span>
         <h3>Production Planner</h3>
-        <p>Your sales forecast per variety, set against your released stock and turned into a production plan: the need per month, with shortage warnings while there is still time to act.</p>
+        <p>Your sales forecast per variety, set against your released stock and turned into a production plan: the need per month, with shortage warnings while there is still time to act. Your forecast stays in the sheet you already keep. The plan is calculated from it, so the two can't drift apart.</p>
       </article>
       <article class="offer-card">
         <span class="offer-step">2</span>
         <h3>Stock &amp; Lot Control</h3>
-        <p>Live stock per variety, lot and location, calculated from every movement since the last count. Germination tests and retest alerts. A clear view of what can be sold today, lot by lot.</p>
+        <p>Live stock per variety, lot and location, calculated from every movement since the last count. Germination tests and retest alerts. A clear view of what can be sold today, lot by lot. Counts are typed in a sheet or scanned on a phone. Stock is calculated from them, never re-typed.</p>
       </article>
       <article class="offer-card">
         <span class="offer-step">3</span>
         <h3>Operations System</h3>
-        <p>Orders, international invoices, production partner quality data and reporting in one connected system. Or only the parts you need.</p>
+        <p>Orders, international invoices, production partner quality data and reporting in one connected system. Or only the parts you need. Excel stays for bulk entry and for reading the numbers your own way. Approvals, invoices and the audit trail live in the system.</p>
       </article>
     </div>
+    <p class="offer-note">What this fixes in Excel: numbers re-typed between sheets, two files that disagree, formulas only one person understands, and a workbook nobody dares to change.</p>
     <p class="offer-note">Prefer to keep it simple? A season planning retainer keeps your forecast and production plan up to date every season.</p>
     <p class="offer-note">Each offer is a fixed project with a scope agreed in writing before we start. No hourly billing.</p>
   </div>
