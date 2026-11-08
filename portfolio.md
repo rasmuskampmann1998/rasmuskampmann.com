@@ -2,7 +2,7 @@
 layout: home
 title: Portfolio
 permalink: /portfolio/
-description: Power BI Consultant for seed and agriculture companies. Projects, experience and CV. Odense, Denmark.
+description: Power BI Consultant for seed and agriculture companies. Freelance. Projects and background. Odense, Denmark.
 ---
 
 <section class="hero-centered">
@@ -34,11 +34,6 @@ description: Power BI Consultant for seed and agriculture companies. Projects, e
       <a href="#projects" class="btn-pill btn-pill--ghost">See the projects</a>
       <a href="https://calendly.com/rasmuskampmann-info/30min" class="btn-pill btn-pill--primary" target="_blank" rel="noopener">Book a call</a>
     </div>
-    <p class="hero-cv-link">
-      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>↓ CV (EN)</a>
-      <span style="margin: 0 10px; color: var(--text-muted);">·</span>
-      <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>↓ CV (DA)</a>
-    </p>
   </div>
 </section>
 
@@ -145,7 +140,7 @@ description: Power BI Consultant for seed and agriculture companies. Projects, e
         <p>The AI I build with: an agentic setup where Claude Code operates in GitHub, pulls context from Supabase, runs my library of reusable skills, and connects to my tools through MCP. One person, the delivery speed of a small team.</p>
         <p>Between the two layers, the source of truth stays deterministic. Trust is engineering, not generation.</p>
         <p style="margin-top: 28px;"><strong>The technical layer</strong></p>
-        <p>Today I own BI and reporting across sales, operations, and production at Veginova. The data landscape is moving onto Azure SQL Database, and that migration is under way now. I evaluated Microsoft Fabric end to end with a working prototype before landing on Azure.</p>
+        <p>Today I build and run the data and reporting for a seed company across sales, operations and production, on Azure SQL and Power BI.</p>
         <p>I specialise in Power BI end to end: semantic models, DAX, Power Query, report design, distribution, and access management. I connect Power BI to the sources the business already runs on: SQL Server, PostgreSQL, Azure SQL, SharePoint, Excel, APIs, and third-party platforms.</p>
         <p>Beyond dashboards: data modelling in SQL, workflow automation with Power Automate and Python, and forecasting in Python notebooks.</p>
         <p style="margin-top: 28px;">Most of my experience is from small companies and my own. Close to the decisions, owning the work end to end.</p>
@@ -166,92 +161,49 @@ description: Power BI Consultant for seed and agriculture companies. Projects, e
 
 <section class="experience-section" id="experience">
   <div class="container">
-    <span class="eyebrow">3+ years of experience</span>
-    <h2>Experience</h2>
-    <p class="section-sub">Roles where I built the data systems, dashboards, and automation behind real commercial decisions.</p>
+    <span class="eyebrow">Background</span>
+    <h2>Where the work comes from</h2>
+    <p class="section-sub">I work freelance. Everything below I built end to end, for a real business, close to the people who use it.</p>
 
     <div class="experience-timeline">
 
       <div class="experience-card">
-        <p class="experience-date">Aug 2023 to now</p>
+        <p class="experience-date">2023 to now</p>
         <h4 class="experience-role">Veginova Seeds</h4>
         <p class="experience-company">Family-owned seed company · Odense, Denmark</p>
-        <p class="experience-transition">International growers, distributors, and production partners across Europe and Latin America. (Spring 2026: role at Digi-Tal Regnskab, see below.)</p>
-
-        <div class="experience-subrole">
-          <p class="experience-date">Jun 2026 to now</p>
-          <h5 class="experience-subrole-title">Power BI Developer</h5>
-          <p class="experience-transition">Back at Veginova with responsibility for BI and reporting across sales, operations, and production. Driving the consolidation of the entire data landscape into one unified Microsoft ecosystem.</p>
-          <ul class="experience-bullets">
-            <li>Architecture: Azure SQL Database as the operational data layer, Power BI as the decision layer. Migration in progress. I evaluated Microsoft Fabric end to end with a working prototype before landing on Azure.</li>
-            <li>Automated line-level invoice extraction with the Claude API: confidence scores and human approval via Power BI translytical task flows. Power Automate for event-driven file synchronisation. Excel inputs as locked tables on SharePoint.</li>
-            <li>Sales and contribution margin dashboards, a seasonal sales forecast, and one unified source of truth reconciled to the accounts. Published as case studies on this site.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> Azure SQL · Power BI · DAX · T-SQL · Python · Power Automate · Claude Code</p>
-        </div>
-
-        <div class="experience-subrole">
-          <p class="experience-date">May 2025 to Feb 2026</p>
-          <h5 class="experience-subrole-title">Data Analyst</h5>
-          <p class="experience-transition">Promoted to ownership of reporting and data infrastructure across sales, operations, and production, and the analyses management steered by.</p>
-          <ul class="experience-bullets">
-            <li>Owned the shared data foundation: Power BI dashboards, SQL data models, and automated data flows as one source of truth for sales, operations, and production.</li>
-            <li>Standardised metric definitions across sales, operations, and production so dashboard numbers matched the systems.</li>
-            <li>Automated recurring reporting workflows so reports stopped being rebuilt by hand each week.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> SQL · Power BI · DAX · Python · Excel · Supabase · Claude Code</p>
-        </div>
-
-        <div class="experience-subrole">
-          <p class="experience-date">Aug 2023 to May 2025</p>
-          <h5 class="experience-subrole-title">Marketing &amp; Operations</h5>
-          <p class="experience-transition">Broad commercial role in the family business. The foundation for everything I do with data today.</p>
-          <ul class="experience-bullets">
-            <li>B2B marketing and lead sourcing (Clay) toward international wholesale, distributor, and grower customers. Trade fairs and customer events in Denmark.</li>
-            <li>Production visits in Costa Rica, Panama, and Mexico. In Costa Rica also company establishment and dialogue with local partners.</li>
-            <li>Connected ERP, CRM, and operational tools into reliable data flows. The role grew into the data work: the transition to data analyst came from there.</li>
-          </ul>
-          <p class="experience-stack"><strong>Stack:</strong> Microsoft Office · Clay · n8n · Supabase · Apify · API sources · GitHub</p>
-        </div>
-      </div>
-
-      <div class="experience-card">
-        <p class="experience-date">Feb to May 2026</p>
-        <h4 class="experience-role">Data Analyst (Commercial)</h4>
-        <p class="experience-company">Digi-Tal Regnskab</p>
-        <p class="experience-transition">Built the commercial data infrastructure in four months: CRM, ad, and registry data unified into one source of truth, and the models and analyses on top. Recruited on the back of my Sira Logic data work.</p>
+        <p class="experience-transition">My family's seed company, and the system I build and run today. Growers, distributors and production partners across Europe and Latin America.</p>
         <ul class="experience-bullets">
-          <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
-          <li>Revenue channel analysis: close rate, conversion, and how long deals took to close across paid, cold outreach, and inbound, with revenue figures reconciled to the accounts.</li>
-          <li>Predictive models: ICP and lead scoring with strong holdout performance, plus an ML model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
-          <li>Churn and segmentation analysis: customer and prospect base segmented into active, lead, lost, and inactive cohorts. Surfaced funnel drop-off and the patterns behind closed deals.</li>
+          <li>Azure SQL as the data layer, Power BI as the decision layer. I tested Microsoft Fabric with a working prototype first, then chose Azure.</li>
+          <li>Supplier invoices read line by line with the Claude API. A person approves each one in Power BI before it reaches the accounts.</li>
+          <li>Contribution margin dashboards, a seasonal sales forecast, and one set of numbers reconciled to the accounts. Both are case studies on this site.</li>
+          <li>Before the data work: marketing and operations. Trade fairs, customers, and production visits in Costa Rica, Panama and Mexico.</li>
         </ul>
-        <p class="experience-transition">Left when the family moved back to Denmark.</p>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
+        <p class="experience-stack"><strong>Stack:</strong> Azure SQL · Power BI · DAX · T-SQL · Python · Power Automate · Claude Code</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Jun 2024 to Aug 2025</p>
-        <h4 class="experience-role">Data &amp; AI Consultant (Independent)</h4>
-        <p class="experience-company">Sira Logic</p>
-        <p class="experience-transition">Own consulting business: end-to-end data and automation systems for B2B companies, from data collection to operationalised scoring in the clients' CRM.</p>
+        <h4 class="experience-role">Sira Logic</h4>
+        <p class="experience-company">My first consultancy · B2B data and automation</p>
+        <p class="experience-transition">Data and automation systems for B2B companies, from collecting the data to scoring leads inside the client's CRM.</p>
         <ul class="experience-bullets">
-          <li>Scraping, AI-assisted enrichment and qualification, scoring, CRM automation, and lead systems combined in one flow. Qualification accuracy up by roughly a third.</li>
-          <li>Custom web scraping for industry-specific sources. Owned the full cycle: sales, scoping, build, deployment, handoff.</li>
+          <li>Scraping, AI-assisted enrichment, qualification, scoring and CRM automation in one flow. Qualification accuracy up by roughly a third.</li>
+          <li>The whole cycle on my own: sales, scoping, build, deployment, handover.</li>
         </ul>
-        <p class="experience-transition">This work led directly to the Data Analyst role at Digi-Tal Regnskab.</p>
         <p class="experience-stack"><strong>Stack:</strong> SQL · Python · n8n · Clay · Apify · HubSpot · GoHighLevel · Excel</p>
       </div>
 
       <div class="experience-card">
-        <p class="experience-date">Jan to Aug 2023</p>
-        <h4 class="experience-role">Marketing &amp; Digital Graduate (student job, part-time during BBA)</h4>
-        <p class="experience-company">Damstahl Danmark</p>
-        <p class="experience-transition">Part-time student job alongside the BBA at Aarhus BSS.</p>
+        <p class="experience-date">Feb to May 2026</p>
+        <h4 class="experience-role">Digi-Tal Regnskab</h4>
+        <p class="experience-company">Accounting firm · Commercial data</p>
+        <p class="experience-transition">CRM, ad and registry data brought into one source of truth in four months, with the models and analyses on top.</p>
         <ul class="experience-bullets">
-          <li>Product and marketing data in ERP and CRM across European markets.</li>
-          <li>Excel dashboards for campaign reporting and standardised regional data processes.</li>
+          <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
+          <li>Revenue channel analysis: close rate, conversion and time to close across paid, cold outreach and inbound, reconciled to the accounts.</li>
+          <li>Predictive models: lead scoring, plus a model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
         </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
       </div>
 
     </div>
@@ -264,6 +216,6 @@ description: Power BI Consultant for seed and agriculture companies. Projects, e
     <p class="section-sub">Tell me how you plan production and track stock today. I'll tell you honestly whether I can help.</p>
     <a href="https://calendly.com/rasmuskampmann-info/30min" class="btn-primary" target="_blank" rel="noopener">Book a call →</a>
     <p class="cta-soft-footnote"><a href="{{ '/' | relative_url }}">See the offer</a></p>
-    <p class="cta-soft-footnote">See my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
+    <p class="cta-soft-footnote">Or find me on <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </div>
 </section>
