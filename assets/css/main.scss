@@ -2162,3 +2162,101 @@ ul.hero-stack {
 
 // Anchor jumps land below the sticky 68px header
 .offer-section, .offer-hero { scroll-margin-top: 68px; }
+
+// ── OFFER PAGE v2 (2026-11-08): proof strip, timeline, project cards ────────
+.offer-section--tight { padding-top: 40px; padding-bottom: 40px; }
+
+.offer-eyebrow {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.offer-proof {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.offer-proof-item {
+  max-width: 300px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.offer-proof-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.offer-timeline {
+  list-style: none;
+  border-left: 2px solid var(--border-strong);
+  margin-left: 6px;
+
+  li {
+    position: relative;
+    padding: 0 0 22px 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 0.45em;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent-green);
+    }
+
+    &:last-child { padding-bottom: 0; }
+  }
+
+  strong { color: var(--text-primary); margin-right: 6px; }
+}
+
+.offer-timeline-when {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.offer-projects {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .offer-projects { grid-template-columns: 1fr; }
+  .offer-proof { gap: 28px; }
+}
+
+.offer-routes { text-align: left; }
+.offer-routes .offer-btn { margin-top: 12px; }
+.offer-topics {
+  list-style: none;
+  margin-top: 12px;
+
+  li + li { margin-top: 8px; }
+}
+
+.offer-cards--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 880px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) { .offer-cards--two { grid-template-columns: 1fr; } }
