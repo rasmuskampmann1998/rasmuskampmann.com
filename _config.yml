@@ -40,5 +40,7 @@ exclude:
   - vendor
   - README.md
   - cv
+  - assets/files/rasmus-kampmann-cv.pdf
+  - assets/files/rasmus-kampmann-cv-da.pdf
   - scripts
   - UPDATE_BRIEF.md
