@@ -2,7 +2,7 @@
 layout: home
 title: Portfolio
 permalink: /portfolio/
-description: Power BI developer and data analyst. Case studies, experience and CV. Odense, Denmark.
+description: Power BI Consultant for seed and agriculture companies. Projects, experience and CV. Odense, Denmark.
 ---
 
 <section class="hero-centered">
@@ -11,15 +11,14 @@ description: Power BI developer and data analyst. Case studies, experience and C
       <img src="{{ '/assets/images/me/hero-portrait.jpg?v=3' | relative_url }}" alt="Rasmus Kampmann" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
     </div>
     <p class="hero-name">Hi, I'm Rasmus Kampmann</p>
-    <h1>Power BI Developer &amp; Data Analyst</h1>
+    <h1>Power BI Consultant for seed and agriculture companies.</h1>
     <ul class="hero-stack">
       <li>Power BI</li>
       <li>SQL</li>
       <li>Microsoft Fabric</li>
       <li>Python</li>
     </ul>
-    <p class="hero-slogan">From Excel chaos to <span class="highlight">Power BI clarity.</span></p>
-    <p class="hero-background">Your numbers live in files that do not agree. Excel says one thing, the system says another, and someone rebuilds the report by hand every week. I connect it all into one dashboard that updates itself.</p>
+    <p class="hero-background">I build the systems a seed company plans, stocks and sells from. Excel stays your front end. The numbers behind it agree.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -32,8 +31,8 @@ description: Power BI developer and data analyst. Case studies, experience and C
       </a>
     </div>
     <div class="hero-ctas-centered">
-      <a href="#projects" class="btn-pill btn-pill--ghost">View Projects</a>
-      <a href="{{ '/contact' | relative_url }}" class="btn-pill btn-pill--primary">Get in touch</a>
+      <a href="#projects" class="btn-pill btn-pill--ghost">See the projects</a>
+      <a href="https://calendly.com/rasmuskampmann-info/30min" class="btn-pill btn-pill--primary" target="_blank" rel="noopener">Book a call</a>
     </div>
     <p class="hero-cv-link">
       <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>↓ CV (EN)</a>
@@ -53,6 +52,19 @@ description: Power BI developer and data analyst. Case studies, experience and C
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="16" rx="1.5"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="3" y1="14" x2="21" y2="14"/>
+            <line x1="9" y1="4" x2="9" y2="20"/>
+            <line x1="15" y1="4" x2="15" y2="20"/>
+          </svg>
+        </div>
+        <h3>Excel</h3>
+        <p>Where your data starts, and that is fine. I keep Excel as the input and make it safe: locked tables, clear templates, no formulas that break when someone sorts a column.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="13" width="4" height="7" rx="0.5"/>
             <rect x="10" y="7" width="4" height="13" rx="0.5"/>
             <rect x="17" y="3" width="4" height="17" rx="0.5"/>
@@ -61,7 +73,6 @@ description: Power BI developer and data analyst. Case studies, experience and C
         <h3>Power BI</h3>
         <p>The screen you look at. Charts and numbers built around your decisions: what sold, what it cost, what is left. Semantic models, DAX, and report design underneath, so it stays fast and correct.</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -73,21 +84,6 @@ description: Power BI developer and data analyst. Case studies, experience and C
         <h3>SQL</h3>
         <p>The order underneath. One place where every number lives, so every report shows the same figure. I connect it to what you already use: SQL Server, PostgreSQL, SharePoint, Excel, APIs.</p>
       </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="16" rx="1.5"/>
-            <line x1="3" y1="9" x2="21" y2="9"/>
-            <line x1="3" y1="14" x2="21" y2="14"/>
-            <line x1="9" y1="4" x2="9" y2="20"/>
-            <line x1="15" y1="4" x2="15" y2="20"/>
-          </svg>
-        </div>
-        <h3>Excel</h3>
-        <p>Where your data starts, and that is fine. I keep Excel as the input and make it safe: locked tables, clear templates, no formulas that break when someone sorts a column.</p>
-      </div>
-
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -100,7 +96,6 @@ description: Power BI developer and data analyst. Case studies, experience and C
         <h3>Automation</h3>
         <p>The end of copy-paste. Files flow in on their own and reports update themselves. Power Query, Power Automate, and n8n do the moving. Nobody retypes anything.</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="#B5E853" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -121,7 +116,7 @@ description: Power BI developer and data analyst. Case studies, experience and C
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Three builds, one story: messy files in, one trusted screen out. Built with synthetic data where a client is involved. Written so you do not need to be a data person to follow them.</p>
+    <p class="section-sub">Three builds. Messy files in, one trusted screen out. Built with synthetic data where a client is involved. Written so you do not need to be a data person to follow them.</p>
     {% assign sorted_projects = site.projects | where_exp: "p", "p.archived != true" | sort: "order" %}
     <div class="projects-grid-large">
       {% for project in sorted_projects %}{% include project-card.html project=project %}{% endfor %}
@@ -135,19 +130,8 @@ description: Power BI developer and data analyst. Case studies, experience and C
       <div class="about-two-col-text">
         <span class="eyebrow">Learn more</span>
         <h2>About Me</h2>
-        <p>Hi, I'm Rasmus. I take the numbers your business already has and put them on one screen you can trust.</p>
-        <p>I didn't start in data. I started in marketing and operations at <strong>Veginova</strong>, my family's seed company in Odense: sourcing customers, running trade fairs, and visiting production in Costa Rica, Panama, and Mexico. I learned what the numbers meant by collecting them, years before I built a dashboard on them.</p>
-        <p>That's what makes the reporting different. When a report says a variety is running short or a customer isn't profitable, I know which process produced that number and where it breaks, because I worked in the process. The role grew into the data work, and I moved into it from there.</p>
-        <p style="margin-top: 28px;"><strong>Does this sound like your Monday?</strong></p>
-        <ul>
-          <li>Your numbers live in five places and they do not agree.</li>
-          <li>The same report gets rebuilt by hand every week. Usually by you.</li>
-          <li>Excel says one thing. The system says another. Nobody knows which is right.</li>
-          <li>You sell every day but do not know what you actually earn per product, per customer, per channel.</li>
-          <li>One wrong formula and the pricing is off. It has happened before.</li>
-          <li>You want AI, but the data under it is a mess.</li>
-        </ul>
-        <p>If two of these are true, that is the problem I fix.</p>
+        <p>I didn't start in data. I started in marketing and operations at <strong>Veginova</strong>, my family's seed company in Odense: sourcing customers, running trade fairs, and visiting production in Costa Rica, Panama, and Mexico.</p>
+        <p>When a report says a variety is running short, I know which process produced that number and where it breaks. I worked in that process.</p>
         <p style="margin-top: 28px;"><strong>What runs today</strong></p>
         <ul>
           <li>A system that reads supplier invoices line by line, a person approves what it found, and the accounts stay clean. Live at Veginova.</li>
@@ -170,9 +154,8 @@ description: Power BI developer and data analyst. Case studies, experience and C
         <p style="margin-top: 28px;"><strong>Working with me</strong></p>
         <p>One person, full responsibility. I scope the project, build it, document it, and hand it over. Nothing falls between chairs, because there are no chairs.</p>
         <p>I hold the whole picture from end to end. You explain your business once. I take it from there: your files, the data model, the dashboard, the training.</p>
-        <p>No cure, no pay. Before I start, we agree in writing exactly what the dashboard must do. If it does not do that, you do not pay.</p>
+        <p>No cure, no second payment. Before I start, we agree in writing what it must do. If what we agreed is not met, you don't pay the second half.</p>
         <p>Fixed price, clear end date. And when I leave, you own everything: documentation, training, no dependency on me.</p>
-        <p><em>Based in Odense, Denmark. Open to on-site roles.</em></p>
       </div>
       <div class="about-two-col-photo">
         <img src="{{ '/assets/images/me/photo-2.jpg' | relative_url }}" alt="Rasmus Kampmann" loading="lazy" onerror="this.src='{{ '/assets/images/me/headshot.jpg' | relative_url }}'" />
@@ -243,7 +226,7 @@ description: Power BI developer and data analyst. Case studies, experience and C
           <li>Predictive models: ICP and lead scoring with strong holdout performance, plus an ML model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
           <li>Churn and segmentation analysis: customer and prospect base segmented into active, lead, lost, and inactive cohorts. Surfaced funnel drop-off and the patterns behind closed deals.</li>
         </ul>
-        <p class="experience-transition">Resigned when the family relocated back to Denmark. The role was fully remote, and I wanted to be back on-site, close to the business.</p>
+        <p class="experience-transition">Left when the family moved back to Denmark.</p>
         <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
       </div>
 
@@ -277,9 +260,10 @@ description: Power BI developer and data analyst. Case studies, experience and C
 
 <section class="cta-soft">
   <div class="container">
-    <h2>Run a seed or agriculture company?</h2>
-    <p class="section-sub">The operations systems I build for seed and agriculture companies are on the <a href="{{ '/' | relative_url }}">front page</a>.</p>
-    <a href="{{ '/' | relative_url }}" class="btn-primary">See the offer →</a>
+    <h2>Planning next season?</h2>
+    <p class="section-sub">Tell me how you plan production and track stock today. I'll tell you honestly whether I can help.</p>
+    <a href="https://calendly.com/rasmuskampmann-info/30min" class="btn-primary" target="_blank" rel="noopener">Book a call →</a>
+    <p class="cta-soft-footnote"><a href="{{ '/' | relative_url }}">See the offer</a></p>
     <p class="cta-soft-footnote">See my <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> or grab my CV in <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>English</a> or <a href="{{ '/assets/files/rasmus-kampmann-cv-da.pdf' | relative_url }}" download>Danish</a>.</p>
   </div>
 </section>
