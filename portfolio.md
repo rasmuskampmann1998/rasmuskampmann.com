@@ -132,7 +132,7 @@ description: Power BI Consultant for seed and agriculture companies. Freelance. 
           <li>A system that reads supplier invoices line by line, a person approves what it found, and the accounts stay clean. Live at Veginova.</li>
           <li>A seasonal sales forecast that feeds the production plan.</li>
           <li>A profitability dashboard checked against the accounts, line by line.</li>
-          <li>A prediction model at a fintech firm, right about three times out of four, running in production.</li>
+          <li>A prediction model at an accounting firm, right about three times out of four, running in production.</li>
         </ul>
         <p id="two-layers-of-ai" style="margin-top: 28px;"><strong>Two layers of AI</strong></p>
         <p>AI in my work comes in two layers.</p>
