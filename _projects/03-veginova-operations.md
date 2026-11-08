@@ -6,13 +6,14 @@ description: "The production plan lived in a spreadsheet. It went stale the mome
 tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Matched the planner's existing production numbers exactly, with zero mismatches against their spreadsheet, then made the plan live and testable"
 outcome_detail: "The system agrees with the hand-built spreadsheet on every variety it was checked against. It works out what to produce from live sales, stock, and incoming orders. It flags shortages early enough to act on a one-year lead time, and lets the planner test a big sale or a capacity drop before any seed is committed."
+featured: true
 order: 2
 cover_image: /assets/images/projects/veginova-operations-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/10-veginova-operations
 coming_soon: false
 ---
 
-Built for Veginova, a seed business with a hard constraint: seed takes about a year to produce. The validation in this piece (that the system reproduces the planner's own numbers, zero mismatches) is real. Where I quote how many varieties were at risk or how much to produce, those figures are real live-snapshot numbers from the build. The system, and the validation that proves it works, are the real ones.
+Built for a European seed producer, a business with a hard constraint: seed takes about a year to produce. The validation in this piece (that the system reproduces the planner's own numbers, zero mismatches) is real. Where I quote how many varieties were at risk or how much to produce, those figures are real live-snapshot numbers from the build. The system, and the validation that proves it works, are the real ones.
 
 **Pillars this case proves:** commercial · close to the decision makers · data depth
 

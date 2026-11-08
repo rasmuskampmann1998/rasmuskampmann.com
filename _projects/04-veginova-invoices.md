@@ -6,19 +6,20 @@ description: "A seed business had two sets of numbers that disagreed: tax accoun
 tools: [Power BI, PostgreSQL, Python, Supabase]
 outcome_headline: "Reconciled three conflicting revenue numbers to one trusted figure, then made profit visible per product and per customer for the first time"
 outcome_detail: "2024 revenue tied to the official accounts, the gap fully explained by currency timing. With the numbers trusted, gross margin per seed variety, customer profitability, and accounts receivable became visible on a single live view."
+featured: true
 order: 1
 cover_image: /assets/images/projects/veginova-invoices-cover.png
 github_url: https://github.com/rasmuskampmann1998/rasmus-kampmann-case-studies/tree/main/11-veginova-invoices
 coming_soon: false
 ---
 
-Built for Veginova, a seed business selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation in this piece (the 2024 revenue match against the official accounts) is real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
+Built for a European seed producer selling tomato, pepper, and nightshade varieties across Europe and the Middle East. The reconciliation in this piece (the 2024 revenue match against the official accounts) is real. The commercial detail (per-product margins, customer profitability, receivables amounts) is **illustrative**: the shape and scale of the real findings, with the confidential client figures replaced. The method, and the result that mattered, are the real ones.
 
 **Pillars this case proves:** commercial · close to the decision makers · data depth
 
 ## Situation: three questions no report could answer
 
-Leadership at Veginova, a family-owned seed company, asked three questions no report could answer:
+Leadership at a family-owned seed company asked three questions no report could answer:
 
 - What's the real gross margin on each seed variety?
 - Which customers drive profit, and which just drive volume?
@@ -36,9 +37,9 @@ And it had to attribute cost per variety, which the official accounts do not do 
 
 ### What the data looked like before
 
-Like many small businesses, Veginova's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture. The invoices held the record of what was actually sold, to whom, at what price, but nothing proved the two sets of numbers tied together.
+Like many small businesses, the company's numbers lived in two places that didn't agree. The official accounts were structured for tax, which meant they *hid* the real commercial picture. The invoices held the record of what was actually sold, to whom, at what price, but nothing proved the two sets of numbers tied together.
 
-The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly four in ten CFOs said they don't completely trust their own organisation's financial data. Veginova was living that problem.
+The accounts said one thing. The invoices said another. Nobody could trust a single number, and you can't make a commercial decision on a number you don't trust. That distrust is common at this level. In a 2024 BlackLine survey of more than 1,300 finance leaders, nearly four in ten CFOs said they don't completely trust their own organisation's financial data. This company was living that problem.
 
 ## Action: made the invoices the source and the accounts the cross-check
 
