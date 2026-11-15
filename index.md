@@ -7,7 +7,7 @@ description: A production plan your team trusts. Operations systems for seed and
 <section class="offer-hero" id="top">
   <div class="container">
     <h1>A production plan your team trusts.</h1>
-    <p class="offer-sub">Operations systems for seed and agriculture companies. Built on Excel and the Microsoft tools you already use. In English and Spanish.</p>
+    <p class="offer-sub">I build the operating systems seed and agri companies use to plan what to produce, with data, AI and the tools they already work in. In English and Spanish.</p>
     <div class="offer-ctas">
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a call</a>
       <a href="{{ '/results/' | relative_url }}" class="offer-btn">See the results</a>
@@ -111,15 +111,53 @@ description: A production plan your team trusts. Operations systems for seed and
   </div>
 </section>
 
+<section class="offer-section" id="skills">
+  <div class="container">
+    <h2>One system, not four projects.</h2>
+    <p class="offer-lead">I don't hand over a dashboard or an AI tool. I build the system: the data, the app, the reports and the AI connected, so a sale or a germination test updates the plan on its own.</p>
+    <div class="offer-cards offer-cards--four">
+      <article class="offer-card">
+        <span class="offer-step">1</span>
+        <h3>Data foundation</h3>
+        <p>One database with rules, loaded and checked automatically. Every number traces back to a movement.</p>
+        <p class="offer-tools"><strong>Tools:</strong> Azure SQL, Python</p>
+        <p class="offer-feeds">Feeds the app and the reports.</p>
+      </article>
+      <article class="offer-card">
+        <span class="offer-step">2</span>
+        <h3>Business applications</h3>
+        <p>The screens people use every day: entry, approvals, counts scanned on a phone. Excel stays for bulk entry.</p>
+        <p class="offer-tools"><strong>Tools:</strong> Power Apps, Excel, SharePoint</p>
+        <p class="offer-feeds">Writes back to the database.</p>
+      </article>
+      <article class="offer-card">
+        <span class="offer-step">3</span>
+        <h3>Reporting</h3>
+        <p>Semantic models and dashboards built on the same numbers the app uses, so the meeting and the floor agree.</p>
+        <p class="offer-tools"><strong>Tools:</strong> Power BI, DAX</p>
+        <p class="offer-feeds">Reads from the database.</p>
+      </article>
+      <article class="offer-card">
+        <span class="offer-step">4</span>
+        <h3>AI inside the system</h3>
+        <p>Claude connected to the database through MCP: questions on the plan answered from the live numbers, the update drafted for you. A person approves every change.</p>
+        <p class="offer-tools"><strong>Tools:</strong> Claude, MCP</p>
+        <p class="offer-feeds">Reads the database, proposes to the app.</p>
+      </article>
+    </div>
+    <p class="offer-note"><a href="https://calendly.com/rasmuskampmann-info/30min" target="_blank" rel="noopener">Book a call</a> to talk about one layer or the whole system.</p>
+  </div>
+</section>
+
 <section class="offer-section" id="how">
   <div class="container offer-narrow">
     <h2>How we work.</h2>
-    <p class="offer-lead">Most projects run 2 to 4 weeks from kickoff to handover.</p>
+    <p class="offer-lead">Most projects run 3 to 6 weeks from kickoff to handover.</p>
     <ol class="offer-timeline">
       <li><span class="offer-timeline-when">Day 1</span><strong>Call and proposal.</strong> We talk, and the proposal arrives the same day.</li>
       <li><span class="offer-timeline-when">Before we start</span><strong>Contract and deposit.</strong> Scope, acceptance test and data access agreed in writing. About half up front.</li>
       <li><span class="offer-timeline-when">Week 1</span><strong>Kickoff.</strong> Within five working days. One intake form, so there's no week of back and forth.</li>
-      <li><span class="offer-timeline-when">Weeks 1 to 4</span><strong>Build rounds.</strong> An update at least once a week. Problems raised the day I find them.</li>
+      <li><span class="offer-timeline-when">Weeks 1 to 6</span><strong>Build rounds.</strong> An update at least once a week. Problems raised the day I find them.</li>
       <li><span class="offer-timeline-when">End of build</span><strong>Acceptance test.</strong> We run the test we agreed, with the people who use it daily. The final invoice goes out only when it passes.</li>
       <li><span class="offer-timeline-when">Handover</span><strong>Yours to run.</strong> A user guide, a recorded walkthrough, admin rights in your name. My access removed.</li>
       <li><span class="offer-timeline-when">Optional</span><strong>Season retainer.</strong> I keep the forecast and plan current each season.</li>
@@ -146,7 +184,7 @@ description: A production plan your team trusts. Operations systems for seed and
       </div>
       <div class="offer-about-text">
         <h2>Built by someone who works inside a seed company</h2>
-        <p class="offer-about-intro">I'm Rasmus Kampmann, a Power BI Consultant based in Odense, Denmark.</p>
+        <p class="offer-about-intro">I'm Rasmus Kampmann, a Power BI Consultant based in Odense, Denmark. I build the whole system: the database, the app, the reports and the AI that runs on them.</p>
         <ul class="offer-list">
           <li>I started in marketing and operations at a family-owned seed company with operations in Europe and Latin America, and visited its production in Costa Rica, Panama and Mexico. Today I build and run its operations system: stock, lots, production, quality tests, forecasting and invoicing.</li>
           <li>I know the seed business from the inside: varieties, seasons, production partners, distributors and export markets.</li>
@@ -183,7 +221,7 @@ description: A production plan your team trusts. Operations systems for seed and
       </details>
       <details>
         <summary>How long does a project take?</summary>
-        <p>Most projects run 2 to 4 weeks from kickoff to handover. The proposal gives the dates before we start.</p>
+        <p>Most projects run 3 to 6 weeks from kickoff to handover. The proposal gives the dates before we start.</p>
       </details>
       <details>
         <summary>What happens after handover?</summary>
