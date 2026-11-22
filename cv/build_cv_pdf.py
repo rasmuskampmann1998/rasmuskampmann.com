@@ -14,9 +14,9 @@ import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
+# 2026-11-22: the 2026-11 CV is the one the site links; the old English and Danish CVs are retired.
 JOBS = [
-    (REPO / "cv" / "rasmus-kampmann-cv.html", REPO / "assets" / "files" / "rasmus-kampmann-cv.pdf"),
-    (REPO / "cv" / "rasmus-kampmann-cv-da.html", REPO / "assets" / "files" / "rasmus-kampmann-cv-da.pdf"),
+    (REPO / "cv" / "rasmus-kampmann-cv-2026-11.html", REPO / "assets" / "files" / "rasmus-kampmann-cv.pdf"),
 ]
 
 EDGE_PATHS = [

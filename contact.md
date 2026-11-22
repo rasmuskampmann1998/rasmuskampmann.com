@@ -27,7 +27,7 @@ description: Hire Rasmus Kampmann, Freelance Power BI Consultant. Book a 20-minu
         <a href="mailto:{{ mail }}" class="offer-btn">Email me</a>
       </article>
     </div>
-    <p class="offer-note" id="cv">For my CV, <a href="mailto:{{ mail }}?subject=CV%20request">email me</a> and I'll send the current version.</p>
+    <p class="offer-note" id="cv"><a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>Download my CV (PDF)</a>.</p>
     <p class="offer-note">Freelance by the hour, hours by agreement. Hybrid in Denmark up to three days a week, or remote for Europe and the US. Rate on request. I work in Danish, English and Spanish.</p>
     <p class="offer-note">Or find me on <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </div>

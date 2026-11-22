@@ -12,7 +12,7 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
     <p class="offer-avail">Available for hourly freelance contracts, with hours by agreement. Hybrid in Denmark up to three days a week, or remote for Europe and the US.</p>
     <div class="offer-ctas">
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a call</a>
-      <a href="{{ '/contact' | relative_url }}#cv" class="offer-btn">Ask for my CV</a>
+      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" class="offer-btn" download>Download CV</a>
     </div>
     <div class="offer-badge">
       <img src="{{ '/assets/images/me/hero-portrait.jpg' | relative_url }}" alt="" width="44" height="44" />
