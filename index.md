@@ -118,6 +118,7 @@ redirect_from:
         <p class="experience-company">Own business · Odense, Denmark · hybrid or remote</p>
         <ul class="experience-bullets">
           <li>I take hourly contracts on longer engagements: Power BI, Power Platform, Azure SQL and Python.</li>
+          <li>Hybrid in Denmark up to three days a week, or remote for Europe and the US.</li>
         </ul>
       </div>
 
@@ -125,70 +126,93 @@ redirect_from:
         <p class="experience-date">Aug 2023 to now</p>
         <h4 class="experience-role">Veginova Seeds</h4>
         <p class="experience-company">Family-owned seed company · Odense, Denmark · my employer</p>
-        <ul class="experience-bullets">
-          <li>Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules. Power BI reports and a Power Apps operations app sit on top.</li>
-          <li>The first version ran on Postgres (Supabase). I tested Microsoft Fabric with a working prototype, then moved the system to Azure SQL in August 2026.</li>
-          <li>Revenue reconciles to the audited accounts on every change, and the production plan matches the planner's own spreadsheet with zero mismatches. Both are case studies on this site.</li>
-        </ul>
+        <p class="experience-transition">The supply chain and operations system the company runs on, from scattered Excel files to one Azure SQL database with apps, reports and AI on top. The first version ran on Postgres (Supabase); I tested Microsoft Fabric with a working prototype, then moved the system to Azure SQL in August 2026.</p>
+
         <div class="experience-subrole">
           <p class="experience-date">Jun 2026 to now</p>
           <p class="experience-subrole-title">Power BI &amp; Power Apps Developer</p>
+          <ul class="experience-bullets">
+            <li>Mapped sales, inventory, production and finance data from Excel, SharePoint and e-conomic into one source of truth.</li>
+            <li>Power BI dashboards and semantic models for sales, inventory and finance.</li>
+            <li>A Power Apps operations app for orders, invoices, stock, germination tests and month-end close.</li>
+            <li>Data pipelines in Python and Azure Functions, refreshed every ten minutes during the working day.</li>
+            <li>Lot traceability and quality control: a lot can only be sold once its germination test releases it.</li>
+            <li>Claude set up to read seed packets and bills into rows a person confirms. Not yet in daily use.</li>
+            <li><strong>Results:</strong> three revenue numbers became one, tied to the official accounts, and the production plan matches the planner's own spreadsheet with zero mismatches. Both are case studies on this site.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Azure SQL · T-SQL · Python · Azure Functions · Power BI · DAX · Power Apps · SharePoint · Excel · Claude Code</p>
         </div>
+
         <div class="experience-subrole">
           <p class="experience-date">May 2025 to Feb 2026</p>
           <p class="experience-subrole-title">Data Analyst</p>
+          <p class="experience-transition">The first version of the operations and finance reporting, which became the foundation for the system that runs today.</p>
+          <ul class="experience-bullets">
+            <li>Power BI dashboards for operations and finance with DAX and Power Query.</li>
+            <li>A Postgres database on Supabase and an operations and finance web app in Streamlit and Python.</li>
+            <li>SQL on Excel files and e-conomic accounting exports, my first work with e-conomic data.</li>
+            <li>An agriculture market intelligence platform that scraped news, regulations and market data from 228 sources with AI agents, and answered questions through retrieval-based chat.</li>
+          </ul>
+          <p class="experience-stack"><strong>Stack:</strong> Power BI · DAX · Power Query · SQL · Python · Postgres · Supabase · Streamlit · FastAPI · React · e-conomic</p>
         </div>
+
         <div class="experience-subrole">
           <p class="experience-date">Aug 2023 to May 2025</p>
           <p class="experience-subrole-title">Marketing &amp; Operations</p>
-          <p class="experience-transition">Trade fairs, customers, and production visits in Costa Rica, Panama and Mexico. The data work grew out of this role.</p>
+          <p class="experience-transition">Customer sourcing, trade fairs and visits to seed production partners in Costa Rica, Panama and Mexico. This is where I learned how seed is produced, tested, priced, sold and shipped, and that shapes every rule in the systems I build. The data work grew out of this role.</p>
         </div>
-        <p class="experience-stack"><strong>Stack:</strong> Azure SQL · T-SQL · Power BI · DAX · Power Apps · Power Automate · Python · Claude Code</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Feb to May 2026</p>
         <h4 class="experience-role">Digi-Tal Regnskab</h4>
-        <p class="experience-company">Accounting firm · Data Analyst (Commercial)</p>
-        <p class="experience-transition">CRM, ad and registry data brought into one source of truth in four months, with the models and analyses on top.</p>
+        <p class="experience-company">Digital accounting firm for small businesses · Data Analyst (Commercial)</p>
+        <p class="experience-transition">An outbound sales system from lead sourcing to CRM handoff, combining data, AI and automation, built in four months.</p>
         <ul class="experience-bullets">
+          <li>Revenue and customer acquisition analysis across Meta, Google, LinkedIn, cold calling and inbound, reconciled to the accounts.</li>
+          <li>Customer, churn and LinkedIn attribution analyses, so sales targeted customers who convert and stay.</li>
+          <li>The ideal customer profile and lead scoring from Pipedrive CRM data and the Danish company registry (CVR).</li>
+          <li>A machine learning model that predicts a prospect's accounting software, trained on 4,600+ rows, AUC 0.75 on holdout.</li>
           <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
-          <li>Revenue channel analysis: close rate, conversion and time to close across paid, cold outreach and inbound, reconciled to the accounts.</li>
-          <li>Predictive models: lead scoring, plus a model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
+          <li>Lead sourcing, enrichment and CRM handoff automated with Python, Clay and the Claude API.</li>
         </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
+        <p class="experience-stack"><strong>Stack:</strong> Python · SQL · PostgreSQL · Pipedrive · Clay · HeyReach · Claude API · scikit-learn · XGBoost</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Jan 2025 to Jan 2026</p>
         <h4 class="experience-role">Outlier</h4>
         <p class="experience-company">AI &amp; LLM Data Analyst · LLM evaluation in Danish</p>
+        <p class="experience-transition">Reviewed and annotated 1,000+ Danish AI conversations used to train large language models. It taught me how LLMs answer, where they go wrong and how to evaluate their output, which I use when I build AI into business systems.</p>
+        <p class="experience-stack"><strong>Skills:</strong> LLM evaluation · data annotation · prompt review · generative AI</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Jun 2024 to Aug 2025</p>
         <h4 class="experience-role">Sira Logic</h4>
         <p class="experience-company">My first consultancy · AI &amp; Automation Consultant (independent)</p>
-        <p class="experience-transition">AI and automation for B2B sales data.</p>
+        <p class="experience-transition">Run alongside the seed company: AI and automation systems for B2B sales data, from data collection to scoring inside the CRM.</p>
         <ul class="experience-bullets">
-          <li>Scraping, AI-assisted enrichment, qualification, scoring and CRM automation in one flow.</li>
-          <li>The whole cycle on my own: sales, scoping, build, deployment, handover.</li>
+          <li>Lead enrichment and scoring workflows with AI-assisted enrichment.</li>
+          <li>CRM workflows automated in n8n and Make with HubSpot and GoHighLevel.</li>
+          <li>Custom web scraping with Python and Apify.</li>
+          <li>The whole cycle on my own: sales, scoping, build, deployment, handover. It closed in 2025 and taught me which automation is worth building.</li>
         </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · n8n · Clay · Apify · HubSpot · GoHighLevel · Excel</p>
+        <p class="experience-stack"><strong>Stack:</strong> Python · SQL · n8n · Make · Clay · Apify · HubSpot · GoHighLevel · Claude API</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Jan to Aug 2023</p>
         <h4 class="experience-role">Damstahl Danmark</h4>
-        <p class="experience-company">Marketing &amp; Digital Graduate</p>
-        <p class="experience-transition">Product data in ERP and CRM.</p>
+        <p class="experience-company">Stainless steel distributor · Marketing &amp; Digital Graduate</p>
+        <p class="experience-transition">Part-time alongside my BBA: product data in the ERP and CRM systems, and Excel dashboards for campaigns.</p>
       </div>
 
       <div class="experience-card">
         <p class="experience-date">Aug 2020 to Jun 2023</p>
         <h4 class="experience-role">Aarhus BSS, Aarhus University</h4>
         <p class="experience-company">Bachelor of Business Administration (BBA)</p>
-        <p class="experience-transition">Exchange semester at Universidad del Pacífico, Peru, Aug to Dec 2022.</p>
+        <p class="experience-transition">Exchange semester at Universidad del Pacífico, Peru, Aug to Dec 2022. Before that, Tietgen HHX with a marketing line, 2015 to 2018.</p>
       </div>
 
     </div>
