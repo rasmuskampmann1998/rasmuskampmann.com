@@ -1524,12 +1524,12 @@ ul.hero-stack {
     .hero-slogan    { margin: 0 auto 8px !important; }
     .hero-background { margin: 0 auto 28px !important; }
 
-    .hero-social    { margin-bottom: 18px; }
+    .hero-social    { margin-bottom: 24px; }
 
     .hero-ctas-centered {
       flex-direction: column;
       align-items: center;
-      gap: 8px;
+      gap: 14px;
     }
   }
 
@@ -2439,6 +2439,5 @@ ul.hero-stack {
 }
 
 @media (max-width: 640px) {
-  .hero-ctas-centered { flex-direction: column; align-items: center; gap: 12px; }
   .offer-ctas { gap: 12px; }
 }
