@@ -2391,18 +2391,7 @@ ul.hero-stack {
   }
 }
 
-// One-page home (2026-11-22): the experience timeline and About blocks open and close
-// (details/summary inside .offer-faq). Left-aligned so a date and a role read as one line.
-.experience-section .offer-faq {
-  max-width: 820px;
-  margin: 32px auto 0;
-  text-align: left;
-
-  summary { font-size: 1rem; }
-  ul { margin: 10px 0 0 20px; }
-  .experience-stack { margin-top: 10px; font-size: 0.9rem; }
-}
-
+// One-page home (2026-11-22): the About block opens and closes (details/summary inside .offer-faq).
 .about-two-col .offer-faq {
   margin-top: 28px;
   ul { margin: 10px 0 0 20px; }
@@ -2441,3 +2430,6 @@ ul.hero-stack {
 @media (max-width: 640px) {
   .offer-ctas { gap: 12px; }
 }
+
+// The timeline lost its intro line (2026-11-22); keep the gap it gave under the heading.
+#experience .experience-timeline { margin-top: 48px; }

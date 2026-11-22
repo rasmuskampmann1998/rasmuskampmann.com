@@ -109,51 +109,87 @@ redirect_from:
   <div class="container">
     <span class="eyebrow">Background</span>
     <h2>Experience</h2>
-    <div class="offer-faq">
 
-      <details open>
-        <summary>Nov 2026 to now &middot; Freelance Power BI &amp; Power Platform Consultant</summary>
-        <p>My own business in Odense. Hourly contracts on longer engagements: Power BI, Power Platform, Azure SQL and Python.</p>
-      </details>
+    <div class="experience-timeline">
 
-      <details open>
-        <summary>Aug 2023 to now &middot; Veginova Seeds, my employer</summary>
-        <p>A family-owned seed company in Odense. Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules, with Power BI reports and a Power Apps operations app on top. The first version ran on Postgres (Supabase); I tested Microsoft Fabric with a prototype, then moved the system to Azure SQL in August 2026.</p>
-        <p><strong>Jun 2026 to now:</strong> Power BI &amp; Power Apps Developer. <strong>May 2025 to Feb 2026:</strong> Data Analyst. <strong>Aug 2023 to May 2025:</strong> Marketing &amp; Operations, with trade fairs, customers and production visits in Costa Rica, Panama and Mexico.</p>
-        <p class="experience-stack"><strong>Stack:</strong> Azure SQL, T-SQL, Power BI, DAX, Power Apps, Power Automate, Python, Claude Code</p>
-      </details>
-
-      <details>
-        <summary>Feb to May 2026 &middot; Digi-Tal Regnskab, Data Analyst (Commercial)</summary>
-        <p>CRM, ad and registry data for an accounting firm, brought into one source of truth in four months.</p>
-        <ul>
-          <li>Commission and forecast model, rebuilt to weight MRR and LTV.</li>
-          <li>Revenue channel analysis: close rate, conversion and time to close, reconciled to the accounts.</li>
-          <li>A model that predicts a prospect's accounting software from public registry data, at AUC 0.75 on holdout.</li>
+      <div class="experience-card">
+        <p class="experience-date">Nov 2026 to now</p>
+        <h4 class="experience-role">Freelance Power BI &amp; Power Platform Consultant</h4>
+        <p class="experience-company">Own business · Odense, Denmark · hybrid or remote</p>
+        <ul class="experience-bullets">
+          <li>I take hourly contracts on longer engagements: Power BI, Power Platform, Azure SQL and Python.</li>
         </ul>
-        <p class="experience-stack"><strong>Stack:</strong> SQL, Python, PostgreSQL, n8n, Excel, Pipedrive, Clay</p>
-      </details>
+      </div>
 
-      <details>
-        <summary>Jan 2025 to Jan 2026 &middot; Outlier, AI &amp; LLM Data Analyst</summary>
-        <p>LLM evaluation in Danish.</p>
-      </details>
+      <div class="experience-card">
+        <p class="experience-date">Aug 2023 to now</p>
+        <h4 class="experience-role">Veginova Seeds</h4>
+        <p class="experience-company">Family-owned seed company · Odense, Denmark · my employer</p>
+        <ul class="experience-bullets">
+          <li>Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules. Power BI reports and a Power Apps operations app sit on top.</li>
+          <li>The first version ran on Postgres (Supabase). I tested Microsoft Fabric with a working prototype, then moved the system to Azure SQL in August 2026.</li>
+          <li>Revenue reconciles to the audited accounts on every change, and the production plan matches the planner's own spreadsheet with zero mismatches. Both are case studies on this site.</li>
+        </ul>
+        <div class="experience-subrole">
+          <p class="experience-date">Jun 2026 to now</p>
+          <p class="experience-subrole-title">Power BI &amp; Power Apps Developer</p>
+        </div>
+        <div class="experience-subrole">
+          <p class="experience-date">May 2025 to Feb 2026</p>
+          <p class="experience-subrole-title">Data Analyst</p>
+        </div>
+        <div class="experience-subrole">
+          <p class="experience-date">Aug 2023 to May 2025</p>
+          <p class="experience-subrole-title">Marketing &amp; Operations</p>
+          <p class="experience-transition">Trade fairs, customers, and production visits in Costa Rica, Panama and Mexico. The data work grew out of this role.</p>
+        </div>
+        <p class="experience-stack"><strong>Stack:</strong> Azure SQL · T-SQL · Power BI · DAX · Power Apps · Power Automate · Python · Claude Code</p>
+      </div>
 
-      <details>
-        <summary>Jun 2024 to Aug 2025 &middot; Sira Logic, AI &amp; Automation Consultant</summary>
-        <p>My first consultancy: AI and automation for B2B sales data, from scraping and enrichment to scoring and CRM automation. Sales, scoping, build, deployment and handover on my own.</p>
-        <p class="experience-stack"><strong>Stack:</strong> SQL, Python, n8n, Clay, Apify, HubSpot</p>
-      </details>
+      <div class="experience-card">
+        <p class="experience-date">Feb to May 2026</p>
+        <h4 class="experience-role">Digi-Tal Regnskab</h4>
+        <p class="experience-company">Accounting firm · Data Analyst (Commercial)</p>
+        <p class="experience-transition">CRM, ad and registry data brought into one source of truth in four months, with the models and analyses on top.</p>
+        <ul class="experience-bullets">
+          <li>Commission and forecast model: rebuilt the commission structure to weight MRR and LTV, removing the incentive to discount subscriptions to close.</li>
+          <li>Revenue channel analysis: close rate, conversion and time to close across paid, cold outreach and inbound, reconciled to the accounts.</li>
+          <li>Predictive models: lead scoring, plus a model predicting prospects' accounting software from public registry data (holdout AUC 0.75).</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · PostgreSQL · n8n · Excel · Pipedrive · Clay · Claude Code</p>
+      </div>
 
-      <details>
-        <summary>Jan to Aug 2023 &middot; Damstahl Danmark, Marketing &amp; Digital Graduate</summary>
-        <p>Product data in ERP and CRM.</p>
-      </details>
+      <div class="experience-card">
+        <p class="experience-date">Jan 2025 to Jan 2026</p>
+        <h4 class="experience-role">Outlier</h4>
+        <p class="experience-company">AI &amp; LLM Data Analyst · LLM evaluation in Danish</p>
+      </div>
 
-      <details>
-        <summary>Aug 2020 to Jun 2023 &middot; Aarhus BSS, Aarhus University, BBA</summary>
-        <p>Bachelor of Business Administration, with an exchange semester at Universidad del Pac&iacute;fico in Peru in 2022.</p>
-      </details>
+      <div class="experience-card">
+        <p class="experience-date">Jun 2024 to Aug 2025</p>
+        <h4 class="experience-role">Sira Logic</h4>
+        <p class="experience-company">My first consultancy · AI &amp; Automation Consultant (independent)</p>
+        <p class="experience-transition">AI and automation for B2B sales data.</p>
+        <ul class="experience-bullets">
+          <li>Scraping, AI-assisted enrichment, qualification, scoring and CRM automation in one flow.</li>
+          <li>The whole cycle on my own: sales, scoping, build, deployment, handover.</li>
+        </ul>
+        <p class="experience-stack"><strong>Stack:</strong> SQL · Python · n8n · Clay · Apify · HubSpot · GoHighLevel · Excel</p>
+      </div>
+
+      <div class="experience-card">
+        <p class="experience-date">Jan to Aug 2023</p>
+        <h4 class="experience-role">Damstahl Danmark</h4>
+        <p class="experience-company">Marketing &amp; Digital Graduate</p>
+        <p class="experience-transition">Product data in ERP and CRM.</p>
+      </div>
+
+      <div class="experience-card">
+        <p class="experience-date">Aug 2020 to Jun 2023</p>
+        <h4 class="experience-role">Aarhus BSS, Aarhus University</h4>
+        <p class="experience-company">Bachelor of Business Administration (BBA)</p>
+        <p class="experience-transition">Exchange semester at Universidad del Pacífico, Peru, Aug to Dec 2022.</p>
+      </div>
 
     </div>
   </div>
