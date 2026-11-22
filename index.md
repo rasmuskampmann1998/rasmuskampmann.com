@@ -9,7 +9,7 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
     <p class="offer-eyebrow">Rasmus Kampmann &middot; Odense, Denmark</p>
     <h1>Freelance Power BI Consultant</h1>
     <p class="offer-sub">Power BI Developer, Power Platform Consultant and Data Analyst. I build business systems that combine data, apps and AI for supply chain and agri-food companies.</p>
-    <p class="offer-avail">Available for freelance contracts by the hour, hours by agreement. Hybrid in Denmark up to three days a week, or remote for Europe and the US.</p>
+    <p class="offer-avail">Available for hourly freelance contracts, with hours by agreement. Hybrid in Denmark up to three days a week, or remote for Europe and the US.</p>
     <div class="offer-ctas">
       <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a call</a>
       <a href="{{ '/contact' | relative_url }}#cv" class="offer-btn">Ask for my CV</a>
