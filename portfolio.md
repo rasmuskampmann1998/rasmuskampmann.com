@@ -116,7 +116,7 @@ description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. 
     <div class="projects-grid-large">
       {% for project in sorted_projects %}{% include project-card.html project=project %}{% endfor %}
     </div>
-    <p class="section-sub">Earlier analysis work, kept online: <a href="{{ '/projects/05-software-detection-ml/' | relative_url }}">Software Detection ML Model</a> (AUC 0.75 at an accounting firm) &middot; <a href="{{ '/projects/02-channel-performance/' | relative_url }}">Channel &amp; Churn Analysis</a> (synthetic data) &middot; <a href="{{ '/projects/01-cold-call-funnel/' | relative_url }}">Funnel &amp; Segment Analysis</a> (synthetic data).</p>
+    <p class="section-sub" style="margin-top: 36px;">Earlier analysis work, kept online: <a href="{{ '/projects/05-software-detection-ml/' | relative_url }}">Software Detection ML Model</a> (AUC 0.75 at an accounting firm) &middot; <a href="{{ '/projects/02-channel-performance/' | relative_url }}">Channel &amp; Churn Analysis</a> (synthetic data) &middot; <a href="{{ '/projects/01-cold-call-funnel/' | relative_url }}">Funnel &amp; Segment Analysis</a> (synthetic data).</p>
   </div>
 </section>
 

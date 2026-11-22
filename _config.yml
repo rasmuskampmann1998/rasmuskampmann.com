@@ -42,5 +42,8 @@ exclude:
   - cv
   - assets/files/rasmus-kampmann-cv.pdf
   - assets/files/rasmus-kampmann-cv-da.pdf
+  - assets/images/projects/veginova-finance-overview.png
+  - assets/images/projects/veginova-finance-receivables.png
+  - assets/images/projects/veginova-invoices-cover.png
   - scripts
   - UPDATE_BRIEF.md
