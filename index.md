@@ -105,7 +105,7 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
     <ol class="offer-timeline">
       <li>
         <span class="offer-timeline-when">Aug 2023 to now</span>
-        <strong>Veginova seeds, Odense.</strong> A family-owned seed company and my employer. I build and run its system: Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules, with Power BI reports and a Power Apps operations app on top.
+        <strong>Veginova Seeds, Odense.</strong> A family-owned seed company and my employer. I build and run its system: Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules, with Power BI reports and a Power Apps operations app on top.
         <p class="offer-role"><span>Jun 2026 to now</span> Power BI &amp; Power Apps Developer</p>
         <p class="offer-role"><span>May 2025 to Feb 2026</span> Data Analyst</p>
         <p class="offer-role"><span>Aug 2023 to May 2025</span> Marketing &amp; Operations, with production visits in Costa Rica, Panama and Mexico</p>
