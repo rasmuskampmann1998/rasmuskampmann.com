@@ -48,26 +48,31 @@ redirect_from:
         <h3>Data foundation</h3>
         <p>One source of truth with the business rules in the database, so sales, inventory and finance show the same number.</p>
         <p class="offer-tools"><strong>Tools:</strong> Azure SQL, T-SQL, Python, Azure Functions</p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Case: three revenue numbers became one &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">2</span>
         <h3>Business apps</h3>
         <p>Apps where teams enter orders, stock and plans in one place instead of many spreadsheets. Excel stays as a front door.</p>
         <p class="offer-tools"><strong>Tools:</strong> Power Apps, Power Automate, SharePoint</p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: a Power Apps operations app on Azure SQL &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">3</span>
         <h3>Reporting</h3>
         <p>Semantic models and Power BI reports for sales, inventory and finance that load fast and show the number the database holds.</p>
         <p class="offer-tools"><strong>Tools:</strong> Power BI, DAX, Power Query</p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Case: two semantic models and four reports &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">4</span>
         <h3>AI and automation</h3>
         <p>Claude beside the system, connected to the database through MCP, proposing changes a person approves.</p>
         <p class="offer-tools"><strong>Tools:</strong> Claude Code, MCP, Python, GitHub</p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: Claude Code, MCP and my sign-off on every release &rarr;</a></p>
       </article>
     </div>
+    <p class="offer-note">I also build on Google Workspace and on custom stacks with Postgres and Python.</p>
   </div>
 </section>
 
