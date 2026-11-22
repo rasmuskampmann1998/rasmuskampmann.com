@@ -2267,3 +2267,50 @@ ul.hero-stack {
 @media (max-width: 640px) { .offer-cards--four { grid-template-columns: 1fr; } }
 .offer-tools { font-size: 0.9rem; opacity: 0.85; }
 .offer-feeds { font-size: 0.85rem; opacity: 0.7; font-style: italic; margin-top: auto; }
+
+/* Freelancer home (2026-11-22): availability line, case links, role lines, project facts */
+.offer-hero .offer-avail {
+  color: var(--text-primary);
+  font-size: 1rem;
+  max-width: 640px;
+  margin: -14px auto 30px;
+}
+.offer-case { font-size: 0.9rem; margin-top: 12px; }
+.offer-case a { color: var(--accent-green); }
+.offer-case a:hover { color: var(--text-primary); }
+.offer-role {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+
+  span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-right: 8px;
+  }
+}
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 20px;
+  max-width: 880px;
+  margin: 0 0 26px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-green);
+    margin-bottom: 4px;
+  }
+  dd { margin: 0; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.45; }
+}
+@media (max-width: 760px) { .project-facts { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .project-facts { grid-template-columns: 1fr; } }
