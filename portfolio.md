@@ -207,7 +207,7 @@ description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. 
       <div class="experience-card">
         <p class="experience-date">Jan 2025 to Jan 2026</p>
         <h4 class="experience-role">Outlier</h4>
-        <p class="experience-company">AI trainer · LLM evaluation in Danish</p>
+        <p class="experience-company">AI &amp; LLM Data Analyst · LLM evaluation in Danish</p>
       </div>
 
       <div class="experience-card">

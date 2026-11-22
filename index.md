@@ -116,7 +116,7 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
       </li>
       <li>
         <span class="offer-timeline-when">Jan 2025 to Jan 2026</span>
-        <strong>Outlier, AI trainer.</strong> LLM evaluation in Danish.
+        <strong>Outlier, AI &amp; LLM Data Analyst.</strong> LLM evaluation in Danish.
       </li>
       <li>
         <span class="offer-timeline-when">Jun 2024 to Aug 2025</span>
