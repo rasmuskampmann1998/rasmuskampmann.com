@@ -31,31 +31,31 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
         <h3>Data foundation</h3>
         <p>One source of truth with the business rules in the database, so sales, inventory and finance show the same number.</p>
         <p class="offer-tools"><strong>Tools:</strong> Azure SQL, T-SQL, Python, Azure Functions, Logic Apps</p>
-        <p class="offer-case"><a href="{{ '/projects/04-veginova-invoices/' | relative_url }}">Case: three revenue numbers became one &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Case: three revenue numbers became one &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">2</span>
         <h3>Business applications</h3>
         <p>Apps where teams enter orders, stock and plans in one place instead of many spreadsheets. Excel stays as a front door.</p>
         <p class="offer-tools"><strong>Tools:</strong> Power Apps, Power Automate, Excel, SharePoint</p>
-        <p class="offer-case"><a href="{{ '/projects/03-veginova-operations/' | relative_url }}">Case: the production plan the app works from &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: a Power Apps operations app on Azure SQL &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">3</span>
         <h3>Reporting</h3>
         <p>Semantic models and Power BI dashboards for sales, inventory and finance. At Veginova the reports refresh themselves every ten minutes during the working day.</p>
         <p class="offer-tools"><strong>Tools:</strong> Power BI, DAX, Power Query</p>
-        <p class="offer-case"><a href="{{ '/projects/06-excel-to-one-source/' | relative_url }}">Case: 11 Excel files into one dashboard &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Case: two semantic models and four reports &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">4</span>
         <h3>AI and automation</h3>
         <p>Claude beside the system, connected to the database through MCP, proposing changes a person approves. I build with Claude Code in VS Code and GitHub.</p>
         <p class="offer-tools"><strong>Tools:</strong> Claude Code, VS Code, GitHub, MCP, Python</p>
-        <p class="offer-case"><a href="{{ '/projects/05-software-detection-ml/' | relative_url }}">Case: a model that reordered the call list &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: Claude Code, MCP and my sign-off on every release &rarr;</a></p>
       </article>
     </div>
-    <p class="offer-note">I also build on Google Workspace and on custom stacks with Postgres and Python. <a href="{{ '/portfolio/' | relative_url }}#projects">All projects</a></p>
+    <p class="offer-note">I also build on Google Workspace and on custom stacks with Postgres and Python. <a href="{{ '/portfolio/' | relative_url }}#projects">Both case studies</a></p>
   </div>
 </section>
 
@@ -66,32 +66,17 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
       <article class="offer-card">
         <h3>Three revenue numbers that disagree.</h3>
         <p>Three revenue numbers became one, tied to the official accounts, and revenue reconciles to the audited accounts on every change.</p>
-        <p class="offer-case"><a href="{{ '/projects/04-veginova-invoices/' | relative_url }}">Invoice &amp; Financial Dashboard &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Power BI, SQL and data analytics &rarr;</a></p>
       </article>
       <article class="offer-card">
         <h3>A production plan that goes stale the day a sale lands.</h3>
         <p>The production plan matches the planner's own spreadsheet with zero mismatches, and it updates when sales or stock change.</p>
-        <p class="offer-case"><a href="{{ '/projects/03-veginova-operations/' | relative_url }}">Operations &amp; Production Planning &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Power BI, SQL and data analytics &rarr;</a></p>
       </article>
       <article class="offer-card">
         <h3>Stock numbers nobody trusts.</h3>
         <p>Stock is calculated from every movement since the last count, lot by lot, and a lot can only be sold once its quality test releases it.</p>
-        <p class="offer-case"><a href="{{ '/projects/03-veginova-operations/' | relative_url }}">Operations &amp; Production Planning &rarr;</a></p>
-      </article>
-      <article class="offer-card">
-        <h3>A folder of monthly Excel files nobody can add up.</h3>
-        <p>One Power Query flow reads every file in the folder and feeds one dashboard, so no file is edited by hand. Shown on synthetic data.</p>
-        <p class="offer-case"><a href="{{ '/projects/06-excel-to-one-source/' | relative_url }}">From 11 Excel files to one source of truth &rarr;</a></p>
-      </article>
-      <article class="offer-card">
-        <h3>A sales team calling in the wrong order.</h3>
-        <p>At an accounting firm, a model predicted a prospect's accounting software from public registry data at AUC 0.75 on holdout, and reordered the call list every morning.</p>
-        <p class="offer-case"><a href="{{ '/projects/05-software-detection-ml/' | relative_url }}">Software Detection ML Model &rarr;</a></p>
-      </article>
-      <article class="offer-card">
-        <h3>Ten sales channels reported as one number.</h3>
-        <p>Each channel scored on win rate, capacity, speed and churn, so the channels whose revenue lasts a year stand apart. Synthetic data, real method.</p>
-        <p class="offer-case"><a href="{{ '/projects/02-channel-performance/' | relative_url }}">Channel &amp; Churn Analysis &rarr;</a></p>
+        <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Power Platform and AI development &rarr;</a></p>
       </article>
     </div>
   </div>

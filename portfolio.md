@@ -2,6 +2,10 @@
 layout: home
 title: Portfolio
 permalink: /portfolio/
+redirect_from:
+  - /projects/01-cold-call-funnel/
+  - /projects/02-channel-performance/
+  - /projects/05-software-detection-ml/
 description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. Power BI Developer, Power Platform Consultant and Data Analyst. Case studies, skills and experience.
 ---
 
@@ -111,12 +115,11 @@ description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. 
   <div class="container">
     <span class="eyebrow">Explore my work</span>
     <h2>My Projects</h2>
-    <p class="section-sub">Two cases from the system I built at Veginova, with the real validation and illustrative figures on the screenshots, and one method piece on synthetic data. Each page opens with my role, the dates, the stack and the result.</p>
+    <p class="section-sub">Two case studies from the system I built at Veginova, my family's seed company: the data foundation and Power BI reporting, and the Power Apps operations app with the AI layer. Each page opens with my role, the dates, the stack and the result.</p>
     {% assign sorted_projects = site.projects | where_exp: "p", "p.archived != true" | sort: "order" %}
     <div class="projects-grid-large">
       {% for project in sorted_projects %}{% include project-card.html project=project %}{% endfor %}
     </div>
-    <p class="section-sub" style="margin-top: 36px;">Earlier analysis work, kept online: <a href="{{ '/projects/05-software-detection-ml/' | relative_url }}">Software Detection ML Model</a> (AUC 0.75 at an accounting firm) &middot; <a href="{{ '/projects/02-channel-performance/' | relative_url }}">Channel &amp; Churn Analysis</a> (synthetic data) &middot; <a href="{{ '/projects/01-cold-call-funnel/' | relative_url }}">Funnel &amp; Segment Analysis</a> (synthetic data).</p>
   </div>
 </section>
 
