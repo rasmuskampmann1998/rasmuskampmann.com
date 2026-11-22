@@ -2430,3 +2430,6 @@ ul.hero-stack {
 @media (max-width: 640px) {
   .offer-ctas { gap: 12px; }
 }
+
+// The timeline lost its intro line (2026-11-22); keep the gap it gave under the heading.
+#experience .experience-timeline { margin-top: 48px; }
