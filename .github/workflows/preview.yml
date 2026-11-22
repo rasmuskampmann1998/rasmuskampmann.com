@@ -1,0 +1,35 @@
+name: Preview build (no deploy)
+
+# Builds any branch other than main and uploads the built site as an artifact, so a change can be
+# checked locally (download, serve, screenshot) before it is merged and published. Nothing is
+# deployed: only jekyll.yml on main publishes. Added 2026-11-22 (no Ruby on the laptop).
+
+on:
+  push:
+    branches-ignore: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      - name: Upload the built site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: _site
+          retention-days: 7
