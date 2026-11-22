@@ -4,6 +4,11 @@ title: From 11 Excel files to one source of truth
 tagline: "A folder of monthly Excel files, different formats, broken headers, totals mixed into the rows. One automated flow reads them all, cleans them, and feeds one dashboard that updates itself."
 description: "The most common small-business data problem: a folder of monthly Excel exports that nobody can add up. Different column names each month, headers split over two rows, and summary totals sitting in the middle of the data. This is how I turn that folder into one dashboard that updates itself, using Power Query folder ingestion, a clean model, and a small set of DAX measures."
 tools: [Power BI, Power Query, DAX, Excel]
+facts:
+  role: "My own method piece, built solo"
+  when: "Published August 2026, still in progress"
+  stack: "Power BI, Power Query, DAX, Excel"
+  result: "In progress, on synthetic data: one folder in, one dashboard out, with no hand-editing of any file."
 outcome_headline: "One folder in, one dashboard out, with no hand-editing of any file"
 outcome_detail: "Drop next month's file into the folder and the dashboard updates on its own. No renamed columns to fix, no totals to delete by hand, no copy-paste. The rules that clean the files are written once and run every refresh."
 order: 3
@@ -22,9 +27,9 @@ The figures are synthetic, generated from a seeded script. The mess is modelled 
 
 The owner's question is simple and nobody can answer it quickly: **what did we actually sell this year, by product and by customer, and how does this month compare to the same month last year?**
 
-The data to answer it already exists. It is sitting in the folder. The reason nobody can answer is not analysis. It is that adding the files together takes a day of manual work, so it gets done rarely, late, and differently each time.
+The data to answer it already exists. It is sitting in the folder. Nobody can answer quickly because adding the files together takes a day of manual work, so it gets done rarely, late, and differently each time.
 
-The real requirement is not a chart. It is that next month's file lands in the folder and the answer updates without anyone touching it.
+The real requirement is that next month's file lands in the folder and the answer updates without anyone touching it.
 
 ## Where the data comes from
 

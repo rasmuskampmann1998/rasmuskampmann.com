@@ -4,6 +4,11 @@ title: Channel & Churn Analysis
 tagline: "Multi-factor scoring and twelve-month survival analysis across ten channels reported as one blended mix. Scored on win rate, capacity, speed, and churn. Synthetic data, real method."
 description: "Multi-factor channel scoring plus twelve-month survival and churn analysis across ten acquisition channels. The blended report hid a 12x split between the warm and outbound clusters. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
 tools: [Power BI, SQL, Python]
+facts:
+  role: "Solo analysis. The method comes from my work at an accounting firm, and every figure here is synthetic"
+  when: "Published May 2026"
+  stack: "SQL, DuckDB, Python, Power BI"
+  result: "Synthetic data, real method: five channels held 21% of deals and 78% of the revenue that lasted the first year."
 outcome_headline: "Survival analysis revealed five channels at 21% of deals but 78% of the revenue that lasted the first year"
 outcome_detail: "The largest channel by volume won 8.6% of the time, consumed 91% of all sales-rep dialer hours, and churned half its customers within twelve months. The scorecard handled the split with a rule, not a model, so the revenue-ops lead could re-run it each quarter without a data team in the room."
 order: 1

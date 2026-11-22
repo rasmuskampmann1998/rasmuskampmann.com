@@ -4,6 +4,11 @@ title: Software Detection ML Model
 tagline: "A model is only as good as the features under it. This one predicts accounting-software adoption from public Danish company-registry data alone, no paid data vendor, and reorders the cold-outbound dialler queue before reps make a single call."
 description: "An ML classifier built on public registry data instead of a paid vendor feed. The features are all cold-observable, no CRM and no sales history, and getting the label right (binary, not 3-class) is what made 4,658 rows learnable. Deployed as a score boost that reorders the dialler queue every morning and retrains monthly."
 tools: [Python, scikit-learn, XGBoost, SHAP, pandas, PostgreSQL, GitHub Actions]
+facts:
+  role: "Data Analyst (Commercial) at Digi-Tal Regnskab, an accounting firm. Built solo"
+  when: "Feb to May 2026"
+  stack: "Python, pandas, scikit-learn, XGBoost, SHAP, PostgreSQL, GitHub Actions"
+  result: "Holdout AUC 0.75. The lift in conversions was never measured."
 outcome_headline: "Reordered the cold-outbound dialler queue around companies the model thinks are most likely to fit, before reps make a single call"
 outcome_detail: "Deployed as a score boost in the lead-scoring pipeline, reordering the queue automatically every morning and retraining itself monthly. Built on 4,658 training rows of public registry data. Reproducible on a 5,000-row synthetic dataset."
 order: 3
@@ -66,7 +71,7 @@ Why XGBoost over logistic regression. Logistic regression assumes additive log-o
 ![SHAP feature impact: top 15 features]({{ '/assets/images/projects/software-detection-ml-shap.png' | relative_url }})
 *SHAP impact distribution per feature. Each dot is one prediction. Position on the x-axis shows whether that feature pushed the score up (uses target software) or down. Colour shows the feature value. Feature names are anonymised in the public version. The real schema is grouped by company size, legal form, age, industry, and filing cadence.*
 
-**The evaluation.** I evaluated the model at five levels, not just AUC:
+**The evaluation.** I evaluated the model at five levels, with AUC as only the first:
 
 - **ROC and AUC.** Holdout AUC 0.7475, cross-validation 0.7046. Permutation test p < 0.0001. The model is meaningfully better than random.
 - **Confusion matrix at threshold 0.5.** False-positive rate inside acceptable range for downstream use.
@@ -93,7 +98,7 @@ The model earns its keep by reordering the queue, but the team isn't measuring w
 
 ## What I'd do differently
 
-The first version was a 3-class model. I wanted to distinguish three accounting products at once. The two minority classes were indistinguishable from cold registry features alone. The model collapsed to AUC 0.527, barely above random. I dropped to binary (target product yes/no), which unlocked the full 4,658 training rows and gave the model something it could actually learn.
+The first version was a 3-class model. I wanted to distinguish three accounting products at once. The two minority classes were indistinguishable from cold registry features alone. The model collapsed to AUC 0.527, barely above random. I dropped to binary (target product yes/no), which made the full 4,658 training rows usable and gave the model something it could actually learn.
 
 One feature, `has_revisor` (whether the company has an external auditor on file), only had 4,241 of 4,658 rows populated. I imputed the missing 8%. If I rebuilt the pipeline I'd scrape the missing records from the CVR website directly before training, not after.
 

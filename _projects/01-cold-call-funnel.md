@@ -4,6 +4,11 @@ title: Funnel & Segment Analysis
 tagline: "Funnel decomposition and firmographic segment-lift analysis across 102,007 records. One employee band converted at 37.5%, everyone else at 3.0%. The drop was after the first conversation, not before it. Synthetic data, real method."
 description: "Funnel decomposition and segment-lift analysis: 102,007 records reduced to one decision rule. The conversion drop was after the first conversation, not before it. Method: star schema in SQL, validation in DuckDB, scorecard in Power BI."
 tools: [Power BI, SQL, Python]
+facts:
+  role: "Solo analysis. The method comes from my work at an accounting firm, and every figure here is synthetic"
+  when: "Published May 2026"
+  stack: "SQL, DuckDB, Python, Power BI"
+  result: "Synthetic data, real method: one employee band converted at 37.5% against 3.0% for everyone else."
 outcome_headline: "Segment-lift analysis isolated one firmographic band converting at 37.5% against 3.0% everywhere else, a 12.7x split on the single decisive cut in the dataset"
 outcome_detail: "Only 12.8% of held meetings converted, so the funnel dropped after the first conversation, not before it. The deliverable is an additive scoring rule built from the segment lift."
 order: 2
@@ -79,7 +84,7 @@ This is the strongest signal in the analysis. Conversion is not distributed acro
 ![Meeting to won by industry, non-fit industries in red]({{ '/assets/images/projects/cold-call-funnel-industry.png' | relative_url }})
 *Held-to-won by industry. Consulting, Transport, and Marketing close at roughly zero: two wins on 502 held meetings combined. Every qualifying industry sits between 14.7% and 16.6%.*
 
-Industry does not rank prospects on a curve, it disqualifies three of them outright. Consulting (0.0%), Transport (0.4%), and Marketing (1.1%) are not weak-converting industries, they are non-fit at the level the data can detect: 502 held meetings, two wins. The qualifying industries sit flat at around 15%, which means industry functions as an exclusion list, not a scored input. Two fields, employee band and an industry exclusion, do almost all the discriminating work, which is what made the final deliverable a rule rather than a regression.
+Industry does not rank prospects on a curve, it disqualifies three of them outright. Consulting (0.0%), Transport (0.4%), and Marketing (1.1%) are not weak-converting industries, they are non-fit at the level the data can detect: 502 held meetings, two wins. The qualifying industries sit flat at around 15%, which means industry works as an exclusion list, not a scored input. Two fields, employee band and an industry exclusion, do almost all the discriminating work, which is what made the final deliverable a rule rather than a regression.
 
 **The fourth cut was held-to-won by accounting software, which returned no signal.**
 
