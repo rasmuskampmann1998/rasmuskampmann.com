@@ -104,6 +104,10 @@ description: Freelance Power BI Consultant in Odense, Denmark. Power BI Develope
     <h2>Experience</h2>
     <ol class="offer-timeline">
       <li>
+        <span class="offer-timeline-when">Nov 2026 to now</span>
+        <strong>Freelance Power BI &amp; Power Platform Consultant.</strong> I take hourly contracts on longer engagements: Power BI, Power Platform, Azure SQL and Python. Hybrid in Denmark up to three days a week, or remote for Europe and the US.
+      </li>
+      <li>
         <span class="offer-timeline-when">Aug 2023 to now</span>
         <strong>Veginova Seeds, Odense.</strong> A family-owned seed company and my employer. I build and run its system: Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules, with Power BI reports and a Power Apps operations app on top.
         <p class="offer-role"><span>Jun 2026 to now</span> Power BI &amp; Power Apps Developer</p>

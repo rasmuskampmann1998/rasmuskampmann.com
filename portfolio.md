@@ -167,6 +167,15 @@ description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. 
     <div class="experience-timeline">
 
       <div class="experience-card">
+        <p class="experience-date">Nov 2026 to now</p>
+        <h4 class="experience-role">Freelance Power BI &amp; Power Platform Consultant</h4>
+        <p class="experience-company">Own business · Odense, Denmark · hybrid or remote</p>
+        <ul class="experience-bullets">
+          <li>I take hourly contracts on longer engagements: Power BI, Power Platform, Azure SQL and Python.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
         <p class="experience-date">Aug 2023 to now</p>
         <h4 class="experience-role">Veginova Seeds</h4>
         <p class="experience-company">Family-owned seed company · Odense, Denmark · my employer</p>
