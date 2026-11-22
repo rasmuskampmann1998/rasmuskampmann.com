@@ -1,6 +1,6 @@
 ---
 layout: home
-description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. Power BI, Power Apps, Azure SQL and Python. Hourly contracts on longer engagements, hybrid in Denmark or remote for Europe and the US.
+description: Rasmus Kampmann, Freelance Power BI Consultant in Odense, Denmark. Power BI Developer, Power Platform Consultant and Data Analyst. I build business systems that combine data, apps and AI for supply chain and agri-food companies. Hourly contracts, hybrid in Denmark or remote for Europe and the US.
 redirect_from:
   - /projects/01-cold-call-funnel/
   - /projects/02-channel-performance/
@@ -21,7 +21,7 @@ redirect_from:
       <li>Azure SQL</li>
       <li>Python</li>
     </ul>
-    <p class="hero-background">I build the data foundation, the apps and the Power BI reports a business runs on, on the Microsoft data stack. Hourly contracts on longer engagements, hybrid in Denmark up to three days a week or remote for Europe and the US. Rate on request.</p>
+    <p class="hero-background">Power BI Developer, Power Platform Consultant and Data Analyst. I build business systems that combine data, apps and AI for supply chain and agri-food companies. Hourly contracts on longer engagements, hybrid in Denmark up to three days a week or remote for Europe and the US. Rate on request.</p>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -47,14 +47,14 @@ redirect_from:
         <span class="offer-step">1</span>
         <h3>Data foundation</h3>
         <p>One source of truth with the business rules in the database, so sales, inventory and finance show the same number.</p>
-        <p class="offer-tools"><strong>Tools:</strong> Azure SQL, T-SQL, Python, Azure Functions</p>
+        <p class="offer-tools"><strong>Tools:</strong> Azure SQL, T-SQL, Python, Azure Functions, Logic Apps</p>
         <p class="offer-case"><a href="{{ '/projects/veginova-power-bi/' | relative_url }}">Case: three revenue numbers became one &rarr;</a></p>
       </article>
       <article class="offer-card">
         <span class="offer-step">2</span>
-        <h3>Business apps</h3>
+        <h3>Business applications</h3>
         <p>Apps where teams enter orders, stock and plans in one place instead of many spreadsheets. Excel stays as a front door.</p>
-        <p class="offer-tools"><strong>Tools:</strong> Power Apps, Power Automate, SharePoint</p>
+        <p class="offer-tools"><strong>Tools:</strong> Power Apps, Power Automate, Excel, SharePoint</p>
         <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: a Power Apps operations app on Azure SQL &rarr;</a></p>
       </article>
       <article class="offer-card">
@@ -68,7 +68,7 @@ redirect_from:
         <span class="offer-step">4</span>
         <h3>AI and automation</h3>
         <p>Claude beside the system, connected to the database through MCP, proposing changes a person approves.</p>
-        <p class="offer-tools"><strong>Tools:</strong> Claude Code, MCP, Python, GitHub</p>
+        <p class="offer-tools"><strong>Tools:</strong> Claude Code, VS Code, GitHub, MCP, Python</p>
         <p class="offer-case"><a href="{{ '/projects/veginova-power-platform-ai/' | relative_url }}">Case: Claude Code, MCP and my sign-off on every release &rarr;</a></p>
       </article>
     </div>
