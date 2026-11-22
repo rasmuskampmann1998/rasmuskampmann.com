@@ -2418,3 +2418,27 @@ ul.hero-stack {
 @media (max-width: 720px) {
   #projects .projects-grid-large { grid-template-columns: 1fr; }
 }
+
+// Button spacing on the one-page home (2026-11-22): no two buttons or icon links touch.
+// The hero follows the live portfolio: icons first, then the two pills, with room between.
+.hero-centered .hero-social { margin-top: 4px; margin-bottom: 28px; }
+.hero-ctas-centered, .offer-ctas { gap: 16px; }
+.btn-card { margin-top: 16px; display: inline-block; }
+
+// Contact closes the page like the portfolio did: no cards, no band, it fades into the page.
+#contact.cta-soft {
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
+  padding: 96px 0 104px;
+
+  .section-sub { max-width: 620px; }
+  .section-sub a { color: var(--accent-green); }
+  .btn-primary { margin-top: 8px; }
+  .cta-soft-footnote { margin-top: 24px; }
+}
+
+@media (max-width: 640px) {
+  .hero-ctas-centered { flex-direction: column; align-items: center; gap: 12px; }
+  .offer-ctas { gap: 12px; }
+}

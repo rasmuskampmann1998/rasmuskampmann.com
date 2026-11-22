@@ -22,10 +22,6 @@ redirect_from:
       <li>Python</li>
     </ul>
     <p class="hero-background">I build the data foundation, the apps and the Power BI reports a business runs on, on the Microsoft data stack. Hourly contracts on longer engagements, hybrid in Denmark up to three days a week or remote for Europe and the US. Rate on request.</p>
-    <div class="hero-ctas-centered">
-      <a href="{{ booking }}" class="btn-pill btn-pill--primary" target="_blank" rel="noopener">Book a call</a>
-      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" class="btn-pill btn-pill--ghost" download>Download CV</a>
-    </div>
     <div class="hero-social">
       <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -33,6 +29,10 @@ redirect_from:
       <a href="mailto:{{ site.author.email }}" aria-label="Email">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
       </a>
+    </div>
+    <div class="hero-ctas-centered">
+      <a href="{{ booking }}" class="btn-pill btn-pill--primary" target="_blank" rel="noopener">Book a call</a>
+      <a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" class="btn-pill btn-pill--ghost" download>Download CV</a>
     </div>
   </div>
 </section>
@@ -203,8 +203,8 @@ redirect_from:
 
 <section class="offer-section offer-section--alt" id="hire">
   <div class="container offer-narrow">
-    <span class="eyebrow">How I work</span>
-    <h2>Hire me by the hour</h2>
+    <span class="eyebrow">Contracts</span>
+    <h2>How I work</h2>
     <ul class="offer-list">
       <li>By the hour on longer engagements. Rate on request, hours by agreement.</li>
       <li>Inside your team next to your own people, or as the one person who builds the system end to end.</li>
@@ -215,23 +215,12 @@ redirect_from:
   </div>
 </section>
 
-<section class="offer-section offer-final" id="contact">
+<section class="cta-soft" id="contact">
   <div class="container">
     <span class="eyebrow">Contact</span>
-    <h2>Book a call or send an email</h2>
-    <p class="offer-lead">Recruiters and companies use the same route. I reply within one working day.</p>
-    <div class="offer-cards offer-cards--two offer-routes">
-      <article class="offer-card">
-        <h3>Book a call</h3>
-        <p>30 minutes on the calendar, about 20 of talking, with me.</p>
-        <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a call</a>
-      </article>
-      <article class="offer-card">
-        <h3>Send an email</h3>
-        <p>Write to <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> with the project or contract, the dates and the hours you have in mind.</p>
-        <a href="mailto:{{ site.author.email }}" class="offer-btn">Email me</a>
-      </article>
-    </div>
-    <p class="offer-note" id="cv"><a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>Download my CV (PDF)</a> &middot; <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></p>
+    <h2>Hire me by the hour.</h2>
+    <p class="section-sub">Book a 20-minute call, or write to <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> with the project, the dates and the hours. Recruiters and companies use the same route, and I reply within one working day.</p>
+    <a href="{{ booking }}" class="btn-primary" target="_blank" rel="noopener">Book a call &rarr;</a>
+    <p class="cta-soft-footnote" id="cv"><a href="{{ '/assets/files/rasmus-kampmann-cv.pdf' | relative_url }}" download>Download my CV (PDF)</a> &middot; <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </section>
