@@ -26,6 +26,7 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 markdown: kramdown
 highlighter: rouge
@@ -47,3 +48,27 @@ exclude:
   - assets/images/projects/veginova-invoices-cover.png
   - scripts
   - UPDATE_BRIEF.md
+  # 2026-11-22: images of the six case pages replaced by the two Veginova pages; files stay in git
+  - assets/images/projects/channel-performance-cover.png
+  - assets/images/projects/channel-performance-mrr-mix.png
+  - assets/images/projects/channel-performance-nrr.png
+  - assets/images/projects/channel-performance-retention-curve.png
+  - assets/images/projects/channel-performance-time-to-won.png
+  - assets/images/projects/channel-performance-volume.png
+  - assets/images/projects/channel-performance-winrate.png
+  - assets/images/projects/channel-performance.jpg
+  - assets/images/projects/cold-call-funnel-cover.png
+  - assets/images/projects/cold-call-funnel-cycle.png
+  - assets/images/projects/cold-call-funnel-employee-band.png
+  - assets/images/projects/cold-call-funnel-industry.png
+  - assets/images/projects/cold-call-funnel-loss.png
+  - assets/images/projects/cold-call-funnel-waterfall.png
+  - assets/images/projects/cold-call-funnel.jpg
+  - assets/images/projects/excel-to-one-source-cover.png
+  - assets/images/projects/software-detection-ml-calibration.png
+  - assets/images/projects/software-detection-ml-cover.png
+  - assets/images/projects/software-detection-ml-shap.png
+  - assets/images/projects/software-detection-ml.jpg
+  - assets/images/projects/veginova-operations-cover.png
+  - assets/images/projects/veginova-operations-need-vs-plan.png
+  - assets/images/projects/veginova-operations-production.png

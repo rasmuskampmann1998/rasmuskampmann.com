@@ -2314,3 +2314,79 @@ ul.hero-stack {
 }
 @media (max-width: 760px) { .project-facts { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .project-facts { grid-template-columns: 1fr; } }
+
+// ── Architecture diagram on the case pages (2026-11-22) ──────────────────────
+.arch-diagram {
+  margin: 28px 0 30px;
+
+  .arch-flow {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .arch-box {
+    position: relative;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    padding: 14px 14px 12px;
+
+    b {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text-primary);
+      font-size: 0.98rem;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    small { display: block; color: var(--text-muted); font-size: 0.82rem; line-height: 1.45; }
+    em {
+      display: block;
+      font-style: normal;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-green);
+      margin-bottom: 6px;
+    }
+  }
+
+  .arch-box--focus { border-color: var(--accent-green); background: rgba(181, 232, 83, 0.06); }
+
+  .arch-flow .arch-box:not(:last-child)::after {
+    content: "\2192";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-green);
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .arch-side {
+    margin-top: 14px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 10px;
+    padding: 12px 14px;
+
+    b { color: var(--text-primary); font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; }
+    small { display: block; color: var(--text-muted); font-size: 0.82rem; line-height: 1.45; margin-top: 4px; }
+  }
+
+  figcaption { margin-top: 12px; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; }
+}
+@media (max-width: 760px) {
+  .arch-diagram .arch-flow { grid-template-columns: 1fr; gap: 26px; }
+  .arch-diagram .arch-flow .arch-box:not(:last-child)::after {
+    content: "\2193";
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -21px;
+    transform: translateX(-50%);
+  }
+}
