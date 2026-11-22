@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rasmus Kampmann, CV (draft 2026-11)</title>
+<!-- DRAFT for Rasmus's review, 2026-11-22. Not linked from the site. Sources: _claims-2026-11.md. -->
+<style>
+  @page { size: A4; margin: 13mm 15mm 13mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 9.4pt; line-height: 1.34; color: #1a1d1a; }
+  a { color: #1a1d1a; text-decoration: none; }
+  .contact a, .inline-list a { color: #0f62c4; text-decoration: underline; }
+
+  .name { font-size: 21pt; font-weight: 700; letter-spacing: 0.5px; text-align: center; }
+  .headline { font-size: 10.5pt; text-align: center; color: #2e4a1f; font-weight: 600; margin-top: 2px; }
+  .contact { text-align: center; font-size: 8.8pt; color: #444; margin-top: 4px; }
+  .contact span { margin: 0 3px; color: #999; }
+  .accent-rule { height: 2.5px; background: #B5E853; margin: 8px auto 0; width: 100%; }
+
+  h2 { font-size: 9.6pt; text-transform: uppercase; letter-spacing: 1.4px; color: #2e4a1f;
+       border-bottom: 1px solid #c9cec6; padding-bottom: 2px; margin: 11px 0 5px; break-after: avoid; }
+
+  .summary p { margin: 2px 0; }
+
+  .stack-table p { margin: 1.5px 0; }
+  .stack-table strong { color: #1a1d1a; }
+
+  .role { margin-bottom: 8px; break-inside: avoid; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; break-after: avoid; }
+  .role-title { font-size: 10pt; font-weight: 700; }
+  .role-date { font-size: 8.8pt; color: #555; white-space: nowrap; }
+  .role-sub { display: flex; justify-content: space-between; font-size: 8.9pt; color: #555; font-style: italic; margin-bottom: 2px; }
+  .role-lead { margin: 1px 0 2px; }
+  ul { margin: 1px 0 2px 14px; }
+  li { margin-bottom: 1.5px; }
+  .stack-line { font-size: 8.6pt; color: #555; margin-top: 1px; }
+  .stack-line strong { color: #444; }
+
+  .inline-list { margin: 0; }
+  .avoid-break { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="name">RASMUS KAMPMANN</div>
+<div class="headline">Freelance Power BI Developer &amp; Power Platform Consultant</div>
+<div class="contact">
+  Odense, Denmark <span>·</span>
+  <a href="tel:+4523818782">+45 23 81 87 82</a> <span>·</span>
+  <a href="mailto:info@rasmuskampmann.com">info@rasmuskampmann.com</a> <span>·</span>
+  <a href="https://rasmuskampmann.com">rasmuskampmann.com</a> <span>·</span>
+  <a href="https://www.linkedin.com/in/rasmuskampmann/">linkedin.com/in/rasmuskampmann</a>
+</div>
+<div class="accent-rule"></div>
+
+<h2>Profile</h2>
+<div class="summary">
+  <p>I build business systems that combine data, apps and AI for supply chain and agri-food companies, on the Microsoft data stack: Power BI, Power Platform, Azure SQL and Python.</p>
+  <p>I've built every layer myself at a seed company: the database with the business rules, the Power Apps operations app, the Power BI reports and the AI on top.</p>
+  <p>I work agentic. I build with Claude Code in VS Code and GitHub, AI drafts from written procedures and review agents, and I review and sign off every release.</p>
+  <p>Available for hourly freelance contracts on longer engagements: hybrid in Denmark up to three days a week, or remote for clients in Europe and the US.</p>
+</div>
+
+<h2>Core Skills</h2>
+<div class="stack-table">
+  <p><strong>Data foundation:</strong> Azure SQL, T-SQL, Python, Azure Functions, Logic Apps. One source of truth with the business rules in the database.</p>
+  <p><strong>Business applications:</strong> Power Apps, Power Automate, Excel, SharePoint. Apps where teams enter orders, stock and plans, with Excel kept as a front door.</p>
+  <p><strong>Reporting:</strong> Power BI, DAX, Power Query. Semantic models and dashboards for sales, inventory and finance.</p>
+  <p><strong>AI and automation:</strong> Claude Code, VS Code, GitHub, MCP, Python. Claude beside the system, proposing changes a person approves.</p>
+</div>
+
+<h2>Experience</h2>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Power BI &amp; Power Apps Developer</span><span class="role-date">Jun 2026 to Present</span></div>
+  <div class="role-sub"><span>Veginova Seeds (family-owned seed company, my family's)</span><span>Odense, Denmark</span></div>
+  <p class="role-lead">I build and run the company's system on my own: Excel on SharePoint and the accounting export feed an Azure SQL database with the business rules, with Power BI reports and a Power Apps operations app on top.</p>
+  <ul>
+    <li>Moved the system from Postgres (Supabase) to Azure SQL in August 2026, with a test copy and a live copy. Prototyped Microsoft Fabric first and dropped it on cost.</li>
+    <li>Built a Python load service in Azure Functions that loads the Excel files and parks failed rows in quarantine. It refreshes itself every ten minutes during the working day.</li>
+    <li>Built two Power BI semantic models and four reports, with daily operational reports kept apart from analysis reports. Made the invoices the source for revenue: three revenue numbers became one, tied to the official accounts, and it is checked again on every change.</li>
+    <li>Moved the planner's production calculation into SQL. The production plan matches the planner's own spreadsheet with zero mismatches.</li>
+    <li>Built a Power Apps operations app with nine screens, generated from Python, for orders, invoices, credit notes, stock, germination tests, payments and month-end close. Permissions are enforced in the database.</li>
+    <li>Built lot traceability into the database. Stock is calculated from every movement since the last count, lot by lot. A lot can only be sold once its quality test releases it.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> Azure SQL, T-SQL, Power BI, DAX, Power Query, Power Apps, Power Automate, Python, Azure Functions, Logic Apps, Entra ID, Claude Code, MCP</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Data Analyst (Commercial)</span><span class="role-date">Feb 2026 to May 2026</span></div>
+  <div class="role-sub"><span>Digi-Tal Regnskab (accounting firm)</span><span>Denmark</span></div>
+  <ul>
+    <li>Built the commercial data infrastructure in four months: CRM, ad and registry data in one source of truth.</li>
+    <li>Built a model that predicts a prospect's accounting software from public registry data, at AUC 0.75 on holdout.</li>
+    <li>Rebuilt the commission model to weight MRR and LTV, which removed the incentive to discount subscriptions to close.</li>
+    <li>Analysed close rate, conversion and time to close per revenue channel, reconciled to the accounts.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> SQL, Python, PostgreSQL, n8n, Excel, Pipedrive, Clay, Claude Code</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Data Analyst</span><span class="role-date">May 2025 to Feb 2026</span></div>
+  <div class="role-sub"><span>Veginova Seeds</span><span>Odense, Denmark</span></div>
+  <ul>
+    <li>Built the first version of the operations and finance reporting: Power BI dashboards with DAX and Power Query, a Postgres database on Supabase and a Streamlit app in Python.</li>
+    <li>Wrote SQL on the Excel files and the e-conomic accounting exports, my first work with accounting data.</li>
+    <li>Built an agriculture market intelligence platform that collected news, regulations and market data from 228 sources with AI agents and answered questions through a retrieval-based chat.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> Power BI, DAX, Power Query, SQL, PostgreSQL, Supabase, Python, Streamlit, Excel</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Marketing &amp; Operations</span><span class="role-date">Aug 2023 to May 2025</span></div>
+  <div class="role-sub"><span>Veginova Seeds</span><span>Odense, Denmark</span></div>
+  <ul>
+    <li>Worked with customers and trade fairs, and visited seed production in Costa Rica, Panama and Mexico. The data work grew out of this role.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AI Trainer, LLM evaluation in Danish</span><span class="role-date">Jan 2025 to Jan 2026</span></div>
+  <div class="role-sub"><span>Outlier</span><span>Remote</span></div>
+  <ul>
+    <li>Reviewed more than 1,000 Danish AI conversations.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AI &amp; Automation Consultant (Independent)</span><span class="role-date">Jun 2024 to Aug 2025</span></div>
+  <div class="role-sub"><span>Sira Logic (my first consultancy, closed in 2025)</span><span>Remote</span></div>
+  <ul>
+    <li>Built AI and automation for B2B sales data: scraping, enrichment, scoring and CRM automation in one flow.</li>
+    <li>Did the whole cycle on my own, from scoping and build to deployment and handover.</li>
+  </ul>
+  <p class="stack-line"><strong>Stack:</strong> Python, SQL, n8n, Clay, Apify, HubSpot, GoHighLevel, Excel</p>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Marketing &amp; Digital Graduate</span><span class="role-date">Jan 2023 to Aug 2023</span></div>
+  <div class="role-sub"><span>Damstahl Danmark</span><span>Denmark</span></div>
+  <ul>
+    <li>Maintained product data in ERP and CRM.</li>
+  </ul>
+</div>
+
+<div class="avoid-break">
+<h2>Education</h2>
+<div class="role-head"><span class="role-title">Bachelor of Business Administration (BBA)</span><span class="role-date">2020 to 2023</span></div>
+<div class="role-sub"><span>Aarhus BSS, Aarhus University</span><span>Aarhus, Denmark</span></div>
+<div class="role-head"><span class="role-title">Exchange semester</span><span class="role-date">2022</span></div>
+<div class="role-sub"><span>Universidad del Pacífico</span><span>Peru</span></div>
+</div>
+
+<div class="avoid-break">
+<h2>Certificates</h2>
+<p class="inline-list">Artificial Intelligence: Implications for Business Strategy (MIT Sloan) · Google Data Analytics (Google) · Power BI Fundamentals (DataCamp)</p>
+</div>
+
+<div class="avoid-break">
+<h2>Languages</h2>
+<p class="inline-list">Danish (native) · English (full professional) · Spanish (professional working)</p>
+</div>
+
+</body>
+</html>

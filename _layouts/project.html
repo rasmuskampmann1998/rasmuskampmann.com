@@ -6,7 +6,7 @@ layout: default
     <div class="container">
       <a href="{{ '/portfolio/#projects' | relative_url }}" class="back-link">&larr; All case studies</a>
       {% if page.archived %}
-      <p class="archived-notice">Archived analysis work. My current focus is here: <a href="{{ '/' | relative_url }}">operations systems for seed and agriculture companies</a>.</p>
+      <p class="archived-notice">Earlier analysis work, kept online. What I do now: <a href="{{ '/' | relative_url }}">freelance Power BI and Power Platform work</a>.</p>
       {% endif %}
       <div class="project-tools-header">
         {% for tool in page.tools %}
@@ -14,6 +14,14 @@ layout: default
         {% endfor %}
       </div>
       <h1>{{ page.title }}</h1>
+      {% if page.facts %}
+      <dl class="project-facts">
+        <div><dt>Role</dt><dd>{{ page.facts.role }}</dd></div>
+        <div><dt>When</dt><dd>{{ page.facts.when }}</dd></div>
+        <div><dt>Stack</dt><dd>{{ page.facts.stack }}</dd></div>
+        <div><dt>Result</dt><dd>{{ page.facts.result }}</dd></div>
+      </dl>
+      {% endif %}
       {% if page.tagline %}<p class="project-tagline-hero">{{ page.tagline }}</p>{% endif %}
       <div class="outcome-callout">
         <span class="outcome-icon">&#x2713;</span>
