@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Get in touch
-description: Book a call or write. Operations systems for seed and agriculture companies. I reply within one working day.
+title: Contact
+description: Hire Rasmus Kampmann, Freelance Power BI Consultant. Book a 20-minute call or email info@rasmuskampmann.com. Recruiters and companies use the same route.
 ---
 {% assign booking = "https://calendly.com/rasmuskampmann-info/30min" %}
 {% assign mail = site.author.email %}
 
 <section class="offer-hero">
   <div class="container">
-    <h1>Get in touch.</h1>
-    <p class="offer-sub">Tell me how you plan production and track stock today. I'll tell you honestly whether I can help.</p>
+    <h1>Contact</h1>
+    <p class="offer-sub">Recruiters and companies use the same route: book a 20-minute call or send an email. I reply within one working day.</p>
   </div>
 </section>
 
@@ -22,16 +22,13 @@ description: Book a call or write. Operations systems for seed and agriculture c
         <a href="{{ booking }}" class="offer-btn offer-btn--primary" target="_blank" rel="noopener">Book a call</a>
       </article>
       <article class="offer-card">
-        <h3>Write instead.</h3>
-        <p>Pick what it's about. I reply within one working day.</p>
-        <ul class="offer-topics">
-          <li><a href="mailto:{{ mail }}?subject=Production%20Planner">Production Planner &rarr;</a></li>
-          <li><a href="mailto:{{ mail }}?subject=Stock%20and%20lot%20control">Stock &amp; lot control &rarr;</a></li>
-          <li><a href="mailto:{{ mail }}?subject=Operations%20system">Operations system &rarr;</a></li>
-          <li><a href="mailto:{{ mail }}?subject=Not%20sure%20yet">Not sure yet &rarr;</a></li>
-        </ul>
+        <h3>Send an email.</h3>
+        <p>Write to <a href="mailto:{{ mail }}">{{ mail }}</a> with the role or the project, the dates and the hours you have in mind.</p>
+        <a href="mailto:{{ mail }}" class="offer-btn">Email me</a>
       </article>
     </div>
-    <p class="offer-note">Or find me on <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>. I work in English and Spanish.</p>
+    <p class="offer-note" id="cv">For my CV, <a href="mailto:{{ mail }}?subject=CV%20request">email me</a> and I'll send the current version.</p>
+    <p class="offer-note">Freelance by the hour, hours by agreement. Hybrid in Denmark up to three days a week, or remote for Europe and the US. Rate on request. I work in Danish, English and Spanish.</p>
+    <p class="offer-note">Or find me on <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </div>
 </section>
