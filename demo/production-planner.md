@@ -2,20 +2,16 @@
 layout: default
 title: Production planner demo
 permalink: /demo/production-planner/
-description: A demo on synthetic data. Which seed varieties are short or long, how much to produce, where and by when. The same numbers in Microsoft, Google or a custom app.
+description: A demo on synthetic data. Which seed varieties are short or long, how much to produce, where and by when. Built in Power BI, Power Apps, Power Automate and Excel, with Claude beside it.
 ---
 {% comment %}
-DRAFT 2026-11-15, branch demo-page-2026-11-15. Not live. Copy needs Rasmus's approval.
-Fill the links below when each version is live. An empty link hides its button.
+DRAFT 2026-11-15, rewritten 2026-11-26 for the Microsoft-only demo (Rasmus, 2026-11-24: Google and the custom
+version archived; video and screenshots, no public link). Branch demo-page-2026-11-15. Not live. Copy needs Rasmus's
+approval. Before it goes live: the Claude question run on the Semina model (demo/claude-questions.md in
+seed-planning-demo) and the demo-track QC record. Fill the video link when it is recorded; empty hides the button.
 {% endcomment %}
 {% assign booking = "https://calendly.com/rasmuskampmann-info/30min" %}
-{% assign video_custom = "" %}
-{% assign video_google = "" %}
 {% assign video_microsoft = "" %}
-{% assign live_custom = "" %}
-{% assign live_google = "" %}
-{% assign copy_google = "" %}
-{% assign live_microsoft = "" %}
 
 <section class="offer-hero">
   <div class="container">
@@ -46,34 +42,32 @@ Fill the links below when each version is live. An empty link hides its button.
         <p>When a yield estimate drops, an alert fires. If a site in the other hemisphere can still land seed before the need date, the planner proposes that order.</p>
       </article>
     </div>
-    <p class="offer-note">Every number comes from plain rules in the database. No AI calculates anything. The same rules give the same result in all three versions, checked field by field on every build.</p>
+    <p class="offer-note">Every number comes from plain rules in the database. No AI calculates anything. The rules are checked against a separate reference engine, field by field, on every build.</p>
   </div>
 </section>
 
 <section class="offer-section">
   <div class="container">
-    <h2>Three versions, same numbers</h2>
+    <h2>Built in the Microsoft tools you already pay for</h2>
     <div class="offer-cards offer-cards--two">
       <article class="offer-card">
-        <h3>Microsoft</h3>
-        <p>Azure SQL, Power BI, an Excel forecast grid and a Power App for production stages.</p>
-        {% if video_microsoft != "" %}<p><a href="{{ video_microsoft }}" target="_blank" rel="noopener">Watch the 4-minute walkthrough &rarr;</a></p>{% endif %}
-        {% if live_microsoft != "" %}<p><a href="{{ live_microsoft }}" target="_blank" rel="noopener">Open the report &rarr;</a></p>{% endif %}
+        <h3>Power BI</h3>
+        <p>The board, the plan with its yield switch, the alerts and the lots. One model on Azure SQL, so every screen and every answer reads the same numbers.</p>
       </article>
       <article class="offer-card">
-        <h3>Google Workspace</h3>
-        <p>One Google Sheet with Apps Script. No new licences. Your data stays in your own Drive.</p>
-        {% if video_google != "" %}<p><a href="{{ video_google }}" target="_blank" rel="noopener">Watch the 4-minute walkthrough &rarr;</a></p>{% endif %}
-        {% if live_google != "" %}<p><a href="{{ live_google }}" target="_blank" rel="noopener">Open the web app &rarr;</a></p>{% endif %}
-        {% if copy_google != "" %}<p><a href="{{ copy_google }}" target="_blank" rel="noopener">Make your own copy &rarr;</a></p>{% endif %}
+        <h3>Power Apps</h3>
+        <p>Where a person acts: log a production stage or a yield estimate, and approve what Claude proposes. The app adds up nothing; the database does the sums.</p>
       </article>
       <article class="offer-card">
-        <h3>Custom</h3>
-        <p>A Postgres database with a web app. For teams on neither stack.</p>
-        {% if video_custom != "" %}<p><a href="{{ video_custom }}" target="_blank" rel="noopener">Watch the 4-minute walkthrough &rarr;</a></p>{% endif %}
-        {% if live_custom != "" %}<p><a href="{{ live_custom }}" target="_blank" rel="noopener">Open the app &rarr;</a></p>{% endif %}
+        <h3>Power Automate</h3>
+        <p>The high alerts land in your inbox each morning, so nobody has to open a report to find out. A forecast typed in Excel is written back to the plan by a flow.</p>
+      </article>
+      <article class="offer-card">
+        <h3>Excel</h3>
+        <p>The forecast grid stays in Excel: what each customer said, what they usually buy, and the bias-adjusted figure next to it. Type your own number and submit.</p>
       </article>
     </div>
+    {% if video_microsoft != "" %}<p><a href="{{ video_microsoft }}" target="_blank" rel="noopener">Watch the 4-minute walkthrough &rarr;</a></p>{% endif %}
   </div>
 </section>
 
@@ -83,6 +77,7 @@ Fill the links below when each version is live. An empty link hides its button.
     <p>Claude reads, explains and drafts. It never calculates a plan number and never changes data on its own. It files a proposal with the source attached, and a person approves it.</p>
     <p>Built in the demo:</p>
     <ul>
+      <li>"How much should we produce, and by when?" asked in plain words and answered from the Power BI model, through Microsoft's own connector. Same number as the report.</li>
       <li>"Why are we producing this much?" answered from the plan, rule by rule.</li>
       <li>A grower's mail turned into a proposed stage update or yield estimate.</li>
     </ul>
